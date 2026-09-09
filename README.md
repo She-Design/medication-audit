@@ -29,7 +29,8 @@ safety and privacy posture, and the open questions — is in
 | 📓 | **[CLAUDE.md](./CLAUDE.md)** | The brief. Problem, audience, locked decisions, scope, safety posture, architecture sketch, open questions | 🟢 9 Sep 2026 |
 | 🔍 | **[research/](./research/)** | [Evidence](./research/research.md) in six sections — problem, competitors, entry-friction benchmark, Cyprus context, content sources, conclusions | 🟡 Skeleton, competitors done |
 | 🎯 | **[research/competitors.md](./research/competitors.md)** | The analysis shortlist — 15 products in three groups, what to learn from each, and the four decisions it puts in question | 🟡 9 Sep 2026 — desk research only, none installed |
-| 🖼️ | **[research/screens/](./research/screens/)** | Competitor and reference captures | ⚪ Empty |
+| 📊 | **[research/competitor-comparison.md](./research/competitor-comparison.md)** | All 15 compared on audience, base, mechanism, trust and monetisation — plus three patterns, three differences, and three questions for the PM | 🟡 9 Sep 2026 — sites and listings read, apps not installed |
+| 🖼️ | **[research/screens/](./research/screens/)** | 31 captures — marketing sites, App Store galleries, one live public web app. Login-walled surfaces documented rather than captured | 🟡 31 captures, no in-app screens |
 | ✏️ | **[wireframes/](./wireframes/)** | Structure and flow. Grey boxes, real copy, no styling | ⚪ Empty |
 | 🎨 | **[concept/](./concept/)** | Visual directions, mood, tone of voice, the name | ⚪ Blocked on wireframes |
 | 🎛️ | **[tokens/](./tokens/)** | Colour, type, spacing, radius, motion as JSON | ⚪ Blocked on concept |
@@ -56,14 +57,16 @@ research  →  wireframes  →  concept  →  tokens  →  components  →  desi
 Nothing skips a stage. Tokens invented before a concept exists encode nothing; a
 design system written before there are screens is a document about opinions.
 
-**Right now:** the [competitor shortlist](./research/competitors.md) is drawn
-and it moved the priorities. The first piece of work is no longer the
-entry-friction benchmark — it is finding out **whether Cyprus publishes an open
-medicines register**, because if it does, the manual-entry decision in the brief
-is a self-inflicted disadvantage rather than a pragmatic simplification. That
-answer can make the benchmark moot, so it goes first. The
-[benchmark](./research/research.md#3-entry-friction-benchmark) follows, measured
-by hand across five installed apps.
+**Right now:** the competitor work is done to the limit of desk research — a
+[shortlist](./research/competitors.md) and a [five-dimension
+comparison](./research/competitor-comparison.md) of all fifteen. It moved the
+priorities twice. The first piece of work is finding out **whether Cyprus
+publishes an open medicines register**: across fifteen products, having an
+authoritative drug database is the single thing that separates the ones with
+users from the ones without. The [entry-friction
+benchmark](./research/research.md#3-entry-friction-benchmark) follows, measured
+by hand across five installed apps — and it matters slightly less than it did,
+because no scanner in the category captures an expiry date either.
 
 ---
 
