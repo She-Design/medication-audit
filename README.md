@@ -27,7 +27,8 @@ safety and privacy posture, and the open questions — is in
 | | Folder | What's in it | Status |
 |---|---|---|---|
 | 📓 | **[CLAUDE.md](./CLAUDE.md)** | The brief. Problem, audience, locked decisions, scope, safety posture, architecture sketch, open questions | 🟢 9 Sep 2026 |
-| 🔍 | **[research/](./research/)** | [Evidence](./research/research.md) in six sections — problem, competitors, entry-friction benchmark, Cyprus context, content sources, conclusions | ⚪ Skeleton only — **next** |
+| 🔍 | **[research/](./research/)** | [Evidence](./research/research.md) in six sections — problem, competitors, entry-friction benchmark, Cyprus context, content sources, conclusions | 🟡 Skeleton, competitors done |
+| 🎯 | **[research/competitors.md](./research/competitors.md)** | The analysis shortlist — 15 products in three groups, what to learn from each, and the four decisions it puts in question | 🟡 9 Sep 2026 — desk research only, none installed |
 | 🖼️ | **[research/screens/](./research/screens/)** | Competitor and reference captures | ⚪ Empty |
 | ✏️ | **[wireframes/](./wireframes/)** | Structure and flow. Grey boxes, real copy, no styling | ⚪ Empty |
 | 🎨 | **[concept/](./concept/)** | Visual directions, mood, tone of voice, the name | ⚪ Blocked on wireframes |
@@ -55,11 +56,14 @@ research  →  wireframes  →  concept  →  tokens  →  components  →  desi
 Nothing skips a stage. Tokens invented before a concept exists encode nothing; a
 design system written before there are screens is a document about opinions.
 
-**Right now:** research is a skeleton with the questions written and no answers.
-The first real work is the [entry-friction
-benchmark](./research/research.md#3-entry-friction-benchmark) — how long adding
-one item takes in the best home-inventory apps, measured by hand, not estimated.
-Everything downstream depends on that number.
+**Right now:** the [competitor shortlist](./research/competitors.md) is drawn
+and it moved the priorities. The first piece of work is no longer the
+entry-friction benchmark — it is finding out **whether Cyprus publishes an open
+medicines register**, because if it does, the manual-entry decision in the brief
+is a self-inflicted disadvantage rather than a pragmatic simplification. That
+answer can make the benchmark moot, so it goes first. The
+[benchmark](./research/research.md#3-entry-friction-benchmark) follows, measured
+by hand across five installed apps.
 
 ---
 
