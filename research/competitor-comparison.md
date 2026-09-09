@@ -23,15 +23,18 @@ earns or costs them credibility) · **Monetisation**.
 |---|---|---|---|---|---|
 | **MyAidKit** | Families with multiple kits — home, car, travel | **None.** No drug register. Barcode scan + 18 built-in health categories | Split one medicine across kits; expiry alerts at 7/30/90 days; symptom search; shopping list; iCloud family sharing; CSV/JSON export | Solo developer (Stanislav Makushov). **Not enough ratings to show an average.** Listing shows last update Aug 2025 — roughly a year stale | $2.99/mo · $24.99/yr · $2.99 to remove ads |
 | **Home Med Cabinet** | **Caregivers, not households.** Its own store copy: *"Grandma has six. Dad has three. You have one app"* | Barcode catalogue across countries, plus AI-generated medicine information drawn from official databases in **Spain, France and Switzerland** | Two-axis organisation — **by person and by location** (Room / Container: Kitchen, Car, Travel Kit, Bathroom Cabinet, Bedroom Nightstand); OCR (*"the camera does the typing"*); prescription photo recognition; colour-coded expiry counters | Solo developer (Jouriy Lysenko), but **actively shipping** — v2.5.0 five days ago. Offline with password-protected backup. **Serves AI-generated side-effect and interaction text** — the advice line we refuse to cross, crossed by one person with no medical review. Not enough ratings to show an average | £3.99/mo · £24.99/yr |
-| **HomeMed** | Individuals who want a private list and nothing else | **Nothing.** No accounts, no cloud, no register — *"no accounts to create, no cloud syncing, and no internet connection required"* | Photo, expiry to month/year, quantity and units, **storage location**, notes, **symptom tags**, search by name/category/symptom | Solo developer (Krishna Upadhyay). **One rating.** Ships ads and passes Device ID plus product-interaction data to third-party advertising — in a medicine app | Free, ad-supported |
-| **BEEP** | Individuals → shops, warehouses, pharmacies. Retail first, home second | Universal **barcode catalogue** across food, cosmetics and medicine. Explicitly no pharmaceutical data | Scan barcode → **type the expiry date by hand** → push reminder at 1 day / 1 week / 1 month; group by type, category or location; team cross-check | Korean company (BGPworks) with real retail customers. No privacy claims made at all. Honest about what barcodes cannot do | Free ≤ 50 products · **$4.90 / team / month** · enterprise custom |
-| **Medkit** | Unclear, and that is the finding | None stated. Interaction checking of undisclosed provenance | Multiple cabinets, stock levels, expiry filters, interaction check | **Weakest in the group.** 2.1/5 on ~10k Play installs; App Store description reads *"assistance tools for medical centers"* — it does not match the product; collects contact info and user ID **linked to identity** | Free, no IAP listed |
+| **HomeMed** | Individuals who want a private list and nothing else | **Nothing.** No accounts, no cloud, no register — *"no accounts to create, no cloud syncing, and no internet connection required"* | Photo, expiry to month/year, quantity and units, **storage location**, notes, **symptom tags**, search by name/category/symptom | Solo developer. **One App Store rating.** Ships ads and passes Device ID plus product-interaction data to third-party advertising — in a medicine app. And it **declares *"No data collected"* on Play** while doing so. The two stores contradict each other | Free, ad-supported |
+| **BEEP** | Individuals → shops, warehouses, pharmacies. Retail first, home second | Universal **barcode catalogue** across food, cosmetics and medicine. Explicitly no pharmaceutical data | Scan barcode → **type the expiry date by hand** → push reminder at 1 day / 1 week / 1 month; group by type, category or location; team cross-check | Korean company (BGPworks) with real retail customers, **500K+ installs and a 1.9 rating from 1,910 people** — the only direct competitor with a real audience. No privacy claims made at all. Honest about what barcodes cannot do, and punished for it anyway: roughly half its one-star reviews are people who expected the scanner to read the expiry date | Free ≤ 50 products · **$4.90 / team / month** · enterprise custom |
+| **Medkit** | Unclear, and that is the finding | None stated. Interaction checking of undisclosed provenance | Multiple cabinets, stock levels, expiry filters, interaction check | **Weakest in the group.** ~~2.1/5 on ~10k installs~~ — that figure came from mojApteczka's blog and is wrong: Play shows **3.4 from 18 ratings on 5K+ installs**, and no rating at all outside Vietnam. Listing reads *"assistance tools for medical centers"* by a Vietnamese business-software house — it does not match the product; collects contact info and user ID **linked to identity** | Free, no IAP listed |
 
-**What the group says as a whole.** Five products, and not one of them has enough
-ratings to show an average — except Medkit, whose average is 2.1. This is a
-category with many entrants and no winner, built almost entirely by solo
-developers, priced at £25–30 a year, and going nowhere. Nobody here has an
-audience.
+**What the group says as a whole.** On the App Store, not one of these five has
+enough ratings to show an average. That looked like a category of entrants with
+no winner — and the Play pass in [store-evidence.md](./store-evidence.md) showed
+it was half the picture. **BEEP has 500K+ installs and a 1.9 rating from 1,910
+people.** So the category does have an audience; it has a badly served one. The
+rest of the group is still solo-developer work at £25–30 a year with no users,
+but "nobody has traction" was too comfortable a conclusion and the store data
+does not support it.
 
 ---
 
@@ -40,8 +43,8 @@ audience.
 | Product | Audience | Base | Key mechanism | Trust | Monetisation |
 |---|---|---|---|---|---|
 | **Apple Health — Medications** | Everyone with an iPhone, by default | The platform itself, plus a US drug database | Add by camera (**US only**) or by hand; schedule; log Taken or Skipped; share with family via Health sharing | Apple's privacy posture, and an explicit line: the feature *"should not be used as a substitute for professional medical judgment."* **Interactions are US-only.** No expiry date, no quantity, no household stock | None. It exists to hold the platform |
-| **Medisafe** | **Pharmaceutical brands.** Patients are the inventory, not the customer | 13M+ patients, 25+ pharma partners, 150+ countries; outcome studies with IQVIA and Vanderbilt/NIH | Reminders and adherence "Pathways" that pharma brands buy into | The cautionary tale of the whole list. Its homepage now sells *"the patient engagement engine for pharma portfolios"* and *"up to 50x ROI"* — and the consumer free tier was cut to **two medications** in Jan 2026 | B2B pharma contracts, plus ~$40/yr consumer premium |
-| **MyTherapy** | Patients with chronic conditions | smartpatient gmbh (Munich); partnerships with pharma and health institutes | Reminders, intake documentation, refill alerts, health diary | The counter-example to Medisafe with the same funding source: *"MyTherapy always has been and always will remain free... we cooperate with partners such as pharmaceutical companies"* and *"Your personal data will never be handed over to our partners."* Same money, opposite posture | Free to the user; pharma and institutional partnerships |
+| **Medisafe** | **Pharmaceutical brands.** Patients are the inventory, not the customer | 13M+ patients, 25+ pharma partners, 150+ countries; outcome studies with IQVIA and Vanderbilt/NIH | Reminders and adherence "Pathways" that pharma brands buy into | The cautionary tale of the whole list. Its homepage now sells *"the patient engagement engine for pharma portfolios"* and *"up to 50x ROI"* — and the consumer free tier was cut to **two medications** — reviewers describe the cap from **Nov 2024**, earlier than the Jan 2026 date in mojApteczka's comparison | B2B pharma contracts, plus ~$40/yr consumer premium |
+| **MyTherapy** | Patients with chronic conditions | smartpatient gmbh (Munich); partnerships with pharma and health institutes | Reminders, intake documentation, refill alerts, health diary | The counter-example to Medisafe with the same funding source: *"MyTherapy always has been and always will remain free... we cooperate with partners such as pharmaceutical companies"* and *"Your personal data will never be handed over to our partners."* Same money, opposite posture — **but the posture has slipped**: its Play declaration now shares User IDs and diagnostics with third parties, and 2025–26 reviews describe full-screen video ads with sound *inside medication reminders* | Free to the user; pharma and institutional partnerships |
 | **Sortly** | **Businesses.** 20,000+ of them. Households live on the free tier | A generic inventory engine — photos, custom fields, QR/barcode label generation | Photo-first items, custom fields, generated QR labels, low-stock and date alerts | Business SaaS with no health obligations at all — which is why it can be this good at the thing we need | Free (100 items, 1 user) · $24 · $74 · $149/mo · enterprise |
 | **Cyprus duty-pharmacy cluster** (farmakeia.com.cy, Cyprus Pharmacies, Cyprus Night Pharmacies, PharmaCY) | Everyone in Cyprus who needs a pharmacy **right now** | **The Ministry of Health pharmacy directory** — official, and the only local data moat in this document. ~700 pharmacies across five districts | Pick a city or use GPS; real-time on-duty list; push notification when the rota changes | Official source, 4.9 rating, and it ships in **Greek, English and Russian** — confirming the language mix our brief assumes | **OTC brand banner advertising.** The capture in [`screens/`](./screens/) shows a Gum Paroex ad above the on-duty list |
 
@@ -51,8 +54,8 @@ audience.
 
 | Product | Audience | Base | Key mechanism | Trust | Monetisation |
 |---|---|---|---|---|---|
-| **mojApteczka** | Families, seniors, caregivers, parents — and employers buying it as a benefit | **The Polish medicines register (URPL): 78,000 products, updated daily.** Plus DDInter 2.0 for interactions and EMA/OpenFDA sourcing for pregnancy badges. This is the moat | AI camera scan → register match → fields auto-filled. Then: **search by indication** (ATC-based), substitutes with price comparison, **paediatric classification by age and weight**, caregiver role, grouping by location/member/kit, offline leaflets and SmPC, notes, and a **QR code that shows a pharmacist your list without them installing anything** | The strongest posture in the document: *"Medical data is encrypted on the device. We do not sell or share data with third parties. We comply with GDPR and Polish medical-data law."* Recall matching runs **on-device** — *"your medicine list never leaves your phone."* And the disclaimer is one honest sentence: *"It's a tool, not a diagnosis."* | Free (20 medicines, 1 cabinet, 3 AI scans/mo) · Standard 9.99 PLN/mo (30 medicines) · Pro 19.99 PLN/mo (**90 medicines**) · enterprise |
-| **Apteczka Domowa** (Asseco) | Polish households | The same Ministry of Health register | Photo, barcode or manual entry; calendar-synced reminders; official leaflets; search by name, expiry or manufacturer | *"The developer does not collect any data from this app"* — everything stays on the phone. And it is dying anyway: **3.3/5 from 21 ratings**, Polish only, 16+, last updated **December 2024** | None. Free, funded by a large enterprise's goodwill |
+| **mojApteczka** | Families, seniors, caregivers, parents — and employers buying it as a benefit | **The Polish medicines register (URPL): 78,000 products, updated daily.** Plus DDInter 2.0 for interactions and EMA/OpenFDA sourcing for pregnancy badges. This is the moat | AI camera scan → register match → fields auto-filled. Then: **search by indication** (ATC-based), substitutes with price comparison, **paediatric classification by age and weight**, caregiver role, grouping by location/member/kit, offline leaflets and SmPC, notes, and a **QR code that shows a pharmacist your list without them installing anything** | The strongest posture in the document: *"Medical data is encrypted on the device. We do not sell or share data with third parties. We comply with GDPR and Polish medical-data law."* Recall matching runs **on-device** — *"your medicine list never leaves your phone."* And the disclaimer is one honest sentence: *"It's a tool, not a diagnosis."* **But its Play declaration contradicts the marketing** — four data types shared with third parties including Device IDs and app interactions, and *"Health info"* collected. The ad-supported free tier is the likely reason. On Play it has **100+ installs and no rating** | Free (20 medicines, 1 cabinet, 3 AI scans/mo) · Standard 9.99 PLN/mo (30 medicines) · Pro 19.99 PLN/mo (**90 medicines**) · enterprise |
+| **Apteczka Domowa** (Asseco) | Polish households | The same Ministry of Health register | Photo, barcode or manual entry; calendar-synced reminders; official leaflets; search by name, expiry or manufacturer | *"The developer does not collect any data from this app"* — everything stays on the phone. And it is dying anyway: **3.4 from 87 ratings** on Play (3.3 from 21 on the App Store), Polish only, 16+, last updated **6 Mar 2026** on Play | None. Free, funded by a large enterprise's goodwill |
 | **Bring!** | Households and flatmates — **20 million users** | The shared-list network itself, plus a retailer partnership network | Tap a tile to add; lists sync across devices in real time with push; voice add via Siri and Alexa | Consumer scale is the trust. No health obligations, so no health disclaimers needed | **Retailer partnerships and advertising** — digital brochures and one-click offers into your list |
 | **Red Cross first aid apps** | Anyone; a separate app for parents and grandparents | An institutional first-aid curriculum | 20+ skills as step-by-step guides, video, animation and quizzes; **works with no internet**; a toolkit to record a child's medical needs | An institution that cannot afford to be wrong. Worth noting: the page carries **no "this does not replace professional help" disclaimer**, and the tone is reassuring rather than cautionary. Authority earns the right to be calm | Free. Charity-funded |
 | **NHS App / nhs.uk** | England, aged 13+, registered with a GP | National health records | Prescriptions, records, appointments | Government service, published accessibility statement, formal and unhurried language with no marketing flourish | Taxpayer |
@@ -61,14 +64,16 @@ audience.
 
 ## Three common patterns
 
-**1. The register is the moat. Everything else is decoration.**
-Every product in this document with real users is sitting on an authoritative
-drug database — mojApteczka on URPL, Apteczka Domowa on the same register, Apple
-on a US database, Home Med Cabinet borrowing from Spanish, French and Swiss
-sources. Every product **without** one — MyAidKit, HomeMed, BEEP, Medkit — is a
-date-reminder app with a nicer icon, and not one of them has enough ratings to
-display an average. The correlation across fifteen products is uncomfortably
-clean. Design quality is not what separates the winners here; data is.
+**1. A register is table stakes for credibility, but it is not what wins users.**
+*This pattern was stated too strongly in the first pass and the store data broke
+it.* The original claim — every product with users has an authoritative drug
+database, every product without one has none — is false in both directions.
+**BEEP has no pharmaceutical data at all and has 500K+ installs.**
+**mojApteczka has the Polish national register and has 100+ installs and no
+ratings on Android.** What the register actually buys is the ability to fill in
+a name, an ingredient and a leaflet without asking the user; what it does not
+buy is distribution or retention. Data is necessary to be trusted in this
+category and insufficient to be used.
 
 **2. Almost nobody in this category is paid by the person using it.**
 Medisafe is paid by pharma. MyTherapy is paid by pharma. Bring! is paid by
@@ -84,8 +89,15 @@ Barcodes do not carry expiry dates. BEEP says so outright: scan the barcode, the
 **type the date**. Every product here — registry-backed or not — asks a human to
 enter the expiry by hand. Scanning saves the *name*; it never saves the *date*.
 This substantially narrows the gap between our manual-entry decision and the
-scanning products: they are not automating the hard field either. What the
-register actually buys is the name, the ingredient, and the leaflet.
+scanning products: they are not automating the hard field either.
+
+**And it is the single largest source of anger in the category.** BEEP's 1.9
+rating is, in the main, eight years of people installing a barcode scanner,
+discovering it wants them to type the expiry date, and leaving a one-star
+review. The lesson is not "don't ask for the date" — everyone has to. It is
+**never imply you won't**. A product that promises scanning and then asks for
+typing is punished far harder than one that was honest about typing from the
+start.
 
 ---
 
@@ -119,6 +131,18 @@ building for a market where the ambient temperature routinely breaks the storage
 label on the box. A medicine in a car in Cyprus in August is a different object
 from one in a kitchen drawer, and this document contains no evidence that anyone
 has noticed.
+
+**A fourth, found in the Play pass and worth as much as the three above.**
+**Nobody in this category ships household sharing with a clean data
+declaration.** The apps that share — mojApteczka, Medisafe, MyTherapy — all
+declare data shared with third parties, because ads or pharma partnerships fund
+them. The apps with clean declarations — Med Tracker, Apteczka Domowa, HomeMed
+in its Play version — are the local-only ones, and their reviews are full of
+people who lost everything when a phone died. *Shared **and** clean* is an empty
+position, and one reviewer states our entire premise unprompted: **"a medicine
+database held by only one person in the home makes no sense"** (1★, 22 Nov
+2025). Taking that position means refusing the money that funds everyone else —
+which is open question 1.
 
 ---
 

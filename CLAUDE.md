@@ -68,9 +68,11 @@ v1 targets households in Cyprus. This is a real constraint, not a placeholder.
   Russian- and Ukrainian-speaking communities. v1 ships in English, but **all
   user-facing strings must be externalised from day one** — Greek is the first
   follow-on locale, not a rewrite.
-- **Naming.** Households talk in brand names (Depon, Panadol, Algofren), not
-  active ingredients. The interface must accept the brand name the user knows and
-  quietly attach the ingredient behind it.
+- **Naming.** Households talk in brand names (Depon, Panadol, Nurofen, Brufen),
+  not active ingredients. The interface must accept the brand name the user knows
+  and quietly attach the ingredient behind it. *(All four verified present in the
+  Cyprus register — see [research/cyprus-medicines-register.md](./research/cyprus-medicines-register.md).
+  An earlier draft of this brief cited "Algofren", which is not in the register.)*
 - **Regulation.** EU/GDPR applies. See §8.
 
 ## 5. Locked decisions
