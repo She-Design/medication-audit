@@ -32,6 +32,7 @@ safety and privacy posture, and the open questions — is in
 | 📊 | **[research/competitor-comparison.md](./research/competitor-comparison.md)** | All 15 compared on audience, base, mechanism, trust and monetisation — plus the patterns, the differences, and three questions for the PM | 🟡 9 Sep 2026 — corrected after the Play pass |
 | 🇨🇾 | **[research/cyprus-medicines-register.md](./research/cyprus-medicines-register.md)** | **Cyprus publishes an open CC BY 4.0 register of 6,369 medicines** — fields, export, licence, and why there is still nothing to scan against | 🟢 9 Sep 2026 — register used hands-on |
 | ⭐ | **[research/store-evidence.md](./research/store-evidence.md)** | Google Play: install counts, Data Safety declarations, and 58 verbatim reviews on why people stop maintaining these apps | 🟢 9 Sep 2026 |
+| 🤝 | **[research/trust-mechanisms.md](./research/trust-mechanisms.md)** | Eight criteria for *inherited trust*, five non-medical etalons scored against them, three mechanisms for the MVP and one to refuse | 🟢 10 Sep 2026 |
 | 🖼️ | **[research/screens/](./research/screens/)** | 69 captures — marketing sites, App Store galleries, Play listings and Data Safety pages, the Cyprus register. Login-walled surfaces documented rather than captured | 🟡 69 captures, no in-app screens |
 | ✏️ | **[wireframes/](./wireframes/)** | Structure and flow. Grey boxes, real copy, no styling | ⚪ Empty |
 | 🎨 | **[concept/](./concept/)** | Visual directions, mood, tone of voice, the name | ⚪ Blocked on wireframes |
