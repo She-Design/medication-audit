@@ -27,7 +27,7 @@ safety and privacy posture, and the open questions — is in
 | | Folder | What's in it | Status |
 |---|---|---|---|
 | 📓 | **[CLAUDE.md](./CLAUDE.md)** | The brief. Problem, audience, locked decisions, scope, safety posture, architecture sketch, open questions | 🟢 9 Sep 2026 |
-| 🔍 | **[research/](./research/)** | [Evidence](./research/research.md) in six sections — problem, competitors, entry-friction benchmark, Cyprus context, content sources, conclusions | 🟡 Skeleton, competitors done |
+| 🔍 | **[research/](./research/)** | [Evidence](./research/research.md) in four sections — Competitors, Benchmark, Patterns, Conclusions. Eight hypotheses, each sourced or marked unproven | 🟢 10 Sep 2026 |
 | 🎯 | **[research/competitors.md](./research/competitors.md)** | The analysis shortlist — 15 products in three groups, what to learn from each, and the four decisions it puts in question | 🟡 9 Sep 2026 — desk research only, none installed |
 | 📊 | **[research/competitor-comparison.md](./research/competitor-comparison.md)** | All 15 compared on audience, base, mechanism, trust and monetisation — plus the patterns, the differences, and three questions for the PM | 🟡 9 Sep 2026 — corrected after the Play pass |
 | 🇨🇾 | **[research/cyprus-medicines-register.md](./research/cyprus-medicines-register.md)** | **Cyprus publishes an open CC BY 4.0 register of 6,369 medicines** — fields, export, licence, and why there is still nothing to scan against | 🟢 9 Sep 2026 — register used hands-on |
