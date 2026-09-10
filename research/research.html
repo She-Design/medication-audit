@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medication Audit — Research</title>
+<style>
+  :root{
+    --ink:#16181c; --ink-2:#3d434d; --muted:#767d8a; --line:#e5e4e0;
+    --bg:#fbfaf8; --card:#ffffff;
+    --accent:#0f6660; --accent-soft:#e8f2f0;
+    --warn:#8a5a00; --warn-soft:#fdf4e3; --warn-line:#e8d5a8;
+    --pick:#0f6660; --pick-soft:#e8f2f0;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    color-scheme:light;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; scroll-padding-top:70px}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 28px}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(15,102,96,.28)}
+  a:hover{border-bottom-color:var(--accent)}
+
+  /* nav */
+  nav{position:sticky;top:0;z-index:20;background:rgba(251,250,248,.92);
+    backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;gap:26px;align-items:center;height:56px;overflow-x:auto}
+  nav b{font:600 13px/1 var(--sans);letter-spacing:.02em;white-space:nowrap}
+  nav a{font-size:13.5px;color:var(--ink-2);border:0;white-space:nowrap}
+  nav a:hover{color:var(--accent)}
+
+  /* hero */
+  header{padding:76px 0 52px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 18px}
+  h1{font:400 clamp(38px,6vw,60px)/1.05 var(--serif);margin:0 0 20px;letter-spacing:-.015em}
+  .lede{font-size:20px;line-height:1.55;color:var(--ink-2);max-width:64ch;margin:0 0 28px}
+  .pull{font:400 clamp(21px,3vw,27px)/1.4 var(--serif);color:var(--ink);
+    border-left:3px solid var(--accent);padding:4px 0 4px 22px;margin:32px 0;max-width:60ch}
+  .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+  .chip{font-size:12.5px;padding:5px 11px;border-radius:100px;background:#fff;
+    border:1px solid var(--line);color:var(--ink-2)}
+  .chip.on{background:var(--accent-soft);border-color:#c9e0dc;color:var(--accent)}
+
+  /* sections */
+  section{padding:64px 0;border-bottom:1px solid var(--line)}
+  .snum{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 12px;font-weight:600}
+  h2{font:400 clamp(28px,4vw,38px)/1.15 var(--serif);margin:0 0 14px;letter-spacing:-.01em}
+  h3{font:600 17px/1.35 var(--sans);margin:44px 0 12px;letter-spacing:-.005em}
+  h4{font:600 15px/1.4 var(--sans);margin:28px 0 8px}
+  p{margin:0 0 16px;max-width:72ch}
+  .sub{color:var(--muted);font-size:15px;max-width:66ch}
+  strong{font-weight:600}
+  em{font-style:italic;color:var(--ink-2)}
+
+  /* tables */
+  .scroll{overflow-x:auto;margin:22px 0;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:720px}
+  th,td{text-align:left;padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-weight:600;font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--muted);background:#f6f5f2;white-space:nowrap}
+  tbody tr:last-child td{border-bottom:0}
+  td.prod{font-weight:600;white-space:nowrap}
+  .score{text-align:center;font-variant-numeric:tabular-nums;width:64px}
+  .hi{color:var(--accent);font-weight:700}
+  .lo{color:#a8341f;font-weight:700}
+  tr.total td{background:#f6f5f2;font-weight:600}
+
+  /* callouts */
+  .call{border:1px solid var(--line);background:var(--card);border-radius:10px;
+    padding:20px 22px;margin:22px 0}
+  .call p:last-child{margin-bottom:0}
+  .call.warn{background:var(--warn-soft);border-color:var(--warn-line)}
+  .call.warn .tag{color:var(--warn)}
+  .call.pick{background:var(--pick-soft);border-color:#c9e0dc}
+  .call.pick .tag{color:var(--pick)}
+  .tag{display:block;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;
+    font-weight:700;color:var(--muted);margin-bottom:8px}
+
+  /* numbered findings */
+  .find{display:flex;gap:18px;margin:26px 0;align-items:flex-start}
+  .find .n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--accent-soft);
+    color:var(--accent);font:600 14px/34px var(--sans);text-align:center}
+  .find .b{flex:1;min-width:0}
+  .find h4{margin:4px 0 8px}
+
+  /* figures */
+  figure{margin:26px 0;padding:0}
+  figure img{width:100%;display:block;border:1px solid var(--line);border-radius:8px;background:#fff}
+  figcaption{font-size:13px;color:var(--muted);margin-top:10px;max-width:70ch}
+  .duo{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  @media(max-width:720px){.duo{grid-template-columns:1fr}}
+
+  /* hypotheses */
+  .hyp{background:var(--card);border:1px solid var(--line);border-radius:10px;
+    padding:22px 24px;margin:16px 0}
+  .hyp .hd{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;margin-bottom:12px}
+  .hyp .id{font:700 12px/1 var(--sans);letter-spacing:.08em;color:var(--accent);
+    background:var(--accent-soft);padding:6px 9px;border-radius:5px}
+  .hyp .ti{font:600 16px/1.35 var(--sans);flex:1;min-width:200px}
+  .hyp dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 16px;font-size:14px}
+  .hyp dt{font-weight:600;color:var(--muted);font-size:11.5px;letter-spacing:.06em;
+    text-transform:uppercase;padding-top:3px;white-space:nowrap}
+  .hyp dd{margin:0}
+  .hyp dd.np{color:var(--warn);font-weight:500}
+  @media(max-width:620px){.hyp dl{grid-template-columns:1fr;gap:2px 0}
+    .hyp dt{margin-top:10px}}
+
+  /* gallery */
+  .gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:16px;margin-top:24px}
+  .gal a{border:0;display:block}
+  .gal img{width:100%;height:140px;object-fit:cover;object-position:top center;
+    border:1px solid var(--line);border-radius:7px;background:#fff;transition:border-color .15s}
+  .gal a:hover img{border-color:var(--accent)}
+  .gal span{display:block;font-size:11.5px;color:var(--muted);margin-top:7px;line-height:1.4}
+
+  footer{padding:52px 0 80px;color:var(--muted);font-size:13.5px}
+  footer p{max-width:70ch}
+  @media print{nav{display:none}section{page-break-inside:avoid;border:0}body{background:#fff}}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <b>Medication&nbsp;Audit</b>
+  <a href="#product">Product</a>
+  <a href="#competitors">Competitors</a>
+  <a href="#benchmark">Benchmark</a>
+  <a href="#patterns">Patterns</a>
+  <a href="#conclusions">Conclusions</a>
+  <a href="#screens">Screens</a>
+</div></nav>
+
+<header><div class="wrap">
+  <p class="eyebrow">Design research · 10 September 2026</p>
+  <h1>The home medicine cabinet,<br>made legible to everyone who shares it.</h1>
+  <p class="lede">Fifteen competitors, five trust etalons from outside the category, eight interaction
+  patterns, and eight hypotheses — with an honest account of what we still don't know.</p>
+  <div class="meta">
+    <span class="chip on">Stage: concept</span>
+    <span class="chip">Cyprus first</span>
+    <span class="chip">69 screen captures</span>
+    <span class="chip">0 user interviews</span>
+  </div>
+</div></header>
+
+<!-- PRODUCT -->
+<section id="product"><div class="wrap">
+  <p class="snum">The product</p>
+  <h2>What we're building</h2>
+  <p>Households keep a drawer full of medicine that only one person understands. Boxes lose their
+  leaflets, nobody remembers what the half-used one was for, and the person who does know isn't
+  always the one standing at the cabinet.</p>
+
+  <div class="pull">The biggest pain isn't not knowing what's in the drawer — it's standing there
+  at 2am having to decide alone, so the app's job is to make the household's own knowledge survive
+  without the person who holds it, and make the pharmacist one tap away when it isn't enough.</div>
+
+  <h3>The key task</h3>
+  <p><strong>Find what we have, know what it's for in our own words, and whether that's still
+  true.</strong> Everything is measured against that sentence. Entry has to be cheap or the
+  knowledge never gets in; entries have to visibly age or the knowledge quietly stops being
+  knowledge.</p>
+
+  <h3>Who it's for</h3>
+  <p>Couples and small households sharing a cabinet, plus people living alone. Defined by three
+  traits: <strong>low pharmaceutical literacy</strong> — they know "the white box for headaches",
+  not "ibuprofen 400 mg"; <strong>not near a pharmacy</strong> — restocking is a planned trip;
+  <strong>shared responsibility, uneven knowledge</strong> — one person buys and remembers, everyone
+  else needs to act without them.</p>
+
+  <h3>The line we don't cross</h3>
+  <p>The app never tells anyone what to take. It reports what the household owns, what the household
+  wrote about it, and mechanical facts — dates, counts, matching ingredient names. No diagnosis, no
+  recommendation, no dose. That boundary keeps the product honest and out of medical-device
+  territory, and it shapes every decision that follows.</p>
+
+  <div class="call warn">
+    <span class="tag">Read this before the findings</span>
+    <p><strong>No app was installed, no medicine was added, nothing was timed.</strong> All
+    competitor evidence is vendor marketing, store listings, store metadata and other people's
+    reviews.</p>
+    <p><strong>No user research has been done at all</strong> — not one interview, survey or
+    observation with a household. Every statement about <em>our</em> users is a hypothesis inherited
+    from the brief, not a finding. Section 4 treats them as such, and marks the ones with no
+    evidence behind them.</p>
+  </div>
+</div></section>
+
+<!-- COMPETITORS -->
+<section id="competitors"><div class="wrap">
+  <p class="snum">Section 1</p>
+  <h2>Competitors</h2>
+  <p class="sub">Fifteen products in three groups — direct competitors, products doing part of the
+  same job, and international etalons. Compared on audience, what the product is built on, its key
+  mechanism, what earns or costs it trust, and who pays.</p>
+
+  <h3>Hard — same product, same audience, available in Cyprus</h3>
+  <p>A finding in itself: <strong>there is no Cypriot or Greek home-medicine-cabinet app.</strong>
+  Our direct competitors are international apps reachable from the Cyprus store — none of which knows
+  anything about local brand names, pharmacy hours, or a Mediterranean summer.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Product</th><th>Audience</th><th>Base</th><th>Key mechanism</th><th>Trust</th><th>Money</th></tr></thead>
+    <tbody>
+      <tr><td class="prod"><a href="https://apps.apple.com/us/app/myaidkit-medicine-cabinet/id6759701054">MyAidKit</a></td>
+        <td>Families, multiple kits</td><td>No register</td>
+        <td>Kits, expiry alerts at 7/30/90 days, symptom search, iCloud sharing</td>
+        <td>Solo developer. Too few ratings to show an average; listing shows last update Aug 2025</td>
+        <td>$2.99/mo · $24.99/yr</td></tr>
+      <tr><td class="prod"><a href="https://apps.apple.com/gb/app/home-med-cabinet/id6759405485">Home Med Cabinet</a></td>
+        <td><strong>Caregivers</strong> — “Grandma has six. Dad has three.”</td>
+        <td>Barcode catalogue + AI text from ES/FR/CH databases</td>
+        <td>Person <em>and</em> location; OCR; prescription photo recognition</td>
+        <td>Actively shipping. Serves <strong>AI-generated side-effect and interaction text</strong></td>
+        <td>£3.99/mo · £24.99/yr</td></tr>
+      <tr><td class="prod"><a href="https://apps.apple.com/us/app/homemed/id6760306108">HomeMed</a></td>
+        <td>Individuals, private list</td><td>None — no accounts, no cloud</td>
+        <td>Photo, expiry, quantity, storage location, symptom tags</td>
+        <td>Declares <em>“No data collected”</em> on Play while shipping ads; App Store label lists Device ID for third-party advertising</td>
+        <td>Free, ad-supported</td></tr>
+      <tr><td class="prod"><a href="https://www.beepscan.com/">BEEP</a></td>
+        <td>Retail first, home second</td><td>Universal barcode catalogue, no pharma data</td>
+        <td>Scan barcode → <strong>type expiry by hand</strong> → reminders</td>
+        <td><strong>500K+ installs, 1.9 from 1,910 ratings</strong></td>
+        <td>Free ≤50 · $4.90/team/mo</td></tr>
+      <tr><td class="prod"><a href="https://apps.apple.com/us/app/medkit-app/id1632961578">Medkit</a></td>
+        <td>Unclear</td><td>None stated</td><td>Multiple cabinets, stock levels, interaction check</td>
+        <td>3.4 from 18 ratings; listing reads “assistance tools for medical centers”</td><td>Free</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Soft — a different product doing part of the same job</h3>
+  <div class="scroll"><table>
+    <thead><tr><th>Product</th><th>Audience</th><th>Base</th><th>Key mechanism</th><th>Trust</th><th>Money</th></tr></thead>
+    <tbody>
+      <tr><td class="prod"><a href="https://support.apple.com/en-us/105064">Apple Health</a></td>
+        <td>Everyone with an iPhone</td><td>Platform + US drug database</td>
+        <td>Camera add (<strong>US only</strong>), schedule, log Taken/Skipped</td>
+        <td>“Should not be used as a substitute for professional medical judgment.” No expiry, no quantity</td><td>None</td></tr>
+      <tr><td class="prod"><a href="https://medisafe.com/">Medisafe</a></td>
+        <td><strong>Pharma brands</strong></td><td>13M+ patients, 25+ pharma partners</td>
+        <td>Reminders and adherence “Pathways”</td>
+        <td>Homepage sells <em>“the patient engagement engine for pharma portfolios”</em>, <em>“up to 50x ROI”</em></td>
+        <td>B2B pharma</td></tr>
+      <tr><td class="prod"><a href="https://www.mytherapyapp.com/">MyTherapy</a></td>
+        <td>Chronic-condition patients</td><td>smartpatient gmbh</td><td>Reminders, intake documentation, diary</td>
+        <td><em>“Always free… we cooperate with partners such as pharmaceutical companies”</em></td>
+        <td>Pharma partnerships</td></tr>
+      <tr><td class="prod"><a href="https://www.sortly.com/pricing/">Sortly</a></td>
+        <td><strong>Businesses</strong> — 20,000+</td><td>Generic inventory engine + QR labels</td>
+        <td>Photo-first items, custom fields, generated labels</td><td>Business SaaS, no health obligations</td>
+        <td>Free (100 items) → $149/mo</td></tr>
+      <tr><td class="prod"><a href="https://farmakeia.com.cy/en">Cyprus pharmacy apps</a></td>
+        <td>Anyone in Cyprus needing a pharmacy now</td><td><strong>Ministry of Health directory</strong></td>
+        <td>City or GPS, real-time on-duty list, push on rota change</td>
+        <td>Official source; Greek, English <strong>and Russian</strong></td>
+        <td><strong>OTC brand banner ads</strong></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Aspirational — international etalons</h3>
+  <div class="scroll"><table>
+    <thead><tr><th>Product</th><th>Audience</th><th>Base</th><th>Key mechanism</th><th>Trust</th><th>Money</th></tr></thead>
+    <tbody>
+      <tr><td class="prod"><a href="https://mojapteczka.pl/en">mojApteczka</a></td>
+        <td>Families, seniors, caregivers, employers</td>
+        <td><strong>Polish register (URPL), 78,000 products, daily</strong></td>
+        <td>AI scan → register match → autofill; search by indication; paediatric classification; QR to pharmacist</td>
+        <td>Site says it doesn't share data; Play declaration lists four data types shared and collects “Health info”. <strong>100+ Play installs, no rating</strong></td>
+        <td>Free (20 meds) → 19.99 PLN (90)</td></tr>
+      <tr><td class="prod"><a href="https://play.google.com/store/apps/details?id=pl.asseco.apteczkadomowa">Apteczka Domowa</a></td>
+        <td>Polish households</td><td>Same MoH register</td><td>Photo/barcode/manual, calendar reminders, official leaflets</td>
+        <td><em>“The developer does not collect any data”</em>; 3.4 from 87 ratings</td><td>None — enterprise goodwill</td></tr>
+      <tr><td class="prod"><a href="https://www.getbring.com/en/home">Bring!</a></td>
+        <td>Households, flatmates — 20M users</td><td>Shared-list network + retailers</td>
+        <td>Tap a tile to add; real-time sync</td><td>Consumer scale; no health obligations</td>
+        <td><strong>Retailers and advertising</strong></td></tr>
+      <tr><td class="prod"><a href="https://www.redcross.org.uk/first-aid/first-aid-apps">Red Cross first aid</a></td>
+        <td>Anyone; parents</td><td>Institutional first-aid curriculum</td><td>20+ skills, step-by-step, video, <strong>offline</strong></td>
+        <td>Carries <strong>no</strong> “does not replace professional help” disclaimer; tone is reassuring</td><td>Charity</td></tr>
+      <tr><td class="prod"><a href="https://www.nhs.uk/nhs-app/">NHS App</a></td>
+        <td>England, 13+, GP-registered</td><td>National health records</td><td>Prescriptions, records, appointments</td>
+        <td>Government; published accessibility statement</td><td>Taxpayer</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Three patterns across the market</h3>
+
+  <div class="find"><div class="n">1</div><div class="b">
+    <h4>A register is table stakes for credibility, but it is not what wins users</h4>
+    <p>An earlier draft of this research claimed the opposite. The store data breaks it in both
+    directions: <a href="https://play.google.com/store/apps/details?id=com.bgpworks.beep">BEEP</a>
+    has no pharmaceutical data at all and 500K+ installs;
+    <a href="https://play.google.com/store/apps/details?id=pl.mojapteczka.android">mojApteczka</a>
+    has the Polish national register and 100+ installs with no rating on Android. A register buys
+    autofill and credibility — not distribution or retention.</p>
+  </div></div>
+
+  <div class="find"><div class="n">2</div><div class="b">
+    <h4>Almost nobody in this category is paid by the person using the product</h4>
+    <p>Medisafe and MyTherapy are paid by pharma. Bring! by retailers. The Cyprus pharmacy apps by
+    an OTC brand banner sitting directly above the on-duty list. Red Cross by donors, the NHS by
+    taxpayers, Apteczka Domowa by a corporation's goodwill. The only products charging users
+    directly are solo-developer apps at £25–30 a year — and none has an audience.</p>
+    <figure>
+      <img src="./screens/farmakeia-cy__web__02-on-duty-list.png" alt="farmakeia.com.cy showing an OTC brand banner above the on-duty pharmacy list">
+      <figcaption>farmakeia.com.cy — a Gum Paroex banner sits directly above the on-duty pharmacy
+      list, over official Ministry of Health data. This is what funding looks like in our market.</figcaption>
+    </figure>
+  </div></div>
+
+  <div class="find"><div class="n">3</div><div class="b">
+    <h4>Expiry is always typed by hand — the one field the category exists for</h4>
+    <p>Barcodes do not carry expiry dates. <a href="https://www.beepscan.com/">BEEP says so
+    outright</a>: scan the barcode, then enter the date. Every product here, registry-backed or not,
+    asks a human for it — and it is the single largest source of anger in the category. Roughly half
+    of BEEP's captured one-star reviews are people who expected a scanner to read it:
+    <em>“to much typing… not 2mins per item”</em> (1★, 22 Dec 2025).</p>
+    <p><strong>The lesson is not “don't ask for the date”. It is never imply you won't.</strong></p>
+  </div></div>
+
+  <h3>Three differences — where nobody is standing</h3>
+
+  <div class="find"><div class="n">1</div><div class="b">
+    <h4>Everyone designs for a patient or a caregiver. Nobody designs for a household that doesn't know what it owns</h4>
+    <p>Home Med Cabinet's own store screenshots use Lisinopril, Metformin and Atorvastatin as sample
+    data, under the headline “Grandma has six. Dad has three. You have one app.” That is chronic
+    prescription management for an ageing relative. Every competitor assumes the user already knows
+    what their medicines are called.</p>
+    <figure>
+      <img src="./screens/home-med-cabinet__store__02-app-screens.png" alt="Home Med Cabinet App Store screenshots showing prescription medicines and caregiver messaging">
+      <figcaption>A company's own screenshots reveal who it thinks its user is. Prescription drugs,
+      a caregiver headline, and locations modelled as Room and Container.</figcaption>
+    </figure>
+  </div></div>
+
+  <div class="find"><div class="n">2</div><div class="b">
+    <h4>Everyone answers “what is this medicine?” from an authority. Nobody answers “what did <em>we</em> decide this was for?”</h4>
+    <p>mojApteczka has Notes as one card among twelve, at the end of its feature grid. Everywhere
+    else the household's own words are a footnote to the official leaflet. For us they are the
+    primary description and the authority is optional — currently the clearest thing we own.</p>
+    <figure>
+      <img src="./screens/mojapteczka__web__02-features.png" alt="mojApteczka feature grid showing substitutes, search by indication, drug interactions, pediatric classification and notes">
+      <figcaption>mojApteczka — the etalon of the category. Search by indication, substitutes with
+      price comparison, interactions, paediatric classification by age and weight. Notes is last.</figcaption>
+    </figure>
+  </div></div>
+
+  <div class="find"><div class="n">3</div><div class="b">
+    <h4>Storage location exists everywhere as a filing system. Nobody connects it to safety</h4>
+    <p>Home Med Cabinet models Kitchen, Car and Travel Kit; mojApteczka groups by location. Both use
+    it to help you <em>find</em> things. No competitor found links location to temperature — and a
+    medicine in a car in Cyprus in August is a different object from one in a kitchen drawer.</p>
+    <div class="call warn"><span class="tag">Not proven</span>
+      <p>That heat is a real problem in Cypriot homes. The brief asserts it; no measurement, guidance
+      document or user report has been gathered. See hypothesis H6.</p></div>
+  </div></div>
+
+  <div class="call"><span class="tag">A fourth, worth as much as the three above</span>
+    <p><strong>Nobody ships household sharing with a clean data declaration.</strong> The apps that
+    share — mojApteczka, Medisafe, MyTherapy — all declare data shared with third parties, because
+    ads or pharma fund them. The ones with clean declarations are local-only, and their reviews are
+    full of people who lost everything when a phone died. <em>Shared and clean</em> is an empty
+    position.</p></div>
+</div></section>
+
+<!-- BENCHMARK -->
+<section id="benchmark"><div class="wrap">
+  <p class="snum">Section 2</p>
+  <h2>Benchmark</h2>
+  <p class="sub">The parameter benchmarked is <strong>inherited trust</strong> — can a second person
+  rely on what the first one recorded, without re-checking, and know when to stop relying on it?
+  Five etalons, none of them medical, scored 1–5 on eight criteria.</p>
+  <p class="sub"><em>Scores are judgement from public documentation, not measurement or hands-on
+  use.</em></p>
+
+  <div class="scroll"><table>
+    <thead><tr><th>Criterion</th><th class="score">Waze</th><th class="score">Medical&nbsp;ID</th>
+      <th class="score">1Password</th><th class="score">Wikipedia</th><th class="score">Nest</th></tr></thead>
+    <tbody>
+      <tr><td>Survives its author</td><td class="score hi">5</td><td class="score hi">5</td><td class="score">4</td><td class="score hi">5</td><td class="score hi">5</td></tr>
+      <tr><td>Provenance on the face of it</td><td class="score">4</td><td class="score">2</td><td class="score">4</td><td class="score hi">5</td><td class="score">2</td></tr>
+      <tr><td>Visible decay</td><td class="score hi">5</td><td class="score lo">1</td><td class="score">3</td><td class="score">3</td><td class="score">4</td></tr>
+      <tr><td>Cheap correction</td><td class="score hi">5</td><td class="score">2</td><td class="score">3</td><td class="score">4</td><td class="score">2</td></tr>
+      <tr><td>Calibrated confidence</td><td class="score">3</td><td class="score">2</td><td class="score">3</td><td class="score hi">5</td><td class="score hi">5</td></tr>
+      <tr><td>Restraint + proof of life</td><td class="score">3</td><td class="score">3</td><td class="score">4</td><td class="score">4</td><td class="score hi">5</td></tr>
+      <tr><td>Reachable in the worst moment</td><td class="score">3</td><td class="score hi">5</td><td class="score">2</td><td class="score">4</td><td class="score hi">5</td></tr>
+      <tr><td>Honest hand-off</td><td class="score">2</td><td class="score hi">5</td><td class="score">2</td><td class="score lo">1</td><td class="score">3</td></tr>
+      <tr class="total"><td>Total / 40</td><td class="score">30</td><td class="score">25</td><td class="score">25</td><td class="score">31</td><td class="score">31</td></tr>
+    </tbody>
+  </table></div>
+
+  <p>Nobody clears 31 of 40, and no product is strong on more than five of eight criteria:
+  <strong>there is no etalon to copy, only one to assemble.</strong> The sharpest lesson is the
+  lowest score on the board — Apple Medical ID is the best product here at surviving its author and
+  the worst at knowing it has gone stale. One written in 2019 presents itself with exactly today's
+  authority. That is the failure our product is one design decision away from.</p>
+
+  <h3>Three mechanics for the MVP</h3>
+
+  <div class="find"><div class="n">M1</div><div class="b">
+    <h4>One-tap freshness confirmation — from Waze</h4>
+    <p>A Waze report carries its age, passing drivers confirm or dismiss it with one tap, and
+    dismissals shorten its life. <strong>Applied:</strong> whenever a medicine surfaces — opened,
+    searched, or in the monthly digest — one tap answers <em>still in the drawer?</em> Each tap
+    restamps the entry; an entry nobody has confirmed in a year says so on its face instead of
+    pretending.</p>
+    <p>This targets the failure other companies' users describe directly: <em>“I added new packs,
+    but the summary still shows the medicines I added before, which I no longer use.”</em>
+    (1★, 23 Dec 2025, translated.)</p>
+  </div></div>
+
+  <div class="find"><div class="n">M2</div><div class="b">
+    <h4>Two severity registers, plus proof of life — from Nest Protect</h4>
+    <p>Heads-Up is a spoken early warning; the alarm is a different register entirely for critical
+    levels. It runs a
+    <a href="https://support.google.com/googlenest/answer/9250492?hl=en">Self Test every 200 seconds</a>,
+    a monthly <a href="https://support.google.com/googlehome/answer/9242130?hl=en">Sound Check</a> of
+    its own speaker and horn, and
+    <a href="https://support.google.com/googlenest/answer/9232412?hl=en">glows green at lights-out</a>
+    so silence is evidence rather than absence. <strong>Applied:</strong> a four-level severity
+    scale, plus a monthly digest that says <em>checked, nothing needs you</em> even when there is
+    nothing to report.</p>
+  </div></div>
+
+  <div class="find"><div class="n">M3</div><div class="b">
+    <h4>Access by someone who is not the owner — from Apple Medical ID</h4>
+    <p>Allergies, conditions and emergency contacts are readable
+    <a href="https://support.apple.com/en-us/105072">from the Lock Screen without a passcode</a>, by
+    a paramedic who has never met you. <strong>Applied:</strong> an emergency view of the cabinet
+    reachable without the household account. This is the job statement rendered as a mechanism, and
+    no competitor found ships it.</p>
+    <p><em>Take the access model and explicitly not the staleness model — Medical ID scores 1 on
+    visible decay.</em></p>
+  </div></div>
+
+  <div class="call warn"><span class="tag">One that will not work — crowd corroboration</span>
+    <p>Waze and Wikipedia are trustworthy because many independent strangers examine the same claim.
+    The mechanism requires a crowd. A household is two to four people: nobody outvotes a wrong entry,
+    a reputation score carries no signal, and the person who typed an entry is the same one who
+    would confirm it. One reviewer states the problem for us — <em>“a medicine database held by only
+    one person in the home makes no sense”</em> (1★, 22 Nov 2025).</p>
+    <p><strong>Take the gesture, refuse the epistemology.</strong> Freshness must come from the
+    object — the printed date, elapsed time, the dose log — never from consensus.</p></div>
+</div></section>
+
+<!-- PATTERNS -->
+<section id="patterns"><div class="wrap">
+  <p class="snum">Section 3</p>
+  <h2>Patterns</h2>
+  <p class="sub">Eight interaction patterns considered for the key task, separated by
+  <em>where retrieval starts</em> — so that they are genuinely different mechanics rather than
+  variants of one.</p>
+
+  <div class="scroll"><table>
+    <thead><tr><th>Pattern</th><th>Retrieval starts from</th><th>Verdict</th></tr></thead>
+    <tbody>
+      <tr><td class="prod">Ledger</td><td>A word in the record</td>
+        <td>Fails the user we designed for: demands vocabulary they don't have, and an empty result is indistinguishable from “we don't own any”</td></tr>
+      <tr><td class="prod">Need-first</td><td>The symptom</td><td><strong>Selected</strong> — see below</td></tr>
+      <tr><td class="prod">Spatial mirror</td><td>A place</td>
+        <td>Strong second. Highest maintenance cost: the map silently lies when someone moves a box</td></tr>
+      <tr><td class="prod">Object-first</td><td>The physical pack</td>
+        <td>Blocked in our market — the Cyprus register has no barcode field, so there is nothing to resolve a scan against</td></tr>
+      <tr><td class="prod">Label-first</td><td>The object, off-screen</td>
+        <td>Needs a ritual most households won't perform; the sticker outlives the record</td></tr>
+      <tr><td class="prod">Episodic</td><td>A memory of an event</td>
+        <td>Needs months of history; episodic memory is the first thing that fails at 2am</td></tr>
+      <tr><td class="prod">Static sheet</td><td>Nothing — you just read it</td>
+        <td>Right for emergency access (M3), breaks past ~10 items</td></tr>
+      <tr><td class="prod">Conversational</td><td>A sentence</td><td>Rejected outright — see below</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="call pick"><span class="tag">Selected — need-first</span>
+    <p>The index is not medicines but reasons — throat, fever, allergy, cuts, stomach. Tap one, see
+    what the household owns tagged to it, in the household's own words.</p>
+    <p><strong>1. The audience is defined by low pharmaceutical literacy.</strong> They know “the
+    white box for headaches”, not “cetirizine”. A search box demands vocabulary the brief says they
+    lack; a list of reasons demands none.</p>
+    <p><strong>2. The task is a question, not a lookup.</strong> The user arrives with a symptom, not
+    a product name. Need-first is the only pattern whose front door matches how the problem
+    presents.</p>
+    <p><strong>3. It makes the household's own words pay for themselves.</strong> The notes and tags
+    <em>become the index</em>, so writing a note has an immediate visible payoff. Every other pattern
+    treats notes as decoration — and staleness is the documented killer in this category.</p>
+    <p><strong>What can go wrong:</strong> it can read as advice. Ordering implies ranking; an empty
+    category implies “you can't treat this”. Both must be handled in wording, and the wording is the
+    safety surface.</p></div>
+
+  <div class="call warn"><span class="tag">Rejected outright — conversational</span>
+    <p>Not “not yet”, on three independent grounds. It <strong>crosses the line we never cross</strong>
+    — a sentence answering “what do we have for a sore throat” is a recommendation however it is
+    hedged. It <strong>breaks offline</strong>, and the one moment we exist for is the one with no
+    signal. And it <strong>cannot be calibrated</strong> — a fluent sentence is maximally confident by
+    construction, while our whole trust model is never claiming more than we know.</p>
+    <p>Home Med Cabinet already ships AI-generated side-effect and interaction text, written by a
+    solo developer with no stated medical review. That is the road, and it is visible.</p></div>
+</div></section>
+
+<!-- CONCLUSIONS -->
+<section id="conclusions"><div class="wrap">
+  <p class="snum">Section 4</p>
+  <h2>Conclusions</h2>
+  <p class="sub">Each gap becomes a falsifiable hypothesis, with the section it depends on, the
+  evidence for and against, and how to test it. Where a hypothesis has no evidence at all, it says
+  so.</p>
+
+  <div class="hyp"><div class="hd"><span class="id">H1</span><span class="ti">Entry friction is the thing that kills this product</span></div>
+    <dl>
+      <dt>Hypothesis</dt><dd>If adding one medicine takes longer than ~30 seconds, the cabinet goes stale within three months and the app becomes worse than useless, because it lies.</dd>
+      <dt>Relies on</dt><dd>§1 Competitors — market pattern 3 and the review evidence</dd>
+      <dt>For</dt><dd>BEEP's 1.9 rating over 1,910 ratings, driven by typing complaints; the Apteczka Domowa staleness reviews</dd>
+      <dt>Not proven</dt><dd class="np">The 30-second threshold. Asserted in the brief, never measured anywhere.</dd>
+      <dt>Test</dt><dd>Install five apps, add one real medicine to each, record taps and seconds. Needs a phone.</dd>
+    </dl></div>
+
+  <div class="hyp"><div class="hd"><span class="id">H2</span><span class="ti">A bundled register removes most of the entry cost without any scanning</span></div>
+    <dl>
+      <dt>Hypothesis</dt><dd>Brand-name autocomplete from the Cyprus register — which returns the active ingredient for free — cuts entry to a name, a date and a place.</dd>
+      <dt>Relies on</dt><dd>§1 Competitors — market pattern 1</dd>
+      <dt>For</dt><dd>The register exists, is open, CC BY 4.0, 6,369 products with brand name, active ingredient, strength, form and ATC code</dd>
+      <dt>Against</dt><dd>It has <strong>no prescription/OTC field</strong>, so it cannot tell us what a household can actually buy — which the kit checklist needs</dd>
+      <dt>Not proven</dt><dd class="np">That autocomplete measurably reduces entry time for this audience.</dd>
+    </dl>
+    <figure><img src="./screens/cy-register__web__03-product-detail.png" alt="Cyprus Ministry of Health pharmaceutical products register showing a Panadol product page">
+      <figcaption>The Cyprus register, used hands-on. Brand name, marketing authorisation holder,
+      pack sizes, ATC classification, active ingredient and leaflets — open, no login, CC BY 4.0.</figcaption></figure>
+  </div>
+
+  <div class="hyp"><div class="hd"><span class="id">H3</span><span class="ti">One-tap confirmation keeps the cabinet true</span></div>
+    <dl>
+      <dt>Hypothesis</dt><dd>A single confirm/gone gesture, offered where the user already is, keeps entries fresh enough that the cabinet stays trustworthy without deliberate maintenance.</dd>
+      <dt>Relies on</dt><dd>§2 Benchmark — M1</dd>
+      <dt>For</dt><dd>Waze's report lifecycle works at scale on exactly this mechanic</dd>
+      <dt>Not proven</dt><dd class="np">That it transfers to a household of three. Waze's version is backed by crowd corroboration, which we have explicitly rejected — the gesture is being lifted out of the system that makes it work.</dd>
+      <dt>Test</dt><dd>The first thing to put in front of real users.</dd>
+    </dl></div>
+
+  <div class="hyp"><div class="hd"><span class="id">H4</span><span class="ti">Need-first beats a ledger for this audience</span></div>
+    <dl>
+      <dt>Hypothesis</dt><dd>Users with low pharmaceutical literacy find the right medicine faster from a list of reasons than from a search box.</dd>
+      <dt>Relies on</dt><dd>§3 Patterns</dd>
+      <dt>For</dt><dd>Nothing from users. The argument is derived from the brief's description of the audience, which is itself unvalidated.</dd>
+      <dt>Not proven</dt><dd class="np">The entire premise. This is the weakest-supported major decision in the project.</dd>
+      <dt>Test</dt><dd>A five-person unmoderated test with both layouts and a real cabinet.</dd>
+    </dl></div>
+
+  <div class="hyp"><div class="hd"><span class="id">H5</span><span class="ti">There is a household audience distinct from the caregiver audience</span></div>
+    <dl>
+      <dt>Hypothesis</dt><dd>Households managing OTC medicines are a real, reachable market — not just the caregiver market with less money.</dd>
+      <dt>Relies on</dt><dd>§1 Competitors — difference 1</dd>
+      <dt>For</dt><dd>No competitor serves them</dd>
+      <dt>Against</dt><dd>Every shipping competitor has drifted to the caregiver, and drift that consistent usually reflects where the demand is</dd>
+      <dt>Not proven</dt><dd class="np">That the household audience will pay for anything, or open the app more than three times a year.</dd>
+      <dt>Test</dt><dd>Interviews. None have been done.</dd>
+    </dl></div>
+
+  <div class="hyp"><div class="hd"><span class="id">H6</span><span class="ti">Heat makes storage location a safety signal in Cyprus</span></div>
+    <dl>
+      <dt>Hypothesis</dt><dd>Cypriot indoor summer temperatures routinely exceed the “store below 25 °C” label, making <em>where</em> a medicine is kept a genuine warning rather than a filing detail.</dd>
+      <dt>Relies on</dt><dd>§1 Competitors — difference 3, where the finding is only that <em>nobody else does this</em></dd>
+      <dt>Not proven</dt><dd class="np">This is an assertion in the brief with no evidence gathered — no temperature data, no official storage guidance, no user report. It is the most confident unsupported claim in the project, and it is load-bearing: one of only two things that make this product specifically Cypriot.</dd>
+      <dt>Test</dt><dd>Indoor summer temperature data for Cypriot homes, plus what the Pharmaceutical Services say about storage.</dd>
+    </dl></div>
+
+  <div class="hyp"><div class="hd"><span class="id">H7</span><span class="ti">This product can be funded without pharma money or OTC advertising</span></div>
+    <dl>
+      <dt>Hypothesis</dt><dd>A product whose warnings must be neutral can be funded some other way than the two models this market actually uses.</dd>
+      <dt>Relies on</dt><dd>§1 Competitors — market pattern 2</dd>
+      <dt>Against</dt><dd>Almost nobody in the category is paid by the user; the only ones who try are solo developers with no audience</dd>
+      <dt>Not proven</dt><dd class="np">Any viable alternative. None has been identified.</dd>
+      <dt>Test</dt><dd>A decision, not an experiment — and one that shapes the account model, so it is needed early.</dd>
+    </dl></div>
+
+  <div class="hyp"><div class="hd"><span class="id">H8</span><span class="ti">No-account emergency access is the differentiator</span></div>
+    <dl>
+      <dt>Hypothesis</dt><dd>A cabinet view readable by someone who is not the owner — offline, without an account — is the clearest expression of the job statement and a position nobody occupies.</dd>
+      <dt>Relies on</dt><dd>§2 Benchmark (M3) and §1 Competitors (the fourth difference)</dd>
+      <dt>For</dt><dd>No competitor found ships it; Apple Medical ID proves the interaction is viable</dd>
+      <dt>Against</dt><dd>The most expensive thing on the list, and it holds special-category health data outside the account boundary — a GDPR problem as much as a UX one</dd>
+      <dt>Not proven</dt><dd class="np">That users want it, or would trust it.</dd>
+    </dl></div>
+
+  <h3>What to do next, in order</h3>
+  <div class="find"><div class="n">1</div><div class="b"><h4>Settle H6 and H7 — they can invalidate the positioning</h4>
+    <p>Both are answerable without users: one from temperature and storage-guidance data, one from a decision about money.</p></div></div>
+  <div class="find"><div class="n">2</div><div class="b"><h4>H1 needs a phone</h4>
+    <p>Install the five benchmark apps, add a real medicine to each, time it. Nothing in a browser substitutes for this.</p></div></div>
+  <div class="find"><div class="n">3</div><div class="b"><h4>H4 and H5 need people</h4>
+    <p>Nothing in this document replaces talking to five households. Until that happens, the audience section of the brief is a well-argued guess.</p></div></div>
+</div></section>
+
+<!-- SCREENS -->
+<section id="screens"><div class="wrap">
+  <p class="snum">Appendix</p>
+  <h2>Research screens</h2>
+  <p class="sub">69 captures — marketing sites, App Store galleries, Play listings and Data Safety
+  declarations, and the Cyprus register used hands-on. Login-walled surfaces are documented rather
+  than captured: Sortly and Bring!'s web apps, mojApteczka's in-app screens, Apple Health (on-device
+  only) and the NHS App all require accounts.</p>
+  <div class="gal">
+    <a href="./screens/mojapteczka__web__02-features.png"><img src="./screens/mojapteczka__web__02-features.png" alt=""><span>mojApteczka — feature grid</span></a>
+    <a href="./screens/home-med-cabinet__store__02-app-screens.png"><img src="./screens/home-med-cabinet__store__02-app-screens.png" alt=""><span>Home Med Cabinet — store gallery</span></a>
+    <a href="./screens/beep__play__01-listing.png"><img src="./screens/beep__play__01-listing.png" alt=""><span>BEEP — 500K+ installs, 1.9 rating</span></a>
+    <a href="./screens/medisafe__web__02-roi-claims.png"><img src="./screens/medisafe__web__02-roi-claims.png" alt=""><span>Medisafe — “up to 50x ROI” for pharma</span></a>
+    <a href="./screens/cy-register__web__01-search-form.png"><img src="./screens/cy-register__web__01-search-form.png" alt=""><span>Cyprus register — 6,369 products</span></a>
+    <a href="./screens/cy-register__web__09-data-gov-cy-dataset-cc-by.png"><img src="./screens/cy-register__web__09-data-gov-cy-dataset-cc-by.png" alt=""><span>data.gov.cy — CC BY 4.0 licence</span></a>
+    <a href="./screens/farmakeia-cy__web__02-on-duty-list.png"><img src="./screens/farmakeia-cy__web__02-on-duty-list.png" alt=""><span>farmakeia.com.cy — OTC banner ad</span></a>
+    <a href="./screens/mojapteczka__web__03-pricing.png"><img src="./screens/mojapteczka__web__03-pricing.png" alt=""><span>mojApteczka — pricing tiers</span></a>
+    <a href="./screens/sortly__web__02-pricing.png"><img src="./screens/sortly__web__02-pricing.png" alt=""><span>Sortly — business pricing</span></a>
+    <a href="./screens/apteczka-domowa__store__02-app-screens.png"><img src="./screens/apteczka-domowa__store__02-app-screens.png" alt=""><span>Apteczka Domowa — store gallery</span></a>
+    <a href="./screens/homemed__play__02-data-safety.png"><img src="./screens/homemed__play__02-data-safety.png" alt=""><span>HomeMed — Play Data Safety</span></a>
+    <a href="./screens/red-cross__web__01-first-aid-apps.png"><img src="./screens/red-cross__web__01-first-aid-apps.png" alt=""><span>Red Cross — first aid apps</span></a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <p><strong>Sources.</strong> Every claim in this document carries a link, a screenshot, or the
+  words “not proven”. Full working — the competitor shortlist, the five-dimension comparison, the
+  Play Store evidence with 58 verbatim reviews, the Cyprus register investigation and the trust
+  benchmark — is in the research folder of the project repository.</p>
+  <p>Medication Audit · design research · 10 September 2026 · stage: concept, nothing built.</p>
+</div></footer>
+
+</body>
+</html>
