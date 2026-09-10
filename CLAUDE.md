@@ -21,17 +21,28 @@ usually knows what the medicine was for; the others do not, and that person is
 not always the one standing at the cabinet.
 
 > **The biggest pain isn't not knowing what's in the drawer — it's standing
-> there at 2am having to decide alone.**
+> there at 2am having to decide alone, so the app's job is to make the
+> household's own knowledge survive without the person who holds it, and make
+> the pharmacist one tap away when it isn't enough.**
 
 Stated this way because "what do we have?" is not, on its own, a painful
 question: you can tip the drawer onto the bed and answer it in ninety seconds.
 What hurts is the next moment — holding a box, not knowing whether it is the
 right thing or still safe, with nobody awake to ask and nothing open.
 
-This is the sentence to measure features against. It also marks the edge of what
-we will do: the app carries the knowledge the household already has so it
-survives without the person holding it. It does not decide for them — see
-[Deliberately never](#deliberately-never).
+This is the sentence to measure features against, and it sets the edge of what
+we will do. We carry what the household already knows so it survives without the
+person holding it. We never decide for them — see
+[Deliberately never](#deliberately-never). And when their own knowledge runs
+out, the answer is to make asking cheap rather than to answer: reaching a
+pharmacist is a *route out of the app*, not a diagnosis inside it.
+
+**Open, and not yet decided:** what "one tap away" actually means in v1 — a
+phone number from the public duty-pharmacy rota, a hand-off to the Cyprus
+pharmacy apps that already do this well, or something like mojApteczka's QR code
+that shows a pharmacist your list without them installing anything. It is
+currently outside the v1 scope in §6, which needs revisiting now that the job
+statement names it.
 
 ## 2. The goal
 
