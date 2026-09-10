@@ -4,121 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Medication Audit — Research</title>
-<style>
-  :root{
-    --ink:#16181c; --ink-2:#3d434d; --muted:#767d8a; --line:#e5e4e0;
-    --bg:#fbfaf8; --card:#ffffff;
-    --accent:#0f6660; --accent-soft:#e8f2f0;
-    --warn:#8a5a00; --warn-soft:#fdf4e3; --warn-line:#e8d5a8;
-    --pick:#0f6660; --pick-soft:#e8f2f0;
-    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
-    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
-    color-scheme:light;
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth; scroll-padding-top:70px}
-  body{margin:0;background:var(--bg);color:var(--ink);
-    font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
-  .wrap{max-width:1000px;margin:0 auto;padding:0 28px}
-  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(15,102,96,.28)}
-  a:hover{border-bottom-color:var(--accent)}
-
-  /* nav */
-  nav{position:sticky;top:0;z-index:20;background:rgba(251,250,248,.92);
-    backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
-  nav .wrap{display:flex;gap:26px;align-items:center;height:56px;overflow-x:auto}
-  nav b{font:600 13px/1 var(--sans);letter-spacing:.02em;white-space:nowrap}
-  nav a{font-size:13.5px;color:var(--ink-2);border:0;white-space:nowrap}
-  nav a:hover{color:var(--accent)}
-
-  /* hero */
-  header{padding:76px 0 52px;border-bottom:1px solid var(--line)}
-  .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 18px}
-  h1{font:400 clamp(38px,6vw,60px)/1.05 var(--serif);margin:0 0 20px;letter-spacing:-.015em}
-  .lede{font-size:20px;line-height:1.55;color:var(--ink-2);max-width:64ch;margin:0 0 28px}
-  .pull{font:400 clamp(21px,3vw,27px)/1.4 var(--serif);color:var(--ink);
-    border-left:3px solid var(--accent);padding:4px 0 4px 22px;margin:32px 0;max-width:60ch}
-  .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
-  .chip{font-size:12.5px;padding:5px 11px;border-radius:100px;background:#fff;
-    border:1px solid var(--line);color:var(--ink-2)}
-  .chip.on{background:var(--accent-soft);border-color:#c9e0dc;color:var(--accent)}
-
-  /* sections */
-  section{padding:64px 0;border-bottom:1px solid var(--line)}
-  .snum{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 12px;font-weight:600}
-  h2{font:400 clamp(28px,4vw,38px)/1.15 var(--serif);margin:0 0 14px;letter-spacing:-.01em}
-  h3{font:600 17px/1.35 var(--sans);margin:44px 0 12px;letter-spacing:-.005em}
-  h4{font:600 15px/1.4 var(--sans);margin:28px 0 8px}
-  p{margin:0 0 16px;max-width:72ch}
-  .sub{color:var(--muted);font-size:15px;max-width:66ch}
-  strong{font-weight:600}
-  em{font-style:italic;color:var(--ink-2)}
-
-  /* tables */
-  .scroll{overflow-x:auto;margin:22px 0;border:1px solid var(--line);border-radius:10px;background:var(--card)}
-  table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:720px}
-  th,td{text-align:left;padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top}
-  th{font-weight:600;font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;
-    color:var(--muted);background:#f6f5f2;white-space:nowrap}
-  tbody tr:last-child td{border-bottom:0}
-  td.prod{font-weight:600;white-space:nowrap}
-  .score{text-align:center;font-variant-numeric:tabular-nums;width:64px}
-  .hi{color:var(--accent);font-weight:700}
-  .lo{color:#a8341f;font-weight:700}
-  tr.total td{background:#f6f5f2;font-weight:600}
-
-  /* callouts */
-  .call{border:1px solid var(--line);background:var(--card);border-radius:10px;
-    padding:20px 22px;margin:22px 0}
-  .call p:last-child{margin-bottom:0}
-  .call.warn{background:var(--warn-soft);border-color:var(--warn-line)}
-  .call.warn .tag{color:var(--warn)}
-  .call.pick{background:var(--pick-soft);border-color:#c9e0dc}
-  .call.pick .tag{color:var(--pick)}
-  .tag{display:block;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;
-    font-weight:700;color:var(--muted);margin-bottom:8px}
-
-  /* numbered findings */
-  .find{display:flex;gap:18px;margin:26px 0;align-items:flex-start}
-  .find .n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--accent-soft);
-    color:var(--accent);font:600 14px/34px var(--sans);text-align:center}
-  .find .b{flex:1;min-width:0}
-  .find h4{margin:4px 0 8px}
-
-  /* figures */
-  figure{margin:26px 0;padding:0}
-  figure img{width:100%;display:block;border:1px solid var(--line);border-radius:8px;background:#fff}
-  figcaption{font-size:13px;color:var(--muted);margin-top:10px;max-width:70ch}
-  .duo{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-  @media(max-width:720px){.duo{grid-template-columns:1fr}}
-
-  /* hypotheses */
-  .hyp{background:var(--card);border:1px solid var(--line);border-radius:10px;
-    padding:22px 24px;margin:16px 0}
-  .hyp .hd{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;margin-bottom:12px}
-  .hyp .id{font:700 12px/1 var(--sans);letter-spacing:.08em;color:var(--accent);
-    background:var(--accent-soft);padding:6px 9px;border-radius:5px}
-  .hyp .ti{font:600 16px/1.35 var(--sans);flex:1;min-width:200px}
-  .hyp dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 16px;font-size:14px}
-  .hyp dt{font-weight:600;color:var(--muted);font-size:11.5px;letter-spacing:.06em;
-    text-transform:uppercase;padding-top:3px;white-space:nowrap}
-  .hyp dd{margin:0}
-  .hyp dd.np{color:var(--warn);font-weight:500}
-  @media(max-width:620px){.hyp dl{grid-template-columns:1fr;gap:2px 0}
-    .hyp dt{margin-top:10px}}
-
-  /* gallery */
-  .gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:16px;margin-top:24px}
-  .gal a{border:0;display:block}
-  .gal img{width:100%;height:140px;object-fit:cover;object-position:top center;
-    border:1px solid var(--line);border-radius:7px;background:#fff;transition:border-color .15s}
-  .gal a:hover img{border-color:var(--accent)}
-  .gal span{display:block;font-size:11.5px;color:var(--muted);margin-top:7px;line-height:1.4}
-
-  footer{padding:52px 0 80px;color:var(--muted);font-size:13.5px}
-  footer p{max-width:70ch}
-  @media print{nav{display:none}section{page-break-inside:avoid;border:0}body{background:#fff}}
-</style>
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
@@ -130,6 +16,7 @@
   <a href="#patterns">Patterns</a>
   <a href="#conclusions">Conclusions</a>
   <a href="#screens">Screens</a>
+  <span class="lang"><a class="on" href="./">EN</a><a href="./uk">УКР</a></span>
 </div></nav>
 
 <header><div class="wrap">
