@@ -20,6 +20,19 @@ The failure is not storage. It is **shared memory**. One person in the household
 usually knows what the medicine was for; the others do not, and that person is
 not always the one standing at the cabinet.
 
+> **The biggest pain isn't not knowing what's in the drawer — it's standing
+> there at 2am having to decide alone.**
+
+Stated this way because "what do we have?" is not, on its own, a painful
+question: you can tip the drawer onto the bed and answer it in ninety seconds.
+What hurts is the next moment — holding a box, not knowing whether it is the
+right thing or still safe, with nobody awake to ask and nothing open.
+
+This is the sentence to measure features against. It also marks the edge of what
+we will do: the app carries the knowledge the household already has so it
+survives without the person holding it. It does not decide for them — see
+[Deliberately never](#deliberately-never).
+
 ## 2. The goal
 
 In a critical moment, any member of the household can answer three questions in
