@@ -1,6 +1,6 @@
 # Personas
 
-Four personas built from [people.md](./people.md), which was built from
+Three personas built from [people.md](./people.md), which was built from
 [research.md](./research.md). Each carries the evidence behind every field, and
 marks what is missing rather than filling it in.
 
@@ -24,13 +24,21 @@ Every field is tagged with what it rests on:
 |---|---|
 | **[B]** | **Observed.** Real verbatim words from Population B — reviewers of competitor apps, [store-evidence.md](./store-evidence.md). Not our audience, but real people. |
 | **[A]** | **Asserted.** From the brief, [CLAUDE.md](../CLAUDE.md). Argued, never validated. |
-| **[C]** | **The builder's household.** Real and reachable, `n = 1`, not independent — [people.md O21](./people.md). |
+| **[C]** | **The builder's household.** The author and their family — a real, reachable instance of **P1**, `n = 1`, not independent ([people.md O21](./people.md)). A note on where evidence comes from, not a persona of its own. |
 | **[?]** | **No data.** Written as a hypothesis, never as a fact. |
 
-**On the quotes.** Each persona carries a real, verbatim, dated quote. **None of
-them was said by the persona** — they are said by real reviewers of other
-products, and each is attributed to whoever actually said it. A quote invented
-for a persona would be the single worst thing this document could contain.
+**On the quotes.** Each persona carries a real, verbatim, dated quote, attributed
+to whoever actually said it. With one exception — the author's own words under
+P1 — **none of them was said by the persona**: they are real reviewers of other
+products, carried here because the shape of what they describe matches. A quote
+invented for a persona would be the single worst thing this document could
+contain.
+
+**Populations are not personas.** [people.md](./people.md) sorts evidence into
+three populations by where it came from (A asserted, B reviewers, C the
+builder's household). That is provenance. The author of this project is not a
+separate kind of user — **they are a Keeper**, and their household is P1's one
+real instance. Recorded inside P1 below, not split off.
 
 ---
 
@@ -64,6 +72,18 @@ literacy — *"the white box for headaches"*, not *"ibuprofen 400 mg"*
 ([CLAUDE.md §3](../CLAUDE.md)). This is the premise need-first navigation rests
 on, and [research.md H4](./research.md#h4--pattern) calls it *"the
 weakest-supported major decision in the project."*
+
+**We have one real Keeper.** `[C]` The author of this project is building it for
+their own family and will maintain their own cabinet
+([people.md section F](./people.md), stated 14 Sep 2026). That is not a separate
+persona — it is P1, with a name and a drawer. It matters for three reasons, and
+carries one liability, all recorded under
+[The one real Keeper](#the-one-real-keeper-and-what-they-can-and-cannot-tell-us)
+below.
+
+`[?]` Whether that household is in Cyprus — not stated, and
+[H6](./research.md#h6--heat) depends on it. `[?]` Its size, composition, and the
+languages spoken in it.
 
 ### Jobs
 
@@ -154,6 +174,63 @@ weakest-supported major decision in the project."*
 *Said by a real person cataloguing a business inventory, not a medicine cabinet.
 Carried here because the shape — hours of unpaid work, then a betrayal — is the
 pattern research.md found in every product in the category.*
+
+And the only words in this document spoken from inside the intended audience,
+by the one Keeper we actually have:
+
+> *"I want to build this up for myself and for my family… I would like to be the
+> maintenance first user… of course, not to take it as a main source."*
+> — **the author, 14 Sep 2026**, this repo's working session
+> ([people.md section F](./people.md))
+
+*The second half of that sentence is the instruction governing how the first
+half may be used.*
+
+<a id="the-one-real-keeper-and-what-they-can-and-cannot-tell-us"></a>
+### The one real Keeper — and what they can and cannot tell us
+
+*Folded in here rather than made a fourth persona: the author is a Keeper, not a
+different kind of user. What changes is the **evidence**, not the audience.*
+
+**What it buys us** `[C]`
+
+1. **The slow failure becomes observable.** [D9](./people.md) — the cabinet that
+   quietly stops matching the drawer — only appears after months of ordinary
+   life, so no interview and no usability session can reach it. **`n = 1`
+   longitudinal beats `n = 5` snapshot** for this one failure, and it is the
+   failure [research.md](./research.md) treats as existential.
+2. **Entry friction can finally be measured** — [H1](./research.md#h1--entry)'s
+   30-second threshold has *"never been measured anywhere."* One real drawer
+   settles it.
+3. **One thermometer, one summer** — a single data point against
+   [H6](./research.md#h6--heat), the most load-bearing unsupported claim in the
+   project.
+4. **The first inventory is observable this week** — whether the drawer really is
+   the boxless half-used strips of O4, at zero cost.
+
+**The liability, and it is not small** `[C]`
+
+- **This Keeper will not feel most of P1's pain points.** Every drop-off in
+  [people.md section E](./people.md) happens to someone who is *not* motivated:
+  the account wall, the required fields, the cap on the sunk cost, a list
+  someone else let rot. The keeper pushes through all of them
+  ([people.md O23](./people.md)). A product built by its own maintainer becomes
+  a product that is pleasant to *maintain*.
+- **They cannot experience their own onboarding.** The mechanism that produced
+  BEEP's 1.9 over 1,910 ratings is an expectation formed *before* the app is
+  opened, by someone who has never seen it ([people.md O17](./people.md)). That
+  judgement is permanently unavailable from inside.
+- **The literacy premise cannot be tested on them.** Whoever has read the Cyprus
+  register, worked with ATC codes and written a need-first taxonomy no longer
+  has the low pharmaceutical literacy that defines this audience, whatever they
+  had beforehand ([people.md O21](./people.md)). That rules them out as a test
+  of [H4](./research.md#h4--pattern).
+
+**So:** the review corpus stays the corrective and is *not* downgraded now that
+there is a real user in the room. And the rest of that household is reachable
+and is *not* the designer — handing them the cabinet cold, no account, no
+walkthrough, is the closest available approximation of **P2**
+([people.md O22](./people.md)). Whether they would take part: `[?]`
 
 ### What would falsify P1
 
@@ -337,88 +414,6 @@ Test: interviews. `[?]`
 
 ---
 
-# P4 — The Builder-Maintainer · secondary, and `n = 1`
-
-*The author of this project, maintaining their own household's cabinet. The only
-persona here backed by a real, reachable, named person — and the least
-independent observer available.*
-
-### Context
-
-Stated by the author, 14 Sep 2026 `[C]`: they are building this for themselves
-and their family, and intend to be the cabinet's maintainer and first user. This
-is [people.md section F](./people.md) in persona form.
-
-They are a **special case of P1** — the keeper who buys and remembers — with one
-difference that changes everything about how their evidence can be used: they
-also designed the product. Per [people.md O21](./people.md), whoever has read
-the Cyprus register, worked with ATC codes and written a need-first taxonomy no
-longer has the low pharmaceutical literacy that defines the audience, whatever
-they had beforehand.
-
-`[?]` Whether the household is in Cyprus — not stated, and
-[H6](./research.md#h6--heat) depends on it. `[?]` Household size, composition,
-languages spoken.
-
-### Jobs
-
-1. **Everything in P1's list, for real, starting now** `[C]`.
-2. **Find out whether the cabinet goes stale over months** `[C]` — the one job
-   no other persona can do for us. [D9](./people.md) only appears after months of
-   ordinary life, so **`n = 1` longitudinal beats `n = 5` snapshot** here, and it
-   targets the failure [research.md](./research.md) treats as existential.
-3. **Measure entry friction on a real drawer** `[C]` —
-   [H1](./research.md#h1--entry)'s 30-second threshold has *"never been measured
-   anywhere."*
-4. **Put a thermometer in the actual cupboard** `[C]` — one data point against
-   [H6](./research.md#h6--heat), the most load-bearing unsupported claim in the
-   project.
-
-### Pain points
-
-- **They will not feel most of the ones that matter** `[C]` — and this is the
-  point of including them. Every drop-off in
-  [people.md section E](./people.md) happens to someone who is **not** the
-  keeper: the account wall, the required fields, the cap on the sunk cost, a
-  list someone else let rot. The keeper pushes through all of them
-  ([people.md O23](./people.md)).
-- **They cannot experience their own onboarding** `[C]` — the mechanism that
-  produced BEEP's 1.9 over 1,910 ratings is an expectation formed *before* the
-  app is opened, by someone who has never seen it
-  ([people.md O17](./people.md)). That judgement is permanently unavailable from
-  this persona.
-
-### Trust triggers
-
-- **They already trust it — that is the hazard, not the asset** `[C]`. A product
-  built by its own maintainer becomes a product that is pleasant to *maintain*
-  ([people.md O23](./people.md)). The review corpus stays the corrective and does
-  not get downgraded now that there is a real user in the room.
-- `[?]` The one trust trigger this persona *can* test honestly is the one that
-  needs no stranger: whether the household's other members will take the cabinet
-  **handed to them cold** — no account, no walkthrough. That is the closest
-  available approximation of P2 and of [H8](./research.md#h8--emergency)
-  ([people.md O22](./people.md)). Whether they would take part: `[?]`
-
-### Quote
-
-> *"I want to build this up for myself and for my family… I would like to be the
-> maintenance first user… of course, not to take it as a main source."*
-> — **the author, 14 Sep 2026**, this repo's working session
-> ([people.md section F](./people.md))
-
-*The only quote in this document spoken by someone actually inside the intended
-audience — and the second half of it is the instruction that governs how the
-first half may be used.*
-
-### What would falsify P4
-
-Nothing — this persona is a real person. But it also proves nothing about
-anyone else, which is why it is secondary despite being the best-evidenced
-entry here.
-
----
-
 # Why P1 is primary
 
 **The designation decides whose friction we spend our budget on.** On that
@@ -439,8 +434,10 @@ question the evidence is one-sided.
    the 500K+ installs of people who catalogue their own possessions
    ([people.md O2](./people.md)), and seven years of reviews describing exactly
    how that relationship ends.
-4. **`n = 1` of it exists and is reachable now** `[C]` — P4 is a Keeper, so the
-   primary persona is the one we can start observing this week.
+4. **It is the only persona with a live instance** `[C]` — the author is a
+   Keeper, so the primary persona is the one we can start observing this week,
+   with the caveats recorded under
+   [The one real Keeper](#the-one-real-keeper-and-what-they-can-and-cannot-tell-us).
 
 **The tension, stated rather than smoothed over.** P1 is primary, but **the job
 statement does not belong to them.** [CLAUDE.md §1](../CLAUDE.md) measures this
@@ -472,7 +469,11 @@ single keeper, P1 dissolves and the primary/secondary split has to be redrawn.
 |---|---|
 | **P2 — The Other Person** | Highest stakes, **zero evidence**. Not one word from this population exists in any source we hold, and structurally cannot: they never installed the app. Secondary by evidence, not by importance — they own the measure of success. |
 | **P3 — The Person Who Lives Alone** | Named in [CLAUDE.md §3](../CLAUDE.md) and served by the same mechanism as P2 ([M3](./research.md)), but with no evidence of size, need or behaviour. `[?]` throughout. Kept so the emergency view isn't designed for households only. |
-| **P4 — The Builder-Maintainer** | The best-evidenced persona here and still secondary, because `n = 1` and the observer is the designer. It buys us the one thing nothing else can — the slow failure, watched over months — and proves nothing about anyone else. |
+
+
+*There is no third secondary persona. An earlier draft split the author out as a
+"Builder-Maintainer"; that was a provenance distinction dressed up as an
+audience one. They are a Keeper, and they live in P1.*
 
 ---
 
@@ -485,5 +486,5 @@ Nothing here substitutes for [research.md's own next step](./research.md):
 > is a well-argued guess."*
 
 Five conversations would convert most of the `[?]` in P1 and P2 into either
-evidence or a correction. Until then these four are scaffolds with their sources
+evidence or a correction. Until then these three are scaffolds with their sources
 showing, and they should be argued with rather than believed.
