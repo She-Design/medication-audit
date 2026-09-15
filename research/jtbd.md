@@ -287,29 +287,39 @@ means, almost none for the end.**
 **2** matters, but survivable if weak ·
 **1** marginal ·
 **`[?]`** no basis to judge ·
-**—** structurally not this persona's job
+**—** structurally not this persona's job (the situation cannot happen to them)
 
-Each cell carries its tag: **[B]** real people's words · **[A]** the brief's
-assertion · **`[?]`** nothing. **No cell is averaged or interpolated.**
+Each cell carries its tag and its source in [research.md](./research.md), with
+the [people.md](./people.md) observation that holds the full quote:
+**[B]** real people's words · **[A]** the brief's assertion, as research.md
+carries it · **`[?]`** nothing.
 
-**Read the P2 and P3 columns with care.** P3's numbers are *inherited by
-definition* — [personas.md](./personas.md) defines P3 as P1 and P2 collapsed
-into one person — never observed, so every one of them is **[A]** at best. P2's
-are the brief's, and we hold no words from P2 anywhere. **Only the P1 column is
+**No cell is averaged, interpolated, or inherited.** That rule empties two
+columns, and the emptiness is the finding: **P2** has never been heard from, and
+**P3** is defined in [personas.md](./personas.md) only as *"P1 and P2 collapsed
+into one person"* — copying P1's numbers into P3 would be exactly the
+interpolation the rule forbids, so they are `[?]`. **Only the P1 column is
 evidence.**
 
 ## Evidenced jobs
 
 | Job | P1 Keeper | P2 Other | P3 Alone | FUNCTION | COMPETITORS |
 |---|---|---|---|---|---|
-| **Main** · find out without the person who knows | 2 · [B] [O3](./people.md) | 3 · [A] [§1–2](../CLAUDE.md) | 3 · [A] | Household by invite link; browse the household's own words; each thing's status on its face | **No.** All fifteen design for a patient or caregiver ([research.md §1](./research.md), difference 1) |
-| **J1** · getting through it once | **3** · [B] [O6](./people.md) | — | 3 · [A] | Add with every field optional — nothing required but a name | **Yes, badly.** Everyone ships it; Apteczka demands EAN, photo and calendar permission ([D2](./people.md)); BEEP sits at 1.9 ([capture](./screens/beep__play__01-listing.png)) |
-| **J2** · keeping up while my hands are full | **3** · [B] [D2, O7](./people.md) | — | 3 · [A] | The same path reused for a change; count down; archive and restore | **Partly.** Apteczka cannot edit stock ([D9](./people.md)); Bring! turned one step into three |
-| **J3** · believing it without going to check | **3** · [B] [D9](./people.md) | 3 · [A] [M1](./research.md) | 3 · [A] | One-tap confirm wherever a thing surfaces; age on its face; duplicate check at entry; archive rather than delete | **No.** Nobody in the category confirms freshness. Apple Medical ID scores **1 of 5** on visible decay ([research.md §2](./research.md)) |
-| **J4** · not doing it twice | **3** · [B] [D7](./people.md) | `[?]` | 3 · [A] | Sync, encrypted, with a declaration that matches the marketing | **Yes.** Sortly, Bring! and Medisafe sync — and diverge ([D8](./people.md)). The clean-declaration apps have none ([research.md §1](./research.md)) |
-| **E1** · still being worth listening to | **3** · [B] [O13, O14](./people.md) | `[?]` | 3 · [A] | A monthly digest that also says *nothing needs you*; two severity levels; silence as the default | **No.** MyTherapy runs ads inside dose reminders ([capture](./screens/mytherapy__play__03-reviews.png)); HomeMed promises daily alerts for things that already expired |
-| **E2** · not being made a mug of | **3** · [B] [D6, O10](./people.md) | — | 3 · [A] | **Not a feature — a pricing commitment.** Never cap the number of medicines | **No.** BEEP caps at 50, Sortly 100, mojApteczka 20, Medisafe 2 ([D6](./people.md)) |
-| **S1** · not being the one it all depends on | **3** · [B] [O3, O8](./people.md) | 3 · [A] | — | Invite by link with no account wall; readable by someone who is not the owner | **Partly.** Sharing exists at mojApteczka, Medisafe, MyTherapy — every one declares third-party sharing ([research.md §1](./research.md), 4th difference) |
+| **Main** · find out without the person who knows | `[?]` ¹ | 3 · [A] [§3, the key task](./research.md#3-patterns) | `[?]` | Household by invite link ([§6.3](../CLAUDE.md)); browse in the household's own words ([§6.2, §7.1](../CLAUDE.md)); expiry status on the face of each entry ([§6.5](../CLAUDE.md)) | **No medicine app does.** Every one designs for a patient or a caregiver ([§1, difference 1](./research.md#three-differences--where-nobody-is-standing)). Bring! does it — for groceries |
+| **J1** · getting through it once | **3** · [B] [H1](./research.md#h1--entry) · [O6](./people.md) | — | `[?]` | Add with every field optional — nothing required but a name ([§7.2](../CLAUDE.md)) | **Yes, badly.** Everyone ships it; Apteczka Domowa demands EAN, photo and a calendar permission ([D2](./people.md)); BEEP sits at 1.9 from 1,910 ([capture](./screens/beep__play__01-listing.png)) |
+| **J2** · keeping up while my hands are full | **3** · [B] [§1, pattern 3](./research.md#three-common-patterns-in-this-market) · [D2, O7](./people.md) | `[?]` ² | `[?]` | The same path reused for a change; count down; archive and restore ([§6.1](../CLAUDE.md)) | **Partly.** Apteczka Domowa cannot edit stock ([D9](./people.md)); Bring! turned one step into three ([D2](./people.md)) |
+| **J3** · believing it without going to check | **3** · [B] [M1](./research.md#three-mechanics-for-the-mvp) · [D9](./people.md) | 3 · [A] [M1, M3](./research.md#three-mechanics-for-the-mvp) | `[?]` | One-tap confirm wherever a thing surfaces, age on its face — **[M1](./research.md#three-mechanics-for-the-mvp), a research recommendation not yet in [§6 v1 scope](../CLAUDE.md)**; duplicate-*entry* check; archive rather than delete ([§6.1](../CLAUDE.md)) | **None listed.** No row of the [fifteen](./research.md#the-matrix) carries a confirm-or-gone gesture; Apple Medical ID scores **1 of 5** on visible decay ([§2](./research.md#2-benchmark)). Caveat: no app was installed |
+| **J4** · not doing it twice | **3** · [B] [§1, 4th difference](./research.md#three-differences--where-nobody-is-standing) · [D7](./people.md) | `[?]` | `[?]` | Sync ([§9](../CLAUDE.md)), encrypted, with a declaration that matches the marketing ([§8](../CLAUDE.md)) | **Yes.** Sortly, Bring! and Medisafe sync — and diverge ([D8](./people.md)). The clean-declaration apps have none ([§1, 4th difference](./research.md#three-differences--where-nobody-is-standing)) |
+| **E1** · still being worth listening to | **3** · [B] [O13, O14](./people.md) — research.md carries only the mechanism, [M2](./research.md#three-mechanics-for-the-mvp) | `[?]` | `[?]` | A monthly digest that also says *nothing needs you* ([§6.7](../CLAUDE.md), [M2](./research.md#three-mechanics-for-the-mvp)); two severity registers; silence as the default ([§7.4](../CLAUDE.md)) | **No.** MyTherapy runs ads inside dose reminders ([capture](./screens/mytherapy__play__03-reviews.png)); HomeMed promises *daily* alerts for medicines already expired ([O14](./people.md)) |
+| **E2** · not being made a mug of | **3** · [B] [§1, pattern 2](./research.md#three-common-patterns-in-this-market) · [D6, O10](./people.md) | — | `[?]` | **Not a feature — a pricing commitment.** Never cap the number of medicines ([§11](../CLAUDE.md), open) | **No.** BEEP caps at 50, Sortly 100, mojApteczka 20 ([matrix](./research.md#the-matrix)), Medisafe 2 ([D6](./people.md)) |
+| **S1** · not being the one it all depends on | **3** · [B] [§2, crowd corroboration](./research.md#one-that-will-not-work-crowd-corroboration) · [O3, O8](./people.md) | — ³ | — | Invite by link, no account wall ([§6.3](../CLAUDE.md)) | **Partly.** Sharing exists at mojApteczka, Medisafe and MyTherapy — and every one declares third-party data sharing ([§1, 4th difference](./research.md#three-differences--where-nobody-is-standing)) |
+
+¹ Not **—**: the brief's *"three years later nobody remembers what it was for"*
+([§1](../CLAUDE.md)) includes the Keeper. Nobody has said so, so `[?]`.
+² Not **—**: P2 takes medicine too, so *the last tablet from a strip* can be
+theirs. Unknown whether they would record it.
+³ P2's side of this job **is** the Main row. The situation as written — *someone
+at home texts me* — is the Keeper's.
 
 ## Hypothesis jobs
 
@@ -319,15 +329,15 @@ should be visible as such.*
 
 | Job | P1 | P2 | P3 | FUNCTION | COMPETITORS |
 |---|---|---|---|---|---|
-| **H1** · the 2am scene | `[?]` | `[?]` | `[?]` | None specifically — it is the framing the whole product is measured by | n/a |
-| **H2** · not knowing the word for it | `[?]` | `[?]` | `[?]` | **Browse by purpose — the entire navigation** ([research.md §3](./research.md)) | Partly: mojApteczka searches by indication ([capture](./screens/mojapteczka__web__02-features.png)) |
-| **H3** · running out when the shop is far | `[?]` | — | `[?]` | Running-low flag; kit gaps | Partly: Medkit has stock levels; Apteczka's is broken ([D9](./people.md)) |
-| **H4** · heat | `[?]` | `[?]` | `[?]` | Heat-risk flag; storage location as a first-class field | **No.** Location is everywhere as filing — Home Med Cabinet's Kitchen, Car, Travel Kit — and nowhere as safety ([research.md §1](./research.md), difference 3) |
-| **H5** · asking someone who actually knows | `[?]` | `[?]` | `[?]` | Not in v1 ([CLAUDE.md §6](../CLAUDE.md)) | Yes: mojApteczka's QR to a pharmacist; farmakeia.com.cy's duty rota ([capture](./screens/farmakeia-cy__web__02-on-duty-list.png)) |
+| **H1** · the 2am scene | `[?]` | `[?]` | `[?]` | None specifically — it is the framing the whole product is measured by ([§1](../CLAUDE.md)) | n/a |
+| **H2** · not knowing the word for it | `[?]` | `[?]` | `[?]` | **Browse by purpose — the entire navigation** ([§3, selected pattern](./research.md#selected-need-first)) | Partly: mojApteczka searches by indication ([capture](./screens/mojapteczka__web__02-features.png)) |
+| **H3** · running out when the shop is far | `[?]` | `[?]` | `[?]` | Running-low flag ([§6.5](../CLAUDE.md)) | Partly: Medkit lists stock levels ([matrix](./research.md#the-matrix)) — and is not a consumer app; Apteczka Domowa's is broken ([D9](./people.md)) |
+| **H4** · heat | `[?]` | `[?]` | `[?]` | Heat-risk flag; storage location as a first-class field ([§6.1, §6.5](../CLAUDE.md)) | **No.** Location is everywhere as filing — Home Med Cabinet's Kitchen, Car, Travel Kit — and nowhere as safety ([§1, difference 3](./research.md#three-differences--where-nobody-is-standing)) |
+| **H5** · asking someone who actually knows | `[?]` | `[?]` | `[?]` | Not in v1 ([§6](../CLAUDE.md)) | Yes: mojApteczka's QR to a pharmacist; farmakeia.com.cy's duty rota ([capture](./screens/farmakeia-cy__web__02-on-duty-list.png)) |
 | **H6** · putting down the guilt | `[?]` | `[?]` | `[?]` | None | n/a |
-| **H7** · not being the one who got it wrong | `[?]` | `[?]` | `[?]` | Allergy-conflict flag; member profiles holding allergies and conditions — **special-category data** ([CLAUDE.md §8](../CLAUDE.md)) | Partly, and badly: Home Med Cabinet ships AI-written interaction text with no stated medical review ([research.md §3](./research.md)) |
-| **H8** · helping in someone else's home | — | `[?]` | — | Not in v1 | n/a |
-| **H9** · being legible to a stranger | — | — | `[?]` | Emergency view without an account — **not in [§6 v1 scope](../CLAUDE.md)**, only in [research.md M3](./research.md) | **No.** Apple Medical ID proves the interaction, for something that is not a medicine cabinet |
+| **H7** · not being the one who got it wrong | `[?]` | `[?]` | `[?]` | Allergy-conflict flag and duplicate-*ingredient* flag ([§6.5](../CLAUDE.md)); member allergies behind them — **special-category data** ([§8](../CLAUDE.md)) | **No allergy check anywhere in the set.** Interaction checks exist: mojApteczka (DDInter 2.0), Medkit, Apple Health (US only), Home Med Cabinet — AI-written, no stated medical review ([matrix](./research.md#the-matrix), [§3](./research.md#rejected-outright-conversational)) |
+| **H8** · helping in someone else's home | `[?]` | `[?]` | `[?]` | Not in v1 | n/a |
+| **H9** · being legible to a stranger | — | — | `[?]` | Emergency view without an account — **not in [§6 v1 scope](../CLAUDE.md)**, only in [M3](./research.md#three-mechanics-for-the-mvp) | **No.** Apple Medical ID proves the interaction, for something that is not a medicine cabinet ([§2](./research.md#2-benchmark)) |
 
 ---
 
@@ -335,76 +345,96 @@ should be visible as such.*
 
 ## Three jobs for the MVP core
 
-*Criterion: importance **3** to the primary persona, and the market does **not**
-address it.* Four rows pass; one of them is not a thing to build.
+*Criterion, applied strictly: importance **3** to the primary persona **and** the
+COMPETITORS cell reads **No**.* Three rows pass. One of them is not a thing to
+build, and the row most people would expect to see here does not pass.
 
 **1. J3 — believing it without going to check.**
-The only job in the table that is simultaneously existential and unopposed.
-[D9](./people.md) is the documented killer in this category, and **no competitor
-confirms freshness** — the etalon for the mechanism is Waze, not any medicine
-app ([research.md M1](./research.md)). Build: one-tap confirm, age on the face of
-each entry, duplicate check at entry, archive rather than delete.
+Existential and unopposed. [D9](./people.md) is the documented killer in this
+category, and no listed competitor confirms freshness — the etalon is Waze, not
+a medicine app ([M1](./research.md#three-mechanics-for-the-mvp)).
+**The mechanism that serves it is not in the locked v1 scope.** [§6](../CLAUDE.md)
+has archive and expiry flags; the one-tap confirm and the visible age come only
+from research.md's M1. The core job of the MVP currently has no function in the
+brief that does the confirming.
 
-**2. S1 — not being the one it all depends on.**
-Sharing exists in the market; sharing **without a data declaration that
-contradicts the marketing** does not ([research.md §1](./research.md), fourth
-difference). This is also the only route by which the main job — P2's — ever gets
-served, so it carries two rows at once.
+**2. E1 — still being worth listening to.**
+Scores 3 on real reviews; the market scores zero — MyTherapy puts ads inside
+dose reminders, HomeMed alerts *daily* about medicines already expired. The work
+is restraint, cheap to build and the first thing to erode.
 
-**3. E1 — still being worth listening to.**
-Scores 3 on real reviews, and the market scores zero: MyTherapy puts ads inside
-dose reminders, HomeMed alerts daily about medicines that already expired. The
-work is restraint, which costs almost nothing to build and is the first thing to
-erode.
+**3. E2 — not being made a mug of.**
+Passes both tests and **is not a feature**: never cap the number of medicines.
+It belongs in the MVP as a commitment, and it is not yet made —
+[H7](./research.md#h7--money) is open, and the local precedent is an OTC banner
+above the duty-pharmacy list. Decide it before it decides itself.
 
-**The fourth, and it is not a feature: E2 — not being made a mug of.** Passes
-both tests and belongs in the MVP as a *commitment* — never cap the number of
-medicines. [H7](./research.md#h7--money) is undecided, and the local precedent is
-an OTC banner above the duty-pharmacy list. Decide it before it decides itself.
+**S1 does not pass, and that is worth stating plainly.** Its COMPETITORS cell
+reads *Partly*: mojApteczka, Medisafe and MyTherapy all let a household share.
+What none of them does is share **without a declaration that contradicts the
+marketing** ([§1, 4th difference](./research.md#three-differences--where-nobody-is-standing)).
+So S1 is a *differentiation* — a place to be better — not an unaddressed job.
+It is also the only route by which the Main job, P2's, ever gets served. If the
+MVP core is chosen on judgement rather than by the criterion, S1 is the row to
+add; by the criterion as set, it stays out.
 
-**Why J1, J2 and J4 are not in the core, despite scoring 3.** They fail the
-second test — the market addresses them. That does not make them optional: J1 and
-J2 are where every competitor *loses*, so they are the price of entry rather than
-the reason to exist. J4 is solved competently by Sortly and Bring!, and our only
-distinction is the honesty of the declaration attached to it.
+**Why J1, J2 and J4 are not in the core despite scoring 3.** The market
+addresses them. That does not make them optional — J1 and J2 are where every
+competitor *loses*, so they are the price of entry rather than the reason to
+exist. J4 is solved competently by Sortly and Bring!; our only distinction there
+is the honesty of the declaration attached to it.
 
 ## Candidate functions for removal
 
 ### Tier 1 — addresses no job in this document
 
-- **Kit gaps** ([CLAUDE.md §6.6](../CLAUDE.md)) — a curated reference kit against
-  what the household owns. The nearest row is [H3](#hypothesis-jobs), itself
-  `[?]`. It also leans toward telling people what they *should* have, which is
-  the boundary [CLAUDE.md "Deliberately never"](../CLAUDE.md) draws. **Cut from
-  v1, or find the job first.**
-- **The *why* in the dose log** ([CLAUDE.md §6.4](../CLAUDE.md), *"who took what,
-  when, and why"*). Who and when serve the main job's third question and have
-  thin real support — *"the main reason I used this was how it syncs with my
-  partners accounts"* (Medisafe, 1★, 4 Apr 2026). **Why** serves nothing here,
-  and is a free-text field asked of someone unwell. **Cut the field, keep the
-  log.**
+- **Kit gaps** ([§6.6](../CLAUDE.md)) — a curated reference kit against what
+  the household owns. No row, evidenced or hypothesised, asks for it: H3 is
+  about things running *low*, not things never owned. It also leans toward
+  telling people what they *should* have, the boundary
+  [§6 "Deliberately never"](../CLAUDE.md) draws. **Cut from v1, or find the job
+  first.**
+- **Chronic conditions on member profiles** ([§5, §6.3](../CLAUDE.md)). No flag
+  in [§6.5](../CLAUDE.md) reads this field — only allergies feed a warning.
+  [§8](../CLAUDE.md) justifies storing both because they *"power the single most
+  valuable warning"*; that justification holds for allergies and not for
+  conditions. The result is **special-category GDPR data collected for nothing
+  in v1.** **Cut until a flag needs it.**
+- **The *why* in the dose log** ([§6.4](../CLAUDE.md), *"who took what, when,
+  and why"*). Who and when serve the Main job's third question and have thin
+  real support — *"one of the main reasons I used this was how it syncs with my
+  partners accounts"* (Medisafe, 1★, 4 Apr 2026, [O8](./people.md)). *Why*
+  serves nothing, and is a free-text field asked of someone unwell. **Cut the
+  field, keep the log.**
 
 ### Tier 2 — not removal, but unpaid-for
 
-*Each of these is a real feature whose only job is a guess. Not wrong — unfunded.
-Each names the test that would pay for it.*
+*Each is a real feature whose only job is a guess. Not wrong — unfunded. Each
+names the test that would pay for it.*
 
 | Feature | Only job it serves | What would pay for it |
 |---|---|---|
-| **Browse by purpose** — the whole navigation | [H2](#hypothesis-jobs) `[?]` | [H4](./research.md#h4--pattern): five people, both layouts, a real drawer. Note our one real Keeper **cannot** run this test ([personas.md](./personas.md)) |
-| **Heat-risk flag** | [H4](#hypothesis-jobs) `[?]` | [H6](./research.md#h6--heat): indoor summer temperatures and the Pharmaceutical Services' guidance |
-| **Allergy-conflict flag** and the member health fields behind it | [H7](#hypothesis-jobs) `[?]` | Interviews. Note the asymmetry: this carries **special-category GDPR data** ([CLAUDE.md §8](../CLAUDE.md)) for a job nobody has voiced |
-| **Running-low flag** | [H3](#hypothesis-jobs) `[?]` | Whether restocking in Cyprus is actually a trip rather than a walk |
-| **Emergency view without an account** | [H9](#hypothesis-jobs) `[?]` | [H8](./research.md#h8--emergency) — and it is already outside §6 v1 scope, so this is a decision not yet taken rather than one to reverse |
+| **Browse by purpose** — the whole navigation | [H2](#hypothesis-jobs) `[?]` | [H4](./research.md#h4--pattern): five people, both layouts, a real drawer. Our one real Keeper **cannot** run it ([personas.md](./personas.md)) |
+| **Heat-risk flag**, and storage location as a first-class field | [H4](#hypothesis-jobs) `[?]` | [H6](./research.md#h6--heat): indoor summer temperatures, and what the Pharmaceutical Services say about storage |
+| **Allergy-conflict flag**, **duplicate-ingredient flag**, and the member allergies behind them | [H7](#hypothesis-jobs) `[?]` | Interviews. This carries **special-category data** ([§8](../CLAUDE.md)) for a job nobody has voiced — the same problem as chronic conditions, one step less severe because at least a flag reads it |
+| **Running-low flag** | [H3](#hypothesis-jobs) `[?]` | Whether restocking in Cyprus is a trip rather than a walk |
+| **Emergency view without an account** | [H9](#hypothesis-jobs) `[?]` | [H8](./research.md#h8--emergency) — already outside §6 v1, so a decision not yet taken rather than one to reverse |
+
+**Thinly funded, not unfunded:** the dose log and the *recent dose* flag
+([§6.4, §6.5](../CLAUDE.md)) serve the Main job's third question, on the
+brief's assertion plus one Medisafe reviewer in a chronic-medication context.
+Kept, and marked.
 
 ## What this matrix is honest about
 
-Of **51** importance cells: **8 rest on real people's words** — the P1 column of
-the evidenced jobs, and nothing else. 10 are the brief's assertions, 9 are
-structurally not that persona's job, and **24 are `[?]`.** Nearly half the
+Of **51** importance cells: **7 rest on real people's words** — the P1 column of
+the evidenced jobs, minus the Main row. 2 are the brief's assertions, 6 are
+structurally not that persona's job, and **36 are `[?]`.** Seven-tenths of the
 matrix is a blank we are choosing not to fill.
 
-The single most consequential line in the table is **H2**: the product's entire
-navigation is built on a job no person has ever expressed to us, which is the
-same thing [H4](./research.md#h4--pattern) says in different words when it calls
-that *"the weakest-supported major decision in the project."*
+Two lines carry the most weight. **H2**: the product's entire navigation is
+built on a job no person has ever expressed to us — what
+[H4](./research.md#h4--pattern) calls *"the weakest-supported major decision in
+the project"*, seen from the jobs side. And **J3**: the one job that is both
+existential and unopposed is served by a mechanism the locked scope does not yet
+contain.
