@@ -1,159 +1,167 @@
 # Jobs to be done
 
-Built from [personas.md](./personas.md) and [research.md](./research.md). One
-main job, five that lead to it, emotional and social jobs kept separate, and
-everything unsupported quarantined in [Hypotheses](#hypotheses).
+Built from [personas.md](./personas.md) and [research.md](./research.md).
 
-**Status:** 14 Sep 2026.
+**Status:** 15 Sep 2026. Second draft — see [what changed](#what-changed).
 
 ---
 
-## The rule this document follows
+## Two rules this document follows
 
-A job reaches the main list **only if a real person's words support it.**
-Everything resting on the brief's argument alone, however good the argument,
-goes to [Hypotheses](#hypotheses) — including some of the most load-bearing
-beliefs in this project.
+**1. Every situation is a real moment.** Something you could film: a place, an
+object, a time of day. Not a state of mind, not a decision to start caring.
+*"When I decide to get organised"* is not a situation. *"When I get home from
+the pharmacy with a box in my hand"* is.
+
+**2. A job reaches the main list only if a real person's words support it.**
+Everything resting on the brief's argument alone goes to
+[Hypotheses](#hypotheses) — including some of the most load-bearing beliefs in
+this project.
 
 | Tag | Meaning |
 |---|---|
-| **[B]** | Backed by verbatim words from real people — reviewers of competitor products, [store-evidence.md](./store-evidence.md). |
+| **[B]** | Backed by verbatim words from real people — [store-evidence.md](./store-evidence.md). |
 | **[A]** | Asserted in the brief, [CLAUDE.md](../CLAUDE.md). Argued, never validated. |
-| **[C]** | The one real Keeper we have — [personas.md P1](./personas.md). `n = 1`. |
 | **[?]** | Nothing. → [Hypotheses](#hypotheses). |
 
-**The limit on every [B] in here.** Those people were managing grocery lists,
-retail stock, emergency food kits and chronic prescriptions — **not a Cypriot
-medicine drawer** ([people.md](./people.md), Population B). What their words
-establish is that *the job exists and is felt strongly*. That it is felt by our
-audience is `[?]`, and no amount of store evidence will ever close that gap.
+**The limit on every [B].** Those people were managing grocery lists, retail
+stock and chronic prescriptions — **not a Cypriot medicine drawer**. Their words
+prove the job exists and is felt strongly. That *our* audience feels it is `[?]`.
 
-**On wording.** No job below names anything we would build. Each one has to
-survive being read by someone who will never see this product. Audited in
-[The check](#the-check).
+No job below names anything we would build. Audited in [The check](#the-check).
 
 ---
 
-# 1. The main job
+# The main job
 
-> ### When someone needs medicine now and the person who bought it isn't there to ask, I want to work out what we have and whether it's still safe to use, so that I can act without guessing and without waking anyone.
+> ## When someone at home needs medicine and the person who knows isn't there, I want to find out what we have and whether it's still good, so that I don't have to guess.
 
-**Persona:** [P2 — The Other Person](./personas.md), in the moment. Held *on
-their behalf* by [P1 — The Keeper](./personas.md), who does the work that makes
-it possible.
+**Persona:** [P2 — The Other Person](./personas.md), in the moment.
+[P1 — The Keeper](./personas.md) holds it on their behalf.
 
-**Where it comes from:** [CLAUDE.md §1](../CLAUDE.md)'s job statement — *"make
-the household's own knowledge survive without the person who holds it"* — and
-[§2](../CLAUDE.md)'s three questions: what do we have, what is each thing for,
-is it still safe.
+**Evidence `[B]` — one sentence, one stranger:**
 
-**Evidence `[B]`, and it is one sentence from one stranger:**
-
-> *"I have to share the medicine list within the household, so until this is
-> fixed one star, because **a medicine database held by only one person in the
-> home makes no sense**."*
+> *"I have to share the medicine list within the household… because **a medicine
+> database held by only one person in the home makes no sense**."*
 > — Apteczka Domowa, 1★, 22 Nov 2025, translated
 > [(capture)](./screens/apteczka-domowa__play__03-reviews.png) ·
-> [store-evidence.md §4](./store-evidence.md) · [people.md O3](./people.md)
+> [people.md O3](./people.md)
 
-**What that sentence does and does not buy.** It supports the *premise* — that
-knowledge held by one person in a household is insufficient, said by someone
-who ran into it. It does **not** support the scene the brief wraps around it:
-2am, a fever, unreadable foil strips ([CLAUDE.md §1](../CLAUDE.md)). That scene
-is [people.md O16](./people.md), and it has no evidence of any kind. The job is
-kept here on the strength of the premise; the scene is in
-[Hypotheses](#hypotheses).
+That sentence supports the *premise* — knowledge held by one person isn't
+enough. It does **not** support the scene the brief wraps around it: 2am, a
+fever, foil strips by phone light ([people.md O16](./people.md)). That scene is
+in [Hypotheses](#hypotheses), and the job above is deliberately written without
+it.
 
 ---
 
-# 2. The jobs that lead to it
+# The four jobs that lead to it
 
-*Five, in the order a person meets them. All five are `[B]` — each one is
-something real people said, in their own words, about products they abandoned.*
+*All four are `[B]` — real people, their own words, about products they left.*
 
-### J1 — Getting on top of it, once
+### J1 · Getting through it once
 
-> **When I decide to find out what we actually keep at home, I want to get
-> through the whole drawer in one sitting, so that I never have to start from
-> nothing again.**
+> **When I tip the whole drawer out onto the table, I want to get through all of
+> it in one go, so that I never have to start from nothing again.**
 
-**Persona:** [P1](./personas.md) · **Evidence `[B]`** — the strongest single
-pattern in the corpus ([store-evidence.md §1](./store-evidence.md),
-[people.md O6](./people.md)). People do this work, at length, unprompted:
+**Persona:** [P1](./personas.md) · **`[B]`**, the strongest pattern in the corpus
+([people.md O6](./people.md)):
 
-> *"A great app, so good that I spent ages cataloging our entire emergency food
-> kit."* — BEEP, 1★, 2 Jul 2018
 > *"I spent hours and hours logging inventory and trying to get everything
 > organized…"* — Sortly, 1★, 3 Mar 2019, 23 found helpful
 > [(capture)](./screens/sortly__play__03-reviews.png)
 
-research.md's reading: *"the initial load is a sunk cost the household makes
-exactly once."* The job is finishing it, and never repeating it.
+The drawer at that moment is boxless, half-used strips — *"when you build the
+database for the first time many medicines have no box"* (Apteczka Domowa, 4★,
+8 Oct 2018, [people.md O4](./people.md)).
 
-### J2 — Keeping up without it becoming a chore
+### J2 · Keeping up while my hands are full
 
-> **When I come home with something new, or use up half of what we had, I want
-> recording the change to cost me almost nothing in the moment I'm holding it,
-> so that staying accurate never becomes a task I put off.**
+> **When I get home with a new box, or take the last tablet from a strip, I want
+> to say what changed in seconds, so that it never becomes a job I put off.**
 
-**Persona:** [P1](./personas.md) · **Evidence `[B]`** —
-[people.md D2, D4, O7](./people.md):
+**Persona:** [P1](./personas.md) · **`[B]`** ([people.md D2, D4](./people.md)):
 
 > *"I don't want a hassle, I just want to quickly open an app and jot down an
 > item before I forget."* — Bring!, 1★, 25 Apr 2022, 21 found helpful
 > [(capture)](./screens/bring__play__03-reviews.png)
-> *"to much typing...it should be scan an go..an not 2mins per item typing x500
-> items"* — BEEP, 1★, 22 Dec 2025
-> *"No way to add a medicine without entering the EAN code and without granting
-> permission to write to the calendar."* — Apteczka Domowa, 1★, 20 May 2024,
-> translated
 
-`[A]` The brief prices this job at 30 seconds
-([CLAUDE.md §7.3](../CLAUDE.md)) — a number [H1](./research.md#h1--entry) says
-*"has never been measured anywhere."* The job is real; the threshold is a guess.
+`[A]` The brief prices this at 30 seconds ([CLAUDE.md §7.3](../CLAUDE.md)) — a
+number [H1](./research.md#h1--entry) says *"has never been measured anywhere."*
+The job is real; the number is a guess.
 
-### J3 — Being able to believe what I'm looking at
+### J3 · Believing it without going to check
 
-> **When I check what we're supposed to have, I want to tell straight away what's
-> still true from what's gone stale, so that I can rely on it instead of going
-> to the drawer to check anyway.**
+> **When I look to see whether we've got something, I want to know the answer is
+> still true, so that I don't open the drawer to check anyway.**
 
-**Persona:** [P1](./personas.md) and [P2](./personas.md) · **Evidence `[B]`** —
-[people.md D9](./people.md), the failure research.md treats as existential:
+**Persona:** [P1](./personas.md) and [P2](./personas.md) · **`[B]`** — the
+failure research.md treats as existential ([people.md D9](./people.md)):
 
 > *"I added new packs, but the summary still shows the medicines I added before,
 > which I no longer use. It makes a mess, because the ones I currently take are
 > hard to find in all that."* — Apteczka Domowa, 1★, 23 Dec 2025, translated
-> *"The most important function, tracking medicine consumption, is not
-> functional… Entries duplicate and cloud the picture. Not usable in its current
-> form."* — Apteczka Domowa, 2★, 10 Mar 2026, translated
 
-Note what the first reviewer is describing: not missing information, but
-information they can no longer trust, which is worse than none.
+Not missing information — information they can no longer trust, which is worse
+than none.
 
-### J4 — Not losing what I worked out
+### J4 · Not doing it twice
 
-> **When my phone dies, or gets replaced, or I simply forget, I want what we
-> worked out to still be there, so that the effort I already spent is not spent
-> again.**
+> **When I change my phone, I want everything I already worked out to still be
+> there, so that one evening's work doesn't have to happen again.**
 
-**Persona:** [P1](./personas.md) · **Evidence `[B]`** —
-[store-evidence.md §1, §4](./store-evidence.md), [people.md D7, O9](./people.md):
+**Persona:** [P1](./personas.md) · **`[B]`** ([people.md D7](./people.md)):
 
-> *"You can't move the database between phones and there's no cloud sync, so
-> when the phone dies you start over typing how many throat tablets you have and
-> until when they're valid…"* — Apteczka Domowa, 1★, 30 Nov 2025, translated
-> *"2 years of entering data, pictures, quanities, etc - GONE."* — Sortly, 1★,
-> 23 Mar 2025
+> *"You can't move the database between phones… so when the phone dies you start
+> over typing how many throat tablets you have and until when they're valid."*
+> — Apteczka Domowa, 1★, 30 Nov 2025, translated
 
-### J5 — Not being the only one who knows
+---
 
-> **When someone else at home needs to act and I'm asleep, out, or unreachable, I
-> want them to get at what I know without going through me, so that I'm not the
-> single point of failure.**
+# Emotional jobs
 
-**Persona:** [P1](./personas.md), on behalf of [P2](./personas.md) ·
-**Evidence `[B]`** — the same Apteczka reviewer as the main job, plus:
+*How the person wants to feel. Two, both `[B]`.*
+
+### E1 · Still being worth listening to
+
+> **When my phone buzzes at me about medicine, I want it to be because something
+> actually needs me, so that I don't get into the habit of ignoring it.**
+
+**Persona:** [P1](./personas.md) · **`[B]`** ([people.md O13, O14](./people.md)):
+
+> *"Now coming back to beg for the ability to turn off streak notifications. I'm
+> not playing Duolingo, I have clinical depression."* — MyTherapy, 2★, 29 May
+> 2025 [(capture)](./screens/mytherapy__play__03-reviews.png)
+> *"This is not an app I want to interact with daily."* — Bring!, 2★, 1 Aug 2019
+
+The cost of getting this wrong is named in [CLAUDE.md §7.4](../CLAUDE.md): an
+app that cries wolf gets muted, and is then useless in the moment that counts.
+
+### E2 · Not being made a mug of
+
+> **When I've already given up an evening to this, I want the terms not to
+> change on me afterwards, so that I don't feel stupid for having bothered.**
+
+**Persona:** [P1](./personas.md) · **`[B]`** — the most resented pattern in the
+dataset ([people.md D6, O10](./people.md)). The word is the reviewer's:
+
+> *"The app has value, but **don't blackmail users** into paying after they have
+> spent hours putting data into your app."* — BEEP, 1★, 2 Jul 2018
+
+Distinct from [J4](#j4--not-doing-it-twice): J4 is the work being *lost*, E2 is
+the work being *leveraged*. Bears directly on
+[H7](./research.md#h7--money), still undecided.
+
+---
+
+# Social job
+
+### S1 · Not being the one it all depends on
+
+> **When I'm away and someone at home texts me asking which one to take, I want
+> them to work it out without me, so that nothing waits on my answering.**
+
+**Persona:** [P1](./personas.md) · **`[B]`** ([people.md O3, O8](./people.md)):
 
 > *"What I miss is automatic exchange of data between the apps on different
 > phones. You can send an email but that's tedious on 2–3 phones after every
@@ -162,203 +170,135 @@ information they can no longer trust, which is worse than none.
 > accounts."* — Medisafe, 1★, 4 Apr 2026
 > [(capture)](./screens/medisafe__play__03-reviews.png)
 
-This is J5 as the Keeper experiences it — wanting to *be reachable*. The same
-job seen from [P2](./personas.md)'s side is the main job, and we have never
-heard it from that side; see [people.md P2's structural blind spot](./people.md).
-
----
-
-# 3. Emotional jobs
-
-*What the person wants to feel, or stop feeling. Two survive the evidence bar;
-the rest are in [Hypotheses](#hypotheses).*
-
-### E1 — Not feeling played for a fool
-
-> **When I've put real hours into something, I want that effort to keep paying
-> off on the terms I started under, so that I don't end up feeling I was taken
-> advantage of for trying.**
-
-**Persona:** [P1](./personas.md) · **Evidence `[B]`** — the most resented
-pattern in the dataset ([people.md D6, O10](./people.md)). The word is the
-reviewer's, not ours:
-
-> *"The app has value, but **don't blackmail users** into paying after they have
-> spent hours putting data into your app."* — BEEP, 1★, 2 Jul 2018
-
-`[A]` Directly relevant to [H7](./research.md#h7--money), which is undecided,
-and where the local precedent is an OTC banner above the on-duty pharmacy list
-[(capture)](./screens/farmakeia-cy__web__02-on-duty-list.png).
-
-### E2 — Being treated as an adult about it
-
-> **When something I rely on gets in touch with me, I want it to be because
-> something genuinely needs me, so that I'm not being managed, nagged, or sold
-> to about my own health.**
-
-**Persona:** [P1](./personas.md) · **Evidence `[B]`** —
-[people.md O11, O13](./people.md):
-
-> *"Now coming back to beg for the ability to turn off streak notifications.
-> I'm not playing Duolingo, I have clinical depression."* — MyTherapy, 2★,
-> 29 May 2025 [(capture)](./screens/mytherapy__play__03-reviews.png)
-> *"I had an ad start auto-playing LOUDLY during a meeting when I discretely
-> took my meds and checked off the reminder! That is NOT OK!"* — MyTherapy, 1★,
-> 6 Feb 2026, 65 found helpful
-> *"This is not an app I want to interact with daily."* — Bring!, 2★, 1 Aug 2019
-
----
-
-# 4. Social jobs
-
-*What the person wants to be, or to be seen as, in relation to other people.*
-
-### S1 — Being able to look after my household without having to be present
-
-> **When the people I live with have to handle something on their own, I want
-> what I know to be available to them, so that looking after them doesn't
-> require me to be in the room.**
-
-**Persona:** [P1](./personas.md) · **Evidence `[B]`, `n = 1`** — the same
-sentence that carries the main job ([people.md O3](./people.md)). That one
-reviewer is expressing a social job, not a technical complaint: they are
-describing a duty they can't discharge.
-
-**Note the asymmetry.** Every other social job in this product belongs to
-[P2](./personas.md) or [P3](./personas.md), and **we hold no words from either**
-— structurally, because store reviewers are people who installed something, and
-P2 never did. All of theirs are in [Hypotheses](#hypotheses).
+**Only one social job here, and that is itself the finding.** Every other social
+job in this product belongs to [P2](./personas.md) or [P3](./personas.md), and
+we hold no words from either — structurally, because store reviewers are people
+who installed something, and P2 never did. Theirs are all in
+[Hypotheses](#hypotheses).
 
 ---
 
 <a id="hypotheses"></a>
-# 5. Hypotheses
+# Hypotheses
 
-*Jobs the brief, the personas or plain reasoning suggest, with **no evidence from
-any person**. Each is phrased as a job so it can be tested as one — none may be
-designed against until someone has said it out loud.*
+*Suggested by the brief or by reasoning, with **no evidence from any person**.
+Written as jobs so they can be tested as jobs. None may be designed against
+until somebody says it out loud.*
 
-## About the moment the product exists for
+**H1 · The 2am scene** `[?]`
+> *When a fever starts in the night and I'm at the drawer by phone light, I want
+> to make sense of what I'm holding, so that I can decide on my own.*
+[CLAUDE.md §1](../CLAUDE.md) · [people.md O16](./people.md). **The most
+load-bearing unevidenced belief in the project** — the sentence every feature is
+measured against, and nobody has described this moment to us.
 
-**H-J1 — The 2am scene** `[?]`
-> *When a fever starts in the middle of the night and I'm at the drawer by phone
-> light, I want to make sense of what I'm holding, so that I can decide alone
-> without waking anyone.*
-[CLAUDE.md §1](../CLAUDE.md) · [people.md O16](./people.md). **The single most
-load-bearing unevidenced belief in the project** — it is the sentence every
-feature is measured against, and nobody has described this moment to us.
-**Test:** five household interviews ([H5](./research.md#h5--audience)).
-
-**H-J2 — Reaching a person when our own knowledge runs out** `[?]`
-> *When what we know isn't enough, I want asking someone qualified to be the
-> easy next step, so that I'm not forced to either guess or give up.*
-[CLAUDE.md §1](../CLAUDE.md), where it is named and explicitly **not decided**
-for v1. **Test:** whether households in Cyprus already do this, and how.
-
-## About the audience's defining trait
-
-**H-J3 — Finding something by what it's for, not what it's called** `[?]`
-> *When I don't know the name of the thing I need, I want to get to it by what
-> it's for, so that not knowing the word doesn't stop me.*
-[CLAUDE.md §3](../CLAUDE.md)'s low-literacy trait and
-[research.md §3](./research.md)'s selected pattern rest entirely on this.
+**H2 · Not knowing the word for it** `[?]`
+> *When I don't know what the thing I need is called, I want to get to it by
+> what it's for, so that not knowing the word doesn't stop me.*
+[CLAUDE.md §3](../CLAUDE.md), and the whole of
+[research.md §3](./research.md) rests on it.
 [H4](./research.md#h4--pattern) calls it *"the weakest-supported major decision
-in the project"*, and [personas.md](./personas.md) notes our one real Keeper
-**cannot test it**, having since learned the vocabulary.
-**Test:** a five-person test with both layouts and a real drawer.
+in the project"*, and our one real Keeper **cannot test it**, having since
+learned the vocabulary ([personas.md](./personas.md)).
 
-## About the local situation
+**H3 · Running out when the shop is far** `[?]`
+> *When getting more means a trip rather than a walk, I want to know what's
+> nearly gone before I need it, so that running out doesn't cost me a day.*
+[CLAUDE.md §3](../CLAUDE.md). No distance or travel data gathered.
 
-**H-J4 — Knowing before running out** `[?]`
-> *When restocking means a planned trip rather than a walk, I want to know what's
-> running low before I need it, so that running out doesn't cost me a day.*
-[CLAUDE.md §3](../CLAUDE.md). No distance, density or travel data gathered.
-
-**H-J5 — Worrying about where it's been kept** `[?]`
+**H4 · Heat** `[?]`
 > *When it's been hot for months, I want to know whether what we're keeping has
-> been kept badly, so that I'm not relying on something the heat has ruined.*
-[CLAUDE.md §4](../CLAUDE.md) and [H6](./research.md#h6--heat) — *"the most
-confident unsupported claim in the project"*, and one of only two things making
-this product specifically Cypriot. No temperature data, no guidance, no user
-report. **Test:** indoor summer temperatures, plus what the Pharmaceutical
-Services say.
+> been kept badly, so that I'm not relying on something the summer has ruined.*
+[H6](./research.md#h6--heat) — *"the most confident unsupported claim in the
+project"*, and one of only two things making this product specifically Cypriot.
 
-## Emotional, unevidenced
+**H5 · Asking someone who actually knows** `[?]`
+> *When what we know runs out, I want asking someone qualified to be the easy
+> next step, so that I'm not stuck choosing between guessing and giving up.*
+[CLAUDE.md §1](../CLAUDE.md), where it is named and **not decided** for v1.
 
-**H-J6 — Putting down the low-grade guilt** `[?]`
-> *When I think about the drawer, I want to stop feeling vaguely bad about not
-> knowing what's in it, so that it stops being a thing I avoid.*
-Suggested by nothing. Plausible, and that is exactly why it is here.
+**H6 · Putting down the guilt** `[?]`
+> *When I open the drawer and see the mess, I want to stop feeling bad about not
+> knowing what's in there, so that it stops being something I avoid.*
+Suggested by nothing at all. Plausible, which is exactly why it is quarantined.
 
-**H-J7 — Not being the one who got it wrong** `[?]`
-> *When I give something to someone I love, I want to be sure I'm not doing harm,
-> so that I don't carry it if something goes wrong.*
-Implied by [CLAUDE.md §8](../CLAUDE.md)'s safety posture. No person has
-expressed this to us. Note the risk: this is the job whose obvious-looking
-answer — telling people what to take — is what
+**H7 · Not being the one who got it wrong** `[?]`
+> *When I hand something to someone I love, I want to be sure I'm not doing
+> harm, so that I don't carry it if something happens.*
+Implied by [CLAUDE.md §8](../CLAUDE.md). **Note the trap:** the obvious answer to
+this job — telling people what to take — is the one thing
 [CLAUDE.md "Deliberately never"](../CLAUDE.md) forbids.
 
-## Social, unevidenced — and all of P2's and P3's
+**H8 · Helping in someone else's home** `[?]`
+> *When I'm looking after someone at their place, I want to act on what they
+> already decided, so that I'm helping rather than deciding for them.*
+[P2](./personas.md). Zero evidence, and unobtainable from store data.
 
-**H-J8 — Acting for someone else without overstepping** `[?]`
-> *When I'm helping in someone else's home, I want to act on what they already
-> decided, so that I'm helping rather than making decisions that aren't mine.*
-[P2](./personas.md). Zero evidence; structurally unobtainable from store data.
-
-**H-J9 — Being legible to a stranger** `[?]`
+**H9 · Being legible to a stranger** `[?]`
 > *When something happens to me and I can't speak for myself, I want whoever
-> arrives to understand what I take and what I react badly to, so that being
-> alone doesn't make me a mystery.*
-[P3](./personas.md), [research.md M3](./research.md),
-[H8](./research.md#h8--emergency) — *"Not proven: that users want it, or would
-trust it."* The interaction is proven viable by Apple Medical ID; the **want**
-is not.
+> turns up to know what I take and what I react badly to, so that living alone
+> doesn't leave them guessing.*
+[P3](./personas.md), [H8](./research.md#h8--emergency) — *"Not proven: that users
+want it, or would trust it."* The interaction is proven viable by Apple Medical
+ID; the **want** is not.
 
-**H-J10 — Being the person who has it handled** `[?]`
-> *When my household depends on me for this, I want to be someone they can
-> depend on, so that I'm seen as looking after us properly.*
-The status side of [S1](#4-social-jobs). S1's single reviewer expresses duty,
-not standing — inferring pride from that sentence would be putting words in
-their mouth.
+---
+
+<a id="what-changed"></a>
+# What changed from the first draft
+
+The first draft had nine jobs and read like a strategy document. Three problems,
+all fixed here:
+
+1. **Situations that weren't situations.** *"When I decide to find out what we
+   actually keep at home"* is not a moment — it's a mood. Every "when" now names
+   something that happens in the world.
+2. **Duplicates counted as separate jobs.** The old J5 (*not being the only one
+   who knows*), the old S1 and the main job were **the same job three times**,
+   at three altitudes. It is now the main job, seen from P2, plus
+   [S1](#s1--not-being-the-one-it-all-depends-on), seen from P1. Old E1 was old
+   J4 in different words; the functional one survived and the emotional one was
+   rewritten into [E2](#e2--not-being-made-a-mug-of), which is a different thing
+   — being leveraged, not being lost.
+3. **Abstraction.** *"I want that effort to keep paying off on the terms I
+   started under"* is nobody's sentence. *"I don't feel stupid for having
+   bothered"* is.
+
+Nine jobs became eight, and four of the nine were reworded down to plain speech.
+No evidence changed; nothing was added that wasn't there before.
 
 ---
 
 <a id="the-check"></a>
-# 6. The check
+# The check
+
+## Real situations
+
+Each "when" names a moment: *the drawer tipped out on the table · home with a new
+box · the last tablet out of a strip · looking to see whether we have something ·
+changing my phone · the phone buzzing · an evening already given up · away, being
+texted.* Eight moments, eight jobs.
+
+Longest of the eight: 34 words. Shortest: 26. The first draft ran to 47.
 
 ## No feature names
 
-Every statement above was audited against the vocabulary of things we would
-build. **None of these words appears in any job formulation:**
+Audited against the vocabulary of things we would build. **None of these appears
+in any job formulation:**
 
 `app` · `cabinet` · `list` · `inventory` · `entry` · `field` · `note` · `tag` ·
-`category` · `photo` · `scan` · `barcode` · `search` · `database` · `sync` ·
-`account` · `login` · `archive` · `log` · `reminder` · `notification` ·
-`alert` · `digest` · `dashboard` · `export` · `profile` · `QR` · `expiry date`
+`photo` · `scan` · `barcode` · `search` · `database` · `sync` · `account` ·
+`archive` · `log` · `reminder` · `notification` · `alert` · `digest` ·
+`profile` · `expiry date`
 
-They appear only in the evidence and source notes, where they describe what
-*competitors* did. Two deliberate near-misses, checked and kept:
+They appear only in evidence notes, describing what competitors did.
 
-- *"recording the change"* (J2) — describes the person's effort, not a screen.
-  The alternative phrasings all smuggled in a noun.
-- *"what we worked out"* (J4) — deliberately vague about what form it takes.
+## What the shape says
 
-## What the hierarchy asserts
-
-**The main job belongs to [P2](./personas.md); J1–J5 belong almost entirely to
-[P1](./personas.md).** That is not an accident of drafting — it is
-[people.md O22](./people.md) restated: the person who does all the work is not
-the person the product exists for. Every job we can *evidence* is a Keeper job,
-because Keepers are the only ones who write reviews.
-
-So the shape of this document is itself a finding: **we have good evidence for
-the means and almost none for the end.**
-
-## What would change it
+The main job belongs to [P2](./personas.md); everything we can evidence belongs
+to [P1](./personas.md). That is [people.md O22](./people.md) again: the person
+doing the work is not the person the product is for. **Good evidence for the
+means, almost none for the end.**
 
 > *"**H4 and H5 need people.** Nothing in this document substitutes for talking
 > to five households."* — [research.md](./research.md)
-
-Five conversations would move most of [section 5](#hypotheses) into the main
-list or delete it. Until then, J1–J5, E1, E2 and S1 are the only jobs here
-anyone has actually voiced.
