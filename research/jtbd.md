@@ -345,44 +345,54 @@ should be visible as such.*
 
 ## Three jobs for the MVP core
 
-*Criterion, applied strictly: importance **3** to the primary persona **and** the
-COMPETITORS cell reads **No**.* Three rows pass. One of them is not a thing to
-build, and the row most people would expect to see here does not pass.
+*Criterion: importance **3** to the primary persona, and the market does not
+address it **in a form that works** — the COMPETITORS cell reads *None*, or
+*Partly* with the competitors' own users describing the failure.*
 
-**1. J3 — believing it without going to check.**
+The three are the product's spine: **put it in cheaply, keep it true, make it
+reachable by the others.**
+
+**1. J2 — keeping up while my hands are full.**
+Entry friction is the number-one risk in the brief ([§7.3](../CLAUDE.md)) and
+the number-one complaint in the category ([§1, pattern 3](./research.md#three-common-patterns-in-this-market),
+[H1](./research.md#h1--entry)). The market *ships* an add path — and its own
+users say it fails: Apteczka Domowa cannot edit stock, Bring! turned one step
+into three, BEEP asks two minutes per item ([D2, D4](./people.md)). J2 rather
+than J1 because J2 is where staleness *starts*: the first inventory gets done
+(people spend hours on it), and then every cheap update that doesn't happen is
+a lie the drawer will tell later. Build: the same path for a change as for an
+add, every field optional, nothing required but a name.
+
+**2. J3 — believing it without going to check.**
 Existential and unopposed. [D9](./people.md) is the documented killer in this
-category, and no listed competitor confirms freshness — the etalon is Waze, not
-a medicine app ([M1](./research.md#three-mechanics-for-the-mvp)).
-**The mechanism that serves it is not in the locked v1 scope.** [§6](../CLAUDE.md)
-has archive and expiry flags; the one-tap confirm and the visible age come only
-from research.md's M1. The core job of the MVP currently has no function in the
-brief that does the confirming.
+category; no listed competitor confirms freshness; the etalon is Waze, not a
+medicine app ([M1](./research.md#three-mechanics-for-the-mvp)).
+**Its mechanism is not in the locked v1 scope** — [§6](../CLAUDE.md) has archive
+and expiry flags, but the one-tap confirm and the visible age exist only in
+research.md. The core job of the MVP currently has no function in the brief that
+does the confirming.
 
-**2. E1 — still being worth listening to.**
-Scores 3 on real reviews; the market scores zero — MyTherapy puts ads inside
-dose reminders, HomeMed alerts *daily* about medicines already expired. The work
-is restraint, cheap to build and the first thing to erode.
+**3. S1 — not being the one it all depends on.**
+The Keeper's side of the Main job, and the only route by which the Main job —
+P2's, the reason the product exists — is ever served. Sharing exists at
+mojApteczka, Medisafe and MyTherapy; every one declares third-party data
+sharing, and the clean-declaration apps have no sharing at all
+([§1, 4th difference](./research.md#three-differences--where-nobody-is-standing)).
+Nobody ships the form that works: household sharing with an honest declaration.
 
-**3. E2 — not being made a mug of.**
-Passes both tests and **is not a feature**: never cap the number of medicines.
-It belongs in the MVP as a commitment, and it is not yet made —
-[H7](./research.md#h7--money) is open, and the local precedent is an OTC banner
-above the duty-pharmacy list. Decide it before it decides itself.
+**Not core, but binding — E1 and E2.** Both score 3 for P1 and both are
+unaddressed, and neither is a job you build an MVP around: they are conditions
+the three above must satisfy. E1 — *silence as the default* — decides whether
+J3's confirmations get muted. E2 — *never cap the number of medicines* —
+decides whether J1's hours turn into the most resented betrayal in the
+category. Treat them as constraints on the core, not entries in it.
 
-**S1 does not pass, and that is worth stating plainly.** Its COMPETITORS cell
-reads *Partly*: mojApteczka, Medisafe and MyTherapy all let a household share.
-What none of them does is share **without a declaration that contradicts the
-marketing** ([§1, 4th difference](./research.md#three-differences--where-nobody-is-standing)).
-So S1 is a *differentiation* — a place to be better — not an unaddressed job.
-It is also the only route by which the Main job, P2's, ever gets served. If the
-MVP core is chosen on judgement rather than by the criterion, S1 is the row to
-add; by the criterion as set, it stays out.
-
-**Why J1, J2 and J4 are not in the core despite scoring 3.** The market
-addresses them. That does not make them optional — J1 and J2 are where every
-competitor *loses*, so they are the price of entry rather than the reason to
-exist. J4 is solved competently by Sortly and Bring!; our only distinction there
-is the honesty of the declaration attached to it.
+**Why J1, J4 and Main are not in the core.** J1 is done once and, per the
+reviews, people do finish it; it is the price of entry rather than the reason
+to exist, and it shares J2's function anyway. J4 is solved competently by
+Sortly and Bring! — the only distinction there is the honesty of the
+declaration. Main is P2's, its P1 cell is `[?]`, and S1 is its Keeper-side
+expression; counting both would be the same job twice.
 
 ## Candidate functions for removal
 
