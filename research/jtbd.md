@@ -2,7 +2,7 @@
 
 Built from [personas.md](./personas.md) and [research.md](./research.md).
 
-**Status:** 15 Sep 2026. Second draft — see [what changed](#what-changed).
+**Status:** 15 Sep 2026.
 
 ---
 
@@ -244,31 +244,6 @@ ID; the **want** is not.
 
 ---
 
-<a id="what-changed"></a>
-# What changed from the first draft
-
-The first draft had nine jobs and read like a strategy document. Three problems,
-all fixed here:
-
-1. **Situations that weren't situations.** *"When I decide to find out what we
-   actually keep at home"* is not a moment — it's a mood. Every "when" now names
-   something that happens in the world.
-2. **Duplicates counted as separate jobs.** The old J5 (*not being the only one
-   who knows*), the old S1 and the main job were **the same job three times**,
-   at three altitudes. It is now the main job, seen from P2, plus
-   [S1](#s1--not-being-the-one-it-all-depends-on), seen from P1. Old E1 was old
-   J4 in different words; the functional one survived and the emotional one was
-   rewritten into [E2](#e2--not-being-made-a-mug-of), which is a different thing
-   — being leveraged, not being lost.
-3. **Abstraction.** *"I want that effort to keep paying off on the terms I
-   started under"* is nobody's sentence. *"I don't feel stupid for having
-   bothered"* is.
-
-Nine jobs became eight, and four of the nine were reworded down to plain speech.
-No evidence changed; nothing was added that wasn't there before.
-
----
-
 <a id="the-check"></a>
 # The check
 
@@ -279,7 +254,7 @@ box · the last tablet out of a strip · looking to see whether we have somethin
 changing my phone · the phone buzzing · an evening already given up · away, being
 texted.* Eight moments, eight jobs.
 
-Longest of the eight: 34 words. Shortest: 26. The first draft ran to 47.
+Longest of the eight: 34 words. Shortest: 26.
 
 ## No feature names
 
