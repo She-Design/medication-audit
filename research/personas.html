@@ -4,7 +4,182 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Medication Audit — Personas &amp; Jobs</title>
-<link rel="stylesheet" href="./style.css">
+<style>
+:root{
+    --ink:#16181c; --ink-2:#3d434d; --muted:#767d8a; --line:#e5e4e0;
+    --bg:#fbfaf8; --card:#ffffff;
+    --accent:#0f6660; --accent-soft:#e8f2f0;
+    --warn:#8a5a00; --warn-soft:#fdf4e3; --warn-line:#e8d5a8;
+    --pick:#0f6660; --pick-soft:#e8f2f0;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    color-scheme:light;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth; scroll-padding-top:70px}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 28px}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(15,102,96,.28)}
+  a:hover{border-bottom-color:var(--accent)}
+
+  /* nav */
+  nav{position:sticky;top:0;z-index:20;background:rgba(251,250,248,.92);
+    backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;gap:26px;align-items:center;height:56px;overflow-x:auto}
+  nav b{font:600 13px/1 var(--sans);letter-spacing:.02em;white-space:nowrap}
+  nav a{font-size:13.5px;color:var(--ink-2);border:0;white-space:nowrap}
+  nav a:hover{color:var(--accent)}
+
+  /* hero */
+  header{padding:76px 0 52px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 18px}
+  h1{font:400 clamp(38px,6vw,60px)/1.05 var(--serif);margin:0 0 20px;letter-spacing:-.015em}
+  .lede{font-size:20px;line-height:1.55;color:var(--ink-2);max-width:64ch;margin:0 0 28px}
+  .pull{font:400 clamp(21px,3vw,27px)/1.4 var(--serif);color:var(--ink);
+    border-left:3px solid var(--accent);padding:4px 0 4px 22px;margin:32px 0;max-width:60ch}
+  .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+  .chip{font-size:12.5px;padding:5px 11px;border-radius:100px;background:#fff;
+    border:1px solid var(--line);color:var(--ink-2)}
+  .chip.on{background:var(--accent-soft);border-color:#c9e0dc;color:var(--accent)}
+
+  /* sections */
+  section{padding:64px 0;border-bottom:1px solid var(--line)}
+  .snum{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 12px;font-weight:600}
+  h2{font:400 clamp(28px,4vw,38px)/1.15 var(--serif);margin:0 0 14px;letter-spacing:-.01em}
+  h3{font:600 17px/1.35 var(--sans);margin:44px 0 12px;letter-spacing:-.005em}
+  h4{font:600 15px/1.4 var(--sans);margin:28px 0 8px}
+  p{margin:0 0 16px;max-width:72ch}
+  .sub{color:var(--muted);font-size:15px;max-width:66ch}
+  strong{font-weight:600}
+  em{font-style:italic;color:var(--ink-2)}
+
+  /* tables */
+  .scroll{overflow-x:auto;margin:22px 0;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:720px}
+  th,td{text-align:left;padding:13px 15px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-weight:600;font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;
+    color:var(--muted);background:#f6f5f2;white-space:nowrap}
+  tbody tr:last-child td{border-bottom:0}
+  td.prod{font-weight:600;white-space:nowrap}
+  .score{text-align:center;font-variant-numeric:tabular-nums;width:64px}
+  .hi{color:var(--accent);font-weight:700}
+  .lo{color:#a8341f;font-weight:700}
+  tr.total td{background:#f6f5f2;font-weight:600}
+
+  /* callouts */
+  .call{border:1px solid var(--line);background:var(--card);border-radius:10px;
+    padding:20px 22px;margin:22px 0}
+  .call p:last-child{margin-bottom:0}
+  .call.warn{background:var(--warn-soft);border-color:var(--warn-line)}
+  .call.warn .tag{color:var(--warn)}
+  .call.pick{background:var(--pick-soft);border-color:#c9e0dc}
+  .call.pick .tag{color:var(--pick)}
+  .tag{display:block;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;
+    font-weight:700;color:var(--muted);margin-bottom:8px}
+
+  /* numbered findings */
+  .find{display:flex;gap:18px;margin:26px 0;align-items:flex-start}
+  .find .n{flex:0 0 34px;height:34px;border-radius:50%;background:var(--accent-soft);
+    color:var(--accent);font:600 14px/34px var(--sans);text-align:center}
+  .find .b{flex:1;min-width:0}
+  .find h4{margin:4px 0 8px}
+
+  /* figures */
+  figure{margin:26px 0;padding:0}
+  figure img{width:100%;display:block;border:1px solid var(--line);border-radius:8px;background:#fff}
+  figcaption{font-size:13px;color:var(--muted);margin-top:10px;max-width:70ch}
+  .duo{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  @media(max-width:720px){.duo{grid-template-columns:1fr}}
+
+  /* hypotheses */
+  .hyp{background:var(--card);border:1px solid var(--line);border-radius:10px;
+    padding:22px 24px;margin:16px 0}
+  .hyp .hd{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;margin-bottom:12px}
+  .hyp .id{font:700 12px/1 var(--sans);letter-spacing:.08em;color:var(--accent);
+    background:var(--accent-soft);padding:6px 9px;border-radius:5px}
+  .hyp .ti{font:600 16px/1.35 var(--sans);flex:1;min-width:200px}
+  .hyp dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 16px;font-size:14px}
+  .hyp dt{font-weight:600;color:var(--muted);font-size:11.5px;letter-spacing:.06em;
+    text-transform:uppercase;padding-top:3px;white-space:nowrap}
+  .hyp dd{margin:0}
+  .hyp dd.np{color:var(--warn);font-weight:500}
+  @media(max-width:620px){.hyp dl{grid-template-columns:1fr;gap:2px 0}
+    .hyp dt{margin-top:10px}}
+
+  /* gallery */
+  .gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:16px;margin-top:24px}
+  .gal a{border:0;display:block}
+  .gal img{width:100%;height:140px;object-fit:cover;object-position:top center;
+    border:1px solid var(--line);border-radius:7px;background:#fff;transition:border-color .15s}
+  .gal a:hover img{border-color:var(--accent)}
+  .gal span{display:block;font-size:11.5px;color:var(--muted);margin-top:7px;line-height:1.4}
+
+  footer{padding:52px 0 80px;color:var(--muted);font-size:13.5px}
+  footer p{max-width:70ch}
+  @media print{nav{display:none}section{page-break-inside:avoid;border:0}body{background:#fff}}
+
+  /* language toggle */
+  .lang{margin-left:auto;display:flex;gap:4px;align-items:center;flex:0 0 auto;padding-left:16px}
+  .lang a{font-size:12px;letter-spacing:.04em;padding:5px 10px;border-radius:6px;border:0;
+    color:var(--muted);font-weight:500}
+  .lang a:hover{color:var(--accent);background:#f2f1ed}
+  .lang a.on{background:var(--accent-soft);color:var(--accent);font-weight:700}
+
+  /* ---- personas & jobs page ---- */
+  .ev{display:inline-block;font:700 10.5px/1 var(--sans);letter-spacing:.06em;padding:4px 6px;border-radius:4px;
+    vertical-align:middle;margin-right:4px;white-space:nowrap}
+  .ev.b{background:var(--accent-soft);color:var(--accent)}
+  .ev.a{background:#f2f1ed;color:var(--ink-2)}
+  .ev.c{background:#ece8f6;color:#4b3a8a}
+  .ev.r{background:#e6f0fa;color:#1b4f8a}
+  .ev.q{background:var(--warn-soft);color:var(--warn);border:1px solid var(--warn-line)}
+  .legend{font-size:14px;line-height:1.9}
+  .hl{display:inline-block;font:700 10.5px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;
+    color:var(--warn);background:var(--warn-soft);border:1px solid var(--warn-line);padding:4px 7px;border-radius:4px;
+    margin-right:6px;vertical-align:middle;white-space:nowrap}
+  .hyp .hd .hl{margin-left:auto}
+
+  .cards{display:grid;grid-template-columns:1fr;gap:22px;margin-top:28px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:26px 28px}
+  .card.primary{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
+  .card-hd{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+  .card-hd h3{margin:0;font:400 26px/1.15 var(--serif)}
+  .pid{font:700 12px/1 var(--sans);letter-spacing:.08em;color:var(--accent);background:var(--accent-soft);
+    padding:6px 9px;border-radius:5px}
+  .badge{font:700 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--accent);
+    padding:6px 10px;border-radius:100px;margin-left:auto}
+  .badge.sec{background:#fff;color:var(--muted);border:1px solid var(--line)}
+  .card .one{font:400 18px/1.45 var(--serif);color:var(--ink-2);margin:0 0 8px}
+  .card h4{margin:24px 0 8px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .card ul{margin:0;padding-left:18px;font-size:14.5px}
+  .card li{margin:6px 0}
+  .card .np{font-size:14.5px}
+  .tt .tag{margin-bottom:6px}
+  .tt ul{font-size:14px}
+  blockquote{margin:12px 0;padding:14px 18px;border-left:3px solid var(--accent);background:#f6f5f2;
+    font:400 16px/1.5 var(--serif);border-radius:0 8px 8px 0}
+  blockquote cite{display:block;font:13px/1.45 var(--sans);color:var(--muted);font-style:normal;margin-top:8px}
+  .card .call{margin:20px 0 0}
+
+  .who{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-right:6px}
+  .job{display:flex;gap:16px;margin:18px 0;align-items:flex-start}
+  .jid{flex:0 0 42px;font:700 12px/1 var(--sans);letter-spacing:.06em;color:var(--accent);background:var(--accent-soft);
+    padding:8px 0;border-radius:6px;text-align:center;margin-top:3px}
+  .jb{flex:1;min-width:0}
+  .js{font:400 18px/1.45 var(--serif);margin:0 0 6px;max-width:70ch}
+  .jm{font-size:13.5px;color:var(--ink-2);margin:0;max-width:78ch}
+  .hyp .js{font-size:16.5px}
+  .hyp .jm{margin-top:6px}
+
+  table.mx{min-width:980px}
+  table.mx td.score{white-space:nowrap;width:auto;text-align:left;line-height:1.5}
+  table.mx td.score small{color:var(--muted);font-size:11.5px}
+  table.mx td.prod{white-space:normal;min-width:170px}
+  .fn{font-size:13px;color:var(--muted);line-height:1.6;max-width:80ch}
+  .fn sup{color:var(--accent);font-weight:700;margin-right:2px}
+
+</style>
 </head>
 <body>
 
@@ -14,8 +189,6 @@
   <a href="#jobs">Jobs</a>
   <a href="#matrix">Matrix</a>
   <a href="#conclusions">Conclusions</a>
-  <a href="./">← Research</a>
-  <span class="lang"><a class="on" href="./personas">EN</a></span>
 </div></nav>
 
 <header><div class="wrap">
@@ -307,7 +480,7 @@
   <p class="sub"><strong>Importance, per persona:</strong> <strong>3</strong> central — the relationship ends without it ·
   <strong>2</strong> matters, survivable if weak · <strong>1</strong> marginal · <span class="ev q">[?]</span> no basis to judge ·
   <strong>—</strong> structurally not this persona's job. Each cell carries its tag and where the evidence sits in the
-  <a href="./">research</a>.</p>
+  research.</p>
   <div class="call warn"><span class="tag">Read the P2 and P3 columns with care</span>
     <p>P2 has never been heard from. P3 is defined only as “P1 and P2 collapsed into one person” — copying P1's numbers into P3 would be the interpolation the rule forbids, so they are [?]. <strong>Only the P1 column is evidence.</strong></p>
   </div>
@@ -318,43 +491,43 @@
     <tbody>
       <tr><td class="prod">Main · find out without the person who knows</td>
         <td class="score"><span class="ev q">[?]</span><sup>1</sup></td>
-        <td class="score"><b>3</b> <span class="ev a">A</span><br><small><a href="./#patterns">§3, the key task</a></small></td>
+        <td class="score"><b>3</b> <span class="ev a">A</span><br><small>§3, the key task</small></td>
         <td class="score"><span class="ev q">[?]</span></td>
         <td>Household by invite link; browse in the household's own words; expiry status on the face of each entry</td>
-        <td><strong>No medicine app does.</strong> Every one designs for a patient or a caregiver (<a href="./#competitors">§1, difference 1</a>). Bring! does it — for groceries</td></tr>
+        <td><strong>No medicine app does.</strong> Every one designs for a patient or a caregiver (§1, difference 1). Bring! does it — for groceries</td></tr>
       <tr><td class="prod">J1 · getting through it once</td>
-        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small><a href="./#conclusions">H1</a> · O6</small></td>
+        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small>H1 · O6</small></td>
         <td class="score">—</td><td class="score"><span class="ev q">[?]</span></td>
         <td>Add with every field optional — nothing required but a name</td>
         <td><strong>Yes, badly.</strong> Everyone ships it; Apteczka Domowa demands EAN, photo and a calendar permission; BEEP sits at 1.9 from 1,910</td></tr>
       <tr><td class="prod">J2 · keeping up while my hands are full</td>
-        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small><a href="./#competitors">§1, pattern 3</a> · D2, O7</small></td>
+        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small>§1, pattern 3 · D2, O7</small></td>
         <td class="score"><span class="ev q">[?]</span><sup>2</sup></td><td class="score"><span class="ev q">[?]</span></td>
         <td>The same path reused for a change; count down; archive</td>
         <td><strong>Partly.</strong> Apteczka Domowa cannot edit stock; Bring! turned one step into three</td></tr>
       <tr><td class="prod">J3 · believing it without going to check</td>
-        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small><a href="./#benchmark">M1</a> · D9</small></td>
-        <td class="score"><b>3</b> <span class="ev a">A</span><br><small><a href="./#benchmark">M1, M3</a></small></td>
+        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small>M1 · D9</small></td>
+        <td class="score"><b>3</b> <span class="ev a">A</span><br><small>M1, M3</small></td>
         <td class="score"><span class="ev q">[?]</span></td>
         <td>One-tap confirm wherever a thing surfaces, age on its face — <strong>a research recommendation not yet in v1 scope</strong>; duplicate-entry check; archive rather than delete</td>
         <td><strong>None listed.</strong> No row of the fifteen carries a confirm-or-gone gesture; Apple Medical ID scores 1 of 5 on visible decay. Caveat: no app was installed</td></tr>
       <tr><td class="prod">J4 · not doing it twice</td>
-        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small><a href="./#competitors">§1, 4th difference</a> · D7</small></td>
+        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small>§1, 4th difference · D7</small></td>
         <td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td>
         <td>Sync, encrypted, with a declaration that matches the marketing</td>
         <td><strong>Yes.</strong> Sortly, Bring! and Medisafe sync — and diverge. The clean-declaration apps have none</td></tr>
       <tr><td class="prod">E1 · still being worth listening to</td>
-        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small>O13, O14 · mechanism: <a href="./#benchmark">M2</a></small></td>
+        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small>O13, O14 · mechanism: M2</small></td>
         <td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td>
         <td>A monthly digest that also says <em>nothing needs you</em>; two severity registers; silence as the default</td>
         <td><strong>No.</strong> MyTherapy runs ads inside dose reminders; HomeMed promises <em>daily</em> alerts for medicines already expired</td></tr>
       <tr><td class="prod">E2 · not being made a mug of</td>
-        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small><a href="./#competitors">§1, pattern 2</a> · D6, O10</small></td>
+        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small>§1, pattern 2 · D6, O10</small></td>
         <td class="score">—</td><td class="score"><span class="ev q">[?]</span></td>
         <td><strong>Not a feature — a pricing commitment.</strong> Never cap the number of medicines</td>
         <td><strong>No.</strong> BEEP caps at 50, Sortly 100, mojApteczka 20, Medisafe 2</td></tr>
       <tr><td class="prod">S1 · not being the one it all depends on</td>
-        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small><a href="./#benchmark">§2, crowd corroboration</a> · O3, O8</small></td>
+        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small>§2, crowd corroboration · O3, O8</small></td>
         <td class="score">—<sup>3</sup></td><td class="score">—</td>
         <td>Invite by link, no account wall</td>
         <td><strong>Partly.</strong> Sharing exists at mojApteczka, Medisafe and MyTherapy — and every one declares third-party data sharing</td></tr>
@@ -370,14 +543,14 @@
     <thead><tr><th>Job</th><th class="score">P1</th><th class="score">P2</th><th class="score">P3</th><th>Function</th><th>Competitors</th></tr></thead>
     <tbody>
       <tr><td class="prod"><span class="hl">Hypothesis</span> H1 · the 2am scene</td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td>None specifically — the framing the whole product is measured by</td><td>n/a</td></tr>
-      <tr><td class="prod"><span class="hl">Hypothesis</span> H2 · not knowing the word for it</td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td><strong>Browse by purpose — the entire navigation</strong> (<a href="./#patterns">§3</a>)</td><td>Partly: mojApteczka searches by indication</td></tr>
+      <tr><td class="prod"><span class="hl">Hypothesis</span> H2 · not knowing the word for it</td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td><strong>Browse by purpose — the entire navigation</strong> (§3)</td><td>Partly: mojApteczka searches by indication</td></tr>
       <tr><td class="prod"><span class="hl">Hypothesis</span> H3 · running out when the shop is far</td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td>Running-low flag</td><td>Partly: Medkit lists stock levels — and is not a consumer app; Apteczka Domowa's is broken</td></tr>
-      <tr><td class="prod"><span class="hl">Hypothesis</span> H4 · heat</td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td>Heat-risk flag; storage location as a first-class field</td><td><strong>No.</strong> Location is everywhere as filing — Kitchen, Car, Travel Kit — and nowhere as safety (<a href="./#competitors">§1, difference 3</a>)</td></tr>
+      <tr><td class="prod"><span class="hl">Hypothesis</span> H4 · heat</td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td>Heat-risk flag; storage location as a first-class field</td><td><strong>No.</strong> Location is everywhere as filing — Kitchen, Car, Travel Kit — and nowhere as safety (§1, difference 3)</td></tr>
       <tr><td class="prod"><span class="hl">Hypothesis</span> H5 · asking someone who actually knows</td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td>Not in v1</td><td>Yes: mojApteczka's QR to a pharmacist; farmakeia.com.cy's duty rota</td></tr>
       <tr><td class="prod"><span class="hl">Hypothesis</span> H6 · putting down the guilt</td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td>None</td><td>n/a</td></tr>
       <tr><td class="prod"><span class="hl">Hypothesis</span> H7 · not being the one who got it wrong</td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td>Allergy-conflict flag and duplicate-ingredient flag; member allergies behind them — <strong>special-category data</strong></td><td><strong>No allergy check anywhere in the set.</strong> Interaction checks exist: mojApteczka (DDInter 2.0), Medkit, Apple Health (US only), Home Med Cabinet — AI-written, no stated medical review</td></tr>
       <tr><td class="prod"><span class="hl">Hypothesis</span> H8 · helping in someone else's home</td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td>Not in v1</td><td>n/a</td></tr>
-      <tr><td class="prod"><span class="hl">Hypothesis</span> H9 · being legible to a stranger</td><td class="score">—</td><td class="score">—</td><td class="score"><span class="ev q">[?]</span></td><td>Emergency view without an account — <strong>not in v1 scope</strong>, only in <a href="./#benchmark">M3</a></td><td><strong>No.</strong> Apple Medical ID proves the interaction, for something that is not a medicine cabinet</td></tr>
+      <tr><td class="prod"><span class="hl">Hypothesis</span> H9 · being legible to a stranger</td><td class="score">—</td><td class="score">—</td><td class="score"><span class="ev q">[?]</span></td><td>Emergency view without an account — <strong>not in v1 scope</strong>, only in M3</td><td><strong>No.</strong> Apple Medical ID proves the interaction, for something that is not a medicine cabinet</td></tr>
     </tbody>
   </table></div>
 
