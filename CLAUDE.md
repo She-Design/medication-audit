@@ -75,6 +75,41 @@ might have to help them).
 regimens, or anyone who needs adherence reminders for a daily prescription.
 Those are different products with different safety obligations.
 
+### Primary persona and jobs
+
+*Condensed from [research/personas.md](./research/personas.md) and
+[research/jtbd.md](./research/jtbd.md), 16 Sep 2026. Three personas exist; the
+other two — the household member at the cabinet without the Keeper, and the
+person living alone — have no evidence behind them yet.*
+
+**Primary persona — P1, The Keeper.** The one who buys and remembers. Does the
+first inventory, and is the reason there is anything in the cabinet to read.
+Brand-literate and ingredient-blind: they say *Panadol*, not *the white box*,
+and 87% of Cypriots know it contains paracetamol — but half don't know Depon
+does, and 72% don't know Buscopan-plus does. Every drop-off the category's
+reviews document is a Keeper drop-off, so P1 governs the friction budget; the
+job statement in §1 still belongs to the person standing there without them.
+
+**Main job.** *When someone at home needs medicine and the person who knows
+isn't there, I want to find out what we have and whether it's still good, so
+that I don't have to guess.*
+
+**Top three jobs for the MVP** — put it in cheaply, keep it true, make it
+reachable by the others:
+
+1. **J2** — *When I get home with a new box, or take the last tablet from a
+   strip, I want to say what changed in seconds, so that it never becomes a job
+   I put off.*
+2. **J3** — *When I look to see whether we've got something, I want to know the
+   answer is still true, so that I don't open the drawer to check anyway.* The
+   mechanism that serves it — one-tap confirm, visible age — is not yet in §6.
+3. **S1** — *When I'm away and someone at home texts me asking which one to
+   take, I want them to work it out without me, so that nothing waits on my
+   answering.*
+
+Two constraints bind all three: silence as the default, and never capping the
+number of medicines.
+
 ## 4. Market: Cyprus first
 
 v1 targets households in Cyprus. This is a real constraint, not a placeholder.

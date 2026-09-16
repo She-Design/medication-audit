@@ -26,14 +26,19 @@ safety and privacy posture, and the open questions — is in
 
 | | Folder | What's in it | Status |
 |---|---|---|---|
-| 📓 | **[CLAUDE.md](./CLAUDE.md)** | The brief. Problem, audience, locked decisions, scope, safety posture, architecture sketch, open questions | 🟢 9 Sep 2026 |
-| 🔍 | **[research/](./research/)** | [Evidence](./research/research.md) in four sections — Competitors, Benchmark, Patterns, Conclusions. Eight hypotheses, each sourced or marked unproven | 🟢 10 Sep 2026 |
+| 📓 | **[CLAUDE.md](./CLAUDE.md)** | The brief. Problem, audience, primary persona and MVP jobs, locked decisions, scope, safety posture, architecture sketch, open questions | 🟢 16 Sep 2026 |
+| 🔍 | **[research/](./research/)** | [Evidence](./research/research.md) in five sections — Competitors, Benchmark, Patterns, Conclusions, and follow-up research after personas. Eight hypotheses, each sourced or marked unproven | 🟢 16 Sep 2026 |
 | 🖥️ | **[research site](https://medication-audit.vercel.app)** · [UA](https://medication-audit.vercel.app/uk) | The research as a single clean page for stakeholders, in English and Ukrainian — product, competitors, benchmark, patterns, conclusions, with tables and screens inline. Source: [research.html](./research/research.html), [research.uk.html](./research/research.uk.html), shared [style.css](./research/style.css); redeploy with `./research/deploy.sh` | 🟢 Live |
 | 🎯 | **[research/competitors.md](./research/competitors.md)** | The analysis shortlist — 15 products in three groups, what to learn from each, and the four decisions it puts in question | 🟡 9 Sep 2026 — desk research only, none installed |
 | 📊 | **[research/competitor-comparison.md](./research/competitor-comparison.md)** | All 15 compared on audience, base, mechanism, trust and monetisation — plus the patterns, the differences, and three questions for the PM | 🟡 9 Sep 2026 — corrected after the Play pass |
 | 🇨🇾 | **[research/cyprus-medicines-register.md](./research/cyprus-medicines-register.md)** | **Cyprus publishes an open CC BY 4.0 register of 6,369 medicines** — fields, export, licence, and why there is still nothing to scan against | 🟢 9 Sep 2026 — register used hands-on |
 | ⭐ | **[research/store-evidence.md](./research/store-evidence.md)** | Google Play: install counts, Data Safety declarations, and 58 verbatim reviews on why people stop maintaining these apps | 🟢 9 Sep 2026 |
 | 🤝 | **[research/trust-mechanisms.md](./research/trust-mechanisms.md)** | Eight criteria for *inherited trust*, five non-medical etalons scored against them, three mechanisms for the MVP and one to refuse | 🟢 10 Sep 2026 |
+| 👥 | **[research/people.md](./research/people.md)** | Everything the research says about people, sorted into three populations by where the evidence came from — the brief, competitor reviewers, the builder's household — plus what we do not know, marked `[?]` | 🟢 14 Sep 2026 |
+| 🎭 | **[research/personas.md](./research/personas.md)** | Three personas as evidence-tagged scaffolds, P1 The Keeper primary. Revised twice from web research: brand-literate-ingredient-blind, and heat | 🟢 16 Sep 2026 |
+| 🧭 | **[research/jtbd.md](./research/jtbd.md)** | One main job, four leading to it, emotional and social jobs, nine quarantined hypotheses; the jobs × personas matrix with FUNCTION and COMPETITORS; MVP core and removal candidates | 🟢 15 Sep 2026 |
+| 🔬 | **[research/review.md](./research/review.md)** | Claim-by-claim audit of personas.md and jtbd.md — 94 statements classified, the 15 that shape design on `[?]` or inference, and three questions to close the gaps | 🟢 15 Sep 2026 |
+| 🗂️ | **[research/personas.html](./research/personas.html)** | Personas, jobs and the matrix as one standalone page — self-contained, not part of the research site | 🟢 16 Sep 2026 — not deployed |
 | 🖼️ | **[research/screens/](./research/screens/)** | 69 captures — marketing sites, App Store galleries, Play listings and Data Safety pages, the Cyprus register. Login-walled surfaces documented rather than captured | 🟡 69 captures, no in-app screens |
 | ✏️ | **[wireframes/](./wireframes/)** | Structure and flow. Grey boxes, real copy, no styling | ⚪ Empty |
 | 🎨 | **[concept/](./concept/)** | Visual directions, mood, tone of voice, the name | ⚪ Blocked on wireframes |
@@ -97,6 +102,53 @@ the mode the product was designed for.
 The full set of principles is in [CLAUDE.md](./CLAUDE.md#7-product-principles).
 When a proposal conflicts with one, say so out loud rather than quietly
 designing around it.
+
+---
+
+## People
+
+Three personas, built as scaffolds rather than invented individuals — role
+titles, no names, no ages — with every claim tagged by what it rests on:
+real reviewers' words, the brief's assertion, the builder's own household, a
+published study, or `[?]`.
+
+| | Persona | Evidence |
+|---|---|---|
+| **P1** | **The Keeper** — buys, remembers, does the first inventory. **Primary.** | Strongest in the repo, and the only persona with a live instance: this product is being built for the author's own household |
+| P2 | The Other Person — at the cabinet without the Keeper. The person the product exists for | **None.** No source holds a word from them; the closest is a Keeper describing their absence |
+| P3 | The Person Who Lives Alone — P1 and P2 in one person | `[?]` throughout |
+
+**P1 is primary because every drop-off the review corpus documents is a Keeper
+drop-off, and if the Keeper quits nobody else has anything to open.** The
+tension is kept, not smoothed: the job statement belongs to P2. P1 governs the
+friction budget; P2 governs the measure of success.
+
+**Two things web research changed.** The brief's *"they know 'the white box
+for headaches', not 'ibuprofen 400 mg'"* was half wrong — nobody says the white
+box, they say the brand, and 87% of Cypriots know Panadol is paracetamol. What
+collapses is knowledge of what is inside everything else. And heat is now
+evidenced everywhere except the inside of a Cypriot cabinet: a 30 °C July daily
+mean against a 25 °C label, and no official Cypriot storage guidance at all.
+
+**Jobs.** One main job — *when someone at home needs medicine and the person
+who knows isn't there, I want to find out what we have and whether it's still
+good, so that I don't have to guess* — with four leading to it, two emotional,
+one social, and nine hypotheses quarantined until somebody voices them. The
+**MVP core** is **J2 put it in cheaply · J3 keep it true · S1 make it reachable
+by the others**, bound by two constraints: silence as the default, and never
+capping the number of medicines. Of the matrix's 51 importance cells, 7 rest on
+real people's words and 36 are `[?]`.
+
+**Still unknown, and said so:** what P2 calls anything; whether anyone finds a
+box by its colour; whether a list of reasons beats a search box; the
+temperature inside a Cypriot bathroom cabinet; whether a single Cypriot
+experiences any of this as a problem. Five household conversations would
+settle most of it. None has happened.
+
+Full working: [people.md](./research/people.md) →
+[personas.md](./research/personas.md) → [jtbd.md](./research/jtbd.md) →
+[review.md](./research/review.md), and the follow-up research in
+[research.md §5](./research/research.md#5-follow-up-research-after-personas).
 
 ---
 
