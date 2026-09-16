@@ -4,7 +4,8 @@ Three personas built from [people.md](./people.md), which was built from
 [research.md](./research.md). Each carries the evidence behind every field, and
 marks what is missing rather than filling it in.
 
-**Status:** 14 Sep 2026.
+**Status:** 14 Sep 2026; P1 revised 16 Sep 2026 — see
+[research.md §5](./research.md#5-post-persona-research).
 
 ---
 
@@ -25,6 +26,7 @@ Every field is tagged with what it rests on:
 | **[B]** | **Observed.** Real verbatim words from Population B — reviewers of competitor apps, [store-evidence.md](./store-evidence.md). Not our audience, but real people. |
 | **[A]** | **Asserted.** From the brief, [CLAUDE.md](../CLAUDE.md). Argued, never validated. |
 | **[C]** | **The builder's household.** The author and their family — a real, reachable instance of **P1**, `n = 1`, not independent ([people.md O21](./people.md)). A note on where evidence comes from, not a persona of its own. |
+| **[R]** | **Published research.** A survey or study found after the personas were written — [research.md §5](./research.md#5-post-persona-research). The only tag that can remove a `[?]`. |
 | **[?]** | **No data.** Written as a hypothesis, never as a fact. |
 
 **On the quotes.** Each persona carries a real, verbatim, dated quote, attributed
@@ -67,11 +69,30 @@ no EAN"* ([store-evidence.md §2](./store-evidence.md),
 photo, and it is arrived at independently by [CLAUDE.md §1](../CLAUDE.md)
 (*"uses half of it, and three years later nobody remembers"*).
 
-`[?]` **Hypothesis, untested:** that a Cypriot Keeper has low pharmaceutical
-literacy — *"the white box for headaches"*, not *"ibuprofen 400 mg"*
-([CLAUDE.md §3](../CLAUDE.md)). This is the premise need-first navigation rests
-on, and [research.md H4](./research.md#h4--pattern) calls it *"the
-weakest-supported major decision in the project."*
+**Brand-literate, ingredient-blind.** `[R]` They have a word for what they
+bought, and it is the brand: *Panadol*, *Depon*, *Nurofen* — used confidently,
+spelled phonetically, as the noun (*"πανταντόλ πλας"*; *"generic calpol"*).
+For the flagship brand they also know the ingredient: **87.2%** of 375
+Cypriots asked at pharmacies in Nicosia, Limassol and Larnaca knew Panadol
+contains paracetamol. What they do not know is what is inside *everything
+else* — the share who knew it contains paracetamol: Depon **50.8%**, Apotel
+**14.1%**, Solpadeine **49.7%**, Buscopan-plus **28.5%** — and only **28.2%**
+knew the maximum daily dose
+(Petrides et al. 2023, [research.md §5.1](./research.md#51-the-one-cypriot-study)).
+The same shape holds in Sweden, Belgium and the US
+([§5.2](./research.md#52-the-same-shape-elsewhere)).
+
+*What changed, 16 Sep 2026.* This paragraph replaced a `[?]` hypothesis taken
+from [CLAUDE.md §3](../CLAUDE.md): *"they know 'the white box for headaches',
+not 'ibuprofen 400 mg'."* Half of that was wrong — nobody says *the white box*,
+they say the brand — and half was right: they do not know the ingredient
+except for the one brand everybody knows. Two consequences. The Keeper does
+**not** lack vocabulary for a search box, so
+[research.md H4](./research.md#h4--pattern)'s case for need-first now rests on
+**P2**, not on P1. And the duplicate-ingredient warning is the one v1 feature
+this evidence directly pays for. Still `[?]`: whether a Keeper ever finds a box
+by colour, and what a *household* — rather than a pharmacy queue skewed young
+and educated — looks like on the same questions.
 
 **We have one real Keeper.** `[C]` The author of this project is building it for
 their own family and will maintain their own cabinet
@@ -220,11 +241,12 @@ different kind of user. What changes is the **evidence**, not the audience.*
   BEEP's 1.9 over 1,910 ratings is an expectation formed *before* the app is
   opened, by someone who has never seen it ([people.md O17](./people.md)). That
   judgement is permanently unavailable from inside.
-- **The literacy premise cannot be tested on them.** Whoever has read the Cyprus
-  register, worked with ATC codes and written a need-first taxonomy no longer
-  has the low pharmaceutical literacy that defines this audience, whatever they
-  had beforehand ([people.md O21](./people.md)). That rules them out as a test
-  of [H4](./research.md#h4--pattern).
+- **Ingredient-blindness cannot be tested on them.** Whoever has read the
+  Cyprus register and worked with ATC codes now knows what is inside Depon
+  and Buscopan-plus, whatever they knew beforehand
+  ([people.md O21](./people.md)). That rules them out as a test of
+  [H4](./research.md#h4--pattern) — and, since 16 Sep 2026, H4 is about P2
+  anyway ([research.md §5.6](./research.md#56-what-this-changes)).
 
 **So:** the review corpus stays the corrective and is *not* downgraded now that
 there is a real user in the room. And the rest of that household is reachable

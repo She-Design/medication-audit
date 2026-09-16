@@ -1,8 +1,9 @@
 # Research
 
-Four sections: **Competitors**, **Benchmark**, **Patterns**, **Conclusions**.
+Five sections: **Competitors**, **Benchmark**, **Patterns**, **Conclusions**,
+**Post-persona research**.
 
-**Status:** 10 Sep 2026. This consolidates
+**Status:** 10 Sep 2026; §5 added 16 Sep 2026. This consolidates
 [competitors.md](./competitors.md),
 [competitor-comparison.md](./competitor-comparison.md),
 [store-evidence.md](./store-evidence.md),
@@ -232,6 +233,10 @@ Tap one, see what the household owns tagged to it, in the household's own words.
 1. **The brief's §3 defines the audience by low pharmaceutical literacy** — they
    know "the white box for headaches", not "cetirizine". A search box demands
    vocabulary the brief says they lack; a list of reasons demands none.
+   *Revised 16 Sep 2026 — see [§5.6](#56-what-this-changes): the vocabulary
+   they have is the brand name, and it is used confidently. What they lack is
+   the ingredient. This argument now holds for the person who did not buy the
+   medicine, not for the one who did.*
 2. **The brief's §2 states the task as a question, not a lookup.** The user
    arrives with a symptom, not a product name. Need-first is the only pattern
    whose front door matches how the problem presents.
@@ -332,6 +337,10 @@ description of the audience, which is itself unvalidated.
 **Not proven:** the entire premise. **This is the weakest-supported major
 decision in the project.**
 **Test:** a five-person unmoderated test with both layouts and a real cabinet.
+**Update 16 Sep 2026:** the "low pharmaceutical literacy" premise is now
+partly evidenced and partly contradicted by a Cypriot survey — see
+[§5](#5-post-persona-research). The test above still stands; what it tests
+has narrowed.
 
 <a id="h5--audience"></a>
 ### H5 — There is a household audience distinct from the caregiver audience
@@ -396,3 +405,227 @@ much as a UX one.
 3. **H4 and H5 need people.** Nothing in this document substitutes for talking to
    five households, and until that happens the audience section of the brief is a
    well-argued guess.
+
+---
+
+# 5. Post-persona research
+
+Targeted research against the first question in
+[review.md](./review.md): **"When you go to the drawer for something, what do
+you call what you're looking for?"** — the gap under the entire navigation
+(review.md C1, [H4](#h4--pattern) above).
+
+**Method, 16 Sep 2026.** Web search and text fetch only. **No screen captures
+were taken** — a departure from the rest of this document, where every claim
+carries one; each source below is a URL with the date fetched, and the quotes
+are verbatim from the fetched text. Nothing was surveyed and nobody was
+interviewed. Several targets were unreachable and are listed in
+[§5.7](#57-could-not-retrieve).
+
+## 5.1 The one Cypriot study
+
+**Petrides M. et al., "Exploring public knowledge and perceptions regarding
+per os OTC pain-relieving medications: the case of paracetamol (acetaminophen)",
+*Journal of Pharmaceutical Policy and Practice* 16:93, 20 Jul 2023.**
+[PMC10360319](https://pmc.ncbi.nlm.nih.gov/articles/PMC10360319/) ·
+DOI 10.1186/s40545-023-00598-1.
+
+- **N = 375**, Republic of Cyprus, November 2020 – April 2021. *"The study's
+  researchers approached members of the public who visited community
+  pharmacies to pursue their medications"* in **Nicosia, Limassol and
+  Larnaca**, questionnaire in Greek with English available.
+- Sample: 18–29 22.9%, 30–39 29.0%, 40–49 21.3%, 50–59 17.0%, 60–69 8.0%,
+  70+ 1.9%. Education: middle school 9.0%, high school 40.2%, university
+  33.5%, postgraduate 11.8%, healthcare professionals 5.5%.
+- **Which brands contain paracetamol?** *"Original (Panadol®) 87.2 (328),
+  Generic 1 (Depon®) 50.8 (191), Generic 2 (Apotel®) 14.1 (53)."*
+- **Combination products:** *"71.5% (N = 269) did not know that a very common
+  antispasmodic/analgesic medication (Buscopan-plus®) also contained
+  paracetamol"*; for Solpadeine, *"half of the participants (50.3%, N = 189)
+  did not recognise this medication as a paracetamol-containing one."*
+- **Dose:** only **28.2%** (N = 96) gave the correct maximum daily dose.
+- **Education** was associated with answering correctly (OR 0.111, p = 0.000):
+  *"Higher the level of education was associated with higher probability of
+  answering all questions regarding paracetamol-containing drugs correctly."*
+- The authors' framing: *"There seems to be a knowledge gap regarding both
+  paracetamol's recognition… The aforementioned factors could lead to an
+  unintended overdose of paracetamol-containing medications using them (two
+  or more at the same time) simultaneously."*
+
+**What it establishes.** Cypriots asked at the pharmacy counter know the
+flagship brand and know what is in it (87%). Knowledge falls by half for the
+first generic, to one in seven for the second, and to one in four or one in
+two for products where paracetamol is one ingredient among several. This is
+the shape of the vocabulary: **brand-literate, ingredient-blind.**
+
+**Limits.** Recruited *at pharmacies* — people already buying medicine, skewed
+young (52% under 40) and educated (45% university or above). The questions
+were recognition ("does X contain paracetamol?"), not free recall; nobody was
+asked what they *call* anything.
+
+## 5.2 The same shape elsewhere
+
+| Study | Where, N | Finding |
+|---|---|---|
+| Wolf et al., *J Gen Intern Med* 2012 | US, 500 adults in four clinical settings | *"45.6% of adults demonstrated they would overdose by 'double-dipping' with two acetaminophen-containing products"*; 23.8% would overdose on a single product; *"limited literacy"* independently associated. [Europe PMC](https://europepmc.org/article/MED/22638604) |
+| Fraeyman et al., *J Manag Care Spec Pharm* 2015 | Belgium (Flanders), 1,636 | *"Only 17% of the respondents were able to recognize a generic medicine"*; over-60s more confused by packaging. [Europe PMC](https://europepmc.org/article/MED/25803762) |
+| Swedish pharmacy customers, *J Pharm Policy Pract* 2020 | Sweden, 209, 2016–17 | 32.1% assigned three or four of four active substances to the right brands; 23.9% all four; education p = 0.006, sex p = 0.015. [PMC7528226](https://pmc.ncbi.nlm.nih.gov/articles/PMC7528226/) |
+| Leanne May, community pharmacist, *The Pharmaceutical Journal*, 2 Sep 2026 | UK, opinion | *"Patients often identify products by their intended use rather than their ingredients, so… paracetamol can be easily missed."* [article](https://pharmaceutical-journal.com/article/feature/lost-in-fine-print-how-patient-information-leaflets-are-failing-patients) |
+
+Four countries, one pattern: **the brand is known; the substance inside it is
+not; education is the strongest predictor.** Cyprus is not an outlier — if
+anything, 87% for Panadol is high.
+
+## 5.3 What people actually say
+
+*Verbatim, from places where people name medicines to each other rather than
+to a researcher.*
+
+**Greek speakers, asking doctors** —
+[doctoranytime.gr, Panadol tag](https://www.doctoranytime.gr/erotiseis-apantiseis/tag/panadol)
+(Greece, not Cyprus):
+
+> *"Μπορώ να πάρω πανταντόλ πλας μαζί με νορτζεστικ για πόνο στο γόνατο;"*
+> — 8 Mar 2026. *Can I take Panadol Plus with [another brand] for knee pain?*
+> Both brand names spelled phonetically; the question is about combining.
+> *"Μπορώ να πάρω panadol ή algofren ενώ έχω πάρει fosfocin;"* — 3 Jun 2024
+> *"Χάπια γρίπης panadol cold&flu…"* — 25 Oct 2024. *Flu pills, Panadol
+> cold&flu* — purpose first, then brand.
+> *"Επιτρέπεται παρακεταμόλη και ψευδοφεδρίνη;"* — 12 Mar 2025. The one
+> question in the sample framed by substance.
+
+**UK parents** — Mumsnet, ["Calpol substitute"](https://www.mumsnet.com/talk/_chat/4518125-calpol-substitute),
+31 Mar – 1 Apr 2022, and ["Calpol vs own brand"](https://www.mumsnet.com/talk/parenting/3607263-calpol-vs-own-brand),
+Jun 2019:
+
+> *"generic calpol and ibuprofen"* · *"own brand paracetamol"* ·
+> *"Sainsbury's one"* · *"the dissolvable ones"* · *"melting tablets"* ·
+> *"the sticky sweet pink stuff"* · *"pink calpol (not the orange stuff.
+> That's rank)"* · *"Parapead"*
+
+The brand has become the noun — *"generic calpol"* is a phrase. Nobody in
+either thread confuses Calpol with anything; they know it is paracetamol.
+Distinctions are made by **form** (dissolvable, chewable, melting), by
+**retailer** (Tesco's, Boots own), and by **colour and taste** (pink, orange)
+— never by strength or ingredient.
+
+**Cyprus, 2015** — [Cyprus Mail, 31 May 2015](https://archive.cyprus-mail.com/2015/05/31/pharmacies-tighten-grip-on-pain-relief/):
+the Health Ministry banned painkiller sales outside pharmacies; Panadol was
+withdrawn from kiosks and supermarkets. Andreas Theodoulou, mini-markets union:
+*"They just quietly stopped bringing it."* Brands named in the piece: Panadol,
+Nurofen, Aspro Clear. What this shows is only that Panadol was a kiosk staple
+— the brand was on the shelf next to the crisps.
+
+**Russian speakers in Northern Cyprus** —
+[cyprus-faq.com](https://cyprus-faq.com/en/north/meditsina/lekarstva-v-aptekakh-severnogo-kipra-i-ikh-analogi/),
+a guide matching familiar CIS brands to local ones. It is organised **by
+purpose** — 26 categories: pain, fever, headache, throat, cough — and within
+each, *brand — ingredient*: *"Minoset — paracetamol." "Calpol — children's
+paracetamol syrup." "Nurofen — ibuprofen, effective for moderate pain."* This
+is what a community with the wrong brand vocabulary builds for itself: a
+need-first index that resolves to brand and ingredient.
+
+**Our own corpus** — one Apteczka Domowa reviewer counts *"how many throat
+tablets you have"* (1★, 30 Nov 2025, [store-evidence.md](./store-evidence.md)):
+purpose as the noun, once.
+
+## 5.4 Colour and shape
+
+[STAT, 15 May 2026](https://www.statnews.com/2026/05/15/pills-changing-colors-shape-generics-confusion/),
+patient essay: *"Every morning, I spread out my pills on the kitchen table and
+use their color, shape, and size as my guide"*; *"My pink tablet turned blue."*
+It cites the 2014 *Annals of Internal Medicine* study: patients **34%** more
+likely to stop a medicine after a colour change and **66%** after a shape
+change. *(Primary not fetched — Harvard's page blocks bots; the figures appear
+identically in three summaries.)*
+
+A Medisafe reviewer ([16 Dec 2024](https://www.minimalistjourneys.com/medisafe-app-review/))
+values that you can *"create icons that match the shape and color of your
+pills"* and faults that *"the app does not allow you to take a photo of the
+pill or the medication packaging."*
+
+**Read narrowly.** All of this is about *loose tablets* for chronic
+prescriptions — the caregiver market, not ours. For OTC boxes at home, the
+only colour evidence found is Mumsnet's pink-versus-orange Calpol, and that is
+taste, not identification. **Whether anyone finds a box at home by its colour
+is still `[?]`.**
+
+## 5.5 Need-first as something people build
+
+One pharmacy-setting study ([Japan, 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC11926441/))
+collapsed 1,440 clinical symptom terms into 211 lay terms in a hierarchy;
+five test users found it *"easier to answer than to be asked"* and *"usable
+without problems"*, with a 79-year-old doubting they could use it unaided.
+n = 5, not our audience, no comparison with a search box. Directional only.
+
+The stronger signal is §5.3's Russian-speakers' guide: a real community,
+lacking the local brand vocabulary, organised its own reference by need.
+
+## 5.6 What this changes
+
+**1. The persona trait is revised, not removed.** The brief's *"they know 'the
+white box for headaches', not 'ibuprofen 400 mg'"* was half right. Nobody in
+any source says *the white box*; they say **Panadol**, **Calpol**, **Depon**,
+**Nurofen** — confidently, phonetically, as the noun. And for the flagship,
+they know the ingredient (87%). What collapses is knowledge of what is inside
+*everything else*: the second brand (51%), the third (14%), the combinations
+(29–50%), and the dose (28%). The trait is now **brand-literate,
+ingredient-blind**, and [personas.md P1](./personas.md) says so.
+
+**2. Argument 1 for need-first ([§3](#selected-need-first)) is weakened for
+the Keeper and untouched for everyone else.** The Keeper has a word for what
+they bought: the brand. A search box does *not* demand vocabulary they lack.
+What need-first still answers is the person who did *not* buy it and does not
+know the brand — P2 — for whom there is still no evidence either way.
+[H4](#h4--pattern) stays open, narrower.
+
+**3. The brief's §4 "Naming" is confirmed.** *"Households talk in brand names
+… The interface must accept the brand name the user knows and quietly attach
+the ingredient behind it."* That is exactly the gap §5.1 measures, and the
+register can close it.
+
+**4. The duplicate-active-ingredient flag is now the best-evidenced safety
+feature in v1.** [CLAUDE.md §6.5](../CLAUDE.md) — *"both of these contain
+paracetamol"* — addresses precisely the failure §5.1 and §5.2 measure: 71.5%
+of Cypriots do not know Buscopan-plus contains paracetamol; 45.6% of US adults
+would double-dip. In [jtbd.md](./jtbd.md) this flag sits on the H7 row as a
+feature whose only job is a guess. **That row is now wrong**, and jtbd.md has
+been left as it was, per instruction; it should be revisited.
+
+**5. Still `[?]`, and stated plainly:** what P2 calls anything; whether colour
+or box appearance is used to find OTC medicines at home; whether a list of
+reasons beats a search box for either persona; whether the pharmacy-recruited,
+younger, educated sample in §5.1 looks like a household.
+
+## 5.7 Could not retrieve
+
+- **r/cyprus** — Reddit blocks fetching; site-restricted search returned no
+  threads. No Cypriot forum post in a Cypriot's own words was reached.
+- **easterncyprus.com** "Panadol… now only in pharmacies" thread — HTTP 403.
+- **expatforum.com** and **Tripadvisor** Cyprus medicine threads — 403 / DNS.
+- **Facebook groups** — not reachable by design.
+- **Harvard Medical School** page on the 2014 pill-appearance study — bot wall;
+  figures taken from STAT.
+- **Play reviews of Apteczka Domowa and mojApteczka** re-read for naming: only
+  the one "throat tablets" instance was already transcribed; the captures were
+  not re-read in Polish for this question.
+
+The Greek-language quotes in §5.3 are from Greece, not Cyprus. The only
+Cyprus-specific source with people's own answers remains §5.1, and it asked
+recognition questions, not what people say.
+
+## Sources, §5
+
+All fetched 16 Sep 2026.
+- [Petrides et al. 2023, PMC10360319](https://pmc.ncbi.nlm.nih.gov/articles/PMC10360319/)
+- [Wolf et al. 2012, Europe PMC 22638604](https://europepmc.org/article/MED/22638604)
+- [Fraeyman et al. 2015, Europe PMC 25803762](https://europepmc.org/article/MED/25803762)
+- [Swedish OTC analgesics study 2020, PMC7528226](https://pmc.ncbi.nlm.nih.gov/articles/PMC7528226/)
+- [The Pharmaceutical Journal, 2 Sep 2026](https://pharmaceutical-journal.com/article/feature/lost-in-fine-print-how-patient-information-leaflets-are-failing-patients)
+- [doctoranytime.gr, Panadol questions](https://www.doctoranytime.gr/erotiseis-apantiseis/tag/panadol)
+- [Mumsnet, "Calpol substitute", 2022](https://www.mumsnet.com/talk/_chat/4518125-calpol-substitute) · [Mumsnet, "Calpol vs own brand", 2019](https://www.mumsnet.com/talk/parenting/3607263-calpol-vs-own-brand)
+- [Cyprus Mail, 31 May 2015](https://archive.cyprus-mail.com/2015/05/31/pharmacies-tighten-grip-on-pain-relief/)
+- [cyprus-faq.com, medicines in Northern Cyprus and their analogues](https://cyprus-faq.com/en/north/meditsina/lekarstva-v-aptekakh-severnogo-kipra-i-ikh-analogi/)
+- [STAT, 15 May 2026](https://www.statnews.com/2026/05/15/pills-changing-colors-shape-generics-confusion/)
+- [Medisafe review, 16 Dec 2024](https://www.minimalistjourneys.com/medisafe-app-review/)
+- [Japanese symptom-list study, PMC11926441](https://pmc.ncbi.nlm.nih.gov/articles/PMC11926441/)
