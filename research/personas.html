@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medication Audit — Personas &amp; Jobs</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<nav><div class="wrap">
+  <b>Medication&nbsp;Audit</b>
+  <a href="#personas">Personas</a>
+  <a href="#jobs">Jobs</a>
+  <a href="#matrix">Matrix</a>
+  <a href="#conclusions">Conclusions</a>
+  <a href="./">← Research</a>
+  <span class="lang"><a class="on" href="./personas">EN</a></span>
+</div></nav>
+
+<header><div class="wrap">
+  <p class="eyebrow">Design research · Personas &amp; jobs · 16 September 2026</p>
+  <h1>Three personas, eight jobs,<br>and a matrix that is seven-tenths blank.</h1>
+  <p class="lede">Who the product is for, what they are trying to get done, and — cell by cell — how much
+  of that rests on evidence, how much on the brief, and how much on nothing yet.</p>
+  <div class="meta">
+    <span class="chip on">P1 The Keeper — primary</span>
+    <span class="chip">8 evidenced jobs · 9 hypotheses</span>
+    <span class="chip">36 of 51 matrix cells [?]</span>
+    <span class="chip">0 user interviews</span>
+  </div>
+</div></header>
+
+<!-- LEGEND -->
+<section id="legend" style="padding:40px 0"><div class="wrap">
+  <div class="call"><span class="tag">How to read the tags</span>
+    <p>Every claim on this page carries one of five marks. <strong>Nothing is averaged, interpolated or inherited</strong> —
+    where there is no basis, the cell says so.</p>
+    <p class="legend">
+      <span class="ev b">B</span> <strong>Observed</strong> — real verbatim words from reviewers of competitor apps. Not our audience, but real people. &nbsp;
+      <span class="ev a">A</span> <strong>Asserted</strong> — from the product brief. Argued, never validated. &nbsp;
+      <span class="ev c">C</span> <strong>The builder's household</strong> — the author and their family, a real instance of P1, <em>n</em>&nbsp;=&nbsp;1. &nbsp;
+      <span class="ev r">R</span> <strong>Published research</strong> — found after the personas were written. The only tag that can remove a [?]. &nbsp;
+      <span class="ev q">[?]</span> <strong>No data</strong> — written as a hypothesis, never as a fact.
+    </p>
+  </div>
+</div></section>
+
+<!-- PERSONAS -->
+<section id="personas"><div class="wrap">
+  <p class="snum">Section 1</p>
+  <h2>Personas</h2>
+  <p class="sub">Scaffolds, not people: role-titles rather than invented names, no ages, no biographies. Every one of
+  those details would be [?], and a deck of confident invented detail is precisely the failure this project guards
+  against. Every quote below is real and dated — and, with one exception, <strong>none was said by the persona</strong>.</p>
+
+  <div class="cards">
+
+    <!-- P1 -->
+    <article class="card primary">
+      <div class="card-hd">
+        <span class="pid">P1</span>
+        <h3>The Keeper</h3>
+        <span class="badge">Primary</span>
+      </div>
+      <p class="one">The one who buys and remembers. Does the first inventory, and is the reason there is anything in the cabinet to read.</p>
+
+      <h4>Context</h4>
+      <ul>
+        <li><span class="ev a">A</span> <em>“One person buys and remembers.”</em> Corroborated from outside by exactly one stranger.</li>
+        <li><span class="ev b">B</span> The behaviour is real at scale — BEEP has 500K+ installs and its reviewers catalogue emergency food kits and 500-item stock. Whether it is real <em>for medicines, in a home</em>: <span class="ev q">[?]</span></li>
+        <li><span class="ev b">B</span> The drawer at first inventory is boxless, half-used strips — <em>“when you build the database for the first time many medicines have no box.”</em> One reviewer, generalised.</li>
+        <li><span class="ev r">R</span> <strong>Brand-literate, ingredient-blind.</strong> They have a word for what they bought, and it is the brand. Of 375 Cypriots asked at pharmacies, <strong>87.2%</strong> knew Panadol contains paracetamol; Depon <strong>50.8%</strong>, Solpadeine 49.7%, Buscopan-plus 28.5%, Apotel 14.1%; only <strong>28.2%</strong> knew the maximum daily dose. Same shape in Sweden, Belgium and the US.</li>
+        <li><span class="ev r">R</span> <strong>Heat.</strong> The label says <em>below 25&nbsp;°C</em>. Nicosia's July–August <strong>daily mean is 30.0&nbsp;°C</strong>; un-cooled Cypriot rooms measured at 29.3&nbsp;°C mean; <em>“almost 30%”</em> of the population cannot stay cool at home. A car: 60&nbsp;°C inside a medication bag in the nearest measured analogue. Nobody official in Cyprus tells them any of this. <span class="ev q">[?]</span> where a Cypriot household keeps the boxes; <span class="ev q">[?]</span> the temperature inside that cupboard.</li>
+        <li><span class="ev c">C</span> <strong>One real Keeper</strong> — the author is building this for their own household. <span class="ev q">[?]</span> whether that household is in Cyprus; its size; its languages.</li>
+      </ul>
+
+      <h4>Jobs</h4>
+      <ul>
+        <li><span class="ev b">B</span> Get the drawer into the app once, and never do it again.</li>
+        <li><span class="ev a">A</span> Keep it true without deliberately maintaining it.</li>
+        <li><span class="ev a">A</span> Make their knowledge survive without them — held on behalf of P2.</li>
+        <li><span class="ev a">A</span> Know before running out. <span class="ev q">[?]</span> for Cyprus.</li>
+      </ul>
+
+      <h4>Pain points</h4>
+      <ul>
+        <li><span class="ev b">B</span> The first inventory is hours long, and everything that happens to it afterwards decides the relationship.</li>
+        <li><span class="ev b">B</span> Required fields — EAN, photo, a <em>calendar permission</em> to add one medicine. Seven years of one-star reviews.</li>
+        <li><span class="ev b">B</span> Typing the expiry date — the one field the category exists for, and no scanner fills it. Roughly half of BEEP's 183 captured one-star reviews.</li>
+        <li><span class="ev b">B</span> The list going stale underneath them — the existential failure.</li>
+        <li><span class="ev b">B</span> Losing it on a new phone: <em>“when the phone dies you start over typing how many throat tablets you have.”</em></li>
+        <li><span class="ev b">B</span> The obligation itself: <em>“it's a hassle track everything down and go back to look at it.”</em></li>
+      </ul>
+
+      <h4>Trust triggers</h4>
+      <div class="duo tt">
+        <div><span class="tag">Builds trust</span>
+          <ul>
+            <li>Trying it before surrendering an identity — the most-endorsed negative review in the dataset (247) is an account wall.</li>
+            <li>Every structured field optional.</li>
+            <li>Archive rather than delete; duplicate check at entry — asked for by name.</li>
+            <li>Silence — <em>“This is not an app I want to interact with daily.”</em></li>
+            <li>A data declaration that matches the marketing. Nobody in the category ships household sharing with a clean one.</li>
+          </ul></div>
+        <div><span class="tag">Causes hesitation</span>
+          <ul>
+            <li>A cap arriving <em>after</em> the cataloguing — <em>“don't blackmail users into paying after they have spent hours.”</em></li>
+            <li>Any implication that a scanner will read the date.</li>
+            <li>Advertising near medicine — the Cyprus precedent is an OTC banner above the duty-pharmacy list.</li>
+            <li>Notifications that nag, or that fail — either makes <em>the whole app</em> untrustworthy.</li>
+            <li>Sync that diverges.</li>
+          </ul></div>
+      </div>
+
+      <h4>Quote</h4>
+      <blockquote>“I spent hours and hours logging inventory and trying to get everything organized only to find out that it is not unlimited on the number of items you can store.”
+        <cite>Sortly, 1★, 3 Mar 2019 · 23 found helpful · a business inventory, not a medicine cabinet</cite></blockquote>
+      <blockquote>“I want to build this up for myself and for my family… I would like to be the maintenance first user… of course, not to take it as a main source.”
+        <cite>The author, 14 Sep 2026 — the only words here from inside the intended audience; the second half governs how the first may be used</cite></blockquote>
+
+      <div class="call"><span class="tag">The one real Keeper — what it buys, and the liability</span>
+        <p><strong>Buys:</strong> the slow failure becomes observable — staleness only appears after months, and <em>n</em>&nbsp;=&nbsp;1 longitudinal beats <em>n</em>&nbsp;=&nbsp;5 snapshot for that one failure. Entry friction can finally be timed. One thermometer, one summer, closes the last link in the heat question.</p>
+        <p><strong>Liability:</strong> this Keeper will not feel most of P1's pain points — every drop-off in the review corpus happens to someone who is <em>not</em> motivated. They cannot experience their own onboarding. And whoever has read the Cyprus register now knows what is inside Depon — so ingredient-blindness cannot be tested on them.</p>
+      </div>
+    </article>
+
+    <!-- P2 -->
+    <article class="card">
+      <div class="card-hd">
+        <span class="pid">P2</span>
+        <h3>The Other Person</h3>
+        <span class="badge sec">Secondary</span>
+      </div>
+      <p class="one">The household member standing at the cabinet without the Keeper. The person the product exists for — and the one we have never heard from.</p>
+
+      <h4>Context</h4>
+      <ul>
+        <li><span class="ev a">A</span> Did not buy it, was not there when it was bought, cannot read the foil strip. May never have installed the app — the brief plans for exactly this.</li>
+        <li><span class="ev b">B</span> <strong>The structural blind spot:</strong> we hold no quote from this person in any source. Reviewers are people who installed something; the absence is observed, and its inevitability is an inference. <span class="ev q">[?]</span> whether this is why the whole category designs for someone else.</li>
+      </ul>
+
+      <h4>Jobs</h4>
+      <ul>
+        <li><span class="ev a">A</span> Answer three questions in under a minute, without help and without signal.</li>
+        <li><span class="ev a">A</span> Act without waking the Keeper.</li>
+        <li><span class="ev a">A</span> Know when to stop trusting what they are reading — Apple Medical ID scores 1 of 5 on visible decay.</li>
+        <li><span class="ev a">A</span> Get out to a pharmacist when the household's knowledge runs out. Undecided in v1.</li>
+      </ul>
+
+      <h4>Pain points</h4>
+      <p class="np"><span class="ev q">[?]</span> <strong>We have none. Not one.</strong> Everything below is a hypothesis derived from the mechanism:</p>
+      <ul>
+        <li><span class="ev q">[?]</span> A list that looks authoritative but is stale is <em>worse than no list</em>.</li>
+        <li><span class="ev q">[?]</span> The Keeper's shorthand note is unreadable to them — the brief bets the opposite way.</li>
+        <li><span class="ev q">[?]</span> They will not install an app for a question they have once a year — which makes no-account access load-bearing.</li>
+      </ul>
+
+      <h4>Trust triggers</h4>
+      <div class="duo tt">
+        <div><span class="tag">Builds trust — all asserted</span>
+          <ul>
+            <li><span class="ev a">A</span> Reachable without the household account, offline — Medical ID proves the interaction.</li>
+            <li><span class="ev a">A</span> An entry that states its own age and when anyone last confirmed it.</li>
+            <li><span class="ev a">A</span> Wording that never claims more than we know — <em>“You wrote that this is for fever.”</em></li>
+          </ul></div>
+        <div><span class="tag">Causes hesitation</span>
+          <ul>
+            <li><span class="ev q">[?]</span> Everything. Unknown.</li>
+            <li>Special-category health data outside the account boundary is a GDPR problem as much as a UX one.</li>
+          </ul></div>
+      </div>
+
+      <h4>Quote</h4>
+      <blockquote>“I have to share the medicine list within the household, so until this is fixed one star, because <strong>a medicine database held by only one person in the home makes no sense</strong>.”
+        <cite>Apteczka Domowa, 1★, 22 Nov 2025, translated — <strong>a Keeper speaking about P2</strong>, not P2 speaking. The closest thing to P2's voice anywhere is someone else describing their absence.</cite></blockquote>
+    </article>
+
+    <!-- P3 -->
+    <article class="card">
+      <div class="card-hd">
+        <span class="pid">P3</span>
+        <h3>The Person Who Lives Alone</h3>
+        <span class="badge sec">Secondary</span>
+      </div>
+      <p class="one">Wants the same clarity for themselves — and for whoever might one day have to help them.</p>
+
+      <h4>Context</h4>
+      <ul>
+        <li><span class="ev a">A</span> Named in the brief. Collapses P1 and P2 into one person: there is no second household member to inherit the knowledge, so the helper is a stranger — the Apple Medical ID case exactly.</li>
+        <li><span class="ev q">[?]</span> Everything else: how many such households exist in Cyprus, their ages, whether they would ever set this up.</li>
+      </ul>
+
+      <h4>Jobs</h4>
+      <ul>
+        <li><span class="ev a">A</span> Everything in P1's list, with nobody to share the work.</li>
+        <li><span class="ev a">A</span> Be legible to a stranger in an emergency.</li>
+        <li><span class="ev q">[?]</span> The cabinet doubles as a record for a doctor — explicitly <em>out</em> of v1; noted so it is not smuggled in.</li>
+      </ul>
+
+      <h4>Pain points</h4>
+      <ul>
+        <li><span class="ev b">B</span> The maintenance burden falls on one person with no fallback — nearest real evidence is a BEEP reviewer describing stock, not solitude.</li>
+        <li><span class="ev q">[?]</span> The frightening moment is being found unconscious with a drawer nobody can interpret. An idea, not an insight.</li>
+      </ul>
+
+      <h4>Trust triggers</h4>
+      <div class="duo tt">
+        <div><span class="tag">Builds trust</span>
+          <ul>
+            <li><span class="ev a">A</span> Readable without a passcode by someone who has never met them.</li>
+            <li><span class="ev a">A</span> Allergies and conditions recorded and reachable.</li>
+          </ul></div>
+        <div><span class="tag">Causes hesitation</span>
+          <ul>
+            <li><span class="ev q">[?]</span> Readable without a passcode is readable by anyone who picks up the phone. Sharper for a person alone; nobody has been asked.</li>
+          </ul></div>
+      </div>
+
+      <h4>Quote</h4>
+      <p class="np"><span class="ev q">[?]</span> <strong>No quote from this population exists in any source we hold.</strong> Nobody reviews an app by mentioning that they live alone. Marked, rather than dressed up.</p>
+    </article>
+  </div>
+
+  <h3>Why P1 is primary</h3>
+  <div class="find"><div class="n">1</div><div class="b"><p><strong>Every drop-off we have evidence for is a Keeper drop-off.</strong> Account wall, required fields, typing the date, the cap, phone change, sync divergence, staleness, notifications — all happen to the person doing the work.</p></div></div>
+  <div class="find"><div class="n">2</div><div class="b"><p><strong>If P1 quits, P2 and P3 have nothing to open.</strong> The Keeper is a dependency, not a peer.</p></div></div>
+  <div class="find"><div class="n">3</div><div class="b"><p><strong>It is the only persona with real evidence behind its behaviour</strong> — and the only one with a live instance.</p></div></div>
+  <div class="call warn"><span class="tag">The tension, stated rather than smoothed</span>
+    <p>P1 is primary, but <strong>the job statement does not belong to them</strong>. The brief measures this product by the person standing at the cabinet without the Keeper — that is P2. So: <strong>P1 governs the friction budget; P2 governs the measure of success.</strong> Optimising only for P1 produces another competitor — the drift every shipping product in the category shows.</p>
+  </div>
+</div></section>
+
+<!-- JOBS -->
+<section id="jobs"><div class="wrap">
+  <p class="snum">Section 2</p>
+  <h2>Jobs to be done</h2>
+  <p class="sub">Two rules. <strong>Every situation is a real moment</strong> — something you could film, not a state of mind.
+  And <strong>a job reaches the main list only if a real person's words support it</strong>; everything resting on the
+  brief's argument alone is in <a href="#hypotheses">Hypotheses</a>, including some of the most load-bearing beliefs in
+  the project. No job names anything we would build.</p>
+
+  <h3>The main job</h3>
+  <div class="pull">When someone at home needs medicine and the person who knows isn't there, I want to find out what we have and whether it's still good, so that I don't have to guess.</div>
+  <p><span class="who">P2, in the moment · held on their behalf by P1</span> &nbsp; <span class="ev b">B</span> one sentence, one stranger: <em>“a medicine database held by only one person in the home makes no sense.”</em> That supports the <em>premise</em>. It does not support the scene the brief wraps around it — 2am, a fever, foil strips by phone light — which is in Hypotheses.</p>
+
+  <h3>The four jobs that lead to it</h3>
+  <div class="job"><div class="jid">J1</div><div class="jb">
+    <p class="js">When I tip the whole drawer out onto the table, I want to get through all of it in one go, so that I never have to start from nothing again.</p>
+    <p class="jm"><span class="who">P1</span> <span class="ev b">B</span> the strongest pattern in the corpus — <em>“I spent hours and hours logging inventory…”</em> (Sortly, 1★, 23 helpful)</p></div></div>
+  <div class="job"><div class="jid">J2</div><div class="jb">
+    <p class="js">When I get home with a new box, or take the last tablet from a strip, I want to say what changed in seconds, so that it never becomes a job I put off.</p>
+    <p class="jm"><span class="who">P1</span> <span class="ev b">B</span> <em>“I don't want a hassle, I just want to quickly open an app and jot down an item before I forget.”</em> (Bring!, 1★, 21 helpful) · <span class="ev a">A</span> the brief prices this at 30 seconds — never measured anywhere</p></div></div>
+  <div class="job"><div class="jid">J3</div><div class="jb">
+    <p class="js">When I look to see whether we've got something, I want to know the answer is still true, so that I don't open the drawer to check anyway.</p>
+    <p class="jm"><span class="who">P1 and P2</span> <span class="ev b">B</span> the existential failure — <em>“the summary still shows the medicines I added before, which I no longer use. It makes a mess.”</em> (Apteczka Domowa, 1★, 23 Dec 2025)</p></div></div>
+  <div class="job"><div class="jid">J4</div><div class="jb">
+    <p class="js">When I change my phone, I want everything I already worked out to still be there, so that one evening's work doesn't have to happen again.</p>
+    <p class="jm"><span class="who">P1</span> <span class="ev b">B</span> <em>“when the phone dies you start over typing how many throat tablets you have and until when they're valid.”</em> (Apteczka Domowa, 1★, 30 Nov 2025)</p></div></div>
+
+  <h3>Emotional jobs</h3>
+  <div class="job"><div class="jid">E1</div><div class="jb">
+    <p class="js">When my phone buzzes at me about medicine, I want it to be because something actually needs me, so that I don't get into the habit of ignoring it.</p>
+    <p class="jm"><span class="who">P1</span> <span class="ev b">B</span> <em>“I'm not playing Duolingo, I have clinical depression.”</em> (MyTherapy, 2★) · <em>“This is not an app I want to interact with daily.”</em> (Bring!, 2★)</p></div></div>
+  <div class="job"><div class="jid">E2</div><div class="jb">
+    <p class="js">When I've already given up an evening to this, I want the terms not to change on me afterwards, so that I don't feel stupid for having bothered.</p>
+    <p class="jm"><span class="who">P1</span> <span class="ev b">B</span> the most resented pattern in the dataset — <em>“don't blackmail users into paying after they have spent hours putting data into your app.”</em> (BEEP, 1★)</p></div></div>
+
+  <h3>Social job</h3>
+  <div class="job"><div class="jid">S1</div><div class="jb">
+    <p class="js">When I'm away and someone at home texts me asking which one to take, I want them to work it out without me, so that nothing waits on my answering.</p>
+    <p class="jm"><span class="who">P1</span> <span class="ev b">B</span> <em>“What I miss is automatic exchange of data between the apps on different phones.”</em> (Apteczka Domowa, 4★) · <em>“one of the main reasons I used this was how it syncs with my partners accounts.”</em> (Medisafe, 1★). Only one social job — every other belongs to P2 or P3, and we hold no words from either.</p></div></div>
+
+  <h3 id="hypotheses">Hypotheses</h3>
+  <p class="sub">Suggested by the brief or by reasoning, with <strong>no evidence from any person</strong>. Written as jobs so they can be tested as jobs. None may be designed against until somebody says it out loud.</p>
+
+  <div class="hyp"><div class="hd"><span class="id">H1</span><span class="ti">The 2am scene</span><span class="hl">Hypothesis · <span class="ev q">[?]</span></span></div>
+    <p class="js">When a fever starts in the night and I'm at the drawer by phone light, I want to make sense of what I'm holding, so that I can decide on my own.</p>
+    <p class="jm">The most load-bearing unevidenced belief in the project — the sentence every feature is measured against, and nobody has described this moment to us.</p></div>
+  <div class="hyp"><div class="hd"><span class="id">H2</span><span class="ti">Not knowing the word for it</span><span class="hl">Hypothesis · <span class="ev q">[?]</span></span></div>
+    <p class="js">When I don't know what the thing I need is called, I want to get to it by what it's for, so that not knowing the word doesn't stop me.</p>
+    <p class="jm">The whole need-first navigation rests on it. Since the vocabulary research, this holds for P2 only — the Keeper has a word, the brand.</p></div>
+  <div class="hyp"><div class="hd"><span class="id">H3</span><span class="ti">Running out when the shop is far</span><span class="hl">Hypothesis · <span class="ev q">[?]</span></span></div>
+    <p class="js">When getting more means a trip rather than a walk, I want to know what's nearly gone before I need it, so that running out doesn't cost me a day.</p></div>
+  <div class="hyp"><div class="hd"><span class="id">H4</span><span class="ti">Heat</span><span class="hl">Hypothesis · <span class="ev q">[?]</span></span></div>
+    <p class="js">When it's been hot for months, I want to know whether what we're keeping has been kept badly, so that I'm not relying on something the summer has ruined.</p>
+    <p class="jm">The hazard is now evidenced everywhere except inside the cabinet. The <em>worry</em> is still unvoiced by any Cypriot.</p></div>
+  <div class="hyp"><div class="hd"><span class="id">H5</span><span class="ti">Asking someone who actually knows</span><span class="hl">Hypothesis · <span class="ev q">[?]</span></span></div>
+    <p class="js">When what we know runs out, I want asking someone qualified to be the easy next step, so that I'm not stuck choosing between guessing and giving up.</p></div>
+  <div class="hyp"><div class="hd"><span class="id">H6</span><span class="ti">Putting down the guilt</span><span class="hl">Hypothesis · <span class="ev q">[?]</span></span></div>
+    <p class="js">When I open the drawer and see the mess, I want to stop feeling bad about not knowing what's in there, so that it stops being something I avoid.</p>
+    <p class="jm">Suggested by nothing at all. Plausible, which is exactly why it is quarantined.</p></div>
+  <div class="hyp"><div class="hd"><span class="id">H7</span><span class="ti">Not being the one who got it wrong</span><span class="hl">Hypothesis · <span class="ev q">[?]</span></span></div>
+    <p class="js">When I hand something to someone I love, I want to be sure I'm not doing harm, so that I don't carry it if something happens.</p>
+    <p class="jm">The obvious answer — telling people what to take — is the one thing the brief forbids.</p></div>
+  <div class="hyp"><div class="hd"><span class="id">H8</span><span class="ti">Helping in someone else's home</span><span class="hl">Hypothesis · <span class="ev q">[?]</span></span></div>
+    <p class="js">When I'm looking after someone at their place, I want to act on what they already decided, so that I'm helping rather than deciding for them.</p></div>
+  <div class="hyp"><div class="hd"><span class="id">H9</span><span class="ti">Being legible to a stranger</span><span class="hl">Hypothesis · <span class="ev q">[?]</span></span></div>
+    <p class="js">When something happens to me and I can't speak for myself, I want whoever turns up to know what I take and what I react badly to, so that living alone doesn't leave them guessing.</p>
+    <p class="jm">The interaction is proven viable by Apple Medical ID; the <em>want</em> is not.</p></div>
+</div></section>
+
+<!-- MATRIX -->
+<section id="matrix"><div class="wrap">
+  <p class="snum">Section 3</p>
+  <h2>The matrix</h2>
+  <p class="sub"><strong>Importance, per persona:</strong> <strong>3</strong> central — the relationship ends without it ·
+  <strong>2</strong> matters, survivable if weak · <strong>1</strong> marginal · <span class="ev q">[?]</span> no basis to judge ·
+  <strong>—</strong> structurally not this persona's job. Each cell carries its tag and where the evidence sits in the
+  <a href="./">research</a>.</p>
+  <div class="call warn"><span class="tag">Read the P2 and P3 columns with care</span>
+    <p>P2 has never been heard from. P3 is defined only as “P1 and P2 collapsed into one person” — copying P1's numbers into P3 would be the interpolation the rule forbids, so they are [?]. <strong>Only the P1 column is evidence.</strong></p>
+  </div>
+
+  <h3>Evidenced jobs</h3>
+  <div class="scroll"><table class="mx">
+    <thead><tr><th>Job</th><th class="score">P1 Keeper</th><th class="score">P2 Other</th><th class="score">P3 Alone</th><th>Function</th><th>Competitors</th></tr></thead>
+    <tbody>
+      <tr><td class="prod">Main · find out without the person who knows</td>
+        <td class="score"><span class="ev q">[?]</span><sup>1</sup></td>
+        <td class="score"><b>3</b> <span class="ev a">A</span><br><small><a href="./#patterns">§3, the key task</a></small></td>
+        <td class="score"><span class="ev q">[?]</span></td>
+        <td>Household by invite link; browse in the household's own words; expiry status on the face of each entry</td>
+        <td><strong>No medicine app does.</strong> Every one designs for a patient or a caregiver (<a href="./#competitors">§1, difference 1</a>). Bring! does it — for groceries</td></tr>
+      <tr><td class="prod">J1 · getting through it once</td>
+        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small><a href="./#conclusions">H1</a> · O6</small></td>
+        <td class="score">—</td><td class="score"><span class="ev q">[?]</span></td>
+        <td>Add with every field optional — nothing required but a name</td>
+        <td><strong>Yes, badly.</strong> Everyone ships it; Apteczka Domowa demands EAN, photo and a calendar permission; BEEP sits at 1.9 from 1,910</td></tr>
+      <tr><td class="prod">J2 · keeping up while my hands are full</td>
+        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small><a href="./#competitors">§1, pattern 3</a> · D2, O7</small></td>
+        <td class="score"><span class="ev q">[?]</span><sup>2</sup></td><td class="score"><span class="ev q">[?]</span></td>
+        <td>The same path reused for a change; count down; archive</td>
+        <td><strong>Partly.</strong> Apteczka Domowa cannot edit stock; Bring! turned one step into three</td></tr>
+      <tr><td class="prod">J3 · believing it without going to check</td>
+        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small><a href="./#benchmark">M1</a> · D9</small></td>
+        <td class="score"><b>3</b> <span class="ev a">A</span><br><small><a href="./#benchmark">M1, M3</a></small></td>
+        <td class="score"><span class="ev q">[?]</span></td>
+        <td>One-tap confirm wherever a thing surfaces, age on its face — <strong>a research recommendation not yet in v1 scope</strong>; duplicate-entry check; archive rather than delete</td>
+        <td><strong>None listed.</strong> No row of the fifteen carries a confirm-or-gone gesture; Apple Medical ID scores 1 of 5 on visible decay. Caveat: no app was installed</td></tr>
+      <tr><td class="prod">J4 · not doing it twice</td>
+        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small><a href="./#competitors">§1, 4th difference</a> · D7</small></td>
+        <td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td>
+        <td>Sync, encrypted, with a declaration that matches the marketing</td>
+        <td><strong>Yes.</strong> Sortly, Bring! and Medisafe sync — and diverge. The clean-declaration apps have none</td></tr>
+      <tr><td class="prod">E1 · still being worth listening to</td>
+        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small>O13, O14 · mechanism: <a href="./#benchmark">M2</a></small></td>
+        <td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td>
+        <td>A monthly digest that also says <em>nothing needs you</em>; two severity registers; silence as the default</td>
+        <td><strong>No.</strong> MyTherapy runs ads inside dose reminders; HomeMed promises <em>daily</em> alerts for medicines already expired</td></tr>
+      <tr><td class="prod">E2 · not being made a mug of</td>
+        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small><a href="./#competitors">§1, pattern 2</a> · D6, O10</small></td>
+        <td class="score">—</td><td class="score"><span class="ev q">[?]</span></td>
+        <td><strong>Not a feature — a pricing commitment.</strong> Never cap the number of medicines</td>
+        <td><strong>No.</strong> BEEP caps at 50, Sortly 100, mojApteczka 20, Medisafe 2</td></tr>
+      <tr><td class="prod">S1 · not being the one it all depends on</td>
+        <td class="score"><b class="hi">3</b> <span class="ev b">B</span><br><small><a href="./#benchmark">§2, crowd corroboration</a> · O3, O8</small></td>
+        <td class="score">—<sup>3</sup></td><td class="score">—</td>
+        <td>Invite by link, no account wall</td>
+        <td><strong>Partly.</strong> Sharing exists at mojApteczka, Medisafe and MyTherapy — and every one declares third-party data sharing</td></tr>
+    </tbody>
+  </table></div>
+  <p class="fn"><sup>1</sup> Not —: the brief's <em>“three years later nobody remembers what it was for”</em> includes the Keeper. Nobody has said so, so [?].
+  <sup>2</sup> Not —: P2 takes medicine too, so <em>the last tablet from a strip</em> can be theirs. Unknown whether they would record it.
+  <sup>3</sup> P2's side of this job <strong>is</strong> the Main row.</p>
+
+  <h3>Hypothesis jobs</h3>
+  <p class="sub">Every importance here is [?] — that is the point. Shown because <strong>real features hang off these rows</strong>, and a feature whose only job is a guess should be visible as such.</p>
+  <div class="scroll"><table class="mx">
+    <thead><tr><th>Job</th><th class="score">P1</th><th class="score">P2</th><th class="score">P3</th><th>Function</th><th>Competitors</th></tr></thead>
+    <tbody>
+      <tr><td class="prod"><span class="hl">Hypothesis</span> H1 · the 2am scene</td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td>None specifically — the framing the whole product is measured by</td><td>n/a</td></tr>
+      <tr><td class="prod"><span class="hl">Hypothesis</span> H2 · not knowing the word for it</td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td><strong>Browse by purpose — the entire navigation</strong> (<a href="./#patterns">§3</a>)</td><td>Partly: mojApteczka searches by indication</td></tr>
+      <tr><td class="prod"><span class="hl">Hypothesis</span> H3 · running out when the shop is far</td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td>Running-low flag</td><td>Partly: Medkit lists stock levels — and is not a consumer app; Apteczka Domowa's is broken</td></tr>
+      <tr><td class="prod"><span class="hl">Hypothesis</span> H4 · heat</td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td>Heat-risk flag; storage location as a first-class field</td><td><strong>No.</strong> Location is everywhere as filing — Kitchen, Car, Travel Kit — and nowhere as safety (<a href="./#competitors">§1, difference 3</a>)</td></tr>
+      <tr><td class="prod"><span class="hl">Hypothesis</span> H5 · asking someone who actually knows</td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td>Not in v1</td><td>Yes: mojApteczka's QR to a pharmacist; farmakeia.com.cy's duty rota</td></tr>
+      <tr><td class="prod"><span class="hl">Hypothesis</span> H6 · putting down the guilt</td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td>None</td><td>n/a</td></tr>
+      <tr><td class="prod"><span class="hl">Hypothesis</span> H7 · not being the one who got it wrong</td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td>Allergy-conflict flag and duplicate-ingredient flag; member allergies behind them — <strong>special-category data</strong></td><td><strong>No allergy check anywhere in the set.</strong> Interaction checks exist: mojApteczka (DDInter 2.0), Medkit, Apple Health (US only), Home Med Cabinet — AI-written, no stated medical review</td></tr>
+      <tr><td class="prod"><span class="hl">Hypothesis</span> H8 · helping in someone else's home</td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td class="score"><span class="ev q">[?]</span></td><td>Not in v1</td><td>n/a</td></tr>
+      <tr><td class="prod"><span class="hl">Hypothesis</span> H9 · being legible to a stranger</td><td class="score">—</td><td class="score">—</td><td class="score"><span class="ev q">[?]</span></td><td>Emergency view without an account — <strong>not in v1 scope</strong>, only in <a href="./#benchmark">M3</a></td><td><strong>No.</strong> Apple Medical ID proves the interaction, for something that is not a medicine cabinet</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="call"><span class="tag">What this matrix is honest about</span>
+    <p>Of <strong>51</strong> importance cells: <strong>7 rest on real people's words</strong> — the P1 column of the evidenced jobs, minus the Main row. 2 are the brief's assertions, 6 are structurally not that persona's job, and <strong>36 are [?]</strong>. Seven-tenths of the matrix is a blank we are choosing not to fill.</p>
+    <p>Two lines carry the most weight. <strong>H2</strong>: the product's entire navigation is built on a job no person has ever expressed to us. And <strong>J3</strong>: the one job that is both existential and unopposed is served by a mechanism the locked scope does not yet contain.</p>
+  </div>
+</div></section>
+
+<!-- CONCLUSIONS -->
+<section id="conclusions"><div class="wrap">
+  <p class="snum">Section 4</p>
+  <h2>Conclusions</h2>
+
+  <h3>Three jobs for the MVP core</h3>
+  <p class="sub">Criterion: importance 3 to the primary persona, and the market does not address it <strong>in a form that works</strong>. The three are the product's spine: <strong>put it in cheaply, keep it true, make it reachable by the others.</strong></p>
+  <div class="find"><div class="n">1</div><div class="b"><h4>J2 — keeping up while my hands are full</h4><p>Entry friction is the number-one risk in the brief and the number-one complaint in the category. The market <em>ships</em> an add path — and its own users say it fails. J2 rather than J1 because J2 is where staleness <em>starts</em>.</p></div></div>
+  <div class="find"><div class="n">2</div><div class="b"><h4>J3 — believing it without going to check</h4><p>Existential and unopposed. No listed competitor confirms freshness; the etalon is Waze, not a medicine app. <strong>Its mechanism is not in the locked v1 scope</strong> — the one-tap confirm and the visible age exist only in the research.</p></div></div>
+  <div class="find"><div class="n">3</div><div class="b"><h4>S1 — not being the one it all depends on</h4><p>The Keeper's side of the Main job, and the only route by which the Main job — P2's, the reason the product exists — is ever served. Nobody ships the form that works: household sharing with an honest data declaration.</p></div></div>
+  <div class="call pick"><span class="tag">Not core, but binding — E1 and E2</span>
+    <p>Both score 3 for P1 and both are unaddressed, and neither is a job you build an MVP around: they are conditions the three above must satisfy. <strong>E1</strong> — silence as the default — decides whether J3's confirmations get muted. <strong>E2</strong> — never cap the number of medicines — decides whether J1's hours turn into the most resented betrayal in the category.</p>
+  </div>
+  <p><strong>Why J1, J4 and Main are not in the core.</strong> J1 is done once and people do get through it; it is the price of entry, and shares J2's function. J4 is addressed by the market — the only distinction is the honesty of the declaration. Main is P2's, its P1 cell is [?], and S1 is its Keeper-side expression.</p>
+
+  <h3>Candidate functions for removal</h3>
+  <div class="call warn"><span class="tag">Tier 1 — addresses no job in this document</span>
+    <p><strong>Kit gaps</strong> — a curated reference kit against what the household owns. No row asks for it, and it leans toward telling people what they <em>should</em> have, the boundary the brief draws. Cut from v1, or find the job first.</p>
+    <p><strong>Chronic conditions on member profiles</strong> — no v1 flag reads this field; only allergies feed a warning. Special-category GDPR data collected for nothing in v1. Cut until a flag needs it.</p>
+    <p><strong>The <em>why</em> in the dose log</strong> — who and when serve the Main job's third question; <em>why</em> serves nothing, and is a free-text field asked of someone unwell. Cut the field, keep the log.</p>
+  </div>
+  <h4>Tier 2 — not removal, but unpaid-for</h4>
+  <div class="scroll"><table>
+    <thead><tr><th>Feature</th><th>Only job it serves</th><th>What would pay for it</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Browse by purpose</strong> — the whole navigation</td><td><span class="hl">Hypothesis</span> H2 <span class="ev q">[?]</span></td><td>Five people, both layouts, a real drawer. Our one real Keeper cannot run it</td></tr>
+      <tr><td><strong>Heat-risk flag</strong>, storage location as a first-class field</td><td><span class="hl">Hypothesis</span> H4 <span class="ev q">[?]</span></td><td>One thermometer in a Cypriot cupboard for one summer — the last unmeasured link</td></tr>
+      <tr><td><strong>Allergy-conflict flag</strong>, duplicate-ingredient flag, member allergies</td><td><span class="hl">Hypothesis</span> H7 <span class="ev q">[?]</span></td><td>Interviews. Carries special-category data for a job nobody has voiced — though the duplicate-ingredient half is now the best-evidenced safety feature in v1 (71.5% of Cypriots don't know Buscopan-plus contains paracetamol)</td></tr>
+      <tr><td><strong>Running-low flag</strong></td><td><span class="hl">Hypothesis</span> H3 <span class="ev q">[?]</span></td><td>Whether restocking in Cyprus is a trip rather than a walk</td></tr>
+      <tr><td><strong>Emergency view without an account</strong></td><td><span class="hl">Hypothesis</span> H9 <span class="ev q">[?]</span></td><td>Already outside v1 — a decision not yet taken rather than one to reverse</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<footer><div class="wrap">
+  <p><strong>Sources.</strong> This page condenses <code>personas.md</code>, <code>jtbd.md</code>, <code>people.md</code> and
+  <code>review.md</code> in the research folder of the project repository, where every claim carries its link, capture or
+  verbatim quote. The vocabulary and heat findings are in research §5, <em>Follow-up research after personas</em>.</p>
+  <p>Medication Audit · design research · 16 September 2026 · stage: concept, nothing built · 0 user interviews.</p>
+</div></footer>
+
+</body>
+</html>
