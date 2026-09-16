@@ -4,8 +4,8 @@ Three personas built from [people.md](./people.md), which was built from
 [research.md](./research.md). Each carries the evidence behind every field, and
 marks what is missing rather than filling it in.
 
-**Status:** 14 Sep 2026; P1 revised 16 Sep 2026 — see
-[research.md §5](./research.md#5-post-persona-research).
+**Status:** 14 Sep 2026; P1 revised 16 Sep 2026 (vocabulary, then heat and
+storage) — see [research.md §5](./research.md#5-follow-up-research-after-personas).
 
 ---
 
@@ -26,7 +26,7 @@ Every field is tagged with what it rests on:
 | **[B]** | **Observed.** Real verbatim words from Population B — reviewers of competitor apps, [store-evidence.md](./store-evidence.md). Not our audience, but real people. |
 | **[A]** | **Asserted.** From the brief, [CLAUDE.md](../CLAUDE.md). Argued, never validated. |
 | **[C]** | **The builder's household.** The author and their family — a real, reachable instance of **P1**, `n = 1`, not independent ([people.md O21](./people.md)). A note on where evidence comes from, not a persona of its own. |
-| **[R]** | **Published research.** A survey or study found after the personas were written — [research.md §5](./research.md#5-post-persona-research). The only tag that can remove a `[?]`. |
+| **[R]** | **Published research.** A survey or study found after the personas were written — [research.md §5](./research.md#5-follow-up-research-after-personas). The only tag that can remove a `[?]`. |
 | **[?]** | **No data.** Written as a hypothesis, never as a fact. |
 
 **On the quotes.** Each persona carries a real, verbatim, dated quote, attributed
@@ -93,6 +93,38 @@ except for the one brand everybody knows. Two consequences. The Keeper does
 this evidence directly pays for. Still `[?]`: whether a Keeper ever finds a box
 by colour, and what a *household* — rather than a pharmacy queue skewed young
 and educated — looks like on the same questions.
+
+**Where they keep it, and how hot it gets.** `[R]` for the heat, `[?]` for the
+cupboard. The label on most of their boxes says *below 25 °C*. Where they live,
+the July and August **daily mean** — night included — is **30.0 °C**
+(Nicosia, 1991–2020 normals); July 2023 averaged **40.0 °C** with sixteen
+consecutive days above 40. The only measured Cypriot interiors found are
+un-cooled classrooms in May–July: mean **29.3 °C**, range 25.3–42.9, above
+27 °C for 85 % of the time. *"Almost 30 %"* of the population reports being
+unable to stay cool at home in summer
+([research.md §5.8–5.9](./research.md#58-how-hot-it-gets-outside)). A car in
+the sun is worse than any room: 60 °C inside a medication bag in the nearest
+measured analogue ([§5.10](./research.md#510-the-car)). And nobody official in
+Cyprus tells them any of this — the pharmacists' association's own heatwave
+advice says nothing about medicines
+([§5.11](./research.md#511-what-cyprus-officially-says-nothing)).
+
+Where in the home the boxes sit is known only from neighbours: in Crete,
+Finland and the US the **kitchen** is the default cupboard and the **bathroom**
+is second — the one place every pharmacist names as wrong
+([§5.13](./research.md#513-where-people-keep-them)). `[?]` where a Cypriot
+household keeps them; `[?]` the temperature inside that cupboard, which depends
+on whether the room is air-conditioned and has never been measured by anyone
+we can find. `[?]` whether any of this is *felt* as a worry — no Cypriot has
+said so in any forum, review or letter reached.
+
+*What changed, 16 Sep 2026.* Heat had been the brief's assertion and nothing
+else ([H6](./research.md#h6--heat), *"the most confident unsupported claim in
+the project"*). It is now evidenced everywhere except the cabinet itself. The
+persona gained this paragraph; no earlier claim was contradicted. The one
+sharpening: the risk is per *household*, not per island — the same box is safe
+in an air-conditioned flat and not in the *"almost 30 %"* that cannot cool —
+which is an argument for storage location as a field rather than against it.
 
 **We have one real Keeper.** `[C]` The author of this project is building it for
 their own family and will maintain their own cabinet
@@ -223,9 +255,11 @@ different kind of user. What changes is the **evidence**, not the audience.*
 2. **Entry friction can finally be measured** — [H1](./research.md#h1--entry)'s
    30-second threshold has *"never been measured anywhere."* One real drawer
    settles it.
-3. **One thermometer, one summer** — a single data point against
-   [H6](./research.md#h6--heat), the most load-bearing unsupported claim in the
-   project.
+3. **One thermometer, one summer** — the last unmeasured link in
+   [H6](./research.md#h6--heat). Outdoors, un-cooled interiors and cars are now
+   sourced ([research.md §5.8–5.10](./research.md#58-how-hot-it-gets-outside));
+   the inside of a home cabinet is not. One logger in this household's cupboard
+   and glovebox, July–August, closes it.
 4. **The first inventory is observable this week** — whether the drawer really is
    the boxless half-used strips of O4, at zero cost.
 

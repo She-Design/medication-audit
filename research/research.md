@@ -1,7 +1,7 @@
 # Research
 
 Five sections: **Competitors**, **Benchmark**, **Patterns**, **Conclusions**,
-**Post-persona research**.
+**Follow-up research after personas**.
 
 **Status:** 10 Sep 2026; §5 added 16 Sep 2026. This consolidates
 [competitors.md](./competitors.md),
@@ -339,7 +339,7 @@ decision in the project.**
 **Test:** a five-person unmoderated test with both layouts and a real cabinet.
 **Update 16 Sep 2026:** the "low pharmaceutical literacy" premise is now
 partly evidenced and partly contradicted by a Cypriot survey — see
-[§5](#5-post-persona-research). The test above still stands; what it tests
+[§5](#5-follow-up-research-after-personas). The test above still stands; what it tests
 has narrowed.
 
 <a id="h5--audience"></a>
@@ -368,6 +368,12 @@ and it is load-bearing: it is one of only two things that make this product
 specifically Cypriot.
 **Test:** indoor summer temperature data for Cypriot homes, plus what the
 Pharmaceutical Services say about storage.
+**Update 16 Sep 2026:** partly evidenced — outdoor normals, measured
+un-cooled Cypriot interiors, a car-cabin analogue, and the label thresholds
+are all now sourced in [§5.8–5.13](#58-how-hot-it-gets-outside). Still
+unmeasured: the inside of a Cypriot home cabinet. And the Pharmaceutical
+Services and the pharmacists' association publish **no** public storage
+guidance for heat — see [§5.11](#511-what-cyprus-officially-says-nothing).
 
 <a id="h7--money"></a>
 ### H7 — This product can be funded without pharma money or OTC advertising
@@ -408,19 +414,27 @@ much as a UX one.
 
 ---
 
-# 5. Post-persona research
+# 5. Follow-up research after personas
 
-Targeted research against the first question in
-[review.md](./review.md): **"When you go to the drawer for something, what do
-you call what you're looking for?"** — the gap under the entire navigation
-(review.md C1, [H4](#h4--pattern) above).
+Targeted research against the questions in [review.md](./review.md), taken in
+the order of how much design sits on them. Answered so far:
+
+- **Question 1 — "What do you call what you're looking for?"** — the gap under
+  the entire navigation (review.md C1, [H4](#h4--pattern)). §5.1–5.7.
+- **Question 3 — "Where do you keep medicines in summer, and how hot does it
+  get?"** — the gap under storage-as-safety (review.md C4, [H6](#h6--heat)).
+  §5.8–5.14.
 
 **Method, 16 Sep 2026.** Web search and text fetch only. **No screen captures
 were taken** — a departure from the rest of this document, where every claim
 carries one; each source below is a URL with the date fetched, and the quotes
 are verbatim from the fetched text. Nothing was surveyed and nobody was
-interviewed. Several targets were unreachable and are listed in
-[§5.7](#57-could-not-retrieve).
+interviewed. Unreachable targets are listed per question in
+[§5.7](#57-could-not-retrieve) and [§5.14](#514-what-this-changes--and-could-not-retrieve-q3).
+
+---
+
+## Question 1 — "What do you call what you're looking for?"
 
 ## 5.1 The one Cypriot study
 
@@ -614,9 +628,232 @@ The Greek-language quotes in §5.3 are from Greece, not Cyprus. The only
 Cyprus-specific source with people's own answers remains §5.1, and it asked
 recognition questions, not what people say.
 
+
+---
+
+## Question 3 — "Where do you keep medicines in summer, and how hot does it get?"
+
+*The brief's claim ([CLAUDE.md §4](../CLAUDE.md)): "Most medicines are labelled
+'store below 25 °C'. A Cypriot summer routinely breaks that in a bathroom
+cabinet or a car glovebox." Two halves — the label, and the heat — and a third
+question underneath: where do people actually keep the boxes?*
+
+## 5.8 How hot it gets, outside
+
+**Nicosia (Athalassa station), 1991–2020 normals** —
+[Wikipedia's climate table](https://en.wikipedia.org/wiki/Nicosia), citing WMO
+normals via NOAA: July mean daily maximum **37.5 °C**, August **37.4 °C**; daily
+mean **30.0 °C** in both months; mean daily minimum 22.6 / 22.5 °C; record highs
+44.6 °C and **45.6 °C**.
+
+**July 2023** — [The Cyprus Institute](https://emme-care.cyi.ac.cy/cyprus-institute-july-was-the-warmest-month-in-the-last-41-years/),
+from Department of Meteorology station records: *"the mean air temperature in
+2023 being 40.0 °C for July"*, 2.6 °C above the 1991–2020 normal, and *"every
+day between 13 and 29 July (a period of 16 days) the maximum temperature
+exceeded 40.0 °C."*
+
+**Trade view** — [C.A. Papaellinas Group](https://papaellinasgroup.com.cy/en/cyprus-pharmaceutical-distribution-centres/),
+a Cypriot pharmaceutical distributor: *"summer daytime temperatures on the
+central plain often exceed 35 degrees Celsius, with average July to August
+maximums around 38 degrees Celsius"*; and *"wholesalers are legally required to
+maintain the labelled storage conditions of each medicinal product during
+transport."* The supply chain treats the label as binding up to the pharmacy
+door. What happens after is nobody's obligation.
+
+**So:** the *daily mean* in Nicosia in July and August — night included — is
+30 °C. The label's ceiling is 25 °C. Outdoors, the brief is right by five
+degrees on an average day.
+
+## 5.9 How hot it gets, inside
+
+**The only measured Cypriot interiors found are schools, not homes.**
+[Konstantinou et al. 2022, *Heliyon*](https://pmc.ncbi.nlm.nih.gov/articles/PMC9057936/):
+84 classrooms in 42 schools across all five districts, **May–July 2021**, air
+conditioning essentially off. Mean indoor temperature **29.3 °C** (SD 2.5),
+range **25.3 – 42.9 °C**; *"Most of the school time (85%), indoor air
+temperature was consistently higher than the upper limit of 27 °C."* Before
+the peak months, in rooms designed for occupancy, the floor of the range was
+already above the label.
+
+**Homes — survey, not measurement.** [EP Pedia](https://www.eppedia.eu/article/excess-heat-homes-during-summer-cyprus)
+summarising Kyprianou & Serghides (2020) and EPOV (2018): *"almost 30% of
+Cyprus' population is thermally uncomfortable in summer"*; in a small survey
+*"approximately 10% of the sample reported rarely or never feeling comfortably
+cool in their homes during the summer"* and *"almost half reported spending
+more than 10% of their net monthly income on cooling."*
+
+**Simulation, old.** A 2000 study modelling modern Cypriot houses on a Nicosia
+typical year reported indoor temperatures *without* air conditioning of
+*"between 30–50 °C for summer"*
+([ScienceDirect](https://www.sciencedirect.com/science/article/abs/pii/S036054420000030X),
+abstract as indexed — page not retrievable, **unverified**).
+
+**Not found:** any measurement inside a Cypriot home, bathroom cabinet or
+kitchen cupboard. A Kyrenia study of 150 residences exists
+([MDPI 2025](https://www.mdpi.com/2075-5309/15/6/899)) but the page blocks
+fetching; the search summary gives only a *comfort* figure (28.9 °C), not
+measured ranges. **The inside of the cabinet the brief describes has never been
+measured by anyone we can find.**
+
+## 5.10 The car
+
+No Cypriot car data. The nearest measured analogue is
+[Alaghawani et al. 2025, *BMC Emergency Medicine*](https://pmc.ncbi.nlm.nih.gov/articles/PMC12211764/):
+six EMS rapid-response cars in **Qatar**, January 2021 – January 2022. Cabin
+maximum **65.7 °C**; inside the medication bags **59.1 °C**; *"around 30–40% of
+our recorded data surpassed the recommended guideline temperature of 30 °C"*;
+mean kinetic temperature above 30 °C every month from May to October. Qatar is
+hotter than Cyprus; the mechanism — a closed vehicle in sun — is the same.
+
+Every guidance source in §5.12 names the car first. The brief's glovebox half
+is the better-supported half.
+
+## 5.11 What Cyprus officially says: nothing
+
+- **Cyprus Pharmaceutical Association** — a site search for *καύσωνας*
+  (heatwave) returns one article, [14 Jun 2024](https://cpa.org.cy/?p=6085),
+  *"Αντιμετώπισε τον Καύσωνα, εμπιστεύσου τον φαρμακοποιό σου"*. It covers
+  hydration, clothing, sunscreen and supplements. **It contains no advice on
+  storing medicines** — not temperature, not the car, not the fridge.
+- **Pharmaceutical Services, Ministry of Health** — a site-restricted search
+  for storage guidance returns the pharmacy rota and a policy document; nothing
+  addressed to the public about heat.
+- **University of Nicosia pharmacy programme**, via
+  [Cyprus Mail, 24 Sep 2025](https://cyprus-mail.com/2025/09/24/safe-smart-medicines-consider-your-health-listen-to-your-pharmacist):
+  one clause — *"Storing them safely, away from children and sources of heat."*
+- **Cypriot press** — searches of Cyprus Mail, Philenews, Sigmalive, Cyprus
+  Times and Reporter for heat-and-medicines pieces returned nothing. The
+  Greek-language advice that does exist (§5.12) is from Greece.
+
+The brief's test for H6 was *"what the Pharmaceutical Services say about
+storage."* The answer is: to the public, nothing findable. That is a vacuum,
+not a contradiction — and it means no Cypriot institution is currently telling
+households the thing this product would tell them.
+
+## 5.12 The label, and what breaks it
+
+**The threshold, stated by regulators and pharmacists:**
+- [MHRA, 10 Jul 2025](https://www.gov.uk/government/news/dont-let-the-heatwave-affect-your-medicines-three-important-tips-from-the-mhra):
+  most medicines *below 25 °C*; avoid hot cars, direct sunlight, sunny
+  windowsills, warm bags and pockets. Alison Cave, Chief Safety Officer:
+  *"medicines left in the heat – in cars, bags, or on sunny windowsills – might
+  not work properly."*
+- [Dipa Kamdar, Kingston University, *The Conversation*, 8 Jul 2026](https://theconversation.com/how-to-keep-your-medicines-safe-during-hot-weather-286990):
+  ideal *"between 15 °C and 25 °C"*; chemical breakdown begins above 25 °C; a
+  car interior reaches *"more than 40 °C on a warm day"*; bathrooms are risky for
+  *"humidity and sudden temperature changes"*. On damage: *"Tablets may become
+  soft, crumbly or discoloured. Liquids may look cloudy or have crystals."* —
+  the only source found that says what heat damage *looks like*.
+- [pharmamanage.gr, 11 Jun 2026](https://www.pharmamanage.gr/kauswnas-kai-farmaka-ti-prepei-na-gnwrizei-o-farmakopoios/)
+  (Greek, for pharmacists): most substances *"below 25 °C or 30 °C, depending on
+  manufacturer guidelines"*; patients should be reminded that *"medicines should
+  not remain in cars, balconies or other spaces developing high temperatures."*
+- [Newsbeast, 16 Aug 2026](https://www.newsbeast.gr/health/prolipsi-therapeia/arthro/13290706/kafsonas-kai-farmaka-otan-i-zesti-chtypa-kai-to-farmakeio-mas)
+  (Greek, consumer): names *"το ντουλάπι του μπάνιου"* — the bathroom cabinet —
+  above kitchen appliances, sunny windowsills, car interiors and gloveboxes as
+  the places to avoid.
+
+**Why the label says 25 °C in a country whose July mean is 30 °C.** Stability
+testing is done at one of two long-term conditions — 25 °C/60 % RH or
+30 °C/65 % RH — *"determined by the climatic condition in which the active
+substance is intended to be stored"*
+([EMA, CPMP/QWP/122/02 rev 1](https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-stability-testing-stability-testing-existing-active-substances-and-related-finished-products-revision-1-corr_en.pdf),
+abstract as indexed). The zones: *Zone II, Mediterranean/subtropical, 25 °C /
+60 % RH; Zone III, hot dry, 30 °C / 35 % RH*
+([Astoriom](https://www.astoriom.com/insight/ich-climatic-zones/)). A product
+tested at 25 °C is labelled for 25 °C. **Which zone Cyprus is formally assigned
+to was not found in a primary source** — the WHO country table is in a PDF that
+would not parse, and the EMA storage-declaration guideline likewise. `[?]`,
+with the strong presumption that EU-authorised products carry the EU's 25 °C
+condition regardless of where in the EU they are sold.
+
+## 5.13 Where people keep them
+
+**Nothing from Cyprus on location.** The one Cypriot household study found —
+[Zorpas, Dimitriou & Voukkali 2018](https://europepmc.org/article/MED/28647879),
+*Environ Sci Pollut Res* — is about disposal: citizens keep unused medicines
+*"at home in case they are needed again"*, and bin them in household waste,
+sink or toilet. It does not say where in the home.
+
+**The nearest neighbour** — [Tsiligianni et al. 2012, *Eur J Gen Pract*](https://pubmed.ncbi.nlm.nih.gov/21879836/),
+40 households in rural Crete: **8.5 ± 5.8** medicine boxes per home; analgesics
+(24 %) and antibiotics (17 %) the most-stored for future use; medicine
+exchanged between households in 95 %. The abstract as indexed by search adds
+that *inappropriate storage conditions were observed in 80 % of households,
+usually in the kitchen and the bathroom* — the full paper was not retrievable,
+so that sentence is **as indexed, not read**.
+
+**Elsewhere, measured rather than asked:**
+
+| Study | Where, N | Where medicines are kept |
+|---|---|---|
+| [Louhisalmi et al. 2024](https://pmc.ncbi.nlm.nih.gov/articles/PMC11655784/) | Finland, 5,004, June 2023 | Kitchen **67.0 %**, bedroom 24.7 %, toilet 17.1 %, bathroom 14.4 %, hallway 9.5 %. 13.9 active packs per household; **44.4 %** of households hold expired medicines |
+| [Funk et al. 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC8326694/) | US, 154 households, 2018 | Kitchen 32.2 %, **bathroom 28.7 %**, bedroom 21.4 %. **76.7 %** of households store at least one medicine inappropriately; ~17 % of medicines had a temperature issue |
+| [Chit et al. 2026](https://pmc.ncbi.nlm.nih.gov/articles/PMC12821371/), meta-analysis | 61 studies, 27 countries, 34,297 | Proper storage practice **45 %** (95 % CI 20–61). Unsuitable places named: *"cars … handbags, suitcases, and clothing pockets"* |
+
+**And in their own words** — Mumsnet, ["Storing calpol"](https://www.mumsnet.com/talk/childrens_health/1424006-Storing-calpol),
+8 Mar 2012: *"storing the calpol in the cupboard in the bathroom"* (OP);
+*"have NEVER kept calpol in the fridge"*; *"I keep mine in the cupboard too, as
+did my mum"*; *"Cool dry secure cupboard is best & recommended."* Nobody in
+the thread mentions heat.
+
+**Read together:** the kitchen is the default medicine cupboard in every
+country measured; the bathroom is second and is the one every pharmacist names
+as wrong. Between a fifth and a half of households are storing something
+badly, in temperate countries. Nobody has counted in Cyprus.
+
+## 5.14 What this changes — and could not retrieve (Q3)
+
+**1. H6 moves from "no evidence" to "evidenced everywhere except the cabinet
+itself."** Outdoors: a 30 °C daily mean against a 25 °C label. Indoors
+un-cooled: 29.3 °C mean in Cypriot rooms before the peak months. Cars: 60 °C
+inside medication bags in a hotter neighbour. The label threshold and the
+places that break it are stated by MHRA, EMA-adjacent guidance and Greek
+pharmacists alike. **What is still `[?]` is the exact thing the brief names:
+the temperature inside a Cypriot bathroom cabinet.** In an air-conditioned home
+it may never exceed 25 °C; in a home that is among the *"almost 30 %"* that
+cannot stay cool, it almost certainly does. The variable is the household, not
+the island — which is an argument *for* storage location as a field, since the
+same box is safe in one home and not in the next.
+
+**2. The glovebox half of the brief's sentence is the better-supported half.**
+Every guidance source leads with the car; the one measured analogue is
+alarming. The bathroom half rests on humidity and pharmacist convention, not on
+a Cypriot measurement.
+
+**3. Cyprus offers no official guidance to fill.** [§5.11](#511-what-cyprus-officially-says-nothing)
+is a vacuum: the pharmacists' association's own heatwave article says nothing
+about medicines. A heat warning in the product would not be duplicating a
+public campaign; it would be the only one.
+
+**4. Still nobody Cypriot has said this is a worry.** No forum post, no review,
+no letter. The evidence for the *hazard* is now good; the evidence that anyone
+*experiences* it as a problem is still zero — which is the same gap as Q1's P2:
+the concern is inferred, not voiced.
+
+**5. Where the boxes are kept is answerable for Cyprus only by asking.** Crete
+says kitchen and bathroom; Finland and the US agree; Cyprus has never been
+surveyed on it. The [personas.md P1](./personas.md) storage trait is written
+from neighbours, and says so.
+
+**Could not retrieve:**
+- Any measured temperature inside a Cypriot dwelling (the Kyrenia and Famagusta
+  studies exist; both blocked).
+- The full text of the Crete household survey (Taylor & Francis 403; Europe
+  PMC 503 twice; the abstract came via PubMed E-utilities).
+- The EMA storage-declaration guideline and the WHO climatic-zone country
+  table — both PDFs downloaded but unparseable without a PDF library.
+- **r/cyprus**, expatforum.com, Tripadvisor Cyprus — blocked. The one
+  Cyprus-focused expat thread reached
+  ([expat.com](https://www.expat.com/en/forum/europe/cyprus/887678-medication-in-cyprus.html))
+  is five posts about prices and contains nothing on heat.
+- Any Cypriot news article on medicines and heat. Searched five outlets.
+
 ## Sources, §5
 
 All fetched 16 Sep 2026.
+
+**Question 1**
 - [Petrides et al. 2023, PMC10360319](https://pmc.ncbi.nlm.nih.gov/articles/PMC10360319/)
 - [Wolf et al. 2012, Europe PMC 22638604](https://europepmc.org/article/MED/22638604)
 - [Fraeyman et al. 2015, Europe PMC 25803762](https://europepmc.org/article/MED/25803762)
@@ -629,3 +866,21 @@ All fetched 16 Sep 2026.
 - [STAT, 15 May 2026](https://www.statnews.com/2026/05/15/pills-changing-colors-shape-generics-confusion/)
 - [Medisafe review, 16 Dec 2024](https://www.minimalistjourneys.com/medisafe-app-review/)
 - [Japanese symptom-list study, PMC11926441](https://pmc.ncbi.nlm.nih.gov/articles/PMC11926441/)
+
+**Question 3**
+- [Nicosia climate table (Athalassa, 1991–2020)](https://en.wikipedia.org/wiki/Nicosia)
+- [Cyprus Institute, July 2023 record](https://emme-care.cyi.ac.cy/cyprus-institute-july-was-the-warmest-month-in-the-last-41-years/)
+- [C.A. Papaellinas Group, distribution centres](https://papaellinasgroup.com.cy/en/cyprus-pharmaceutical-distribution-centres/)
+- [Konstantinou et al. 2022, Cyprus schools, PMC9057936](https://pmc.ncbi.nlm.nih.gov/articles/PMC9057936/)
+- [EP Pedia, excess heat in homes in Cyprus](https://www.eppedia.eu/article/excess-heat-homes-during-summer-cyprus)
+- [Alaghawani et al. 2025, Qatar EMS vehicles, PMC12211764](https://pmc.ncbi.nlm.nih.gov/articles/PMC12211764/)
+- [Cyprus Pharmaceutical Association, heatwave article, 14 Jun 2024](https://cpa.org.cy/?p=6085)
+- [Cyprus Mail, 24 Sep 2025, World Pharmacist Day](https://cyprus-mail.com/2025/09/24/safe-smart-medicines-consider-your-health-listen-to-your-pharmacist)
+- [MHRA, 10 Jul 2025](https://www.gov.uk/government/news/dont-let-the-heatwave-affect-your-medicines-three-important-tips-from-the-mhra)
+- [The Conversation, 8 Jul 2026](https://theconversation.com/how-to-keep-your-medicines-safe-during-hot-weather-286990)
+- [pharmamanage.gr, 11 Jun 2026](https://www.pharmamanage.gr/kauswnas-kai-farmaka-ti-prepei-na-gnwrizei-o-farmakopoios/) · [Newsbeast, 16 Aug 2026](https://www.newsbeast.gr/health/prolipsi-therapeia/arthro/13290706/kafsonas-kai-farmaka-otan-i-zesti-chtypa-kai-to-farmakeio-mas)
+- [EMA CPMP/QWP/122/02 rev 1](https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-stability-testing-stability-testing-existing-active-substances-and-related-finished-products-revision-1-corr_en.pdf) · [Astoriom, ICH climatic zones](https://www.astoriom.com/insight/ich-climatic-zones/)
+- [Zorpas et al. 2018, Cyprus disposal, Europe PMC 28647879](https://europepmc.org/article/MED/28647879)
+- [Tsiligianni et al. 2012, rural Crete, PubMed 21879836](https://pubmed.ncbi.nlm.nih.gov/21879836/)
+- [Louhisalmi et al. 2024, Finland, PMC11655784](https://pmc.ncbi.nlm.nih.gov/articles/PMC11655784/) · [Funk et al. 2021, US, PMC8326694](https://pmc.ncbi.nlm.nih.gov/articles/PMC8326694/) · [Chit et al. 2026, meta-analysis, PMC12821371](https://pmc.ncbi.nlm.nih.gov/articles/PMC12821371/)
+- [Mumsnet, "Storing calpol", 2012](https://www.mumsnet.com/talk/childrens_health/1424006-Storing-calpol)
