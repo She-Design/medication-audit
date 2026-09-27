@@ -100,7 +100,7 @@ The job is real; the number is a guess.
 > still true, so that I don't open the drawer to check anyway.**
 
 **Persona:** [Dani](./personas.md) and [Sam](./personas.md) · **`[B]`** — the
-failure research.md treats as existential ([people.md D9](./people.md)):
+failure research.md treats as existential ([people.md F5](./people.md)):
 
 > *"I added new packs, but the summary still shows the medicines I added before,
 > which I no longer use. It makes a mess, because the ones I currently take are
@@ -114,7 +114,7 @@ than none.
 > **When I change my phone, I want everything I already worked out to still be
 > there, so that one evening's work doesn't have to happen again.**
 
-**Persona:** [Dani](./personas.md) · **`[B]`** ([people.md D7](./people.md)):
+**Persona:** [Dani](./personas.md) · **`[B]`** ([people.md F5](./people.md)):
 
 > *"You can't move the database between phones… so when the phone dies you start
 > over typing how many throat tablets you have and until when they're valid."*
@@ -407,7 +407,7 @@ sharing, and the clean-declaration apps have no sharing at all
 ([§1, 4th difference](./research.md#three-differences--where-nobody-is-standing)).
 Nobody ships the form that works: household sharing with an honest declaration.
 
-**Not core, but binding — E1 and E2.** Both score 3 for P1 and both are
+**Not core, but binding — E1 and E2.** Both score 3 for Dani and both are
 unaddressed, and neither is a job you build an MVP around: they are conditions
 the three above must satisfy. E1 — *silence as the default* — decides whether
 J3's confirmations get muted. E2 — *never cap the number of medicines* —
