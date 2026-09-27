@@ -139,9 +139,20 @@ by the others**, bound by two constraints: silence as the default, and never
 capping the number of medicines. Of the matrix's 51 importance cells, 7 rest on
 real people's words and 36 are `[?]`.
 
+**One correction, 24 Sep 2026.** The brief says "Cyprus first" because the
+author lives there — not because Cyprus is the market. The product is not
+positioned for Cypriot households, and the author's own cabinet holds medicines
+brought from several countries. Every Cypriot fact above is one household's
+context. What this opens: whether the audience is any household anywhere, or
+households whose medicines cross borders — undecided, recorded in
+[CLAUDE.md §4 and §11](./CLAUDE.md). It also sharpens one mechanism: the same
+ingredient arrives under a different brand in every country, so *accept the
+brand, attach the ingredient, warn on duplicates* becomes the core, not a local
+nicety.
+
 **Still unknown, and said so:** what P2 calls anything; whether anyone finds a
 box by its colour; whether a list of reasons beats a search box; the
-temperature inside a Cypriot bathroom cabinet; whether a single Cypriot
+temperature inside the author's bathroom cabinet; whether a single household
 experiences any of this as a problem. Five household conversations would
 settle most of it. None has happened.
 

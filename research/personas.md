@@ -5,7 +5,10 @@ Three personas built from [people.md](./people.md), which was built from
 marks what is missing rather than filling it in.
 
 **Status:** 14 Sep 2026; P1 revised 16 Sep 2026 (vocabulary, then heat and
-storage) — see [research.md §5](./research.md#5-follow-up-research-after-personas).
+storage) — see [research.md §5](./research.md#5-follow-up-research-after-personas);
+corrected 24 Sep 2026 (Cyprus is context, not market).
+
+*Correction, 24 Sep 2026:* the author lives in Cyprus — that is why the brief says "Cyprus first" — but the product is **not** positioned for the Cypriot market, and the author's cabinet holds medicines brought from several countries. Cyprus facts below are one household's context, not the audience. See [CLAUDE.md §4](../CLAUDE.md).
 
 ---
 
@@ -134,9 +137,15 @@ carries one liability, all recorded under
 [The one real Keeper](#the-one-real-keeper-and-what-they-can-and-cannot-tell-us)
 below.
 
-`[?]` Whether that household is in Cyprus — not stated, and
-[H6](./research.md#h6--heat) depends on it. `[?]` Its size, composition, and the
-languages spoken in it.
+`[C]` That household **is in Cyprus** — stated 24 Sep 2026, which resolves the
+`[?]` that stood here. Two more facts from the same statement: **its medicines
+come from several countries**, brought in rather than bought locally, so the
+cabinet is mixed-origin; and the author does **not** want the product
+positioned for the Cypriot market. The Cyprus facts in this persona — heat,
+brand names, the register — describe this household's context, not the
+audience. `[?]` Its size, composition, and the languages spoken in it.
+`[?]` Whether "medicines from several countries" is a trait of the audience or
+only of this household — the open question that now decides who P1 is.
 
 ### Jobs
 

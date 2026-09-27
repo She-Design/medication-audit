@@ -366,6 +366,15 @@ No temperature data, no official storage guidance, no user report has been
 collected. It is currently the most confident unsupported claim in the project,
 and it is load-bearing: it is one of only two things that make this product
 specifically Cypriot.
+**Correction 24 Sep 2026:** that last sentence is withdrawn. The author lives in
+Cyprus but does not want the product positioned for the Cypriot market, and
+their cabinet holds medicines from several countries
+([CLAUDE.md §4](../CLAUDE.md)). Heat stays a real hazard and storage location
+stays a field — as *a hot household's* concern, not the product's national
+identity. The same withdrawal applies to H2's register argument: with the same
+ingredient arriving as Panadol, Calpol, Tylenol or Efferalgan depending on
+where a box was bought, brand→ingredient resolution matters *more*, and one
+national register cannot do it alone.
 **Test:** indoor summer temperature data for Cypriot homes, plus what the
 Pharmaceutical Services say about storage.
 **Update 16 Sep 2026:** partly evidenced — outdoor normals, measured
@@ -424,6 +433,12 @@ the order of how much design sits on them. Answered so far:
 - **Question 3 — "Where do you keep medicines in summer, and how hot does it
   get?"** — the gap under storage-as-safety (review.md C4, [H6](#h6--heat)).
   §5.8–5.14.
+
+**Framing note, 24 Sep 2026.** Both questions below were researched *about
+Cyprus* because the brief said "Cyprus first". The author has since said Cyprus
+is where they live, not the market ([CLAUDE.md §4](../CLAUDE.md)). The findings
+stand as facts about one household's context; read "Cypriot" below as "in the
+author's country", not "in the audience's".
 
 **Method, 16 Sep 2026.** Web search and text fetch only. **No screen captures
 were taken** — a departure from the rest of this document, where every claim

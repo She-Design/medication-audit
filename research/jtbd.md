@@ -427,7 +427,7 @@ names the test that would pay for it.*
 | **Browse by purpose** — the whole navigation | [H2](#hypothesis-jobs) `[?]` | [H4](./research.md#h4--pattern): five people, both layouts, a real drawer. Our one real Keeper **cannot** run it ([personas.md](./personas.md)) |
 | **Heat-risk flag**, and storage location as a first-class field | [H4](#hypothesis-jobs) `[?]` | [H6](./research.md#h6--heat): indoor summer temperatures, and what the Pharmaceutical Services say about storage |
 | **Allergy-conflict flag**, **duplicate-ingredient flag**, and the member allergies behind them | [H7](#hypothesis-jobs) `[?]` | Interviews. This carries **special-category data** ([§8](../CLAUDE.md)) for a job nobody has voiced — the same problem as chronic conditions, one step less severe because at least a flag reads it |
-| **Running-low flag** | [H3](#hypothesis-jobs) `[?]` | Whether restocking in Cyprus is a trip rather than a walk |
+| **Running-low flag** | [H3](#hypothesis-jobs) `[?]` | Whether restocking is a trip rather than a walk — the brief said "in Cyprus"; since 24 Sep 2026 Cyprus is the author's context, not the market ([CLAUDE.md §4](../CLAUDE.md)) |
 | **Emergency view without an account** | [H9](#hypothesis-jobs) `[?]` | [H8](./research.md#h8--emergency) — already outside §6 v1, so a decision not yet taken rather than one to reverse |
 
 **Thinly funded, not unfunded:** the dose log and the *recent dose* flag

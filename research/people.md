@@ -27,7 +27,7 @@ allowed to cross between them:
 
 | | **A — the intended audience** | **B — the people we have words from** | **C — the builder's household** |
 |---|---|---|---|
-| Who | Cypriot households sharing a medicine cabinet | One- and two-star reviewers of ten competitor apps | The author of this project and their family |
+| Who | Households sharing a medicine cabinet — the brief says *Cypriot*; corrected 24 Sep 2026: Cyprus is where the author lives, not the market ([CLAUDE.md §4](../CLAUDE.md)) | One- and two-star reviewers of ten competitor apps | The author of this project and their family — in Cyprus, with medicines from several countries |
 | Where described | [CLAUDE.md §1–§4](../CLAUDE.md) (the brief) | Play reviews captured 9 Sep 2026, [store-evidence.md](./store-evidence.md) | Stated by the author, 14 Sep 2026 |
 | Storefronts read | — | PL, US, DE, VN, IN, CH. **Not Cyprus** | n/a |
 | What they were doing | Managing a home OTC cabinet | Chronic-medication reminders, grocery lists, retail/prepper inventory, one register-backed cabinet app | Will manage their own cabinet in this product |
@@ -328,8 +328,8 @@ That is a genuine change and a small one. What it can and cannot carry:
 - **Heat ([H6](./research.md#h6--heat)).** A thermometer in the actual cupboard
   through one summer is one data point of the temperature evidence H6 asks for.
   Not "Cypriot homes in general" — but the cheapest possible move against the
-  most load-bearing unsupported claim in the project. Whether the author's home
-  is in Cyprus: `[?]` — not stated.
+  most load-bearing unsupported claim in the project. The author's home **is
+  in Cyprus** (stated 24 Sep 2026) — so the logger test is available.
 
 **What it cannot carry:**
 - **Whether anyone else wants this.** [H5](./research.md#h5--audience) (is there
@@ -475,9 +475,12 @@ real user in the room.
 *Reachable is not the same as known. Nothing has been collected from this
 household yet.*
 
-- Where it is — Cyprus or elsewhere: `[?]`. The brief targets Cyprus
-  ([CLAUDE.md §4](../CLAUDE.md)); the author's location has not been stated, and
-  [H6](./research.md#h6--heat) depends on it.
+- Where it is: **Cyprus** — stated 24 Sep 2026, resolving the `[?]` that stood
+  here. With it came two more facts: the household's medicines are brought from
+  several countries, and the author does not want the product positioned for
+  the Cypriot market ([CLAUDE.md §4](../CLAUDE.md) correction). So
+  [H6](./research.md#h6--heat) can now be tested in this household — and no
+  longer carries the weight of making the product "specifically Cypriot".
 - Household size and composition: `[?]`
 - Which languages are spoken in it, and which one a note would be written in:
   `[?]`
