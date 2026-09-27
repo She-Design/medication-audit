@@ -1,537 +1,306 @@
 # People
 
-Everything in [research.md](./research.md) that is about *people* — who they
-are, what drives them, what they fear, how they choose, where they drop off —
-pulled out and sourced. Plus, separately, what we do not know about them.
+What [research.md](./research.md) says about people — who they are, what they
+want, what they know, how they keep medicines, when they need them, what makes
+them quit — pulled out and sourced. Then, separately, what it does not say.
 
-**Status:** 14 Sep 2026. Derived from [research.md](./research.md) and its
-cited sources ([store-evidence.md](./store-evidence.md),
-[competitor-comparison.md](./competitor-comparison.md),
-[cyprus-medicines-register.md](./cyprus-medicines-register.md)) and from the
-brief, [CLAUDE.md](../CLAUDE.md).
+**Status:** second pass, 27 Sep 2026. Replaces the 14 Sep version. Covers
+research.md §1–§5 including the 24 Sep correction that Cyprus is where the
+author lives, not the market ([CLAUDE.md §4](../CLAUDE.md)).
 
----
+**Three kinds of evidence, never mixed:**
+**[reviewers]** — verbatim one- and two-star reviews of ten similar apps, from
+Poland, the US, Germany, Switzerland, Vietnam and India
+([store-evidence.md](./store-evidence.md)). Real people, not our audience.
+**[study]** — published surveys, found in §5. **[brief]** — asserted in
+[CLAUDE.md](../CLAUDE.md), never validated. **[author]** — stated by the person
+building this, about their own household. **`[?]`** — nothing.
 
-## The fact that governs this whole document
-
-research.md says it in its own scope note, and it is not softened here:
-
-> *"**No user research has been done at all.** Not one interview, survey or
-> observation with a Cypriot household. Every statement about *our* users — what
-> they know, what they'd tolerate, whether they'd pay — is a hypothesis
-> inherited from the brief, not a finding."*
-> — [research.md, "What this research is and is not"](./research.md)
-
-So there are **three populations** in this material, and no observation below is
-allowed to cross between them:
-
-| | **A — the intended audience** | **B — the people we have words from** | **C — the builder's household** |
-|---|---|---|---|
-| Who | Households sharing a medicine cabinet — the brief says *Cypriot*; corrected 24 Sep 2026: Cyprus is where the author lives, not the market ([CLAUDE.md §4](../CLAUDE.md)) | One- and two-star reviewers of ten competitor apps | The author of this project and their family — in Cyprus, with medicines from several countries |
-| Where described | [CLAUDE.md §1–§4](../CLAUDE.md) (the brief) | Play reviews captured 9 Sep 2026, [store-evidence.md](./store-evidence.md) | Stated by the author, 14 Sep 2026 |
-| Storefronts read | — | PL, US, DE, VN, IN, CH. **Not Cyprus** | n/a |
-| What they were doing | Managing a home OTC cabinet | Chronic-medication reminders, grocery lists, retail/prepper inventory, one register-backed cabinet app | Will manage their own cabinet in this product |
-| Evidence status | **Asserted. Zero observations.** | Real verbatim words, but a self-selected complaint sample | Real, reachable, and continuous — but **n = 1 and not independent** |
-| Count | 0 people contacted | ~242 of BEEP's 1,910 reviews, 51 of Apteczka Domowa's 87, ~250 per filter for the large apps — *what Play chose to render* | 1 household, size `[?]` |
-
-**Population B is not a proxy for Population A**, and this document never treats
-it as one. The overlap is one product (Apteczka Domowa, a Polish home-cabinet
-app) and one review that speaks directly to our premise — O3 below.
-
-**Population C is not a market** — see [O21](#o21) for what it can and cannot
-carry. The author's own framing, and it is the right one: a real first user, *not
-the main source*.
-
-Nothing here is a persona. There is not enough to build one.
+research.md's own limit still stands: *"No user research has been done at all.
+Not one interview, survey or observation."* Nothing below is from a person we
+have spoken to.
 
 ---
 
 # Observations
 
-Each carries: the claim, the evidence, the source, and **which population** it
-describes. Where research.md itself marks something unproven, that marking is
-carried through rather than quietly dropped.
-
 ## A. Who they are
 
-### O1 — Every shipping product in this category is built for a caregiver managing chronic prescriptions, not for a household
-**Population:** B, indirectly — this is who competitors *target*, read off
-their own marketing, not who uses them.
-Home Med Cabinet's store screenshots use Lisinopril, Metformin and Atorvastatin
-as sample data under *"Grandma has six. Dad has three. You have one app"*
-[(capture)](./screens/home-med-cabinet__store__02-app-screens.png). mojApteczka
-ships dosing plans and a household compliance dashboard
-[(capture)](./screens/mojapteczka__web__02-features.png). research.md's first
-"difference" is exactly this: *"Everyone designs for a patient or a caregiver.
-Nobody designs for a household that doesn't know what it owns."*
-**Note the counter-reading research.md makes against itself** in
-[H5](./research.md#h5--audience): *"every shipping competitor has drifted to the
-caregiver, and drift that consistent usually reflects where the demand is."*
+**A1 — Every product in this category is built for a caregiver or a patient
+on daily prescriptions.** [reviewers' apps] Home Med Cabinet's sample data is
+Lisinopril, Metformin, Atorvastatin under *"Grandma has six. Dad has three"*
+[(capture)](./screens/home-med-cabinet__store__02-app-screens.png); mojApteczka
+ships dosing plans and a compliance dashboard
+[(capture)](./screens/mojapteczka__web__02-features.png). research.md
+[§1, difference 1](./research.md#three-differences--where-nobody-is-standing):
+*"Nobody designs for a household that doesn't know what it owns."* — and its own
+counter-reading in [H5](./research.md#h5--audience): drift that consistent
+usually reflects where the demand is.
 
-### O2 — The people who actually maintain item-level home inventories exist in large numbers, and they are not medicine people
-**Population:** B.
-BEEP has **500K+ installs** [(capture)](./screens/beep__play__01-listing.png)
-and no pharmaceutical data at all. Its reviewers are cataloguing emergency food
-kits and 500-item retail stock: *"I spent ages cataloging our entire emergency
-food kit"* (BEEP, 1★, 2 Jul 2018); *"not 2mins per item typing x500 items"*
-(BEEP, 1★, 22 Dec 2025) — [store-evidence.md](./store-evidence.md#entry-friction-and-staleness).
-Sortly's are businesses (20,000+ customers, per its own site). The behaviour we
-need — a person who will sit down and type a drawer into a phone — is
-demonstrably real. Whether it is real *for medicines in a home* is [?].
+**A2 — People who will type their possessions into a phone exist in large
+numbers, and they are not medicine people.** [reviewers] BEEP: 500K+ installs,
+no pharmaceutical data [(capture)](./screens/beep__play__01-listing.png);
+its reviewers catalogue emergency food kits and 500-item stock. Whether that
+behaviour exists for medicines in a home: `[?]`.
 
-### O3 — The brief's central premise is corroborated by exactly one stranger
-**Population:** B, one person, in Poland.
-> *"I have to share the medicine list within the household, so until this is
-> fixed one star, because **a medicine database held by only one person in the
-> home makes no sense**."*
-> — Apteczka Domowa, 1★, 22 Nov 2025, translated
-> [(reviews capture)](./screens/apteczka-domowa__play__03-reviews.png) ·
-> [store-evidence.md §4](./store-evidence.md)
+**A3 — In a household, one person buys and remembers; the others don't.**
+[brief], corroborated by exactly one stranger [reviewer]: *"a medicine database
+held by only one person in the home makes no sense"* (Apteczka Domowa, 1★,
+22 Nov 2025, [§2](./research.md#one-that-will-not-work-crowd-corroboration)).
+One review. An existence proof, not a frequency.
 
-research.md cites this twice — as the reason crowd corroboration fails at
-household scale, and as *"our brief's §1 in a reviewer's words."* It is the
-single strongest external support for [CLAUDE.md §1](../CLAUDE.md)'s "shared
-memory" framing. It is **one review**. Treat it as an existence proof, not a
-frequency.
+**A4 — The person the product is for has never appeared in any source.**
+The one at the cabinet *without* the person who knows. Reviewers installed
+something; this person, by the brief's own design ([§6.3, §8](../CLAUDE.md)),
+may never install anything. Not one word from them anywhere. `[?]` everything
+about them.
 
-### O4 — At the moment of first inventory, half the cabinet has no packaging
-**Population:** B.
-> *"When you build the database for the first time many medicines have no box,
-> so no EAN."* — Apteczka Domowa, 4★, 8 Oct 2018, translated
-> ([store-evidence.md §2](./store-evidence.md))
+**A5 — The one household we can reach is the author's.** [author] In Cyprus;
+medicines brought from several countries; the author will be the Keeper. Not
+positioned as a Cypriot product. `[?]` its size, its members, its languages.
 
-This is a physical fact about the population's drawer, reported by someone
-standing in front of one: boxless, half-used strips. It is why research.md
-records object-first and label-first as blocked patterns, and it matches
-[CLAUDE.md §1](../CLAUDE.md)'s *"uses half of it, and three years later nobody
-remembers."* Independently arrived at, from two directions.
+## B. What they want
 
-### O5 — The only population signal we have that is actually about Cyprus is a language mix, and it comes from a pharmacy-finder, not a cabinet
-**Population:** neither, strictly — it is a product's language choice.
-[farmakeia.com.cy](https://farmakeia.com.cy/en) ships Greek, English **and
-Russian** [(capture)](./screens/farmakeia-cy__web__02-on-duty-list.png). The
-Cyprus register itself returns Greek and English product records
-[(capture)](./screens/cy-register__web__05-product-detail-greek.png). The brief
-adds Ukrainian ([CLAUDE.md §4](../CLAUDE.md)) — with no source.
-Households also talk in brand names, not ingredients: Depon, Panadol, Nurofen,
-Brufen, *"all four verified present in the Cyprus register"*
-([CLAUDE.md §4](../CLAUDE.md),
-[cyprus-medicines-register.md](./cyprus-medicines-register.md)). The verification
-is of the register. **That Cypriots use these words is still the brief's
-assertion** — the register proves the words exist, not that anyone says them.
+**B1 — To get the whole thing organised, once.** [reviewers] The strongest
+pattern in the corpus: hours, evenings, years of cataloguing, and rage when it
+is lost or paywalled — *"I spent hours and hours logging inventory…"* (Sortly,
+1★, 3 Mar 2019, 23 helpful); *"2 years of entering data… GONE"* (Sortly, 1★,
+23 Mar 2025). [store-evidence.md §1](./store-evidence.md).
 
-## B. What drives them
+**B2 — To not forget, fast.** [reviewers] *"I don't want a hassle, I just want to
+quickly open an app and jot down an item before I forget."* (Bring!, 1★,
+25 Apr 2022, 21 helpful.)
 
-### O6 — Ownership of the list, earned by hours of work
-**Population:** B. The strongest pattern in the whole review corpus, and
-research.md flags it as such.
-> *"I spent hours and hours logging inventory and trying to get everything
-> organized…"* — Sortly, 1★, 3 Mar 2019, **23 people found this helpful**
-> *"2 years of entering data, pictures, quanities, etc - GONE."* — Sortly, 1★, 23 Mar 2025
-> *"after 4 hours listing and photographing… it all disappeared!"* — Sortly, 1★, 8 Mar 2018
-> [(capture)](./screens/sortly__play__03-reviews.png) · [store-evidence.md §1](./store-evidence.md)
+**B3 — To know what has expired.** [reviewers' apps] The stated reason BEEP
+exists and the reason people install it — and the field no scanner fills
+([§1, pattern 3](./research.md#three-common-patterns-in-this-market)).
 
-store-evidence.md's reading: *"the initial load is a sunk cost the household
-makes exactly once."* The drive is not health — it is the completed list itself.
+**B4 — For the other people in the house to see it.** [reviewers] *"What I miss
+is automatic exchange of data between the apps on different phones… tedious on
+2–3 phones after every change… please add several cabinets, because I have a
+home one, a travel one and the ones in the cars"* (Apteczka Domowa, 4★,
+20 Jul 2019); *"one of the main reasons I used this was how it syncs with my
+partners accounts"* (Medisafe, 1★, 4 Apr 2026). Asked for, unprompted, as a
+reason for using.
 
-### O7 — Speed, and then invisibility
-**Population:** B.
-> *"I don't want a hassle, I just want to quickly open an app and jot down an
-> item before I forget."* — Bring!, 1★, 25 Apr 2022, **21 found helpful**
-> *"This is not an app I want to interact with daily."* — Bring!, 2★, 1 Aug 2019
-> [(capture)](./screens/bring__play__03-reviews.png)
+## C. What they know, and how they name things
 
-research.md uses the second line to confirm the brief's *silence is the default*
-principle. The motivation is to discharge a task, not to engage with a product.
+**C1 — They know medicines by brand.** [study] Of 375 people at pharmacies in
+Nicosia, Limassol and Larnaca, **87.2%** knew Panadol contains paracetamol
+([Petrides et al. 2023](https://pmc.ncbi.nlm.nih.gov/articles/PMC10360319/),
+[§5.1](./research.md#51-the-one-cypriot-study)). In forums the brand is the
+noun — *"generic calpol"*, *"πανταντόλ πλας"* (Panadol Plus, as heard),
+*"panadol cold&flu"* ([§5.3](./research.md#53-what-people-actually-say)).
+Nobody says "the white box".
 
-### O8 — Wanting other people in the house to see it — named by users, unprompted
-**Population:** B.
-> *"What I miss is automatic exchange of data between the apps on different
-> phones… Also please add several cabinets, because I have a home one, a travel
-> one and the ones in the cars."* — Apteczka Domowa, 4★, 20 Jul 2019, translated
-> *"One of the main reasons I used this was how it syncs with my partners
-> accounts."* — Medisafe, 1★, 4 Apr 2026 [(capture)](./screens/medisafe__play__03-reviews.png)
+**C2 — They do not know what is inside anything else.** [study] Same sample:
+Depon **50.8%**, Solpadeine 49.7%, Buscopan-plus 28.5%, Apotel 14.1%; only
+**28.2%** knew the maximum daily dose. Sweden: 32% get three of four
+substances right. Belgium: 17% can recognise a generic. US: **45.6%** would
+double-dose paracetamol across two products
+([§5.2](./research.md#52-the-same-shape-elsewhere)). Education is the
+predictor everywhere.
 
-Sharing appears as a *reason for using*, not a feature request at the margin.
-Also note the second half of that first quote: the cabinet is already plural —
-home, travel, car — which is the same model Home Med Cabinet ships as Room and
-Container [(capture)](./screens/home-med-cabinet__store__02-app-screens.png).
+**C3 — They tell boxes apart by form, shop and colour — not strength.**
+[forum] *"the dissolvable ones"*, *"melting tablets"*, *"Sainsbury's one"*,
+*"the sticky sweet pink stuff"*, *"pink calpol (not the orange stuff)"*
+(Mumsnet 2019, 2022). Colour and shape as *identifiers* is documented only for
+loose daily pills — chronic patients, not boxes
+([§5.4](./research.md#54-colour-and-shape)).
 
-## C. What they fear
+**C4 — When they don't have the local brand vocabulary, they build a
+purpose-first index for themselves.** Russian speakers in Northern Cyprus
+maintain a guide organised by symptom, each entry *brand — ingredient*
+([cyprus-faq.com](https://cyprus-faq.com/en/north/meditsina/lekarstva-v-aptekakh-severnogo-kipra-i-ikh-analogi/),
+[§5.5](./research.md#55-need-first-as-something-people-build)). One community;
+directional. **Whether anyone in our audience lacks the word for what they
+need: `[?]`** — the Keeper clearly has it (C1); the other person is unknown (A4).
 
-*Read literally: these are things reviewers are angry about. "Fear" in the sense
-of what they act to avoid. The 2am fear the brief is built on (O16) has no
-evidence at all.*
+## D. How they get and keep medicines
 
-### O9 — Losing the work
-**Population:** B. research.md: *"data loss on phone change is fatal."*
-> *"You can't move the database between phones and there's no cloud sync, so
-> when the phone dies you start over typing how many throat tablets you have and
-> until when they're valid…"* — Apteczka Domowa, 1★, 30 Nov 2025, translated
+**D1 — From the pharmacy, and they keep the leftovers.** [study] In Cyprus,
+painkillers left kiosks and supermarkets in 2015
+([Cyprus Mail](https://archive.cyprus-mail.com/2015/05/31/pharmacies-tighten-grip-on-pain-relief/));
+86% of Cypriots surveyed use the pharmacy, and *"citizens mainly keep unused
+medicines and drugs at home in case they are needed again"*
+([Zorpas et al. 2018](https://europepmc.org/article/MED/28647879)).
 
-The bitter irony research.md draws out: this is the app whose Play declaration
-says *"The developer does not collect any data"*
-[(capture)](./screens/apteczka-domowa__play__02-data-safety.png). Privacy as
-sold, data loss as experienced.
+**D2 — About eight boxes per home, painkillers and antibiotics kept "for
+later", and medicines swapped between households.** [study] Rural Crete, 40
+homes: **8.5 ± 5.8** boxes; analgesics 24% and antibiotics 17% of what is
+stored for future use; **95%** of households exchange medicines with family or
+friends ([Tsiligianni et al. 2012](https://pubmed.ncbi.nlm.nih.gov/21879836/),
+abstract only). Crete, not Cyprus; `[?]` whether it transfers.
 
-### O10 — Being charged *after* the work
-**Population:** B. store-evidence.md calls this *"the single most resented
-monetisation in the dataset."*
-> *"don't blackmail users into paying after they have spent hours putting data
-> into your app."* — BEEP, 1★, 2 Jul 2018
+**D3 — The first sort-out is half loose strips without boxes.** [reviewer]
+*"When you build the database for the first time many medicines have no box"*
+(Apteczka Domowa, 4★, 8 Oct 2018). One person; vivid; matches the brief's
+*"uses half of it and three years later nobody remembers"*.
 
-The caps: BEEP at 50 items, Sortly at 100, mojApteczka at 20, Medisafe at 2.
+**D4 — Kitchen first, bathroom second.** [study] Finland (5,004): kitchen
+**67%**, bedroom 25%, bathroom 14%; 44% of homes hold expired medicines. US
+(154): kitchen 32%, **bathroom 29%**; 77% store at least one thing badly.
+Crete: 80% inappropriate, *"usually in the kitchen and the bathroom"*. Global
+meta-analysis: proper storage 45%; cars, handbags, suitcases named
+([§5.13](./research.md#513-where-people-keep-them)). **Where a household in
+our audience keeps them: `[?]`.** Nobody has asked.
 
-### O11 — Being advertised at inside a medical moment
-**Population:** B (chronic-medication users, furthest from our audience — but
-the reaction is the sharpest in the corpus).
-> *"I had an ad start auto-playing LOUDLY during a meeting when I discretely
-> took my meds and checked off the reminder! That is NOT OK!"* — MyTherapy, 1★,
-> 6 Feb 2026, **65 found helpful**
-> *"ads in a reminder that should be for medication is legitimately insane."*
-> — MyTherapy, 1★, 13 Dec 2025 [(capture)](./screens/mytherapy__play__03-reviews.png)
+**D5 — Where the author lives, the ambient heat breaks the label.** [study]
+Nicosia July–August **daily mean 30.0 °C** against "store below 25 °C";
+un-cooled rooms measured at **29.3 °C** mean; *"almost 30%"* of the population
+cannot keep cool at home; a car reaches 60 °C inside a medication bag in the
+nearest measured analogue ([§5.8–5.10](./research.md#58-how-hot-it-gets-outside)).
+No Cypriot authority tells the public any of this
+([§5.11](./research.md#511-what-cyprus-officially-says-nothing)). **Inside an
+actual home cupboard: `[?]`.** Whether anyone experiences this as a worry:
+`[?]` — no one has said so anywhere reached. Since 24 Sep this is *one hot
+household's* context, not the product's market.
 
-Context that makes this a live risk and not an abstraction: the Cyprus-market
-precedent is an **OTC brand banner sitting directly above the on-duty pharmacy
-list** [(capture)](./screens/farmakeia-cy__web__02-on-duty-list.png) — see
-[H7](./research.md#h7--money).
+## E. When they need it
 
-### O12 — Handing over identity to reach a feature
-**Population:** B. This is the **most-endorsed negative review in the entire
-dataset**.
-> *"I said 'no' when I was prompted with the screen to create an account… It's
-> too much hassle to register, use app for 10 mins to appraise it, only to find
-> myself to be uninstalling it"* — Bring!, 2★, 29 Jul 2019, **247 people found
-> this helpful**
-> *"barcode SCANNER needs my facebook??!"* — BEEP, 1★, 4 Oct 2025
-> *"I refuse to create an account and give my info to an app dev who 'partners
-> w pharma companies.'"* — MyTherapy, 1★, 8 Feb 2026
+**E1 — Not daily.** [reviewers] *"This is not an app I want to interact with
+daily"* (Bring!, 2★); *"once a week for grocery shopping"* (Bring!, 2★,
+1 Aug 2019). The people who *do* open a medicine app daily are chronic
+patients — Medisafe and MyTherapy, 5M+ each — and the brief excludes them.
+How often our audience would: `[?]`. The brief's "three times a year" is
+asserted.
 
-### O13 — Being nagged, and being nagged *cheerfully*
-**Population:** B.
-> *"Now coming back to beg for the ability to turn off streak notifications.
-> I'm not playing Duolingo, I have clinical depression."* — MyTherapy, 2★, 29 May 2025
-> *"You guys are waaaay too offensive with your push messages, it's directly
-> abusive."* — Bring!, 2★, 15 Mar 2019
+**E2 — The moments that appear in people's own words are ordinary.** A child's
+fever (parenting forums), period pain, knee pain, cold and flu
+([doctoranytime.gr](https://www.doctoranytime.gr/erotiseis-apantiseis/tag/panadol)),
+*"the ones I currently take"* (Apteczka Domowa, 1★, 23 Dec 2025). **The 2am
+scene the brief is built on — fever, phone light, foil strips — has no
+evidence of any kind.** `[?]` time of day, who is present, how often.
 
-### O14 — An app that lies to them — which they experience as the app being untrustworthy, not broken
-**Population:** B.
-> *"almost every app update… break some aspect of notifications. Unfortunately
-> that makes **the whole app untrustworthy**."* — MyTherapy, 2★, 16 Oct 2025
-> *"I'd get notifications asking if I had taken meds I had already marked taken.
-> It was incredibly confusing."* — Medisafe, 1★, 7 Jan 2025, **103 found helpful**
+## F. What makes them quit
 
-This is the mechanism behind research.md's whole trust section: one unreliable
-surface discredits the record itself.
+All [reviewers]; all from [store-evidence.md](./store-evidence.md). In the
+order a person meets them:
 
-### O15 — Taking on an obligation they can't sustain
-**Population:** B. The most honest review in the corpus about what this
-category actually asks of a person:
-> *"I don't think this app is really for a need unless you plan to keep this app
-> until all your stuff expire it's a hassle track everything down and go back to
-> look at it"* — BEEP, 1★, 8 Oct 2020
+**F1 — An account before they have seen anything.** *"It's too much hassle to
+register, use app for 10 mins to appraise it, only to find myself uninstalling
+it"* — Bring!, 2★, 29 Jul 2019, **247 found helpful**, the most-endorsed
+complaint in the dataset. *"barcode SCANNER needs my facebook??!"* — BEEP.
 
-### O16 — The 2am fear the product is built on
-**Population:** A. **Not proven — no evidence of any kind.**
-[CLAUDE.md §1](../CLAUDE.md): *"standing there at 2am having to decide alone"*;
-*"the household searches a drawer by phone light and reads foil strips it cannot
-interpret."* This is the job statement, the thing every feature is measured
-against — and it is an assertion. No one has described this moment to us. It is
-listed here so it is not mistaken for a finding when it appears everywhere else
-in the repo.
+**F2 — Required fields.** EAN, a photo, a *calendar permission* to add one
+medicine — Apteczka Domowa, seven years of one-star reviews on the best-funded
+app in the category.
 
-## D. How they make choices
+**F3 — Typing the expiry date after being promised a scanner.** Roughly half of
+BEEP's 183 captured one-star reviews. research.md's rule: *"never imply you
+won't"* ask for it.
 
-### O17 — They form an expectation from one word before opening the app, and judge the product against that expectation, not against what it does
-**Population:** B. The clearest causal finding in the material.
-BEEP: **500K+ installs, 1.9 stars from 1,910 ratings**, and *183 of the 242
-captured reviews are one-star*
-[(capture)](./screens/beep__play__01-listing.png). store-evidence.md:
-*"the reason for the 1.9 is a single misunderstanding repeated for eight years:
-people install a 'scanner' expecting it to* read *the expiry date, and it asks
-them to* type *it."* research.md's conclusion is a rule about our own copy:
-**"The lesson is not 'don't ask for the date'. It is never imply you won't."**
+**F4 — A cap arriving after the work.** *"Don't blackmail users into paying
+after they have spent hours putting data into your app"* — BEEP, 1★, 2 Jul
+2018. BEEP 50, Sortly 100, mojApteczka 20, Medisafe 2.
 
-### O18 — They evaluate before they commit, and a wall before value ends the evaluation permanently
-**Population:** B. Same evidence as O12; the point here is sequence. The
-decision is made *before the first item is added* — store-evidence.md: *"The cost
-of getting it wrong is measured in uninstalls before the first item is added."*
+**F5 — Losing it, or seeing it drift.** *"When the phone dies you start over
+typing how many throat tablets you have"* (Apteczka Domowa, 1★, 30 Nov 2025);
+*"not a single device contains the same information"* (Sortly, 1★, three
+users). And the list going stale: *"the summary still shows the medicines I
+added before, which I no longer use. It makes a mess"* (Apteczka Domowa, 1★,
+23 Dec 2025) — the failure research.md treats as existential.
 
-### O19 — A minority read the data declarations, and reconcile them against what they can see
-**Population:** B, a small minority — do not generalise.
-Reviewers call BEEP *"spyware"* (1★, 20 Sep 2024) over its social-login wall;
-the MyTherapy reviewer above refuses on pharma partnership grounds. That
-scrutiny is warranted: research.md documents **two declarations that contradict
-their own marketing** — HomeMed declaring *"No data collected"* on Play while
-shipping ads and listing Device ID for third-party advertising on the App Store
-[(capture)](./screens/homemed__play__02-data-safety.png), and mojApteczka's
-*"we do not sell or share data with third parties"* against a Play declaration
-listing four shared data types and collecting *"Health info"*
-[(capture)](./screens/mojapteczka__play__02-data-safety.png).
-How many people actually do this is [?].
-
-### O20 — The only weighting signal we have on any of this is Play's "found this helpful"
-**Population:** B, meta.
-247 (account wall) · 103 (notifications that re-ask) · 65 (ad during dosing) ·
-32 (scanner paywalled) · 23 (hours lost) · 21 (just let me jot it down) · 3
-(calendar permission). Every other quote in this document is **n = 1**.
-
-## E. Where they drop off
-
-*All of these are places people left **other** products. We have no funnel, no
-analytics, no measured rate, and no drop-off evidence for anything we have
-built. Ordered by where they sit in a first-use sequence.*
-
-| # | Moment | What ends it | Source |
-|---|---|---|---|
-| **D1** | Before the first item | Account or social-login wall | Bring! 2★ 29 Jul 2019 (**247 helpful**); BEEP 1★ 5 Aug 2019 · [§6](./store-evidence.md) |
-| **D2** | At the add form | Required fields — EAN, photo, **calendar permission** to add one medicine | Apteczka Domowa 1★ 20 May 2024; 1★ 10 Feb 2024 · [§2](./store-evidence.md) |
-| **D3** | At the add form | The form crashes on a picker: *"after choosing the pack size or whether it's a sachet, bottle or tablet it throws me out of the app"* | Apteczka Domowa 1★ 18 Jan 2026 |
-| **D4** | At the expiry field | Typing the date — **the one field the category exists for, and no scanner fills it** | BEEP 1★ 22 Dec 2025; ~half of 183 captured 1★ · [research.md pattern 3](./research.md) |
-| **D5** | Offline | *"Can't enter data without internet."* | Medkit 2★ 14 Jan 2025, translated |
-| **D6** | After cataloguing | The free-tier cap arrives on top of the sunk cost | BEEP (50), Sortly (100), mojApteczka (20), Medisafe (2) · [§1](./store-evidence.md) |
-| **D7** | New phone / second person | No sync, failed import, data gone | Apteczka Domowa 1★ 30 Nov 2025; 1★ 22 Nov 2025; 4★ 12 Sep 2024 · [§4](./store-evidence.md) |
-| **D8** | Second device, apps that *do* sync | Divergence: *"I have 3 users and right now for an item I'm checking not a single device contains the same information"* | Sortly 1★ 17 Jan 2022 |
-| **D9** | Over months | **Staleness** — entries outlive the medicine, duplicates accumulate, stock can't be corrected: *"Not usable in its current form."* | Apteczka Domowa 1★ 23 Dec 2025; 2★ 10 Mar 2026; 3★ 22 May 2019 · [§3](./store-evidence.md) |
-| **D10** | At every notification afterwards | Ads, nags, or reminders that fire late or not at all | MyTherapy, Bring!, Medisafe · [§5](./store-evidence.md) |
-
-**D9 is the one research.md treats as existential** — it is the documented
-killer in this category and the reason M1 (one-tap freshness confirmation)
-exists at all. The user's own words for it:
-
-> *"I added new packs, but the summary still shows the medicines I added before,
-> which I no longer use. It makes a mess, because the ones I currently take are
-> hard to find in all that."* — Apteczka Domowa, 1★, 23 Dec 2025, translated
-
-## F. The builder's household
-
-*Added 14 Sep 2026, after the rest of this document was written. The author of
-this project is building it for their own family and intends to be the cabinet's
-maintainer and first user. Their own framing, kept: a real first user, **not the
-main source**.*
-
-<a id="o21"></a>
-### O21 — There is now exactly one real household inside the intended audience, and it is reachable
-**Population:** C. This changes the count in the table above from zero to one.
-That is a genuine change and a small one. What it can and cannot carry:
-
-**What it can carry honestly:**
-- **Staleness over months (D9).** The one failure that no interview and no
-  usability test can reach, because it only appears after months of ordinary
-  life. Here **n = 1 longitudinal beats n = 5 snapshot** — this is the single
-  most valuable thing Population C offers, and it targets the failure
-  research.md treats as existential.
-- **The first inventory (O4).** Whether the drawer really is boxless half-used
-  strips is observable this week, at zero cost, in one drawer.
-- **Entry friction ([H1](./research.md#h1--entry)).** The 30-second threshold has
-  *"never been measured anywhere"*. It can be measured on one real cabinet.
-- **Heat ([H6](./research.md#h6--heat)).** A thermometer in the actual cupboard
-  through one summer is one data point of the temperature evidence H6 asks for.
-  Not "Cypriot homes in general" — but the cheapest possible move against the
-  most load-bearing unsupported claim in the project. The author's home **is
-  in Cyprus** (stated 24 Sep 2026) — so the logger test is available.
-
-**What it cannot carry:**
-- **Whether anyone else wants this.** [H5](./research.md#h5--audience) (is there
-  a household market) and [H7](./research.md#h7--money) (will anyone pay) are
-  untouched. A builder using their own product is evidence of one person's need
-  — and that is the one person whose need was never in doubt.
-- **First-run judgement.** O17 and O18 describe an expectation formed *before the
-  app is opened*, by someone who has never seen it — the exact mechanism behind
-  BEEP's 1.9. The author cannot experience their own onboarding. That evaluation
-  is permanently unavailable from Population C.
-- **Vocabulary.** The brief's defining trait is low pharmaceutical literacy —
-  *"the white box for headaches"*, not *"ibuprofen 400 mg"*
-  ([CLAUDE.md §3](../CLAUDE.md)). Whoever has read the Cyprus register, worked
-  with ATC codes and written a need-first taxonomy no longer has that trait,
-  whatever they had beforehand. [H4](./research.md#h4--pattern) — the
-  weakest-supported major decision in the project — **cannot be tested on its own
-  designer.**
-
-### O22 — The maintainer is the one person the product does not exist for
-**Population:** C, structural.
-The brief's household model is *"One person buys and remembers; everyone else
-needs to be able to act without them"* ([CLAUDE.md §3](../CLAUDE.md)). The
-maintainer and first user is, by definition, the person who buys and remembers —
-the one who already knows what is in the drawer and what it was for. The product
-exists for the **others**: whoever is standing at the cabinet without the keeper
-([CLAUDE.md §1](../CLAUDE.md), O16).
-
-So Population C will test the maintenance half of this product thoroughly and the
-job-statement half not at all.
-
-The useful consequence, rather than a problem: **the rest of the author's
-household is also reachable, and they are not the designer.** Handing them the
-cabinet cold — no account, no explanation, no walkthrough — is the closest
-available approximation of M3 (access by someone who is not the owner,
-[H8](./research.md#h8--emergency)) and of the 2am moment the whole brief rests
-on. Whether they would take part: `[?]`
-
-### O23 — The risk that comes with building for yourself
-**Population:** C, meta.
-A product built by its own maintainer tends to become a product that is pleasant
-to *maintain*. Every drop-off in section E happens to someone who is **not** the
-keeper: D1 the account wall, D2 required fields, D6 the cap landing on the sunk
-cost, D9 a list someone else let rot. The keeper pushes through all of them — O6
-(ownership earned by hours) is a description of the keeper.
-
-Population C will therefore under-report section E almost entirely. The review
-corpus stays the corrective, and it does not get downgraded now that there is a
-real user in the room.
-
----
+**F6 — Being nagged, sold to, or lied to.** *"I'm not playing Duolingo, I have
+clinical depression"* (MyTherapy, 2★); an ad *"auto-playing LOUDLY during a
+meeting when I discretely took my meds"* (MyTherapy, 1★, 65 helpful);
+notifications re-asking about doses already logged (Medisafe, 1★, 103 helpful)
+— *"makes the whole app untrustworthy."*
 
 ---
 
 # What we do not know
 
-`[?]` = no data. Not estimated, not inferred from a neighbouring fact.
+`[?]` means no data. Not estimated, not inferred from a neighbour.
 
-## About the people themselves
+**About who they are**
+- Anyone in the intended audience, at all — zero contacted. `[?]`
+- Household size, composition, ages. `[?]`
+- Languages spoken at home; which one a note would be written in. `[?]`
+- Whether "medicines from several countries" is a trait of the audience or only
+  of the author's household. `[?]` — the question that now decides who the
+  Keeper is ([CLAUDE.md §11](../CLAUDE.md)).
+- Who the *other person* is — partner, teenager, grandparent, guest — and
+  whether they would ever install anything. `[?]`
+- Whether people living alone do this at all. `[?]`
 
-- **How many households have been interviewed, surveyed or observed: zero** —
-  including Population C, which is reachable but has not yet been read
-  ([research.md](./research.md)). Everything in [CLAUDE.md §3](../CLAUDE.md) is
-  unvalidated, specifically:
-  - **Low pharmaceutical literacy** — that they know *"the white box for
-    headaches"* and not *"ibuprofen 400 mg"*: `[?]`. This is the premise the
-    entire need-first navigation rests on ([H4](./research.md#h4--pattern),
-    which research.md calls *"the weakest-supported major decision in the
-    project"*).
-  - **"Not near a pharmacy"** — restocking as a planned trip: `[?]`. No
-    distance, density or travel data gathered.
-  - **"One person buys and remembers; everyone else needs to act without them"**:
-    `[?]` — supported by exactly one Polish reviewer (O3), nothing else.
-- Household size and composition: `[?]`
-- Ages of the people who'd use it, and of the person who'd have to read it
-  *for* someone else: `[?]`
-- Language actually spoken at home, and which language a note would be written
-  in: `[?]` (O5 gives a product's language choice, not a population's)
-- Whether children's or elderly dosing is part of the job: `[?]`
-- Eyesight, dexterity, reading a foil strip in the dark — any accessibility
-  constraint: `[?]`
-- iOS/Android split in Cyprus: `[?]`. store-evidence.md could not even check
-  which of the six competitors are **installable** in Cyprus — *"unconfirmed"*.
+**About what they want**
+- Why a household would open this the first time. `[?]`
+- What they do today instead — drawer, shoebox, photos, nothing. `[?]`
+- Whether "what do we have?" is felt as a problem, or only "is this still
+  safe?" — or neither. `[?]`
+- Whether they would pay, and for what. `[?]`
+- Whether they want a stranger to be able to read it in an emergency. `[?]`
 
-## About what drives them
+**About what they know**
+- What the *other person* calls anything — the whole case for browsing by
+  purpose now rests on them (C4). `[?]`
+- Whether anyone finds a box at home by its colour. `[?]`
+- How they remember what a half-used box was for, if they do. `[?]`
 
-- Why a Cypriot household would open this app the first time: `[?]`
-- What they do today instead — drawer, shoebox, photos, a list, nothing: `[?]`
-- Whether "what do we have?" is felt as a problem at all: `[?]`. The brief
-  argues it is *not* on its own (*"you can tip the drawer onto the bed"*) — that
-  reasoning is also unvalidated.
-- How often the real moment occurs — three times a year is the brief's figure
-  ([H5](./research.md#h5--audience)): `[?]`
-- Whether they would let a second household member see the list, or want parts
-  of it private: `[?]`
-- Whether anyone wants no-account emergency access
-  ([H8](./research.md#h8--emergency)) — *"Not proven: that users want it, or
-  would trust it"*: `[?]`
+**About how they keep medicines**
+- Where in *their* home the boxes are; whether the kitchen-then-bathroom
+  pattern holds. `[?]`
+- The temperature inside the cupboard — depends on air-conditioning, never
+  measured. `[?]`
+- Whether they worry about heat, or ever think of it. `[?]`
+- Whether they swap medicines with other households, as 95% of Cretan homes
+  do. `[?]`
 
-## About what they fear
+**About when they need it**
+- Whether the 2am scene happens, to whom, how often. `[?]`
+- How often the cabinet is consulted at all. `[?]`
+- Whether the moment is "what do we have" or "can I take this with that" — the
+  double-dosing data (C2) suggests the second matters; nobody has said so. `[?]`
 
-- Whether the 2am scene happens, to whom, how often: `[?]` (O16)
-- What they actually fear about old medicine — harm, waste, wrong choice: `[?]`
-- Whether they trust a pharmacist more than a phone, and whether "one tap away"
-  is wanted: `[?]`
-- Whether they'd fear *us* holding health data: `[?]`
+**About what would make them quit *our* product**
+- Everything in section F is other products' users. Our own drop-off: `[?]`
+- How long adding one medicine takes anyone — the 30-second number has never
+  been measured. `[?]`
+- Whether one-tap *still here?* keeps a household of three honest — the
+  mechanism is Waze's, lifted out of the crowd that makes it work. `[?]`
 
-## About how they choose
+**About the evidence itself**
+- Whether any reviewer quoted is in our audience — storefronts were PL, US, DE,
+  VN, IN, CH. `[?]`
+- Whether the complaints represent the silent majority — the sample is what
+  Play rendered, filtered to one and two stars. `[?]`
+- The Cypriot survey was recruited at pharmacies, skews young and educated,
+  and asked recognition questions — not what people *call* things. `[?]` how a
+  household looks on the same questions.
 
-- How anyone discovers or chooses between cabinet apps: `[?]`. No acquisition,
-  search-term or referral data.
-- What they'd expect from *our* name and store listing — the exact mechanism
-  that produced BEEP's 1.9 (O17): `[?]`
-- Whether they'd pay, and what for ([H5](./research.md#h5--audience),
-  [H7](./research.md#h7--money)): `[?]`. research.md: *"the only products
-  charging users directly are the solo-developer apps at £25–30 a year, and
-  none of them has an audience."*
-
-## About where they drop off
-
-- **Every drop-off point in section E is another product's, not ours.** Our own
-  funnel: `[?]`
-- How long adding one medicine takes anyone — the brief's 30-second threshold
-  is *"asserted in the brief and has never been measured anywhere"*
-  ([H1](./research.md#h1--entry)): `[?]`
-- Whether register autocomplete reduces entry time for this audience
-  ([H2](./research.md#h2--register)): `[?]`
-- Whether one-tap confirmation keeps a **household of three** honest
-  ([H3](./research.md#h3--staleness)) — research.md is explicit that the gesture
-  is *"being lifted out of the system that makes it work"*: `[?]`
-- Whether need-first outperforms a plain search box
-  ([H4](./research.md#h4--pattern)): `[?]`
-
-## About the market claim that is load-bearing
-
-- **Heat** ([H6](./research.md#h6--heat)): whether Cypriot indoor summer
-  temperatures routinely break "store below 25 °C" — `[?]`. No temperature data,
-  no official storage guidance, no user report. research.md's own words: *"the
-  most confident unsupported claim in the project, and it is load-bearing: it is
-  one of only two things that make this product specifically Cypriot."*
-
-## About the builder's household (Population C)
-
-*Reachable is not the same as known. Nothing has been collected from this
-household yet.*
-
-- Where it is: **Cyprus** — stated 24 Sep 2026, resolving the `[?]` that stood
-  here. With it came two more facts: the household's medicines are brought from
-  several countries, and the author does not want the product positioned for
-  the Cypriot market ([CLAUDE.md §4](../CLAUDE.md) correction). So
-  [H6](./research.md#h6--heat) can now be tested in this household — and no
-  longer carries the weight of making the product "specifically Cypriot".
-- Household size and composition: `[?]`
-- Which languages are spoken in it, and which one a note would be written in:
-  `[?]`
-- Whether its cabinet resembles the one in O4 — boxless, half-used strips:
-  `[?]`. **Observable this week; not yet observed.**
-- Whether the other members would take a cabinet handed to them cold, with no
-  walkthrough — the only approximation of O16 and
-  [H8](./research.md#h8--emergency) available to us: `[?]`
-- Whether anyone in it ever had the low pharmaceutical literacy the brief
-  describes: `[?]` — and the author no longer can, by O21.
-- Whether a cabinet the author maintains would go stale the way D9 describes, or
-  whether the keeper's own motivation masks it: `[?]` — answerable only by
-  waiting, which is the point of O21.
-
-## About the evidence itself (why B and C can't quietly become A)
-
-- Whether any reviewer quoted here is Cypriot: `[?]` — storefronts read were
-  PL, US, DE, VN, IN, CH.
-- Whether these complaints represent the silent majority: `[?]` — the sample is
-  what Play rendered (242 of BEEP's 1,910; 51 of Apteczka Domowa's 87) and is
-  filtered to one- and two-star.
-- What satisfied users of these apps value: `[?]` — not captured; the corpus was
-  deliberately negative.
-- **No app was installed, no medicine was added, nothing was timed**
-  ([research.md](./research.md)). The reviews are the closest this repo gets to
-  a running app.
-- A designer using their own product cannot produce an independent reading of
-  it (O21, O23). Population C is the *least* independent observer available,
-  which is exactly why it is labelled rather than merged.
+Five conversations, at a drawer, twenty minutes each — the Keeper and then the
+other adult separately — would move more of this list than everything above.
 
 ---
 
-## The honest summary
+## Cross-reference to the 14 Sep numbering
 
-We have **one line from one stranger in Poland** (O3) supporting the premise
-this product exists for, a rich and well-sourced picture of how people abandon
-*adjacent* products (section E), and now **one real household that will actually
-live with this thing** (section F). We still have **nothing at all** about the
-people in [CLAUDE.md §3](../CLAUDE.md).
+[personas.md](./personas.md), [jtbd.md](./jtbd.md), [review.md](./review.md)
+and [personas.html](./personas.html) cite the first pass by its O- and
+D-numbers. Where each landed:
 
-What Population C changes: it makes the slow failure testable. D9 — the cabinet
-that quietly stops matching the drawer — is the failure research.md treats as
-existential, and it is the one no interview or usability session can ever reach,
-because it takes months to appear. One household living with the product for a
-year sees it. Five interviews do not.
-
-What it does not change: [H4](./research.md#h4--pattern),
-[H5](./research.md#h5--audience) and [H7](./research.md#h7--money) — the
-vocabulary premise, the market, and the money. Those need people who are not us,
-and research.md's own next-step list still ends where this document does:
-
-> *"**H4 and H5 need people.** Nothing in this document substitutes for talking
-> to five households, and until that happens the audience section of the brief
-> is a well-argued guess."*
+| 14 Sep | Was | Now |
+|---|---|---|
+| O1 | Competitors design for caregivers | A1 |
+| O2 | Inventory-keepers exist at scale, not medicine people | A2 |
+| O3 | One reviewer: "held by only one person makes no sense" | A3 |
+| O4 | First inventory is boxless strips | D3 |
+| O5 | Only Cyprus signal is a language mix | dropped — a product's language choice, not a fact about people |
+| O6 | Ownership of the list, earned by hours | B1 |
+| O7 | Speed, then invisibility | B2, E1 |
+| O8 | Wanting others in the house to see it | B4 |
+| O9 | Fear of losing the work | F5 |
+| O10 | Being charged after the work | F4 |
+| O11 | Ads inside a medical moment | F6 |
+| O12 | Handing over identity | F1 |
+| O13 | Being nagged | F6 |
+| O14 | An app that lies | F6 |
+| O15 | An obligation they can't sustain | B3, E1 |
+| O16 | The 2am fear — unevidenced | E2 |
+| O17 | Judging by the expectation the store listing set | F3 |
+| O18 | Evaluate before committing | F1 |
+| O19 | A minority read data declarations | folded into F6 |
+| O20 | "Found this helpful" as the only weighting | kept inline as counts |
+| O21–O23 | The builder's household: what it buys, what it can't | A5, and personas.md P1 |
+| D1–D10 | Where they drop off | F1–F6 |
