@@ -15,13 +15,16 @@ and a quote for the mood — and every block says what it rests on.
 - **⟲ revised** marks anything that arrived through the later work: the
   vocabulary research (16 Sep), the heat research (16 Sep), or the correction
   that Cyprus is where the author lives, not the market (24 Sep).
-- No names, ages or faces. Every one of those would be `[?]`. Quotes are real,
-  dated, and attributed to whoever said them — **none was said by the persona**
-  except where the speaker is the author.
+- **Names are labels, not evidence.** Dani, Sam and Robin were chosen on
+  27 Sep 2026 so the personas can be talked about; they are gender-neutral and
+  travel across languages on purpose, because nothing in the research says who
+  the Keeper is by gender, age or nationality — all `[?]`. No ages, no faces.
+  Quotes are real, dated, and attributed to whoever said them — **none was said
+  by the persona** except where the speaker is the author.
 
 ---
 
-# P1 — The Keeper · primary
+# P1 — Dani, the Keeper · primary
 
 *The one who buys the medicine, brings it home, and remembers what it was for.
 Does the first sort-out of the drawer. Without them there is nothing in the
@@ -159,7 +162,7 @@ corrective ([people.md A5](./people.md); [research H6](./research.md#h6--heat)).
 
 ---
 
-# P2 — The Other Person · secondary
+# P2 — Sam, the Other Person · secondary
 
 *Standing at the cabinet without the Keeper. Did not buy it, was not there when
 it was bought. The person the product exists for — and the one no source has
@@ -232,7 +235,7 @@ outside the account is a GDPR problem as much as a UX one
 
 ---
 
-# P3 — The Person Who Lives Alone · secondary
+# P3 — Robin, who lives alone · secondary
 
 *Both roles in one body. The "someone who might have to help them" is a
 stranger.*
@@ -283,8 +286,8 @@ reviews an app by mentioning that they live alone. Marked, not dressed up.
 
 # Why P1 is primary, and the other two secondary
 
-**P1 is primary because the product lives or dies on them, and because they are
-the only persona we know anything about.**
+**Dani is primary because the product lives or dies on them, and because they
+are the only persona we know anything about.**
 
 1. **Every way these apps fail is the Keeper giving up.** All six exit points in
    [people.md F](./people.md) — the account wall, required fields, typing the
@@ -299,14 +302,14 @@ the only persona we know anything about.**
 4. So P1 governs the **friction budget**: every add, edit, confirm and
    notification decision is settled by what a Keeper will tolerate.
 
-**P2 is secondary by evidence, not by importance.** The brief's job statement —
+**Sam is secondary by evidence, not by importance.** The brief's job statement —
 *"make the household's own knowledge survive without the person who holds it"*
 — is P2's sentence. Whether the product *worked* is decided in P2's moment.
 That tension is kept: **P1 governs the friction budget; P2 governs the measure
 of success.** Designing for P1 alone produces exactly the caregiver drift every
 shipping competitor shows ([people.md A1](./people.md)).
 
-**P3 is secondary because it is a name in the brief with nothing behind it.**
+**Robin is secondary because it is a line in the brief with nothing behind it.**
 Kept so the emergency view isn't designed for households only; expected to
 either gain evidence or fold into P1.
 
@@ -330,3 +333,5 @@ conversations — the Keeper and the other adult, separately, at the drawer.
 - "Not knowing two boxes contain the same thing" added as a P1 pain point — the
   one hazard the evidence shows and nobody complains about.
 - Shorter: the tag legend is five lines, the builder's household is one block.
+- Named — Dani, Sam, Robin — as labels only; the evidence still says nothing
+  about gender, age or nationality.

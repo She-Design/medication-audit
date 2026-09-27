@@ -107,16 +107,16 @@ designing around it.
 
 ## People
 
-Three personas, built as scaffolds rather than invented individuals — role
-titles, no names, no ages — with every claim tagged by what it rests on:
+Three personas, built as scaffolds rather than invented individuals — a name as
+a label, a role, no ages — with every claim tagged by what it rests on:
 real reviewers' words, the brief's assertion, the builder's own household, a
 published study, or `[?]`.
 
 | | Persona | Evidence |
 |---|---|---|
-| **P1** | **The Keeper** — buys, remembers, does the first inventory. **Primary.** | Strongest in the repo, and the only persona with a live instance: this product is being built for the author's own household |
-| P2 | The Other Person — at the cabinet without the Keeper. The person the product exists for | **None.** No source holds a word from them; the closest is a Keeper describing their absence |
-| P3 | The Person Who Lives Alone — P1 and P2 in one person | `[?]` throughout |
+| **P1** | **Dani, the Keeper** — buys, remembers, does the first inventory. **Primary.** | Strongest in the repo, and the only persona with a live instance: this product is being built for the author's own household |
+| P2 | Sam, the Other Person — at the cabinet without the Keeper. The person the product exists for | **None.** No source holds a word from them; the closest is a Keeper describing their absence |
+| P3 | Robin, who lives alone — P1 and P2 in one person | `[?]` throughout |
 
 **P1 is primary because every drop-off the review corpus documents is a Keeper
 drop-off, and if the Keeper quits nobody else has anything to open.** The

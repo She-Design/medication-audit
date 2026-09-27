@@ -78,11 +78,12 @@ Those are different products with different safety obligations.
 ### Primary persona and jobs
 
 *Condensed from [research/personas.md](./research/personas.md) and
-[research/jtbd.md](./research/jtbd.md), 16 Sep 2026. Three personas exist; the
-other two — the household member at the cabinet without the Keeper, and the
-person living alone — have no evidence behind them yet.*
+[research/jtbd.md](./research/jtbd.md), 16 Sep 2026; names added 27 Sep. Three
+personas exist; the other two — Sam, the household member at the cabinet
+without the Keeper, and Robin, who lives alone — have no evidence behind them
+yet. The names are labels, not evidence.*
 
-**Primary persona — P1, The Keeper.** The one who buys and remembers. Does the
+**Primary persona — P1, Dani, the Keeper.** The one who buys and remembers. Does the
 first inventory, and is the reason there is anything in the cabinet to read.
 Brand-literate and ingredient-blind: they say *Panadol*, not *the white box*,
 and 87% of Cypriots know it contains paracetamol — but half don't know Depon
