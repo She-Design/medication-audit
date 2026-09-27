@@ -26,8 +26,8 @@ and a quote for the mood — and every block says what it rests on.
 
 # P1 — Dani, the Keeper · primary
 
-*The one who buys the medicine, brings it home, and remembers what it was for.
-Does the first sort-out of the drawer. Without them there is nothing in the
+*Dani buys the medicine, brings it home, and remembers what it was for. Dani
+does the first sort-out of the drawer. Without Dani there is nothing in the
 cabinet to read.*
 
 ## Context — who they are, and the situation
@@ -53,7 +53,7 @@ cabinet to read.*
 - **⟲ revised · The one Keeper we can reach is the author**, in Cyprus, with a
   cabinet of medicines brought from several countries. The product is **not**
   positioned for Cyprus ([A5](./people.md); [CLAUDE.md §4](../CLAUDE.md)).
-  `[?]` **Hypothesis: the Keeper's cabinet is mixed-origin** — Panadol from one
+  `[?]` **Hypothesis: Dani's cabinet is mixed-origin** — Panadol from one
   country, Calpol from another, Efferalgan from a third. True of one household;
   whether it defines the audience is the open question in
   [CLAUDE.md §11](../CLAUDE.md). If it does, brand→ingredient resolution is the
@@ -151,7 +151,7 @@ cabinet to read.*
 
 ## The one real Keeper — what it buys, and the cost
 
-[author] The author's household is a live P1: the slow failure — the list
+[author] The author's household is a live Dani: the slow failure — the list
 drifting over months — becomes observable, entry can finally be timed, and one
 thermometer in the cupboard closes the last unmeasured link in the heat
 question. The cost: this Keeper will not feel most of the pain points above
@@ -164,14 +164,14 @@ corrective ([people.md A5](./people.md); [research H6](./research.md#h6--heat)).
 
 # P2 — Sam, the Other Person · secondary
 
-*Standing at the cabinet without the Keeper. Did not buy it, was not there when
-it was bought. The person the product exists for — and the one no source has
-ever heard from.*
+*Sam is standing at the cabinet without Dani. Sam did not buy it and was not
+there when it was bought. Sam is who the product exists for — and the one no
+source has ever heard from.*
 
 ## Context
 
 - **Structurally certain, empirically empty.** If A3 is true — one person
-  remembers — then this person exists in every household. [brief] Every fact
+  remembers — then Sam exists in every household. [brief] Every fact
   about them is `[?]`: partner, teenager, grandparent, guest.
   ([people.md A4](./people.md))
 - **They may never install anything.** The brief plans for exactly this — a
@@ -187,7 +187,7 @@ ever heard from.*
 
 1. **Find out what we have and whether it's still good, without the person who
    knows.** The main job ([jtbd.md](./jtbd.md)); [CLAUDE.md §1–2](../CLAUDE.md).
-2. **Act without waking or phoning the Keeper.** [brief]
+2. **Act without waking or phoning Dani.** [brief]
 3. **Know when to stop trusting what they're reading.** [brief] — Apple Medical
    ID scores 1 of 5 on visible decay; a card from 2019 looks like today's
    ([research §2](./research.md#2-benchmark)).
@@ -218,34 +218,34 @@ outside the account is a GDPR problem as much as a UX one
 
 ## How they decide — `[?]`
 
-- `[?]` **Hypothesis: they text the Keeper.** The one thing the reviews show is
+- `[?]` **Hypothesis: Sam texts Dani.** The one thing the reviews show is
   Keepers wanting to be reachable across phones ([B4](./people.md)) — which
   implies the other person's current method is *ask*. Whether they would trust
   a list instead of a person: `[?]`.
-- `[?]` What they do when the Keeper doesn't answer — wait, guess, go without.
+- `[?]` What Sam does when Dani doesn't answer — wait, guess, go without.
 
-## Mood — nobody's words but the Keeper's
+## Mood — nobody's words but Dani's
 
 > *"I have to share the medicine list within the household, so until this is
 > fixed one star, because a medicine database held by only one person in the
 > home makes no sense."*
 > — Apteczka Domowa, 1★, 22 Nov 2025, translated [reviewers] — **a Keeper
-> speaking about this person.** The closest thing to their voice anywhere is
+> speaking about Sam.** The closest thing to Sam's voice anywhere is
 > someone else describing their absence.
 
 ---
 
 # P3 — Robin, who lives alone · secondary
 
-*Both roles in one body. The "someone who might have to help them" is a
-stranger.*
+*Robin is Dani and Sam in one body. The "someone who might have to help them"
+is a stranger.*
 
 ## Context
 
 - **Named in the brief and nowhere else.** [brief] *"People living alone who
   want the same clarity for themselves (and for whoever might have to help
   them)"* ([CLAUDE.md §3](../CLAUDE.md)).
-- Collapses P1 and P2: there is no second household member to inherit the
+- Collapses Dani and Sam: there is no second household member to inherit the
   knowledge, so the reader is a paramedic or a neighbour who has never seen the
   drawer — the Apple Medical ID case ([research M3](./research.md#three-mechanics-for-the-mvp)).
 - `[?]` Everything else: how many, how old, whether they own more or fewer
@@ -253,7 +253,7 @@ stranger.*
 
 ## Jobs — [brief] and `[?]`
 
-1. Everything in P1's list, with nobody to share the work. [brief]
+1. Everything in Dani's list, with nobody to share the work. [brief]
 2. **Be legible to a stranger in an emergency.** [brief]
 3. `[?]` Use the cabinet as a record for a doctor's appointment — explicitly
    *out* of v1; noted so it isn't smuggled in ([CLAUDE.md §6](../CLAUDE.md)).
@@ -284,37 +284,38 @@ reviews an app by mentioning that they live alone. Marked, not dressed up.
 
 ---
 
-# Why P1 is primary, and the other two secondary
+# Why Dani is primary, and Sam and Robin secondary
 
 **Dani is primary because the product lives or dies on them, and because they
 are the only persona we know anything about.**
 
-1. **Every way these apps fail is the Keeper giving up.** All six exit points in
+1. **Every way these apps fail is Dani giving up.** All six exit points in
    [people.md F](./people.md) — the account wall, required fields, typing the
    date, the cap, the lost database, the nagging — happen to the person doing
    the work. Not one competitor fails because a second person couldn't read the
    list. [reviewers]
-2. **If the Keeper quits, P2 and P3 have nothing to open.** A dependency, not a
+2. **If Dani quits, Sam and Robin have nothing to open.** A dependency, not a
    peer.
-3. **Only P1 has evidence behind it** — the whole review corpus, one Cypriot
-   survey, and a live instance in the author's household. P2 has zero words.
-   P3 has zero words.
-4. So P1 governs the **friction budget**: every add, edit, confirm and
+3. **Only Dani has evidence behind them** — the whole review corpus, one
+   Cypriot survey, and a live instance in the author's household. Sam has zero
+   words. Robin has zero words.
+4. So Dani governs the **friction budget**: every add, edit, confirm and
    notification decision is settled by what a Keeper will tolerate.
 
 **Sam is secondary by evidence, not by importance.** The brief's job statement —
 *"make the household's own knowledge survive without the person who holds it"*
-— is P2's sentence. Whether the product *worked* is decided in P2's moment.
-That tension is kept: **P1 governs the friction budget; P2 governs the measure
-of success.** Designing for P1 alone produces exactly the caregiver drift every
+— is Sam's sentence. Whether the product *worked* is decided in Sam's moment.
+That tension is kept: **Dani governs the friction budget; Sam governs the
+measure of success.** Designing for Dani alone produces exactly the caregiver
+drift every
 shipping competitor shows ([people.md A1](./people.md)).
 
 **Robin is secondary because it is a line in the brief with nothing behind it.**
 Kept so the emergency view isn't designed for households only; expected to
-either gain evidence or fold into P1.
+either gain evidence or fold into Dani.
 
 **This designation is itself a hypothesis** `[?]`, reversible by five
-conversations — the Keeper and the other adult, separately, at the drawer.
+conversations — Dani and the other adult, separately, at the drawer.
 
 ---
 
@@ -324,13 +325,13 @@ conversations — the Keeper and the other adult, separately, at the drawer.
   14 Sep numbering.
 - **⟲** Cyprus is context, not market. The author's household is in Cyprus with a
   mixed-origin cabinet; whether that is an audience trait is `[?]` and now the
-  question that most shapes P1.
+  question that most shapes Dani.
 - **⟲** The literacy trait is *brand-literate, ingredient-blind*, sourced.
 - **⟲** Heat is one hot household's concern, evidenced everywhere except the
-  cupboard; it appears in P1's context only through the author's household.
+  cupboard; it appears in Dani's context only through the author's household.
 - A new block per persona, *How they decide*, because the review corpus is
   clearest about that and it was missing.
-- "Not knowing two boxes contain the same thing" added as a P1 pain point — the
+- "Not knowing two boxes contain the same thing" added as a pain point for Dani — the
   one hazard the evidence shows and nobody complains about.
 - Shorter: the tag legend is five lines, the builder's household is one block.
 - Named — Dani, Sam, Robin — as labels only; the evidence still says nothing
