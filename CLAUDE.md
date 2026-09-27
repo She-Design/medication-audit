@@ -112,6 +112,23 @@ number of medicines.
 
 ## 4. Market: Cyprus first
 
+> **Correction, 24 Sep 2026 — read before the rest of this section.**
+> Cyprus is where the author lives, not the market. The product is **not**
+> positioned for the Cypriot market, and the author's own cabinet holds
+> medicines brought from several countries. Everything below — heat, the
+> pharmacy rota, Greek brand names, the Cyprus register — is true of *one
+> household's context* and stays useful as such; none of it is the product's
+> reason to exist. Two research pillars were justified as "the things that make
+> this product specifically Cypriot" ([research H2 and H6](./research/research.md#h2--register));
+> that framing was the brief's, never the author's. One consequence cuts the
+> other way: with the same ingredient arriving as Panadol, Calpol, Tylenol or
+> Efferalgan depending on where a box was bought, *accept the brand, attach the
+> ingredient, warn on duplicates* becomes the core mechanism rather than a
+> local nicety — and no single national register can do it alone.
+> **Still open** (see §11): whether "medicines from several countries" is a
+> defining trait of the audience or only the author's case. This section is
+> left as written until that is decided.
+
 v1 targets households in Cyprus. This is a real constraint, not a placeholder.
 
 - **Heat.** Most medicines are labelled "store below 25 °C". A Cypriot summer
@@ -289,6 +306,11 @@ notification cadence is wrong. That is the metric to watch first.
   household holding health data is a GDPR question as much as a UX one.)
 - Do we need a "guest / emergency view" for someone who is not in the household
   at all — a visiting relative, a paramedic?
+- **Who is the market, if not Cyprus?** (Added 24 Sep 2026 — see the correction
+  at the top of §4.) Two readings lead to different products: any household
+  anywhere, or households whose medicines cross borders — expats, families with
+  relatives abroad, frequent travellers. Undecided; do not narrow the personas
+  or the scope to either until it is.
 
 ## 12. This repository
 
