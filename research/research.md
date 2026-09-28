@@ -1,9 +1,9 @@
 # Research
 
-Five sections: **Competitors**, **Benchmark**, **Patterns**, **Conclusions**,
-**Follow-up research after personas**.
+Six sections: **Competitors**, **Benchmark**, **Patterns**, **Conclusions**,
+**Follow-up research after personas**, **Households and medicine**.
 
-**Status:** 10 Sep 2026; §5 added 16 Sep 2026. This consolidates
+**Status:** 10 Sep 2026; §5 added 16 Sep 2026; §6 added 28 Sep 2026. This consolidates
 [competitors.md](./competitors.md),
 [competitor-comparison.md](./competitor-comparison.md),
 [store-evidence.md](./store-evidence.md),
@@ -337,6 +337,9 @@ description of the audience, which is itself unvalidated.
 **Not proven:** the entire premise. **This is the weakest-supported major
 decision in the project.**
 **Test:** a five-person unmoderated test with both layouts and a real cabinet.
+**Update 28 Sep 2026:** need-first has its first real support — a household that
+sorted its medicines into bags *by ailment* and called it *"a game-changer"*, and
+an organising genre that says the same. See [§6.5](#65-sorting-by-ailment-is-something-people-already-do).
 **Update 16 Sep 2026:** the "low pharmaceutical literacy" premise is now
 partly evidenced and partly contradicted by a Cypriot survey — see
 [§5](#5-follow-up-research-after-personas). The test above still stands; what it tests
@@ -899,3 +902,199 @@ All fetched 16 Sep 2026.
 - [Tsiligianni et al. 2012, rural Crete, PubMed 21879836](https://pubmed.ncbi.nlm.nih.gov/21879836/)
 - [Louhisalmi et al. 2024, Finland, PMC11655784](https://pmc.ncbi.nlm.nih.gov/articles/PMC11655784/) · [Funk et al. 2021, US, PMC8326694](https://pmc.ncbi.nlm.nih.gov/articles/PMC8326694/) · [Chit et al. 2026, meta-analysis, PMC12821371](https://pmc.ncbi.nlm.nih.gov/articles/PMC12821371/)
 - [Mumsnet, "Storing calpol", 2012](https://www.mumsnet.com/talk/childrens_health/1424006-Storing-calpol)
+
+---
+
+# 6. Households and medicine
+
+*Added 28 Sep 2026. The first evidence in this document about **households living
+with medicine**, rather than about people using inventory software. It exists
+because the jobs kept coming out weak, and the diagnosis was that the review
+corpus could only ever describe a relationship with an app.*
+
+**Method.** 17 web searches, 13 page fetches, 9 successful, 28 Sep 2026. No
+screen captures. **Reddit could not be reached at all** — every lay voice below
+is Mumsnet. Four targets were blocked and are listed in
+[§6.9](#69-could-not-retrieve). Where a figure comes from a search summary
+rather than a page I read, it says **[unverified]** — those are the sentences to
+distrust.
+
+## 6.1 Someone opened 48 real medicine cabinets
+
+**[Pilot Study on the Utility and Feasibility of a House-Call Checkup of the
+Medicine Cabinet](https://pmc.ncbi.nlm.nih.gov/articles/PMC6164397/)**, Belgium,
+*Pharmacy* 2018. 48 households; house calls in March and April 2017 by a
+final-year pharmacy student.
+
+- **"In about 30%, the indication was unknown."**
+- *"In nearly half of the cases, exact usage instructions were forgotten."*
+- *"In 15% of medicine cabinets, medicines were not stored in their original
+  container."*
+- *"In two-thirds of households across our subgroups, expired medicines were
+  present."*
+- *"In 38% it was not out of reach of children."*
+- Orderly storage: **50%** of households with small children, **82%** of elderly
+  households.
+
+**Why this is the most important finding in the document.** The brief's second
+core question — *what is each thing for?* — was, until this study, supported by
+nothing at all. It is now **observed in real homes by someone standing in front
+of the cupboard**: in roughly a third of households, nobody knew what a stored
+medicine was for. The product's central premise has evidence for the first time.
+
+## 6.2 Households do not know what they hold
+
+| Source | Finding |
+|---|---|
+| [Belgium, 48 homes, observed](https://pmc.ncbi.nlm.nih.gov/articles/PMC6164397/) | 30% indication unknown · ~50% instructions forgotten · two-thirds hold expired |
+| [Rijeka, Croatia, *Pharmacy* 2026](https://europepmc.org/article/MED/42646347) | **41.6% of households held expired *or unidentified* medicines**; analgesics present in 92.6% and self-administered in 96%; antibiotics present in 31.5%, self-medicated in 52.9% |
+| [Finland, 5,004 respondents](https://pmc.ncbi.nlm.nih.gov/articles/PMC11655784/) | 13.9 active, 2.8 unnecessary, 2.2 expired packs per household; **44.4% hold expired medicines** |
+| Brown-bag medication reviews | *"The majority of patients had medications in their bags that were not previously recorded"* — **[unverified]**, search summary only; the ULM source returned 403 |
+
+## 6.3 Night-time is when it hurts
+
+**[A Qualitative Study of Parents' Conceptualizations on Fever in Children Aged
+0 to 12](https://pmc.ncbi.nlm.nih.gov/articles/PMC6720744/)**, Spain, 57
+participants, 8 focus groups, grounded theory.
+
+- Parents reported **"dire anguish"**, and fear of severe illness such as
+  meningitis.
+- They described themselves as **"bad parents"** if their actions were wrong.
+- They described **"freezing up"** — unable to react — when they could not
+  determine the cause.
+- **"These feelings increased when the fever appeared or persisted at night."**
+- Many described *"obsession in their behavior when measuring their child's
+  temperature"*. Concern was greatest with a first child.
+- Advice came from health professionals, the internet, leaflets, magazines,
+  **pharmacists, family, friends and grandmothers**.
+- Parents without health training *"demanded the need for more information to
+  allow them to distinguish between a 'high fever' and a normal temperature."*
+
+Corroborated by [Merlo et al., *Eur J Pediatr* 2023](https://europepmc.org/article/MED/36443503)
+(Switzerland, caregivers of children 0–3 plus their paediatricians): the
+*"importance of recognising the emotional component of fever phobia"*, and
+caregiver confidence resting on the relationship with a professional rather
+than on knowledge alone.
+
+**What this changes.** [H1](#h1--entry)'s 2am scene was *"the most confident
+unsupported claim in the project"*. Night-time fear is now documented — not in
+Cyprus, and not about a drawer, but the emotional shape the brief asserts is
+real and studied. It is also the first evidence of any kind behind an
+**emotional** job.
+
+## 6.4 Medicine is scattered, and one person knows where
+
+Real voices, Mumsnet, fetched in full:
+
+> *"Only I know about apparently!"* — on a bathroom drawer of medical supplies.
+> [Where is your medicine cabinet](https://www.mumsnet.com/talk/am_i_being_unreasonable/3467945-where-is-your-medicine-cabinet), 3 Jan 2019
+
+Several posters in that thread and in
+[How do you store medicines](https://www.mumsnet.com/talk/home_decoration_pictures/4321546-How-do-you-store-medicines-plasters-etc-Incredibly-mundane-I-know)
+(12–13 Aug 2021) keep medicines in **two or three places at once** — kitchen,
+bathroom, a bedroom drawer, bags in cars, *"Drawer of Shit in the spare room"*.
+Multiple posters warn against the bathroom because of humidity. This matches the
+storage spread already in [§5.13](#513-where-people-keep-them) and undercuts the
+brief's *"tip the drawer onto the bed and answer it in ninety seconds"* — there
+is no single drawer to tip.
+
+## 6.5 Sorting by ailment is something people already do
+
+> A poster describes a big box holding **six ziplock bags organised by ailment
+> type**, and calls the system **"a game-changer."**
+> [How do you store medicines](https://www.mumsnet.com/talk/home_decoration_pictures/4321546-How-do-you-store-medicines-plasters-etc-Incredibly-mundane-I-know), Aug 2021
+
+The wider organising genre says the same — *"organizing medications by ailment
+categories beats organizing by bottle type"*, and one guide recommends *"writing
+out a running list of all items… for those times when you need medicine fast and
+you're not sure if you have it on hand"* — **[unverified]**, blog search
+summaries. But the Mumsnet instance is a real household doing it unprompted.
+
+**This is the first support [H4](#h4--pattern) has ever had**, and it is thin but
+real: need-first is not only our idea; it is what at least one household
+invented for itself.
+
+## 6.6 Cabinets accumulate — they are not assembled
+
+Across four Mumsnet threads, **nobody works from a checklist.** The 25 Jul 2021
+thread has *"no mentions of pharmacist consultation or formal checklists"*;
+posters trade inventories with each other instead. The
+[preppers thread](https://www.mumsnet.com/talk/preppers/5030596-medicine-cupboard)
+(17 Mar 2024) begins not with assembling a cupboard but **discarding one**: during
+a house move the poster found *"loads of ood non prescription medication to be
+chucked"*.
+
+Two real triggers do appear, and we had none before:
+1. **A house move** — the moment a cabinet gets emptied and reckoned with.
+2. **A new baby** — where the entire *"what should be in your medicine cabinet"*
+   content genre is aimed (CHOP, WebMD, Walgreens, MadeForMums, Kids Central
+   Pediatrics, Mother&Baby — **[unverified]**, titles seen in results, pages not
+   read). A large genre answering a question is evidence the question is asked.
+
+**Consequence for [kit gaps](../CLAUDE.md):** nobody assembles from a list, so a
+curated-kit comparison still has no job behind it — except possibly for new
+parents, which is a narrower claim than §6.6 of the brief makes.
+
+## 6.7 How often, and what people do about expiry
+
+- **[China, 573 adolescents, 2023–24](https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1560299/full):**
+  **52.5%** used an OTC medicine 1–2 times in the past year, **31%** 3–5 times,
+  **14%** more often. Community pharmacy was the source for 62%, and *"only about
+  30%… actively sought guidance from pharmacists."*
+- Mumsnet, on upkeep: *"I check the cabinet twice or three times a year and Chuck
+  the out of date stuff"*; *"It's probably All out of date though"*; *"Don't you
+  find it doesn't get used much abs all goes out of date after couple of
+  years?"*; and one poster who researched it: medicines past their dates are
+  *"most… still OK way after"*.
+
+So the brief's **three times a year** is roughly the right order of magnitude —
+for *use* and for *upkeep* alike. The product must survive long dormancy, and
+expiry is treated by some as a rule and by others as a myth.
+
+## 6.8 Boxes arrive from other people's cupboards
+
+Prescription-medicine sharing runs **6–23% for lending and 5–52% for borrowing**
+depending on country, reaching **40.6% / 43.0%** in a South Korean survey, and is
+overwhelmingly with **family and relatives (83–87%)** — **[unverified]**, search
+summaries from Frontiers in Pharmacology and Annals of Family Medicine. Rural
+Crete's 95% ([§5.13](#513-where-people-keep-them)) is the high end of the same
+behaviour.
+
+## 6.9 Could not retrieve
+
+- **Reddit** — not fetchable, and no usable thread surfaced through search. Every
+  lay voice in §6 is Mumsnet: UK, largely mothers, self-selected.
+- **[PMC8524294](https://pmc.ncbi.nlm.nih.gov/articles/PMC8524294/)** — German
+  parents, fever anxiety, cross-sectional: reCAPTCHA.
+- **ULM brown-bag study PDF** — 403. Its figures stay **[unverified]**.
+- PubMed article pages for the Croatian and Swiss studies — cookie walls;
+  abstracts recovered through the Europe PMC API instead.
+- The baby-cabinet content genre — titles seen, pages not read.
+
+## 6.10 What §6 changes
+
+1. **The brief's second question is no longer unevidenced.** *What is each thing
+   for* — 30% of Belgian households could not say. This should be the
+   best-supported job in [jtbd.md](./jtbd.md), not a hypothesis.
+2. **Emotional jobs have evidence for the first time** — *freezing up*, *bad
+   parents*, *dire anguish*, and specifically **at night**.
+3. **The 2am scene is partly evidenced**, via night-time fever fear.
+4. **"What do we have" is harder than the brief allows**, because there is no one
+   drawer to tip out.
+5. **Need-first has its first user-side support** — one household's ailment bags.
+6. **There is no assembly moment**, but there are two arrival moments: a new baby
+   and a house move.
+7. **Still not our audience.** Belgium, Spain, Switzerland, Croatia, China,
+   Finland, and UK forums. None of it is Cyprus, and none of it is a household
+   that asked for this product.
+
+## Sources, §6
+
+All fetched 28 Sep 2026. Read in full unless marked.
+- [House-call checkup of the medicine cabinet, Belgium, PMC6164397](https://pmc.ncbi.nlm.nih.gov/articles/PMC6164397/)
+- [Parents' conceptualizations on fever, Spain, PMC6720744](https://pmc.ncbi.nlm.nih.gov/articles/PMC6720744/)
+- [Merlo et al., fever phobia, Switzerland, MED/36443503](https://europepmc.org/article/MED/36443503)
+- [Household medicine inventories, Rijeka, MED/42646347](https://europepmc.org/article/MED/42646347)
+- [OTC self-medication in adolescents, China, Front Public Health 2025](https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1560299/full)
+- Mumsnet: [What's in your medicine cabinet?](https://www.mumsnet.com/talk/_chat/4305460-what-s-in-your-medicine-cabinet) · [Where is your medicine cabinet](https://www.mumsnet.com/talk/am_i_being_unreasonable/3467945-where-is-your-medicine-cabinet) · [How do you store medicines, plasters etc](https://www.mumsnet.com/talk/home_decoration_pictures/4321546-How-do-you-store-medicines-plasters-etc-Incredibly-mundane-I-know) · [Medicine cupboard?](https://www.mumsnet.com/talk/preppers/5030596-medicine-cupboard)
+- **[unverified]**, search summaries only: brown-bag medication review figures; medication-sharing prevalence; *"55% still kept unused medicine at home"*; the organising-advice genre; the baby medicine-cabinet genre.
