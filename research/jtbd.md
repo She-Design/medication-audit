@@ -168,8 +168,8 @@ does, and the first of them has real people using the word.
 it still good* and *what was it for* — states of the world. These ask *can I rely
 on what we wrote* — a feeling about the same subject.
 
-<a id="t1"></a>
-### T1 · Relying on our own record without second-guessing it
+<a id="e1"></a>
+### E1 · Relying on our own record without second-guessing it
 
 > **When I'm about to act on something we wrote down months ago, I want to feel I
 > can take it at face value, so that I'm not quietly second-guessing our own
@@ -199,8 +199,8 @@ itself with exactly today's authority, and research.md's instruction is to take
 its access model and explicitly **not** that. Without visible age this job cannot
 be served, only claimed.
 
-<a id="t2"></a>
-### T2 · Trusting what someone else at home wrote as much as my own
+<a id="e2"></a>
+### E2 · Trusting what someone else at home wrote as much as my own
 
 > **When what I'm reading was written by someone else at home, I want to feel as
 > sure of it as if I'd written it myself, so that it being theirs doesn't make me
@@ -408,7 +408,7 @@ on something written months ago · reading something someone else wrote · away 
 being texted.* Six moments, seven listed jobs.
 
 **Functional or emotional.** The main job and L1–L3 have outcomes that are states
-of the world. [T1](#t1) and [T2](#t2) have outcomes that are feelings — *not
+of the world. [E1](#e1) and [E2](#e2) have outcomes that are feelings — *not
 second-guessing*, *not doubting*. Five items whose outcome was the product's
 standing with the user sit in
 [costs and promises](#costs-requirements-and-promises).
@@ -440,8 +440,8 @@ evidence; Sam has never been heard from; Robin is `[?]` by definition.
 | **L1** · clearing out what's no good | **3** [O] | `[?]` | **3** [A] | Expired and expiring flags; archive rather than delete; confirm-or-gone ([M1](./research.md#three-mechanics-for-the-mvp)) | **Expiry: yes** — the category's reason to exist. **"No longer there": nobody** — not one of the fifteen carries a confirm-or-gone gesture |
 | **L2** · recovering what we got it for | **3** [O] | **3** [A] | **3** [A] | **Free-text "what it's for" as the primary description** ([§5](../CLAUDE.md)) | **Nobody.** Everywhere else the household's own words are a footnote to the official leaflet ([§1, difference 2](./research.md#three-differences--where-nobody-is-standing)) |
 | **L3** · whether we even have it | **3** [B] | **3** [A] | **3** [A] | One place covering every room; browse by purpose | **Partly.** Home Med Cabinet models Room and Container, mojApteczka groups by location — both to help you *find*, neither to tell you *whether you have any* |
-| **T1** · relying on our own record | **3** [B] | **3** [A] | **3** [A] | An entry carrying its own age; one-tap confirm to restamp it ([M1](./research.md#three-mechanics-for-the-mvp)) — **not yet in [§6 v1 scope](../CLAUDE.md)** | **Nobody.** Not one of the fifteen shows an entry's age or lets anyone confirm it; Apple Medical ID scores **1 of 5** on visible decay ([§2](./research.md#2-benchmark)) |
-| **T2** · trusting what someone else wrote | `[?]` | **3** [A] | — | Whose words they are, and when; the same record readable by both | **Nobody.** The three products that share a household all treat the record as one person's data ([§1, 4th difference](./research.md#three-differences--where-nobody-is-standing)) |
+| **E1** · relying on our own record | **3** [B] | **3** [A] | **3** [A] | An entry carrying its own age; one-tap confirm to restamp it ([M1](./research.md#three-mechanics-for-the-mvp)) — **not yet in [§6 v1 scope](../CLAUDE.md)** | **Nobody.** Not one of the fifteen shows an entry's age or lets anyone confirm it; Apple Medical ID scores **1 of 5** on visible decay ([§2](./research.md#2-benchmark)) |
+| **E2** · trusting what someone else wrote | `[?]` | **3** [A] | — | Whose words they are, and when; the same record readable by both | **Nobody.** The three products that share a household all treat the record as one person's data ([§1, 4th difference](./research.md#three-differences--where-nobody-is-standing)) |
 | **S1** · not being the one it depends on | **3** [B] | — ² | — | Invite by link, no account wall ([§6.3](../CLAUDE.md)) | **Partly.** Sharing exists at three products; every one declares third-party data sharing |
 | **H1–H11** · hypotheses | `[?]` | `[?]` | `[?]` | see each above | see each above |
 
@@ -480,13 +480,13 @@ served.
 inventory product already does. It earns its place by carrying L2's words to the
 moment of need, not on its own.
 
-**[T1](#t1) belongs with point 2, not beside it.** *An entry carrying its own age,
+**[E1](#e1) belongs with point 2, not beside it.** *An entry carrying its own age,
 restamped by one tap* is the same mechanism as L1's *no-longer-there* half, seen
 from the feeling rather than the fact. The core does not grow to four; point 2
 gets a second reason to exist, and a stronger one — it is the only thing in the
 document that serves a functional job and an emotional job with one gesture.
-**[T2](#t2)** is not buildable as a feature at all: it is earned or lost by
-whether T1's mechanism is honest and whether [S1](#s1)'s declaration is.
+**[E2](#e2)** is not buildable as a feature at all: it is earned or lost by
+whether E1's mechanism is honest and whether [S1](#s1)'s declaration is.
 
 **Held outside the core but arguably the most consequential thing here:**
 [H2](#h2), not doubling a dose. The hazard is the best-measured fact in the
