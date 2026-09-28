@@ -155,7 +155,7 @@ consistent with it and do not demonstrate it.
 have fitted any household-management product — and the evidence that would have
 grounded better ones, the fever-phobia literature, belongs to parents of young
 children and **does not apply to this household**
-([§6.3](./research.md#63-nighttime-is-when-it-hurts)).
+([§6.3](./research.md#63-night-time-is-when-it-hurts)).
 
 What remains to build on is thin and adult: two wry Mumsnet asides about the
 state of a cupboard — *"It's probably All out of date though"*, and a poster
@@ -236,7 +236,7 @@ a measured danger is not a stated want.*
 > to make sense of what I'm holding, so that I can decide on my own.*
 The **night-time** half is now evidenced — but by parents of young children, whose
 feelings *"increased when the fever appeared or persisted at night"*
-([§6.3](./research.md#63-nighttime-is-when-it-hurts)). **That is not this
+([§6.3](./research.md#63-night-time-is-when-it-hurts)). **That is not this
 household.** For an adults-only home the moment is real but the cast is one
 impaired person, not a carer and a child. [§1 of the brief](../CLAUDE.md) should
 be revised to say so.
