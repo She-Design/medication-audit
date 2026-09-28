@@ -58,9 +58,15 @@ cabinet to read.*
   whether it defines the audience is the open question in
   [CLAUDE.md §11](../CLAUDE.md). If it does, brand→ingredient resolution is the
   heart of the product, not a nicety.
-- `[?]` Age, household size, languages, whether they live with children or
-  elders, how many boxes they own. Crete says ~8 boxes and 95% of homes swap
-  medicines with relatives ([D2](./people.md)); ours: `[?]`.
+- **No children in the household** `[author]`, stated 28 Sep 2026 — which
+  resolves one `[?]` and **removes the strongest evidence we had**. The
+  fever-phobia research ([research §6.3](./research.md#63-nighttime-is-when-it-hurts))
+  is about parents of 0–12s; it does not describe this household, so it cannot
+  carry an emotional job here. Paediatric dosing, syringes and the new-baby
+  first-use trigger are all out of scope with it.
+- `[?]` Age, household size, languages, whether anyone elderly lives there, how
+  many boxes they own. Crete says ~8 boxes and 95% of homes swap medicines with
+  relatives ([D2](./people.md)); ours: `[?]`.
 
 ## Jobs — what they are trying to do
 
