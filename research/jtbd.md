@@ -9,8 +9,10 @@ using inventory software. Two facts set the shape: **the household is adults,
 no children** `[author]`, and **the moment at 2am is real, but the person in it
 is the one who is ill.**
 
-**The emotional jobs are being reworked** and are deliberately absent below; see
-[Emotional jobs](#emotional-jobs).
+**The emotional jobs are about trust** — whether the household can rely on what
+it wrote. That is the felt side of the parameter
+[research.md §2](./research.md#2-benchmark) already picked as this product's
+differentiator, *inherited trust*.
 
 ---
 
@@ -151,19 +153,79 @@ consistent with it and do not demonstrate it.
 <a id="emotional-jobs"></a>
 # Emotional jobs
 
-**Being reworked, 28 Sep 2026.** Four earlier attempts were generic — they would
-have fitted any household-management product — and the evidence that would have
-grounded better ones, the fever-phobia literature, belongs to parents of young
-children and **does not apply to this household**
-([§6.3](./research.md#63-night-time-is-when-it-hurts)).
+*Two. Both about **trusting the record and the person who wrote it** — the felt
+side of [§2's inherited trust](./research.md#2-benchmark): "can a second person
+rely on what the first one recorded, without re-checking, and know when to stop
+relying on it?"*
 
-What remains to build on is thin and adult: two wry Mumsnet asides about the
-state of a cupboard — *"It's probably All out of date though"*, and a poster
-naming her own *"Drawer of Shit in the spare room"* — one person's stated motive
-for keeping a stocked cupboard, *"I live alone now far away from family so I need
-to be prepared!"*, and the measured hazard behind a dose decision
-([H2](#h2)). Candidates are under discussion rather than written in, because a
-placeholder is more honest than a fifth set of plausible sentences.
+**Why this direction and not the earlier ones.** Five earlier candidates were
+either generic — they would have fitted any cupboard in the house — or specific
+to medicine with no voice behind them. These two are about the household's own
+record, which is the one thing this product has that nothing else in the category
+does, and the first of them has real people using the word.
+
+**The clean split against the functional jobs:** [L1](#l1) and [L2](#l2) ask *is
+it still good* and *what was it for* — states of the world. These ask *can I rely
+on what we wrote* — a feeling about the same subject.
+
+<a id="t1"></a>
+### T1 · Relying on our own record without second-guessing it
+
+> **When I'm about to act on something we wrote down months ago, I want to feel I
+> can take it at face value, so that I'm not quietly second-guessing our own
+> record.**
+
+**Persona:** [Dani](./personas.md) and [Sam](./personas.md) · **`[B]`** — the
+strongest evidence any emotional job here has had, and one reviewer uses the word
+outright:
+
+> *"Almost every app update… break some aspect of notifications. Unfortunately
+> that makes **the whole app untrustworthy**."* — MyTherapy, 2★, 16 Oct 2025
+> *"I added new packs, but the summary still shows the medicines I added before,
+> which I no longer use. It makes a mess, because the ones I currently take are
+> hard to find in all that."* — Apteczka Domowa, 1★, 23 Dec 2025, translated
+> ([people.md F5, F6](./people.md))
+
+That second quote is somebody describing the moment they stopped believing their
+own record. Note what it costs: once you are second-guessing, you go and look in
+the cupboard anyway — and the record has bought you nothing.
+
+**`[A]` The mechanism this needs is already specified and not yet in scope.**
+[M1](./research.md#three-mechanics-for-the-mvp) — an entry carrying its own age,
+restamped by a one-tap confirmation, so that *"an entry nobody has confirmed in a
+year says so on its face instead of pretending."* The benchmark scores Apple
+Medical ID **1 out of 5** on visible decay: a card written in 2019 presents
+itself with exactly today's authority, and research.md's instruction is to take
+its access model and explicitly **not** that. Without visible age this job cannot
+be served, only claimed.
+
+<a id="t2"></a>
+### T2 · Trusting what someone else at home wrote as much as my own
+
+> **When what I'm reading was written by someone else at home, I want to feel as
+> sure of it as if I'd written it myself, so that it being theirs doesn't make me
+> doubt it.**
+
+**Persona:** [Sam](./personas.md) — and it is Sam's only job of any kind with a
+named mechanism behind it · **`[A]`**, from
+[§2](./research.md#2-benchmark), where this is the benchmarked parameter itself
+rather than a derived idea. `[?]` **No person has voiced it.** Nobody in any
+source describes doubting a housemate's note, because nobody in any source keeps
+one.
+
+**Why it is the premise rather than a nice-to-have.** The product's whole claim
+is that one person's knowledge can survive without them
+([CLAUDE.md §1](../CLAUDE.md)). If the second person doesn't trust the first
+person's words, they re-check — and the product has delivered nothing at all.
+Everything in [§2's](./research.md#2-benchmark) eight criteria is in service of
+this one feeling.
+
+**What it rules out.** Crowd corroboration, which is how Waze and Wikipedia earn
+trust, cannot work here — *"a household is two to four people. At that size
+nobody outvotes a wrong entry"*
+([§2](./research.md#one-that-will-not-work-crowd-corroboration)). So the trust
+has to come from the object: the printed date, the time since anyone touched the
+entry, the dose history. Never from consensus.
 
 ---
 
@@ -341,13 +403,15 @@ the 30% ended its quarantine.
 # The check
 
 **Real situations.** *Going through the cupboard · finding something you can't
-remember buying · needing something that could be in three places · away and
-being texted.* Four moments, four listed jobs, plus the main one.
+remember buying · needing something that could be in three places · about to act
+on something written months ago · reading something someone else wrote · away and
+being texted.* Six moments, seven listed jobs.
 
-**Functional or emotional.** All four listed jobs and the main job have outcomes
-that are states of the world. Five items whose outcome was the product's standing
-with the user sit in [costs and promises](#costs-requirements-and-promises). The
-emotional section is open.
+**Functional or emotional.** The main job and L1–L3 have outcomes that are states
+of the world. [T1](#t1) and [T2](#t2) have outcomes that are feelings — *not
+second-guessing*, *not doubting*. Five items whose outcome was the product's
+standing with the user sit in
+[costs and promises](#costs-requirements-and-promises).
 
 **No feature names.** Audited: `app` · `cabinet` · `list` · `inventory` ·
 `entry` · `field` · `note` · `tag` · `photo` · `scan` · `barcode` · `search` ·
@@ -376,6 +440,8 @@ evidence; Sam has never been heard from; Robin is `[?]` by definition.
 | **L1** · clearing out what's no good | **3** [O] | `[?]` | **3** [A] | Expired and expiring flags; archive rather than delete; confirm-or-gone ([M1](./research.md#three-mechanics-for-the-mvp)) | **Expiry: yes** — the category's reason to exist. **"No longer there": nobody** — not one of the fifteen carries a confirm-or-gone gesture |
 | **L2** · recovering what we got it for | **3** [O] | **3** [A] | **3** [A] | **Free-text "what it's for" as the primary description** ([§5](../CLAUDE.md)) | **Nobody.** Everywhere else the household's own words are a footnote to the official leaflet ([§1, difference 2](./research.md#three-differences--where-nobody-is-standing)) |
 | **L3** · whether we even have it | **3** [B] | **3** [A] | **3** [A] | One place covering every room; browse by purpose | **Partly.** Home Med Cabinet models Room and Container, mojApteczka groups by location — both to help you *find*, neither to tell you *whether you have any* |
+| **T1** · relying on our own record | **3** [B] | **3** [A] | **3** [A] | An entry carrying its own age; one-tap confirm to restamp it ([M1](./research.md#three-mechanics-for-the-mvp)) — **not yet in [§6 v1 scope](../CLAUDE.md)** | **Nobody.** Not one of the fifteen shows an entry's age or lets anyone confirm it; Apple Medical ID scores **1 of 5** on visible decay ([§2](./research.md#2-benchmark)) |
+| **T2** · trusting what someone else wrote | `[?]` | **3** [A] | — | Whose words they are, and when; the same record readable by both | **Nobody.** The three products that share a household all treat the record as one person's data ([§1, 4th difference](./research.md#three-differences--where-nobody-is-standing)) |
 | **S1** · not being the one it depends on | **3** [B] | — ² | — | Invite by link, no account wall ([§6.3](../CLAUDE.md)) | **Partly.** Sharing exists at three products; every one declares third-party data sharing |
 | **H1–H11** · hypotheses | `[?]` | `[?]` | `[?]` | see each above | see each above |
 
@@ -413,6 +479,14 @@ served.
 **Why L3 is not core.** It scores 3, but finding things across rooms is what every
 inventory product already does. It earns its place by carrying L2's words to the
 moment of need, not on its own.
+
+**[T1](#t1) belongs with point 2, not beside it.** *An entry carrying its own age,
+restamped by one tap* is the same mechanism as L1's *no-longer-there* half, seen
+from the feeling rather than the fact. The core does not grow to four; point 2
+gets a second reason to exist, and a stronger one — it is the only thing in the
+document that serves a functional job and an emotional job with one gesture.
+**[T2](#t2)** is not buildable as a feature at all: it is earned or lost by
+whether T1's mechanism is honest and whether [S1](#s1)'s declaration is.
 
 **Held outside the core but arguably the most consequential thing here:**
 [H2](#h2), not doubling a dose. The hazard is the best-measured fact in the
