@@ -429,106 +429,155 @@ still missing is anybody in *our* audience — and any emotional life at all.
 
 # The matrix
 
-**Importance:** **3** central · **2** matters, survivable if weak · **1**
-marginal · **`[?]`** no basis · **—** structurally not this persona's job.
-**Nothing is averaged, interpolated or inherited.** Only Dani's column is
-evidence; Sam has never been heard from; Robin is `[?]` by definition.
+*Rebuilt 29 Sep 2026 from the seven evidenced jobs. The previous matrix was
+built on a job list that no longer exists and has been deleted; git holds it.*
 
-| Job | Dani | Sam | Robin | FUNCTION | COMPETITORS |
+Rows are jobs. Columns are the three personas in
+[personas.md](./personas.md), then what would close the job and who already
+does it.
+
+**Importance:** **3** central — the job is why this persona would use anything
+at all · **2** matters, but they would cope without it · **1** marginal ·
+**`[?]`** no basis to judge · **—** the situation cannot arise for this persona.
+
+**Every cell says what it rests on.** `[O]` observed in real households · `[B]`
+a real person's words · `[A]` asserted in [CLAUDE.md](../CLAUDE.md) ·
+**`[?]` nothing — and nothing is averaged, interpolated or guessed at.**
+
+**Read the Sam and Robin columns knowing this:** Sam has never been heard from
+in any source, so every Sam cell is the brief's assertion or a blank. Robin is
+defined in [personas.md](./personas.md) only as Dani and Sam in one body, and
+the brief says merely that people living alone want *"the same clarity for
+themselves"* — it never says which of these jobs matter to them or how much.
+Copying Dani's column across would be exactly the interpolation this document
+forbids, so Robin is `[?]` wherever the brief is silent. **The emptiness is the
+finding, not a gap in the table.**
+
+| Job | Dani · Keeper (primary) | Sam · the Other Person | Robin · lives alone | FUNCTION — what would close it | COMPETITORS — who already does it |
 |---|---|---|---|---|---|
-| **Main** · find out without the person who knows | `[?]` ¹ | **3** [A] | `[?]` | Household by invite link; the household's own words; each thing's state on its face | **No medicine app does it.** All fifteen design for a patient or a caregiver ([§1](./research.md#three-differences--where-nobody-is-standing)) |
-| **L1** · clearing out what's no good | **3** [O] | `[?]` | **3** [A] | Expired and expiring flags; archive rather than delete; confirm-or-gone ([M1](./research.md#three-mechanics-for-the-mvp)) | **Expiry: yes** — the category's reason to exist. **"No longer there": nobody** — not one of the fifteen carries a confirm-or-gone gesture |
-| **L2** · recovering what we got it for | **3** [O] | **3** [A] | **3** [A] | **Free-text "what it's for" as the primary description** ([§5](../CLAUDE.md)) | **Nobody.** Everywhere else the household's own words are a footnote to the official leaflet ([§1, difference 2](./research.md#three-differences--where-nobody-is-standing)) |
-| **L3** · whether we even have it | **3** [B] | **3** [A] | **3** [A] | One place covering every room; browse by purpose | **Partly.** Home Med Cabinet models Room and Container, mojApteczka groups by location — both to help you *find*, neither to tell you *whether you have any* |
-| **E1** · relying on our own record | **3** [B] | **3** [A] | **3** [A] | An entry carrying its own age; one-tap confirm to restamp it ([M1](./research.md#three-mechanics-for-the-mvp)) — **not yet in [§6 v1 scope](../CLAUDE.md)** | **Nobody.** Not one of the fifteen shows an entry's age or lets anyone confirm it; Apple Medical ID scores **1 of 5** on visible decay ([§2](./research.md#2-benchmark)) |
-| **E2** · trusting what someone else wrote | `[?]` | **3** [A] | — | Whose words they are, and when; the same record readable by both | **Nobody.** The three products that share a household all treat the record as one person's data ([§1, 4th difference](./research.md#three-differences--where-nobody-is-standing)) |
-| **S1** · not being the one it depends on | **3** [B] | — ² | — | Invite by link, no account wall ([§6.3](../CLAUDE.md)) | **Partly.** Sharing exists at three products; every one declares third-party data sharing |
-| **H1–H11** · hypotheses | `[?]` | `[?]` | `[?]` | see each above | see each above |
+| **Main** · find out what we have and whether it's good, without the person who knows | **`[?]`** — the brief's *"three years later nobody remembers what it was for"* includes Dani, and the 30% was measured across whole households, but no one has said Dani is ever the one caught out | **3 · [A]** — this is the brief's job statement ([§1–2](../CLAUDE.md)). Sam did not buy it, was not there, and cannot read the foil. The product exists for this cell | **`[?]`** — not **—**: Robin can be the one who forgot, but nobody has described it | A household record by invite link; each thing shown in the household's own words, with its state on its face | **No medicine app does it.** All fifteen design for a patient or a caregiver ([§1, difference 1](./research.md#three-differences--where-nobody-is-standing)). Bring! does it — for groceries |
+| **L1** · clear out what's no longer any good or no longer there | **3 · [O]** — Dani does the clear-out. Two-thirds of 48 Belgian homes held expired stock; 41.6% in Croatia held expired *or unidentified*; 44.4% in Finland ([§6.1–6.2](./research.md#61-someone-opened-48-real-medicine-cabinets)). `[B]` *"I check the cabinet twice or three times a year and Chuck the out of date stuff"* | **`[?]`** — not **—**: Sam could do a clear-out. Nothing says whether they ever do | **`[?]`** — the household studies did not separate people living alone | Expired and expiring flags; **archive rather than delete**; a confirm-or-gone gesture ([M1](./research.md#three-mechanics-for-the-mvp)) | **Expiry: yes, by everyone** — it is the category's reason to exist and what BEEP's 500K+ installs came for. **"No longer there": nobody** — not one of the fifteen lets a household say *this one's gone* and have the record believe them |
+| **L2** · recover what we got it for | **3 · [O]** — **the 30%.** In roughly a third of 48 Belgian households nobody knew the indication of a medicine they were storing; instructions forgotten in nearly half ([§6.1](./research.md#61-someone-opened-48-real-medicine-cabinets)). Dani bought it and still cannot say | **3 · [A]** — question 2 of the brief's three ([§2](../CLAUDE.md)). Sam never knew in the first place, so for Sam this is not recall but inheritance | **`[?]`** — the brief says Robin wants *"the same clarity"*, which is not a rating | **Free-text "what it's for" as the primary description** ([§5](../CLAUDE.md)), kept in the household's own words and never overwritten ([§7.1](../CLAUDE.md)) | **Nobody.** *"Everyone answers 'what is this medicine?' from an authority. Nobody answers 'what did we decide this was for?'"* — mojApteczka has notes as one card among twelve ([§1, difference 2](./research.md#three-differences--where-nobody-is-standing)) |
+| **L3** · know whether we even have it, wherever it is | **3 · [B]** — Dani searches. Medicine sits in the kitchen *and* bathroom *and* a bedroom drawer, in car bags, in a *"Drawer of Shit in the spare room"* ([§6.4](./research.md#64-medicine-is-scattered-and-one-person-knows-where)). `[O]` Finland: kitchen 67%, bedroom 25%, bathroom 14%, hallway 10%, plus cars and handbags ([§5.13](./research.md#513-where-people-keep-them)) | **3 · [A]** — sharper for Sam than for Dani: Dani at least knows the places, Sam does not. Asserted, never heard | **`[?]`** — no evidence either way | One record covering every room rather than one cupboard; browse by purpose | **Partly.** Home Med Cabinet models Room and Container — Kitchen, Car, Travel Kit; mojApteczka groups by location. Both help you **find** a thing; neither tells you **whether you have any** ([§1, difference 3](./research.md#three-differences--where-nobody-is-standing)) |
+| **E1** · rely on our own record without second-guessing it | **3 · [B]** — the strongest emotional evidence in the document, and a reviewer uses the word: *"makes the whole app untrustworthy"*; and the moment of losing faith — *"the summary still shows the medicines I added before, which I no longer use. It makes a mess"* ([people.md F5, F6](./people.md)) | **`[?]`** — for Sam the record is not *"our own"*; that case is E2 | **`[?]`** — plausible for a record read months later by its own author, undocumented | **An entry carrying its own age**, restamped by a one-tap confirmation, so an entry nobody has touched in a year says so ([M1](./research.md#three-mechanics-for-the-mvp)) — **not yet in [§6 v1 scope](../CLAUDE.md)** | **Nobody.** Not one of the fifteen shows an entry's age or lets anyone confirm it. Apple Medical ID scores **1 out of 5** on visible decay: a card written in 2019 presents itself with today's authority ([§2](./research.md#2-benchmark)) |
+| **E2** · trust what someone else at home wrote as much as my own | **`[?]`** — Dani could be reading Sam's note; nobody has said whether that is doubted | **3 · [A]** — this is [§2's](./research.md#2-benchmark) benchmarked parameter stated as a feeling, and the premise the product stands on: if Sam re-checks, the record delivered nothing | **—** — nobody else at home writes anything | Whose words they are and when they wrote them; one record both people read, with no second-class copy | **Nobody.** The three products that share across a household — mojApteczka, Medisafe, MyTherapy — all treat the record as one person's data, and every one declares third-party sharing ([§1, 4th difference](./research.md#three-differences--where-nobody-is-standing)) |
+| **S1** · not be the one it all depends on | **3 · [B]** — *"Only I know about apparently!"* ([§6.4](./research.md#64-medicine-is-scattered-and-one-person-knows-where)); and *"What I miss is automatic exchange of data between the apps on different phones… tedious on 2–3 phones after every change"* (Apteczka Domowa, 4★, 20 Jul 2019) | **—** — Sam's side of this job **is** the Main row | **—** — nobody at home depends on Robin | Invite by link with no account wall ([§6.3](../CLAUDE.md)); readable by a member who never installed anything | **Partly.** Sharing exists at three products; **not one has a data declaration that matches its marketing**, and the apps with clean declarations have no sharing at all ([§1, 4th difference](./research.md#three-differences--where-nobody-is-standing)) |
 
-¹ Not **—**: the brief's *"nobody remembers what it was for"* includes Dani, and
-the 30% was measured across whole households. Nobody has said it, so `[?]`.
-² Sam's side of S1 **is** the Main row.
+## What the table shows before any conclusion is drawn
+
+Of 21 persona cells: **5 rest on observation or real words** — all five in
+Dani's column. **4 are the brief's assertions** — all four Sam's. **9 are
+`[?]`**, five of them Robin's whole column. **3 are structurally empty.**
+
+So the table has one column of evidence, one column of assertion, and one
+column of blanks. That is not a defect in the matrix; it is
+[people.md A3–A4](./people.md) restated — the person doing the work is not the
+person the product is for, and we have only ever heard from the first.
 
 ---
 
 # Conclusions
 
-## The MVP core
+## Three jobs for the MVP
 
-*Criterion: 3 to Dani, and the market does not address it in a form that works.*
+*Test applied to every row: **importance 3 to Dani**, the primary persona, **and
+the COMPETITORS cell does not read yes**. Four rows score 3 for Dani. L1 fails
+the second test on its larger half — expiry is shipped by everyone — so three
+remain.*
 
-**The core changed this week, for the first time in three rewrites**, and the
-reason is the 30%.
+### 1. L2 — recovering what we got it for
 
-**1. L2 — recovering what we got it for.** The only job whose COMPETITORS cell
-reads **nobody**, and it now scores 3 on observation. It is the brief's second
-question, the principle in §7.1, and the one gap research.md found where no
-competitor stands. Until this week it was a hypothesis. **This is the product.**
+The only row whose COMPETITORS cell reads **nobody**, with no qualifier. It
+scores 3 on **observation**, not on argument: in about a third of real
+households, nobody could say what a stored medicine was for. It is the brief's
+second question, the principle in §7.1, and the one gap
+[research.md §1](./research.md#three-differences--where-nobody-is-standing)
+found where no competitor stands.
 
-**2. L1, but only half of it.** Expiry is table stakes — it is what the
-category exists for and what BEEP's 500K+ installs came for. **"No longer
-there" is the unoccupied half:** nothing in the market lets a household say
-*this one's gone* and have the record believe them. That is [M1](./research.md#three-mechanics-for-the-mvp),
-and it is **not yet in the locked v1 scope**.
+Until 28 Sep 2026 this job sat in the hypotheses marked *searched for and not
+found*. One study moved it to the top of the document. **This is the product.**
 
-**3. S1, but only half of it.** Sharing exists at three products. **Sharing with
-a data declaration that matches the marketing exists nowhere.** S1 is also the
-only route by which the main job — Sam's, the reason the product exists — is ever
-served.
+### 2. E1 — relying on our own record without second-guessing it
 
-**Why L3 is not core.** It scores 3, but finding things across rooms is what every
-inventory product already does. It earns its place by carrying L2's words to the
-moment of need, not on its own.
+Scores 3 on real words, and nobody in the market does it: not one of fifteen
+products shows how old an entry is or lets a household confirm it.
 
-**[E1](#e1) belongs with point 2, not beside it.** *An entry carrying its own age,
-restamped by one tap* is the same mechanism as L1's *no-longer-there* half, seen
-from the feeling rather than the fact. The core does not grow to four; point 2
-gets a second reason to exist, and a stronger one — it is the only thing in the
-document that serves a functional job and an emotional job with one gesture.
-**[E2](#e2)** is not buildable as a feature at all: it is earned or lost by
-whether E1's mechanism is honest and whether [S1](#s1)'s declaration is.
+**It also absorbs the unaddressed half of L1.** *No longer there* and *an entry
+carrying its own age* are the same gesture — a one-tap confirmation that
+restamps the record. One mechanism closes a functional job and an emotional one,
+which nothing else in this document does. **It is not in the locked v1 scope**
+([§6](../CLAUDE.md)), and on this table it should be.
 
-**Held outside the core but arguably the most consequential thing here:**
-[H2](#h2), not doubling a dose. The hazard is the best-measured fact in the
-project and it is adult evidence; nobody has asked for the help. If we build it,
-we build it knowing no user requested it — and the permitted form stays narrow:
-*these two contain the same thing*, never *take this*.
+### 3. S1 — not being the one it all depends on
 
-## Candidate functions for removal
+Scores 3 on real words. Sharing exists in the market; **sharing with a data
+declaration that matches the marketing exists nowhere.** It is also the only
+route by which the Main job — Sam's, the reason the product exists — is ever
+served, so it carries two rows at once.
 
-**Tier 1 — no job at all**
-- **Kit gaps** ([§6.6](../CLAUDE.md)). `[O]` §6 settles it: **nobody assembles a
-  cabinet from a checklist.** Across four Mumsnet threads there is *"no mention
-  of pharmacist consultation or formal checklists"* — cabinets accumulate. The
-  one audience that asks *what should I stock* is new parents, and this household
-  has no children. **Cut.**
-- **Chronic conditions on member profiles.** No v1 flag reads the field; §8's
-  justification covers allergies only. Special-category data collected for
-  nothing. **Cut until a flag needs it.**
-- **The *why* in the dose log.** Who and when serve [H2](#h2) — a measured
-  hazard. *Why* serves nothing, and is a free-text field asked of someone unwell.
-  **Cut the field.**
+**Why L3 is not in the three.** It scores 3 for Dani, but Home Med Cabinet and
+mojApteczka already organise by place. Its unserved part — *whether you have any
+of a thing, anywhere* — arrives free once L2 exists, because L2's words are what
+you search.
 
-**Tier 2 — unpaid-for**
+**What binds all three, from
+[costs and promises](#costs-requirements-and-promises):** silence by default,
+never a cap on the number of medicines, and never losing the work. With OTC use
+at **1–5 times a year** ([§6.7](./research.md#67-how-often-and-what-people-do-about-expiry)),
+anything that speaks more often than it has reason to will be muted before it is
+ever needed.
 
-| Feature | Only job it serves | What would pay for it |
+## Candidate functions to cut
+
+### Closing no job in this matrix, and none in the hypotheses either
+
+- **Kit gaps** — a curated reference kit against what the household owns
+  ([§6.6](../CLAUDE.md)). `[O]` §6 settles it: **nobody assembles a cabinet from
+  a checklist.** Across four Mumsnet threads there is *"no mention of pharmacist
+  consultation or formal checklists"* — cabinets accumulate
+  ([§6.6](./research.md#66-cabinets-accumulate--they-are-not-assembled)). The one
+  audience that asks *what should I stock* is new parents, and this household has
+  no children. It also leans toward telling people what they *should* have, the
+  boundary [§6 "Deliberately never"](../CLAUDE.md) draws. **Cut.**
+- **Chronic conditions on member profiles** ([§5, §6.3](../CLAUDE.md)). No flag
+  in [§6.5](../CLAUDE.md) reads the field; §8 justifies storing it by *"the
+  single most valuable warning"*, which is the allergy one. **Special-category
+  GDPR data collected for nothing.** Cut until a flag needs it.
+- **The *why* in the dose log** ([§6.4](../CLAUDE.md)). Who and when serve a
+  hypothesis; *why* serves nothing on this table, and is a free-text field asked
+  of someone unwell. **Cut the field.**
+
+### Closing only a hypothesis job — not cut, but unpaid-for
+
+*None of these serves a row above. Each names what would pay for it.*
+
+| Feature | The only job it serves | What would pay for it |
 |---|---|---|
-| **Browse by purpose** | [H3](#h3) `[?]`; serves [L2](#l2) and [L3](#l3) as the *answer* | Five people, both layouts, a real drawer. The ailment-bag household is the first hint it is right |
-| **Duplicate-ingredient flag** | [H2](#h2) — hazard `[O]`, want `[?]` | Nothing more is needed on the hazard; what is missing is one person saying they want it |
-| **Heat-risk flag**, storage location | [H5](#h5) `[?]`, hazard sourced | One thermometer, one summer. Mumsnet warns off the bathroom for *humidity* — a different mechanism |
-| **Allergy-conflict flag**, member allergies | `[A]` only | Interviews. Special-category data for a warning nobody has asked for — though no competitor fills the gap |
+| **Dose log and recent-dose flag** ([§6.4–6.5](../CLAUDE.md)) | [H2](#h2) — hazard `[O]`, want `[?]` | The hazard is the best-measured fact in the project: **45.6%** of adults would double-dose across two paracetamol products, **71.5%** of Cypriot adults are blind to a common combination product. What is missing is one person saying they want the warning |
+| **Duplicate-ingredient flag** ([§6.5](../CLAUDE.md)) | [H2](#h2) and [H9](#h9) | Same hazard. Keep it narrow — *these two contain the same thing*, never *take this* |
+| **Allergy-conflict flag** and the member allergies behind it | nothing on this table; `[A]` only | Interviews. It carries special-category data ([§8](../CLAUDE.md)) for a warning no person has asked for — though no competitor fills the gap either |
+| **Heat-risk flag**, storage location as a first-class field | [H5](#h5) `[?]`, hazard sourced | One thermometer in a cupboard for one summer. Note Mumsnet warns off the bathroom for *humidity* — a different mechanism |
 | **Running-low flag** | [H4](#h4) `[?]` | Whether restocking is a trip rather than a walk, for anyone |
-| **Emergency view without an account** | [H11](#h11) `[?]` | Already outside §6 v1 |
+| **Emergency view without an account** | [H11](#h11) `[?]` | Already outside §6 v1 — a decision not yet taken rather than one to reverse |
 
-## What this document says back to the brief
+**Browse by purpose is not on either list.** It closes no row by itself, but it
+is the *form* L2's and L3's answers take, and one household invented it
+unprompted — six bags sorted by ailment, *"a game-changer"*
+([§6.5](./research.md#65-sorting-by-ailment-is-something-people-already-do)).
+Keep it, and keep testing it: the *lack* it assumes — not knowing the word — is
+still [H3](#h3), and belongs to Sam alone.
 
-1. **§1 is right about 2am and wrong about who is standing there.** In an
+## What this matrix says back to the brief
+
+1. **§1 is right that 2am matters and wrong about who is standing there.** In an
    adults-only household it is the ill person, alone and impaired — not a carer
    deciding for someone else.
-2. **§1's *"tip the drawer onto the bed in ninety seconds"* is not true.**
-   Medicine is in two or three places; there is no single drawer to tip. The
-   argument that *what do we have* isn't painful rests on that sentence.
-3. **§6.6's kit gaps has no job.** Cabinets accumulate.
+2. **§1's *"tip the drawer onto the bed and answer it in ninety seconds"* is not
+   true**, and the argument that *what do we have* isn't painful rests on it.
+   Medicine is in two or three rooms.
+3. **§6 should carry M1** — the one-tap confirmation and the visible age. Two of
+   the three MVP jobs need it and the locked scope does not contain it.
+4. **§6.6's kit gaps has no job.** Cabinets accumulate.
 
 > *"**H4 and H5 need people.** Nothing in this document substitutes for talking
 > to five households."* — [research.md](./research.md)
