@@ -3,7 +3,8 @@
 Built from [research.md §6](./research.md#6-households-and-medicine),
 [people.md](./people.md) and [personas.md](./personas.md).
 
-**Status:** rebuilt 28 Sep 2026 on the household evidence in §6 — the first
+**Status:** rebuilt 28 Sep 2026 on the household evidence in §6; E2 revised
+29 Sep 2026 against [research.md §7](./research.md#7-who-actually-holds-the-record) — the first
 evidence in this project about people living with medicine rather than people
 using inventory software. Two facts set the shape: **the household is adults,
 no children** `[author]`, and **the moment at 2am is real, but the person in it
@@ -212,6 +213,21 @@ named mechanism behind it · **`[A]`**, from
 rather than a derived idea. `[?]` **No person has voiced it.** Nobody in any
 source describes doubting a housemate's note, because nobody in any source keeps
 one.
+
+**⟲ 29 Sep — a mechanism, still not a voice.** A 50-person UK study of general
+household coordination draws exactly this distinction independently: most
+shared tools support *coordination* (seeing what someone else entered) rather
+than *collaboration* (co-authoring what it means) — *"cooperation was
+described as central to family management labour, yet it remains framed and
+supported as coordination rather than collaboration"* ([study], Frampton,
+Gould & Cox 2026,
+[research §7.4](./research.md#74-coordination-versus-collaboration--a-distinction-relevant-to-e2)).
+That names *why* a shared record defaults to unequal trust — E2 is asking for
+collaboration where the market ships coordination. It does not supply the
+missing voice: six searches for someone describing distrust of a housemate's
+written entry, across four other shared-household apps, found nothing
+([research §7.1](./research.md#71-the-direct-search-failed-and-that-failure-is-itself-informative)).
+The `[?]` above stands exactly as it did.
 
 **Why it is the premise rather than a nice-to-have.** The product's whole claim
 is that one person's knowledge can survive without them

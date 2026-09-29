@@ -48,12 +48,30 @@ behaviour exists for medicines in a home: `[?]`.
 held by only one person in the home makes no sense"* (Apteczka Domowa, 1★,
 22 Nov 2025, [§2](./research.md#one-that-will-not-work-crowd-corroboration)).
 One review. An existence proof, not a frequency.
+**⟲ 29 Sep — a second, independent corroboration**, outside medicine and outside
+our review corpus: a 50-person UK study of general family management found
+*"while family management is collaborative, most tools remain oriented to
+single users"* ([study], Frampton, Gould & Cox 2026,
+[research §7.2](./research.md#72-a-measured-population-not-a-guess-frampton-gould--cox-2026)).
+Two unrelated sources now say the same thing about two different domains. Still
+not our audience, and still not medicine — but no longer one reviewer alone.
 
 **A4 — The person the product is for has never appeared in any source.**
 The one at the cabinet *without* the person who knows. Reviewers installed
 something; this person, by the brief's own design ([§6.3, §8](../CLAUDE.md)),
 may never install anything. Not one word from them anywhere. `[?]` everything
 about them.
+**⟲ 29 Sep — the role is now measured, the voice still isn't.** A 50-person UK
+survey found **12%** self-describe as "secondary supportive" or "not involved"
+in household management ([study], Frampton, Gould & Cox 2026,
+[research §7.2](./research.md#72-a-measured-population-not-a-guess-frampton-gould--cox-2026)).
+That is the first population estimate anywhere in this project for a role this
+observation has had to mark `[?]`. It confirms the role exists at a real rate
+in general households; it is not medicine-specific, not our audience, and it is
+self-report, not observed experience — six searches for a direct quote from
+someone in this role, about a shared household record, found nothing
+([research §7.1](./research.md#71-the-direct-search-failed-and-that-failure-is-itself-informative)).
+Still `[?]`: everything about what this person actually feels or does.
 
 **A5 — The one household we can reach is the author's.** [author] In Cyprus;
 medicines brought from several countries; the author will be the Keeper. Not

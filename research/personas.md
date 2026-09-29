@@ -5,7 +5,9 @@ Three personas, built from the second pass of [people.md](./people.md)
 same six blocks — context, jobs, pain points, trust triggers, how they decide,
 and a quote for the mood — and every block says what it rests on.
 
-**Status:** third version, 27 Sep 2026. Replaces the 14–16 Sep versions.
+**Status:** third version, 27 Sep 2026; Sam's Context revised 29 Sep 2026
+against [research.md §7](./research.md#7-who-actually-holds-the-record).
+Replaces the 14–16 Sep versions.
 
 **How to read it**
 - Evidence marks: **[reviewers]** verbatim reviews of similar apps, not our
@@ -60,7 +62,7 @@ cabinet to read.*
   heart of the product, not a nicety.
 - **No children in the household** `[author]`, stated 28 Sep 2026 — which
   resolves one `[?]` and **removes the strongest evidence we had**. The
-  fever-phobia research ([research §6.3](./research.md#63-nighttime-is-when-it-hurts))
+  fever-phobia research ([research §6.3](./research.md#63-night-time-is-when-it-hurts))
   is about parents of 0–12s; it does not describe this household, so it cannot
   carry an emotional job here. Paediatric dosing, syringes and the new-baby
   first-use trigger are all out of scope with it.
@@ -184,6 +186,20 @@ source has ever heard from.*
   member profile can describe someone who never opened the app
   ([CLAUDE.md §6.3, §8](../CLAUDE.md)). Which is why they cannot appear in app
   reviews, and why no source holds a word from them.
+- **⟲ revised, 29 Sep · Sam is no longer purely hypothetical — the role is now
+  measured, at a rate, outside this project.** A 50-person UK study of general
+  household management found **12%** self-describe as "secondary supportive" or
+  "not involved" — a real, counted population for a role every line above still
+  marks `[?]` ([study], Frampton, Gould & Cox 2026,
+  [research §7.2](./research.md#72-a-measured-population-not-a-guess-frampton-gould--cox-2026)).
+  The same study, independently, calls the other role — Dani's — the *"keeper
+  of context"*, and names monitoring allergies as part of that person's load,
+  without our having suggested it. **What this does not give us:** six searches
+  for a real Sam-type voice — someone describing what it's like to read a
+  household record they didn't write — found nothing
+  ([research §7.1](./research.md#71-the-direct-search-failed-and-that-failure-is-itself-informative)).
+  Sam's existence just got firmer. Sam's experience is exactly as unknown as it
+  was before.
 - **⟲ revised · The case for a purpose-first index now rests entirely on them.**
   The Keeper has the vocabulary — the brand ([C1](./people.md)). Whether *this*
   person knows the brand of a box they didn't buy: `[?]`
@@ -342,3 +358,7 @@ conversations — Dani and the other adult, separately, at the drawer.
 - Shorter: the tag legend is five lines, the builder's household is one block.
 - Named — Dani, Sam, Robin — as labels only; the evidence still says nothing
   about gender, age or nationality.
+- **⟲ 29 Sep** — Sam's role is now measured (12% of a 50-person study
+  self-describe as secondary/uninvolved), and Dani's "keeper of context"
+  framing gained an independent source; Sam's actual experience is still
+  entirely unvoiced. See [research §7](./research.md#7-who-actually-holds-the-record).
