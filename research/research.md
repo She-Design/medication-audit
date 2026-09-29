@@ -1,9 +1,11 @@
 # Research
 
-Six sections: **Competitors**, **Benchmark**, **Patterns**, **Conclusions**,
-**Follow-up research after personas**, **Households and medicine**.
+Seven sections: **Competitors**, **Benchmark**, **Patterns**, **Conclusions**,
+**Follow-up research after personas**, **Households and medicine**,
+**Who actually holds the record**.
 
-**Status:** 10 Sep 2026; §5 added 16 Sep 2026; §6 added 28 Sep 2026. This consolidates
+**Status:** 10 Sep 2026; §5 added 16 Sep 2026; §6 added 28 Sep 2026; §7 added
+29 Sep 2026. This consolidates
 [competitors.md](./competitors.md),
 [competitor-comparison.md](./competitor-comparison.md),
 [store-evidence.md](./store-evidence.md),
@@ -1098,3 +1100,203 @@ All fetched 28 Sep 2026. Read in full unless marked.
 - [OTC self-medication in adolescents, China, Front Public Health 2025](https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2025.1560299/full)
 - Mumsnet: [What's in your medicine cabinet?](https://www.mumsnet.com/talk/_chat/4305460-what-s-in-your-medicine-cabinet) · [Where is your medicine cabinet](https://www.mumsnet.com/talk/am_i_being_unreasonable/3467945-where-is-your-medicine-cabinet) · [How do you store medicines, plasters etc](https://www.mumsnet.com/talk/home_decoration_pictures/4321546-How-do-you-store-medicines-plasters-etc-Incredibly-mundane-I-know) · [Medicine cupboard?](https://www.mumsnet.com/talk/preppers/5030596-medicine-cupboard)
 - **[unverified]**, search summaries only: brown-bag medication review figures; medication-sharing prevalence; *"55% still kept unused medicine at home"*; the organising-advice genre; the baby medicine-cabinet genre.
+
+---
+
+# 7. Who actually holds the record
+
+*Added 29 Sep 2026, targeted at one question:* **is there any product where the
+second household member — not the person who set the account up — actually
+writes reviews, so we can hear from that person instead of guessing?** This is
+the gap [review.md](./review.md) named as the most essential of its three
+questions: Sam, the person the main job in [jtbd.md](./jtbd.md) belongs to,
+cannot appear in the review corpus this whole project is built on, because
+reviewers are people who installed something and Sam — by the brief's own
+design — may never install anything.
+
+**Method.** 6 web searches for direct product reviews from a "second," non-admin
+household member (Bring!, Cozi, OurHome, FamCal, shared to-do/reminders apps),
+followed by 6 searches and fetches into the academic HCI/sociology literature on
+shared household technology, 29 Sep 2026. One paper was read in full (22 pages,
+fetched as a PDF); two more were found but not retrieved (paywalled, blocked).
+
+## 7.1 The direct search failed, and that failure is itself informative
+
+Six searches across Bring!, Cozi, OurHome, FamCal and generic "shared list/
+reminders" apps for a review written by the non-admin partner — phrasing like
+*"my husband set this up and I can't tell what,"* *"I don't understand what she
+meant"* — **found nothing.** The closest hits were unrelated usability
+complaints (Cozi's date-grid layout, sync gaps between Cozi and Google
+Calendar) and one Cozi review noting a couple "can keep track of what's going
+on… all in one place," which does not describe confusion or a secondary role.
+
+**This is not evidence of absence in the way it might look.** It is one more
+instance of the exact structural problem the question was designed to test:
+someone who is a *passive reader* of a shared list is, almost by definition,
+less likely to be the one who bothers to write a store review about it — the
+organiser is invested enough to review; the person who just checks the list
+is not. The method that works for finding Dani's voice (store reviews)
+cannot find Sam's voice even in an *adjacent* product category. **Zero direct
+quotes were found in this pass**, and a different method was needed.
+
+## 7.2 A measured population, not a guess: Frampton, Gould & Cox 2026
+
+**[The Domestic Operating System: An Empirical Investigation of Digital
+Technology and Hidden Work in the Home](https://dl.acm.org/doi/10.1145/3772318.3791167)**,
+Frampton, Gould & Cox, UCL and Cardiff University, *CHI '26* (Barcelona, April
+2026). Open-access PDF via
+[UCL Discovery](https://discovery.ucl.ac.uk/id/eprint/10222445/1/chi26c-sub3668-cam-i16.pdf),
+read in full (22 pages).
+
+**Method:** 61 UK-based participants recruited via Prolific, pre-screened for
+diversity of household composition and socioeconomic background; 11 excluded
+for incomplete submissions, leaving **N = 50**. Mixed-methods: a REDCap survey
+combining Likert-scale, multiple-choice and open-text items, structured around
+Robertson et al.'s taxonomy of family management labour, followed by deductive
+content analysis and reflexive thematic analysis. Ages 18–67 (median 39); 32 of
+50 cohabiting with a partner.
+
+**The one table that answers our question directly** — participants
+self-reported their household management role:
+
+| Role | N (of 50) |
+|---|---|
+| Primary household manager, living with others | 16 |
+| Shared responsibility equally | 20 |
+| Living alone | 8 |
+| **Secondary supportive household role** | **5** |
+| Not involved in household management | 1 |
+
+**This is the first evidence in this entire project that Sam — a household
+member in a genuinely secondary role — is a measured, real category of
+person, rather than a hypothesis.** 6 of 50 (12%) describe themselves as
+secondary or uninvolved. It is not about medicine, and it is UK-general-
+household-management rather than a medicine cabinet specifically, but it is
+the closest thing yet to a population estimate for a role this whole project
+assigns to "Sam" without ever having counted anyone in it.
+
+**Caveat, stated as plainly as the paper states it:** this is self-report from
+a one-time survey, not observation, and the study's own limitations section
+says it "cannot capture the more tacit, bodily, or evolving aspects" of this
+work. A person's self-description of their role is not the same thing as a
+description of their *experience* in that role — it tells us Sam-like people
+exist and roughly how common they are; it does not tell us what a Sam-like
+person feels reading someone else's shorthand.
+
+## 7.3 "The keeper of context" — a name for Dani, independently arrived at
+
+The paper's own design recommendation, given as an example about meal-planning
+apps specifically:
+
+> *"Meal-planning and grocery apps offer a clear example: although they
+> technically support shared lists or collaborative planning, in practice one
+> person often becomes responsible for selecting meals, balancing dietary
+> constraints, monitoring allergies, budgeting… **This person becomes the
+> 'keeper of context,'** carrying the invisible work needed to make a meal
+> 'right' for the household."*
+> — §5.3.1, "Avoid accidental individualisation"
+
+This is a peer-reviewed, independently-derived description of exactly the
+Dani role — including, unprompted, "monitoring allergies" as one of the
+things the keeper of context carries. Nobody on this project fed that phrase
+to the researchers; they arrived at it studying grocery and meal-planning
+apps, a different product category entirely, and it lands on the same shape.
+
+The paper's central finding, stated plainly: *"while family management is
+collaborative, most tools remain oriented to single users."* This is A3's
+premise (*"one person buys and remembers; the others don't"*) — previously
+supported in this project by exactly one Polish app reviewer — now also
+stated as the headline finding of a 50-person peer-reviewed study, in a
+different domain (general family coordination, not medicine).
+
+## 7.4 Coordination versus collaboration — a distinction relevant to E2
+
+The paper draws a distinction directly useful for [jtbd.md](./jtbd.md)'s E2
+(*"trusting what someone else wrote as much as my own"*):
+
+> *"We break down the concept of cooperation into **coordination** (allocating
+> tasks, aligning schedules and information flows) and **collaboration**
+> (co-authoring plans and norms, negotiating roles, and sharing
+> accountability)… cooperation was described as central to family management
+> labour, yet it remains framed and supported as coordination rather than
+> collaboration in existing frameworks and technologies."*
+
+Applied to a shared medicine record: most shared household tools today let a
+second person *see* what the first person entered (coordination) without
+either person having any hand in shaping how it was entered or what it means
+(collaboration). E2's job — trusting a housemate's note as much as your own —
+is asking for collaboration where the market, per this paper, defaults to
+coordination. This gives E2's *"why it is the premise rather than a
+nice-to-have"* argument an external, independent source it did not have
+before — though, as in [jtbd.md](./jtbd.md)'s own honest accounting, it is
+still true that **no person in this paper or any other source is quoted
+directly describing distrust of a housemate's written note.** The paper
+supports the *mechanism* (coordination-not-collaboration is the market
+default); it does not supply the missing *voice*.
+
+## 7.5 What was found but not retrieved
+
+- **Kennedy, Nansen, Arnold, Wilken & Gibbs 2015**, "Digital housekeepers and
+  domestic expertise in the networked home," *Convergence* 21(4) — directly
+  about gendered distribution of "digital housekeeping" expertise among
+  household members. ResearchGate PDF returned 403; not read.
+- **Whiting & Symon 2020**, "Digi-Housekeeping: The Invisible Work of
+  Flexibility," *Work, Employment and Society* 34(6) — found via search
+  summary only, one quote surfaced (*"I just have to go through and delete 34
+  emails"*, p.1085) but this concerns email/device upkeep for remote work, not
+  shared household records, and is only tangentially relevant. **[unverified]**
+  beyond that single quoted line.
+- Both are cited as references inside Frampton et al. 2026 and describe a
+  closely adjacent phenomenon; neither was read closely enough to extract a
+  direct secondary-user quote.
+
+## 7.6 What §7 changes
+
+1. **Sam stops being purely hypothetical.** 12% of a 50-person UK sample
+   describe themselves as secondary or uninvolved in household management.
+   This is the first population estimate anywhere in this project for a role
+   every other document has had to mark `[?]`. It is general family
+   management, not a medicine cabinet, and not our audience — but it is a
+   measured "yes, this role exists and here is roughly how common it is,"
+   which no source had provided before.
+2. **A3's premise gains independent, peer-reviewed support** in a different
+   domain: *"while family management is collaborative, most tools remain
+   oriented to single users"* — arrived at by three HCI researchers studying
+   general family coordination, not by reading our own store-evidence.md.
+3. **"Keeper of context" is now a source-backed name for Dani**, arrived at
+   independently, and it comes with a detail this project had not made
+   explicit — that the keeper's burden includes exactly the kind of thing
+   [CLAUDE.md §8](../CLAUDE.md) calls out (monitoring allergies) as part of
+   the same undifferentiated load as meal-planning and budgeting.
+4. **E2 gains a mechanism** (coordination-not-collaboration is the market
+   default) but **still no voice** — the search for a person saying "I don't
+   trust what my housemate wrote" came back empty in this pass, same as
+   [jtbd.md](./jtbd.md) already states.
+5. **The original, most literal form of Q3 — a product review from a
+   secondary user — was not found**, and §7.1 argues that absence is itself
+   diagnostic: the method (searching for reviews) cannot reach the population
+   (people who don't write reviews). Future attempts at this question should
+   not repeat the same method; they should either go to academic literature
+   directly (as this section did) or, as [people.md](./people.md) has said
+   since 27 Sep, talk to a real second household member.
+6. **This does not touch personas.md, jtbd.md or people.md.** Per instruction,
+   only this file was edited. What should change there, based on this
+   section, is noted here rather than done: A5/A3 in people.md could cite
+   Frampton et al. 2026 alongside the existing single-reviewer quote;
+   personas.md's Sam section could note that Sam-like roles are now measured
+   (12%) rather than purely asserted; jtbd.md's E2 could cite the
+   coordination/collaboration distinction as a mechanism, while keeping its
+   own honest "no person has voiced it" line intact.
+
+## Sources, §7
+
+Fetched 29 Sep 2026.
+- [Frampton, Gould & Cox 2026, CHI '26, DOI](https://dl.acm.org/doi/10.1145/3772318.3791167) ·
+  [open-access PDF, UCL Discovery](https://discovery.ucl.ac.uk/id/eprint/10222445/1/chi26c-sub3668-cam-i16.pdf) —
+  read in full.
+- [Kennedy et al. 2015, Convergence 21(4)](https://journals.sagepub.com/doi/10.1177/1354856515579848) —
+  found, not read; 403 on the open-access mirror.
+- [Whiting & Symon 2020, Work, Employment and Society 34(6)](https://journals.sagepub.com/doi/10.1177/0950017020916192) —
+  found, not read; one quote via search summary, **[unverified]** beyond it.
+- Direct product review searches (Bring!, Cozi, OurHome, FamCal) — six
+  searches, no usable quote found; see §7.1.
