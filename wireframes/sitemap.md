@@ -1,7 +1,7 @@
 # Sitemap
 
 **Status:** draft, 1 Oct 2026. [Entities](#entities), then a first pass at
-[Screens](#screens), kept shallow on purpose. No navigation yet. Built from [jtbd.md](../research/jtbd.md),
+[Screens](#screens), kept shallow on purpose, then [Navigation](#navigation). Built from [jtbd.md](../research/jtbd.md),
 [personas.md](../research/personas.md) and
 [research.md](../research/research.md). Locked decisions in the brief are
 quoted only where a job needs them.
@@ -250,7 +250,7 @@ Medication audit
 │   │   "what's left is only what we'd actually use"
 │   │
 │   ├── Go through a place .......... (L1, E1) .......................... P1
-│   ├── Needs a look ................ (L1, E1, L2) ...................... P1
+│   ├── Needs a look ................ (L1, E1, L2) ...................... P1 · ⟲ folded into the top of Go through, see Navigation
 │   └── Add or change a medicine .... (L2; L1 as the capture moment) .... P1
 │
 ├── 3 · LETTING THE OTHERS IN
@@ -386,3 +386,130 @@ place*), *archive*, *copy invite link*.
   caregiver structure every competitor drifted to. No job here asks for it.
 - **No section for each feature** (Cabinet · Kits · Reminders · Profile). The
   groups are moments, and features sit inside them.
+
+---
+
+## Navigation
+
+Built only from the screens in [Screens](#screens). One change was needed to
+meet the three-tap rule: *Needs a look* is folded into another screen.
+It is explained under [Depth](#depth-taps-to-the-job).
+
+**Which persona and which job.** In this project the **primary persona is
+Dani**. The **main job is Sam's**: *"When someone at home needs medicine and the
+person who knows isn't there, I want to find out what we have and whether it's
+still good, so that I don't have to guess"* ([jtbd](../research/jtbd.md#the-main-job)).
+The two are different people, so depth is counted for both:
+- Sam, to the main job. This is the count that decides whether the product
+  works.
+- Dani, to the jobs Dani actually does ([personas, "Sam governs the measure of
+  success"](../research/personas.md#why-dani-is-primary-and-sam-and-robin-secondary)).
+
+### Global navigation: three items
+
+The app always opens on **What we have**, for everyone. There is one start
+screen, not one per persona. The moment that has to work is Sam's, possibly at
+night, possibly ill ([H1](../research/jtbd.md#h1)).
+
+| # | Item | Opens | Job cluster it's the entry to | Who it's for |
+|---|---|---|---|---|
+| 1 | **What we have** | *What we have*, with *Find by name* as a field at the top | **Main job + L3.** *Do we have it, and is it still good?* Each row shows its state on its face (expired, not confirmed since…, purpose unknown), so *"still good"* needs no tap. | P2 first, P1 too |
+| 2 | **What it's for** | *Find by what it's for*, a list of Purposes | **H3 ▶ carried forward, serving L2 and L3.** *I don't know what it's called, but I know what's wrong.* It is a global item because H3 is the hypothesis the navigation rests on, and a global item is the most direct way to test it. | P2 |
+| 3 | **Go through** | *Go through a place*, with the *Needs a look* items at the top | **L1 + E1, plus L2's unknowns.** *What's left is only what we'd actually use.* This is the clear-out the household already does 2–3 times a year ([§6.7](../research/research.md#67-how-often-and-what-people-do-about-expiry)). | P1 |
+
+**What was left out of the global navigation, and why:**
+- **Household (S1).** S1 is an MVP job, but it pays off in items 1 and 2,
+  when Sam reads without phoning Dani. The invite itself happens about once.
+  A tab used once a year is the *"Profile"* convention this step is told to
+  avoid. **The cost:** an MVP job has no tab, and inviting someone is one tap
+  deeper than it might be. Accepted, because Dani does it once.
+- **Add.** No job is *adding*. jtbd puts capture inside L1 ([costs](../research/jtbd.md#costs-requirements-and-promises)).
+  A permanent Add button would also hand the most-used slot to the thing the
+  category's one-star reviews hate most ([people.md B1, F3](../research/people.md)).
+  It is contextual: on *What we have* and inside *Go through a place*.
+- **No tab for an orphan.** None of the six has a job.
+
+**`[?]` If H3 fails** (Sam does know the brand names, or a list of reasons
+doesn't help), item 2 is removed and becomes a filter on item 1. That
+leaves two global items, below the 3–5 asked for. That would be the honest
+result, not a reason to bring Household back as a filler tab.
+
+### Depth: taps to the job
+
+Counted from the app open on *What we have*. **Typing is not a tap.** Opening
+the app is not counted.
+
+**Sam, the main job.** This is the count that matters.
+
+| Path | Taps | Where the answer appears |
+|---|---|---|
+| Scan the list, tap the medicine | **1** | *"Still good"* shows on the row at **0**. *What it's for*, and who wrote it (E2), show on *A medicine* at 1. |
+| Search: tap the field, type, tap the result | **2** | Same, on *A medicine* |
+| By purpose: **What it's for** → a purpose → the medicine | **3** | *"Still good"* shows on the purpose's list at 2. *What it's for* shows at 3. |
+
+**Maximum 3. Within the limit.** The by-purpose path is the deepest, and it is
+the one H3 says Sam needs most. It sits exactly at the limit, so it gets no
+more levels. Step 3 must not add one between a purpose and its medicines.
+
+*Not counted:* Sam's first time, through *Join from a link*. That happens once
+per person and lands on *What we have*. `[?]` If Sam never joins and only
+reads, this becomes the open Member question ([Entities](#open-questions-this-inventory-raises)).
+
+**Dani, the jobs Dani does.**
+
+| Job | Path | Taps, before | Taps, after |
+|---|---|---|---|
+| **L1 · clear-out** | **Go through** → a place → *still here / gone* on each pack, inline | 3 | **3** |
+| **L2 · write down what it was for** | **Go through** → *Needs a look* → the medicine → edit → save | **5** | **3**: **Go through** → the item at the top → note field already open on *A medicine*, type, save |
+| **E1 · confirm while looking anyway** | **What we have** → the medicine → *still here* | 2 | **2** |
+| Record a new box *([personas P1 job 2](../research/personas.md#jobs--what-they-are-trying-to-do); not a jtbd job)* | **What we have** → Add → type the name → save | 2 | **2** |
+
+**The one path that broke the limit was L2 at 5 taps.** It is the job this product exists for
+([jtbd conclusions](../research/jtbd.md#1-l2--recovering-what-we-got-it-for)).
+Two changes, both to existing screens:
+
+1. **Needs a look stops being its own screen.** It becomes the top of *Go through
+   a place*, listing items across all Places, followed by the Places. The sitemap
+   had already marked this fold `[?]`.
+2. **The Purpose note is written on *A medicine* itself.** An empty note is an
+   open field, not an *edit* button that opens the form. *Add or change a
+   medicine* stays for the name, Place and expiry.
+
+**The trade-offs:**
+- *Go through* gets longer, and mixes two things: what needs attention and
+  where things are kept. If there are many flagged items, the Places get pushed
+  down the screen. Step 3 should cap the top section, for example *"4 need a
+  look"*, and the cap must not make the rest look urgent
+  ([*never cry wolf*](../research/jtbd.md#costs-requirements-and-promises)).
+- The note can now be written in two places, *A medicine* and the form. Both
+  must save to the same field, with the same author and date (E2).
+- *Still here / gone* inline on a row is one tap with no confirmation step.
+  That is safe only because *gone* archives and does not delete
+  ([Entities §5](#5-medicine)). It needs an undo. *Gone* must never be a
+  destructive tap.
+
+### Global, contextual, deep
+
+| Level | Element | Lives on | Job |
+|---|---|---|---|
+| **Global**, always visible | What we have | everywhere | Main, L3 |
+| | What it's for `[?]` | everywhere | H3 ▶ |
+| | Go through | everywhere | L1, E1 |
+| **Contextual**, appears inside the flow | Find by name field | top of *What we have* | L3 |
+| | A medicine | from any list row | L2, E1, E2, Main |
+| | State on the row (expired · not confirmed since… · purpose unknown) | every list of medicines | Main, L1, E1, L2 |
+| | Purpose note, written in place | *A medicine*, when the note is empty | L2 |
+| | *Still here / gone* + undo | *A medicine*, rows in *Go through a place* | E1, L1 |
+| | Needs a look (top section) | *Go through* | L1, E1, L2 |
+| | Go through a place | *Go through* → a place | L1 |
+| | Add or change a medicine | *What we have*, *Go through a place*, *A medicine* | L1 capture, L2 |
+| **Deep**, infrequent | Who's in, and invite / copy link | a header entry on *What we have* | S1, about once |
+| | Start a household record | first run only | S1, Main |
+| | Join from a link | first run, per person | S1 |
+| | Archived medicines | from *What we have* | L1, *"no longer there"* stays reversible |
+| | Rename or remove a Place | *Go through a place* | L3 |
+| | Remove a member `[?]` | *Who's in* | none; GDPR, [CLAUDE.md §11](../CLAUDE.md) |
+| **None**, no place in the navigation | the six orphans | — | no job |
+
+**For Step 3:** the only paths at the limit are Sam's by-purpose path and Dani's
+L2 path. Both are exactly 3 taps. Any new level there pushes them over.
