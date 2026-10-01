@@ -40,7 +40,7 @@ safety and privacy posture, and the open questions — is in
 | 🔬 | **[research/review.md](./research/review.md)** | Claim-by-claim audit of personas.md and jtbd.md — 94 statements classified, the 15 that shape design on `[?]` or inference, and three questions to close the gaps | 🟢 15 Sep 2026 |
 | 🗂️ | **[research/personas.html](./research/personas.html)** | Personas, jobs and the matrix as one standalone page — self-contained, not part of the research site | 🟢 16 Sep 2026 — not deployed |
 | 🖼️ | **[research/screens/](./research/screens/)** | 69 captures — marketing sites, App Store galleries, Play listings and Data Safety pages, the Cyprus register. Login-walled surfaces documented rather than captured | 🟡 69 captures, no in-app screens |
-| ✏️ | **[wireframes/](./wireframes/)** | Structure and flow. Grey boxes, real copy, no styling. [sitemap.md](./wireframes/sitemap.md): entities and a first screen tree | 🟡 1 Oct 2026 — sitemap drafted, nothing drawn |
+| ✏️ | **[wireframes/](./wireframes/)** | Structure and flow. Grey boxes, real copy, no styling. [sitemap.md](./wireframes/sitemap.md): entities, screens, navigation · [flows.md](./wireframes/flows.md): four user flows | 🟡 1 Oct 2026 — sitemap and flows drafted, nothing drawn |
 | 🎨 | **[concept/](./concept/)** | Visual directions, mood, tone of voice, the name | ⚪ Blocked on wireframes |
 | 🎛️ | **[tokens/](./tokens/)** | Colour, type, spacing, radius, motion as JSON | ⚪ Blocked on concept |
 | 🧩 | **[components/](./components/)** | Individual UI pieces with every state drawn | ⚪ Blocked on tokens |

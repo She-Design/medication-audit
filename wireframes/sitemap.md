@@ -1,7 +1,7 @@
 # Sitemap
 
 **Status:** draft, 1 Oct 2026. [Entities](#entities), then a first pass at
-[Screens](#screens), kept shallow on purpose, then [Navigation](#navigation). Built from [jtbd.md](../research/jtbd.md),
+[Screens](#screens), kept shallow on purpose, then [Navigation](#navigation). Flows are in [flows.md](./flows.md). Built from [jtbd.md](../research/jtbd.md),
 [personas.md](../research/personas.md) and
 [research.md](../research/research.md). Locked decisions in the brief are
 quoted only where a job needs them.
@@ -249,9 +249,11 @@ Medication audit
 ├── 2 · GOING THROUGH THE CUPBOARD
 │   │   "what's left is only what we'd actually use"
 │   │
+│   ├── Go through .................. (L1, E1, L2) ...................... P1 · ⟲ added in flows.md
 │   ├── Go through a place .......... (L1, E1) .......................... P1
 │   ├── Needs a look ................ (L1, E1, L2) ...................... P1 · ⟲ folded into the top of Go through, see Navigation
-│   └── Add or change a medicine .... (L2; L1 as the capture moment) .... P1
+│   ├── Add or change a medicine .... (L2; L1 as the capture moment) .... P1
+│   └── Archived medicines .......... (L1, E1) .......................... P1 · ⟲ added in flows.md
 │
 ├── 3 · LETTING THE OTHERS IN
 │   │   "they work it out without me"
@@ -297,6 +299,11 @@ Medication audit
 
 **2 · Going through the cupboard**
 
+- **Go through** (L1, E1, L2). *Added in [flows.md](./flows.md), 1 Oct 2026.*
+  The screen the global item opens. The *Needs a look* items sit at the top,
+  and the list of Places below them. [Navigation](#navigation) made this fold;
+  the flows needed it named as a screen, because both flow 2 and flow 3 start
+  on it.
 - **Go through a place** (L1, E1). One Place, all its Packs, each answered
   *still here / gone*. This is the clear-out households already do *"twice or
   three times a year"* ([§6.7](../research/research.md#67-how-often-and-what-people-do-about-expiry)).
@@ -316,6 +323,13 @@ Medication audit
   *"the first sort-out"* into L1: *"capture can be a by-product of work they
   were doing anyway"*. So this screen opens from *Go through a place* as well
   as on its own.
+- **Archived medicines** (L1, E1). *Added in [flows.md](./flows.md), 1 Oct
+  2026.* What was marked *gone*, kept and restorable. Flow 3 found a dead end
+  without it: a *gone* tapped by mistake, the undo missed, and the entry
+  believed lost. That is the moment E1 names, when *"the whole app"* becomes
+  *"untrustworthy"*. *"Archive rather than delete"* is asked for by name
+  ([personas P1](../research/personas.md#trust-triggers--what-earns-it-what-loses-it)).
+  It is reached deep, from *What we have* ([Navigation](#global-contextual-deep)).
 
 **3 · Letting the others in**
 
@@ -349,7 +363,7 @@ deleted. They wait for a job.
 
 | | P1 · Dani (primary) | P2 · Sam (secondary) |
 |---|---|---|
-| **Screens they need** | All ten | Five: *What we have*, *Find by what it's for*, *Find by name*, *A medicine*, *Join from a link* |
+| **Screens they need** | All eleven: *Needs a look* became *Go through*, and *Archived medicines* was added in flows.md | Five: *What we have*, *Find by what it's for*, *Find by name*, *A medicine*, *Join from a link* |
 | **Group they live in** | 2: keeping it true | 1: finding out |
 | **What they do on *A medicine*** | Write the Purpose note, confirm or mark gone | Read. Trust it because it shows who wrote it and when (E2) |
 | **Evidence behind their screens** | `[O]` / `[B]` for L1, L2, E1, S1 | `[A]` for Main, and `[?]` for H3. Sam has no voice anywhere ([§7.1](../research/research.md#71-the-direct-search-failed-and-that-failure-is-itself-informative)) |
@@ -415,7 +429,7 @@ night, possibly ill ([H1](../research/jtbd.md#h1)).
 |---|---|---|---|---|
 | 1 | **What we have** | *What we have*, with *Find by name* as a field at the top | **Main job + L3.** *Do we have it, and is it still good?* Each row shows its state on its face (expired, not confirmed since…, purpose unknown), so *"still good"* needs no tap. | P2 first, P1 too |
 | 2 | **What it's for** | *Find by what it's for*, a list of Purposes | **H3 ▶ carried forward, serving L2 and L3.** *I don't know what it's called, but I know what's wrong.* It is a global item because H3 is the hypothesis the navigation rests on, and a global item is the most direct way to test it. | P2 |
-| 3 | **Go through** | *Go through a place*, with the *Needs a look* items at the top | **L1 + E1, plus L2's unknowns.** *What's left is only what we'd actually use.* This is the clear-out the household already does 2–3 times a year ([§6.7](../research/research.md#67-how-often-and-what-people-do-about-expiry)). | P1 |
+| 3 | **Go through** | *Go through*: the *Needs a look* items at the top, then the Places | **L1 + E1, plus L2's unknowns.** *What's left is only what we'd actually use.* This is the clear-out the household already does 2–3 times a year ([§6.7](../research/research.md#67-how-often-and-what-people-do-about-expiry)). | P1 |
 
 **What was left out of the global navigation, and why:**
 - **Household (S1).** S1 is an MVP job, but it pays off in items 1 and 2,
