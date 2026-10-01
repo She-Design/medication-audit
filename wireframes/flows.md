@@ -13,16 +13,20 @@ there.
 | [3](#3--l1--e1-clearing-out-whats-no-longer-any-good) | **L1 + E1**: clearing out what's no longer any good, and keeping the record true | P1 Dani |
 | [4](#4--s1-not-being-the-one-it-all-depends-on) | **S1**: not being the one it all depends on | P1 Dani → P2 Sam |
 
-**Legend**
+**Legend.** This follows the project's flow convention: the flatmate-app example.
 
-| Shape | Meaning |
+| Notation | Meaning |
 |---|---|
-| `["…"]` rectangle | a screen from sitemap.md |
-| `{"…?"}` diamond | a decision |
-| `(["…"])` stadium, dashed | a state of the screen before it: empty, error, loading, flagged |
-| `[/"…"/]` parallelogram, grey | something that happens outside the app, at the drawer or on the phone |
-| `{{"✓ …"}}` green hexagon | success: the job is done |
-| `{{"✗ …"}}` red hexagon | dead end: the person is stuck, or leaves with a wrong answer |
+| `["Screen name"]` | a screen from sitemap.md, named exactly as there |
+| `{"Question?"}` | a decision, with labelled branches `-->\|yes\|` / `-->\|no\|` |
+| `["Loading: …"]` · `["Empty: …"]` · `["Error: …"]` | a state of the screen before it, drawn as its own node |
+| `["Flag: …"]` · `["State: …"]` | two more kinds of state: a flag on a medicine (expired, purpose unknown) and a transient state (link copied, undo available) |
+| `["Outside the app: …"]` | a step at the drawer or in another app. It is **not** a screen |
+| `(["…"])` rounded, first node | where the flow starts |
+| `(["Job closed: …"])` | success: the job is done |
+| `(["Dead end: …"])` | the person is stuck, or leaves with a wrong answer |
+
+Below each diagram, the endpoints are listed as ✓ (job closed) and ✗ (dead end).
 
 **Two rules shape every flow.**
 - **Loading is almost never a wait.** The record is read from the phone
@@ -47,20 +51,20 @@ there.
 
 ```mermaid
 flowchart TD
-    START[/"Sam needs something, and Dani isn't there"/]
+    START(["Sam needs something, and Dani isn't there"])
     START --> JOINED{"Is Sam already in the household record?"}
     JOINED -->|no| HASLINK{"Is there an invite link Sam can find?"}
-    HASLINK -->|no| X_TEXT{{"✗ Texts Dani and waits, or guesses"}}
+    HASLINK -->|no| X_TEXT(["Dead end: Texts Dani and waits, or guesses"])
     HASLINK -->|yes| FLOW4["Join from a link"]
     FLOW4 --> HOME
     JOINED -->|yes| HOME["What we have"]
 
-    HOME --> S_LOAD(["loading: reading the record on this phone"])
+    HOME --> S_LOAD["Loading: reading the record on this phone"]
     S_LOAD --> ANY{"Has anything been added yet?"}
-    ANY -->|no| S_EMPTY(["empty: nothing recorded yet"])
-    S_EMPTY --> X_EMPTY{{"✗ Back to the drawer, guessing"}}
+    ANY -->|no| S_EMPTY["Empty: nothing recorded yet"]
+    S_EMPTY --> X_EMPTY(["Dead end: Back to the drawer, guessing"])
     ANY -->|yes| S_SYNC{"Did the last sync work?"}
-    S_SYNC -->|no| S_ERR(["error: could not sync, showing this phone's copy from the date it was last updated"])
+    S_SYNC -->|no| S_ERR["Error: could not sync, showing this phone's copy from the date it was last updated"]
     S_ERR --> SEE
     S_SYNC -->|yes| SEE{"Can Sam spot it in the list?"}
 
@@ -71,41 +75,32 @@ flowchart TD
 
     BYNAME --> NAMEHIT{"Any match?"}
     NAMEHIT -->|yes| MED
-    NAMEHIT -->|no| S_NONAME(["empty: nothing recorded under that word"])
+    NAMEHIT -->|no| S_NONAME["Empty: nothing recorded under that word"]
     S_NONAME --> TRYPURPOSE{"Try by what it's for instead?"}
     TRYPURPOSE -->|yes| BYPURPOSE
-    TRYPURPOSE -->|no| X_NONE{{"✗ Concludes we have none, which may be wrong"}}
+    TRYPURPOSE -->|no| X_NONE(["Dead end: Concludes we have none, which may be wrong"])
 
     BYPURPOSE --> FITS{"Is anything tagged to that purpose?"}
     FITS -->|yes| MED
-    FITS -->|no| S_NOPURPOSE(["empty: nothing in the record is tagged for this"])
-    S_NOPURPOSE --> X_NOTAG{{"✗ Still has to decide alone"}}
+    FITS -->|no| S_NOPURPOSE["Empty: nothing in the record is tagged for this"]
+    S_NOPURPOSE --> X_NOTAG(["Dead end: Still has to decide alone"])
 
     MED --> EXPIRED{"Is it past its expiry date?"}
-    EXPIRED -->|yes| S_EXPIRED(["flag: expired on the printed date"])
-    S_EXPIRED --> OK_NOTGOOD{{"✓ Knows not to rely on this one"}}
+    EXPIRED -->|yes| S_EXPIRED["Flag: expired on the printed date"]
+    S_EXPIRED --> OK_NOTGOOD(["Job closed: Knows not to rely on this one"])
     EXPIRED -->|no| STALE{"Confirmed by someone recently?"}
-    STALE -->|no| S_STALE(["flag: not confirmed since a past date"])
-    S_STALE --> DRAWER[/"Sam checks the drawer"/]
+    STALE -->|no| S_STALE["Flag: not confirmed since a past date"]
+    S_STALE --> DRAWER["Outside the app: Sam checks the drawer"]
     DRAWER --> THERE{"Is the box there?"}
     THERE -->|no| GONE["A medicine"]
-    GONE --> X_GONE{{"✗ Marks it gone, and has nothing for the need"}}
+    GONE --> X_GONE(["Dead end: Marks it gone, and has nothing for the need"])
     THERE -->|yes| NOTE
     STALE -->|yes| NOTE{"Has anyone written what it's for?"}
-    NOTE -->|no| S_UNKNOWN(["flag: purpose unknown"])
-    S_UNKNOWN --> X_UNKNOWN{{"✗ Has the box but not its purpose, must reach Dani"}}
+    NOTE -->|no| S_UNKNOWN["Flag: purpose unknown"]
+    S_UNKNOWN --> X_UNKNOWN(["Dead end: Has the box but not its purpose, must reach Dani"])
     NOTE -->|yes| MATCH{"Does what the household wrote match the need?"}
     MATCH -->|no| HOME
-    MATCH -->|yes| OK_FOUND{{"✓ Knows what we have, what we wrote it is for, and that it's still good, without Dani"}}
-
-    classDef state stroke-dasharray: 5 4
-    classDef off fill:#eeeeee,stroke:#888888,color:#333333
-    classDef ok fill:#e3f2e6,stroke:#2e7d32,color:#123d17
-    classDef stuck fill:#fbe4e2,stroke:#b3261e,color:#4f1310
-    class S_LOAD,S_EMPTY,S_ERR,S_NONAME,S_NOPURPOSE,S_EXPIRED,S_STALE,S_UNKNOWN state
-    class START,DRAWER off
-    class OK_NOTGOOD,OK_FOUND ok
-    class X_TEXT,X_EMPTY,X_NONE,X_NOTAG,X_GONE,X_UNKNOWN stuck
+    MATCH -->|yes| OK_FOUND(["Job closed: Knows what we have, what we wrote it is for, and that it's still good, without Dani"])
 ```
 
 **Decisions**
@@ -170,7 +165,7 @@ or *throw it out*. *Leaving it there again* is the dead end.
 
 ```mermaid
 flowchart TD
-    START[/"Dani finds a box and can't remember what it was for"/]
+    START(["Dani finds a box and can't remember what it was for"])
     START --> ENTRY{"Where does Dani start?"}
     ENTRY -->|"from the clear-out"| GT["Go through"]
     ENTRY -->|"from the box in hand"| HOME["What we have"]
@@ -182,9 +177,9 @@ flowchart TD
     HOME --> BYNAME["Find by name"]
     BYNAME --> HIT{"Any match?"}
     HIT -->|yes| MED
-    HIT -->|no| S_NONE(["empty: not in the record"])
+    HIT -->|no| S_NONE["Empty: not in the record"]
     S_NONE --> ADD["Add or change a medicine"]
-    ADD --> S_SAME(["state: a medicine with this name already exists"])
+    ADD --> S_SAME["State: a medicine with this name already exists"]
     S_SAME --> SAMEQ{"Is it the same medicine?"}
     SAMEQ -->|yes| MED
     SAMEQ -->|no| MED
@@ -194,35 +189,26 @@ flowchart TD
     WHO --> AGREE{"Does Dani agree with what is written, and who wrote it?"}
     AGREE -->|yes| USE{"Any use to us now?"}
     AGREE -->|no| WRITE
-    HASNOTE -->|no| S_UNKNOWN(["flag: purpose unknown, note field open"])
+    HASNOTE -->|no| S_UNKNOWN["Flag: purpose unknown, note field open"]
     S_UNKNOWN --> REMEMBER{"Does Dani remember now?"}
     REMEMBER -->|yes| WRITE["A medicine"]
-    REMEMBER -->|no| ASK[/"Dani asks someone at home"/]
+    REMEMBER -->|no| ASK["Outside the app: Dani asks someone at home"]
     ASK --> KNOWS{"Does anyone know?"}
     KNOWS -->|yes| WRITE
     KNOWS -->|no| KEEP{"Keep it anyway?"}
-    KEEP -->|yes| X_SHELF{{"✗ Back on the shelf, still unknown"}}
+    KEEP -->|yes| X_SHELF(["Dead end: Back on the shelf, still unknown"])
     KEEP -->|no| BIN
 
-    WRITE --> S_SAVE(["loading: saved on this phone, syncing"])
+    WRITE --> S_SAVE["Loading: saved on this phone, syncing"]
     S_SAVE --> SYNCED{"Did it sync?"}
-    SYNCED -->|no| S_ERR(["error: saved here, will retry when there is signal"])
+    SYNCED -->|no| S_ERR["Error: saved here, will retry when there is signal"]
     S_ERR --> USE
     SYNCED -->|yes| USE
 
-    USE -->|yes| OK_USE{{"✓ Use it: the note is there, with Dani's name and date"}}
+    USE -->|yes| OK_USE(["Job closed: Use it: the note is there, with Dani's name and date"])
     USE -->|no| BIN["A medicine"]
-    BIN --> S_UNDO(["state: marked gone, undo available"])
-    S_UNDO --> OK_BIN{{"✓ Throw it out: archived, out of the cupboard and the list"}}
-
-    classDef state stroke-dasharray: 5 4
-    classDef off fill:#eeeeee,stroke:#888888,color:#333333
-    classDef ok fill:#e3f2e6,stroke:#2e7d32,color:#123d17
-    classDef stuck fill:#fbe4e2,stroke:#b3261e,color:#4f1310
-    class S_NONE,S_SAME,S_UNKNOWN,S_SAVE,S_ERR,S_UNDO state
-    class START,ASK off
-    class OK_USE,OK_BIN ok
-    class X_SHELF stuck
+    BIN --> S_UNDO["State: marked gone, undo available"]
+    S_UNDO --> OK_BIN(["Job closed: Throw it out: archived, out of the cupboard and the list"])
 ```
 
 *A medicine* appears several times (`MED`, `WHO`, `WRITE`, `BIN`). It is one
@@ -280,11 +266,11 @@ the change [Navigation](./sitemap.md#depth-taps-to-the-job) made to keep L2 at
 
 ```mermaid
 flowchart TD
-    START[/"Dani starts a clear-out, a few times a year or on a move"/]
+    START(["Dani starts a clear-out, a few times a year or on a move"])
     START --> GT["Go through"]
-    GT --> S_LOAD(["loading: reading the record on this phone"])
+    GT --> S_LOAD["Loading: reading the record on this phone"]
     S_LOAD --> PLACES{"Are any places recorded yet?"}
-    PLACES -->|no| S_EMPTY(["empty: no places yet, first sort-out"])
+    PLACES -->|no| S_EMPTY["Empty: no places yet, first sort-out"]
     S_EMPTY --> ADD["Add or change a medicine"]
     ADD --> PLACE
     PLACES -->|yes| PICK{"Anything listed at the top as needing a look?"}
@@ -293,27 +279,27 @@ flowchart TD
     PICK -->|no| PLACE["Go through a place"]
 
     PLACE --> S_EMPTYPLACE{"Does this place have any packs recorded?"}
-    S_EMPTYPLACE -->|no| S_NOPACKS(["empty: nothing recorded in this place"])
+    S_EMPTYPLACE -->|no| S_NOPACKS["Empty: nothing recorded in this place"]
     S_NOPACKS --> FOUND
     S_EMPTYPLACE -->|yes| THERE{"Is the next pack physically there?"}
 
-    THERE -->|no| GONE(["state: marked gone, undo available"])
+    THERE -->|no| GONE["State: marked gone, undo available"]
     GONE --> MISTAKE{"Gone by mistake?"}
     MISTAKE -->|"no"| MORE
-    MISTAKE -->|"yes, caught in time"| UNDO(["state: undone, back on the list"])
+    MISTAKE -->|"yes, caught in time"| UNDO["State: undone, back on the list"]
     UNDO --> MORE
     MISTAKE -->|"yes, noticed later"| ARCH["Archived medicines"]
     ARCH --> FINDARCH{"Can Dani find the archive?"}
     FINDARCH -->|yes| MORE
-    FINDARCH -->|no| X_LOST{{"✗ Believes the entry is lost, and stops trusting the record"}}
+    FINDARCH -->|no| X_LOST(["Dead end: Believes the entry is lost, and stops trusting the record"])
 
     THERE -->|yes| EXP{"Past its expiry date?"}
-    EXP -->|yes| S_EXP(["flag: expired"])
+    EXP -->|yes| S_EXP["Flag: expired"]
     S_EXP --> BIN{"Throw it out?"}
     BIN -->|yes| GONE
-    BIN -->|no| KEEPEXP(["state: still here, kept expired by choice"])
+    BIN -->|no| KEEPEXP["State: still here, kept expired by choice"]
     KEEPEXP --> MORE
-    EXP -->|no| HERE(["state: still here, confirmed today"])
+    EXP -->|no| HERE["State: still here, confirmed today"]
     HERE --> MORE
 
     MORE{"More packs in this place?"}
@@ -321,24 +307,15 @@ flowchart TD
     MORE -->|no| FOUND{"Boxes here that are not in the record?"}
     FOUND -->|yes| ADD2["Add or change a medicine"]
     ADD2 --> S_SAVEERR{"Did it save and sync?"}
-    S_SAVEERR -->|no| S_ERR(["error: saved here, will retry"])
+    S_SAVEERR -->|no| S_ERR["Error: saved here, will retry"]
     S_ERR --> FOUND
     S_SAVEERR -->|yes| FOUND
     FOUND -->|no| STOP{"Finished, or interrupted?"}
-    STOP -->|interrupted| S_HALF(["state: halfway, the rest still shows its old confirmation date"])
-    S_HALF --> X_HALF{{"✗ Half confirmed, until Dani comes back"}}
+    STOP -->|interrupted| S_HALF["State: halfway, the rest still shows its old confirmation date"]
+    S_HALF --> X_HALF(["Dead end: Half confirmed, until Dani comes back"])
     STOP -->|finished| OTHER{"Another place to go through?"}
     OTHER -->|yes| GT
-    OTHER -->|no| OK{{"✓ What's left is only what we'd use, and every entry says when it was confirmed"}}
-
-    classDef state stroke-dasharray: 5 4
-    classDef off fill:#eeeeee,stroke:#888888,color:#333333
-    classDef ok fill:#e3f2e6,stroke:#2e7d32,color:#123d17
-    classDef stuck fill:#fbe4e2,stroke:#b3261e,color:#4f1310
-    class S_LOAD,S_EMPTY,S_NOPACKS,GONE,UNDO,S_EXP,KEEPEXP,HERE,S_ERR,S_HALF state
-    class START off
-    class OK ok
-    class X_LOST,X_HALF stuck
+    OTHER -->|no| OK(["Job closed: What's left is only what we'd use, and every entry says when it was confirmed"])
 ```
 
 **Decisions**
@@ -405,50 +382,41 @@ act, and it is the route by which flow 1 can happen at all.
 
 ```mermaid
 flowchart TD
-    START[/"Dani wants the others to see the record without going through Dani"/]
+    START(["Dani wants the others to see the record without going through Dani"])
     START --> EXISTS{"Does a household record exist yet?"}
     EXISTS -->|no| CREATE["Start a household record"]
     CREATE --> INVITE
     EXISTS -->|yes| INVITE["Who's in, and invite"]
-    INVITE --> COPY(["state: link copied"])
-    COPY --> SEND[/"Dani sends the link in their usual messenger"/]
+    INVITE --> COPY["State: link copied"]
+    COPY --> SEND["Outside the app: Dani sends the link in their usual messenger"]
 
     SEND --> OPENED{"Does Sam open it?"}
-    OPENED -->|no| X_IGNORED{{"✗ Link sits unread, and Dani is still the one it depends on"}}
+    OPENED -->|no| X_IGNORED(["Dead end: Link sits unread, and Dani is still the one it depends on"])
     OPENED -->|yes| APP{"Does Sam have the app?"}
     APP -->|no| INSTALL{"Will Sam install it?"}
-    INSTALL -->|no| X_NOINSTALL{{"✗ Won't install for a once-a-year question"}}
+    INSTALL -->|no| X_NOINSTALL(["Dead end: Won't install for a once-a-year question"])
     INSTALL -->|yes| JOIN
     APP -->|yes| JOIN["Join from a link"]
 
     JOIN --> ONLINE{"Is there signal?"}
-    ONLINE -->|no| S_OFFLINE(["error: joining needs signal once"])
+    ONLINE -->|no| S_OFFLINE["Error: joining needs signal once"]
     S_OFFLINE --> RETRY{"Does Sam try again later?"}
     RETRY -->|yes| JOIN
-    RETRY -->|no| X_OFFLINE{{"✗ Never joined"}}
-    ONLINE -->|yes| S_JOINING(["loading: joining"])
+    RETRY -->|no| X_OFFLINE(["Dead end: Never joined"])
+    ONLINE -->|yes| S_JOINING["Loading: joining"]
     S_JOINING --> VALID{"Is the link still valid?"}
-    VALID -->|no| S_EXPIRED(["error: link expired or withdrawn"])
-    S_EXPIRED --> NEWLINK[/"Sam asks Dani for a new link"/]
+    VALID -->|no| S_EXPIRED["Error: link expired or withdrawn"]
+    S_EXPIRED --> NEWLINK["Outside the app: Sam asks Dani for a new link"]
     NEWLINK --> INVITE
-    VALID -->|yes| S_SYNC(["loading: first copy of the record arriving"])
+    VALID -->|yes| S_SYNC["Loading: first copy of the record arriving"]
     S_SYNC --> HOME["What we have"]
     HOME --> EMPTY{"Is anything in it yet?"}
-    EMPTY -->|no| S_EMPTY(["empty: Dani hasn't added anything yet"])
-    S_EMPTY --> X_EMPTY{{"✗ In, but nothing to read"}}
+    EMPTY -->|no| S_EMPTY["Empty: Dani hasn't added anything yet"]
+    S_EMPTY --> X_EMPTY(["Dead end: In, but nothing to read"])
     EMPTY -->|yes| CHECK["Who's in, and invite"]
     CHECK --> SEEN{"Can Dani see that Sam has joined?"}
-    SEEN -->|yes| OK{{"✓ Sam can find out without asking Dani, and Dani knows it"}}
-    SEEN -->|no| X_UNSURE{{"✗ Dani can't tell, so keeps answering the texts"}}
-
-    classDef state stroke-dasharray: 5 4
-    classDef off fill:#eeeeee,stroke:#888888,color:#333333
-    classDef ok fill:#e3f2e6,stroke:#2e7d32,color:#123d17
-    classDef stuck fill:#fbe4e2,stroke:#b3261e,color:#4f1310
-    class COPY,S_OFFLINE,S_JOINING,S_EXPIRED,S_SYNC,S_EMPTY state
-    class START,SEND,NEWLINK off
-    class OK ok
-    class X_IGNORED,X_NOINSTALL,X_OFFLINE,X_EMPTY,X_UNSURE stuck
+    SEEN -->|yes| OK(["Job closed: Sam can find out without asking Dani, and Dani knows it"])
+    SEEN -->|no| X_UNSURE(["Dead end: Dani can't tell, so keeps answering the texts"])
 ```
 
 **Decisions**
