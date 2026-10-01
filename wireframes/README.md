@@ -4,7 +4,7 @@ Structure and flow, deliberately ugly. Grey boxes, real copy, no colour, no type
 choices, no imagery. If a wireframe is pretty, it is being judged on the wrong
 thing.
 
-**Status:** empty. Nothing drawn yet.
+**Status:** pre-wireframe. [sitemap.md](./sitemap.md) holds the entity inventory and a first screen tree (draft, 1 Oct 2026); nothing drawn yet.
 
 ## What belongs here
 
